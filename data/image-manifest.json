@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-04T12:10:10.070Z",
-  "policy": "all",
+  "generatedAt": "2026-10-04T12:25:30.247Z",
+  "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e8c8a35381f8d4b7ab33eca0f8d75468be0b78954901c039872a0f5befdd0677.png",
@@ -82,37 +82,17 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c4d0c8aa01f64123e0b8b1ffee347026f9b839b1c177362f6c85b23d8b662738.png",
       "file": "assets/items/antiseptic.png"
     },
-    "bp-target-anvil-recipe": {
+    "anvil": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a6f5ae7dd4f8bb866752445dad31655a1d934feb2aa2cd106c2ff8b9d70d10e1.png",
-      "file": "assets/items/bp-target-anvil-recipe.png"
-    },
-    "anvil-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a6f5ae7dd4f8bb866752445dad31655a1d934feb2aa2cd106c2ff8b9d70d10e1.png",
-      "file": "assets/items/anvil-i.png"
-    },
-    "anvil-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1b66f01227d5480212a81d6d7ef0d11cf0f6ee580668b87f6bb46557d4f749b9.png",
-      "file": "assets/items/anvil-ii.png"
-    },
-    "anvil-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f9100304f28f764bd3cda141058f2304e836eade07083139c364e449446beb4d.png",
-      "file": "assets/items/anvil-iii.png"
-    },
-    "anvil-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3704776b8a4dc4cb2015920d5f66a8820cca8c7f5b04744875d15989559a139c.png",
-      "file": "assets/items/anvil-iv.png"
+      "file": "assets/items/anvil.png"
     },
     "anvil-splitter": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
       "file": "assets/items/anvil-splitter.png"
     },
-    "bp-target-aphelion-rifle-blueprint": {
+    "aphelion": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c1c59f3cf0cd556bd66aeacc32db364e8db92fc8da6986f5f4fd60c1a3476ec2.png",
-      "file": "assets/items/bp-target-aphelion-rifle-blueprint.png"
-    },
-    "aphelion-rifle": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c1c59f3cf0cd556bd66aeacc32db364e8db92fc8da6986f5f4fd60c1a3476ec2.png",
-      "file": "assets/items/aphelion-rifle.png"
+      "file": "assets/items/aphelion.png"
     },
     "apricot": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/132e3da784ba0724d0b6c8828539570740cd35955df99a1598513f595c12029f.png",
@@ -158,21 +138,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/af2e01a820f57ab9885026b2759dd19ea88b6182838fc4e43e5e8a7b8369892f.png",
       "file": "assets/items/arcade-duck.png"
     },
-    "arpeggio-i": {
+    "arpeggio": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dc3c4f9e8305eb41d5048c817029995c8197586441640c96f006e206f2ac95f2.png",
-      "file": "assets/items/arpeggio-i.png"
-    },
-    "arpeggio-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/199dc9d6e022302347230f59bf284ca857e0c9e3bba3c9fc6143ad85cda701c9.png",
-      "file": "assets/items/arpeggio-ii.png"
-    },
-    "arpeggio-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/da2ded1cd25bd144c6d0a2a378cacb7a563bb13f244a8d20d179b4bd1cb25b7c.png",
-      "file": "assets/items/arpeggio-iii.png"
-    },
-    "arpeggio-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4d99bdc3739b2370881e52927e494ea43c82bc1cc6d8e4689b4fb37525ee22f4.png",
-      "file": "assets/items/arpeggio-iv.png"
+      "file": "assets/items/arpeggio.png"
     },
     "assessor-matrix": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/497a1baeb42dc045d4f83ad1f1561932fb0f0db0dd2b64aa71fd8c351cb6b2f1.png",
@@ -214,25 +182,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5df6141a282776aa2c25d45278cc7d699ef96624886d743e3f8865bbef8d7bb5.png",
       "file": "assets/items/battery.png"
     },
-    "bp-target-bettina-blueprint": {
+    "bettina": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/06d8b439ec8641b72149d65110cb898fd16164349ed124f14c9391810d56e526.png",
-      "file": "assets/items/bp-target-bettina-blueprint.png"
-    },
-    "bettina-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/06d8b439ec8641b72149d65110cb898fd16164349ed124f14c9391810d56e526.png",
-      "file": "assets/items/bettina-i.png"
-    },
-    "bettina-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4fc672f8fcabc4876595f038a506fe0050a8eac240f625f1f6e8d382d9623d17.png",
-      "file": "assets/items/bettina-ii.png"
-    },
-    "bettina-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bf0398d3b57367e6d6b0412bb9874c8e6817e1b6f73ab37c67832e060d43bac7.png",
-      "file": "assets/items/bettina-iii.png"
-    },
-    "bettina-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ddcf8d89363364a27691ae405658c22d582ae155a1c7b3f256e762cdbcff594e.png",
-      "file": "assets/items/bettina-iv.png"
+      "file": "assets/items/bettina.png"
     },
     "bicycle-pump": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/22b9b6db5c83fc8b7935a2fd9be3dd7c9901c0514190c6ae0b3ca0b49a1a14e5.png",
@@ -290,33 +242,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c154e2b2a93af279834e1aa38f2b9c17107b761259f1c55544531a354684f680.png",
       "file": "assets/items/blue-gate-village-key.png"
     },
-    "blue-light-stick": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ae0627b40d61747106b940cb528e9c9643c3f4eca78a74fecd0a9a4487bedbd0.png",
-      "file": "assets/items/blue-light-stick.png"
-    },
     "blue-yellow-aviator-color": {
       "source": "https://static.metaforge.app/arc-raiders/icons/blue-yellow-aviator-color.webp",
       "file": "assets/items/blue-yellow-aviator-color.webp"
     },
-    "bp-target-bobcat-i-recipe": {
+    "bobcat": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/234ed5bfd984b29d6c08c0bd3290a9ef862ad0b1b97e9c8d8b145c7d4c43d2bb.png",
-      "file": "assets/items/bp-target-bobcat-i-recipe.png"
-    },
-    "bobcat-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/234ed5bfd984b29d6c08c0bd3290a9ef862ad0b1b97e9c8d8b145c7d4c43d2bb.png",
-      "file": "assets/items/bobcat-i.png"
-    },
-    "bobcat-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3ec89eff99acc08c759962a9303bfd9340b965087b2e6b841129eaf3e8040020.png",
-      "file": "assets/items/bobcat-ii.png"
-    },
-    "bobcat-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f570bcfde11008e72746eb29edaf7b8aa07b75b5f7fada83fac208e7e714fd58.png",
-      "file": "assets/items/bobcat-iii.png"
-    },
-    "bobcat-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/41effd20b3bd61678406ac46591c9acc12c5da364234150d1a6a334f46e57545.png",
-      "file": "assets/items/bobcat-iv.png"
+      "file": "assets/items/bobcat.png"
     },
     "bombardier-cell": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a143610219120c46c6f439e9506f342ac016fc93c3d3d1675e3edd24115a7963.png",
@@ -378,25 +310,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cce7ada0a17b10c668600d5b24ffe9fddac1924b6379c742118c540946fabce9.png",
       "file": "assets/items/buried-city-town-hall-key.png"
     },
-    "bp-target-burltetta-recipe": {
+    "burletta": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9ecca70d1bb2420829cdcf6cc7a868dc14b70c1217ae689863f5b3a9adaf35f2.png",
-      "file": "assets/items/bp-target-burltetta-recipe.png"
-    },
-    "burletta-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9ecca70d1bb2420829cdcf6cc7a868dc14b70c1217ae689863f5b3a9adaf35f2.png",
-      "file": "assets/items/burletta-i.png"
-    },
-    "burletta-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a43d83d9cda922ebaecc2ba8d236893d868562bfe451aacad5e56ec3393bd71f.png",
-      "file": "assets/items/burletta-ii.png"
-    },
-    "burletta-iiii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c4628ed26c28ea339b0c10eb1bc6133a81115c04f3bac2dbbb3019b8857e705e.png",
-      "file": "assets/items/burletta-iiii.png"
-    },
-    "burletta-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c0e172074a67c9875f63bf6a6baccf630f2c62aec4d4ef9828118bcf131acf0d.png",
-      "file": "assets/items/burletta-iv.png"
+      "file": "assets/items/burletta.png"
     },
     "burned-arc-circuitry": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/88d1542551b8f1a81e9c695c8367c83ed7cf62c2fe1d02f3a5720942767b2e41.png",
@@ -426,25 +342,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/09472ce408498bfe54a9c64442c3fd488d3a896b710dfdd02a9af6db108bd91a.png",
       "file": "assets/items/cans-backpack-attachment.png"
     },
-    "bp-target-canto-blueprint": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/98ca26be2da12d290d00b451ed6b738581335d77b2a36d9ba3317c160923c331.png",
-      "file": "assets/items/bp-target-canto-blueprint.png"
-    },
     "canto": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/98ca26be2da12d290d00b451ed6b738581335d77b2a36d9ba3317c160923c331.png",
       "file": "assets/items/canto.png"
-    },
-    "canto-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9154faffe59797e1a50af6df972c0b7d32b7c5b0629e8e132bb44208d3f8c26c.png",
-      "file": "assets/items/canto-ii.png"
-    },
-    "canto-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c9f9505f466450f059a27c4bb9b01bc7b7aa97d0d2a5f5471559e2d5eeaf4adb.png",
-      "file": "assets/items/canto-iii.png"
-    },
-    "canto-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/42a6c1ed0ab176fa58e04a8060d35ca8e5db52606399ab3dafe3947c4db1fc46.png",
-      "file": "assets/items/canto-iv.png"
     },
     "cat-bed": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/af2fef37d76cf37b9c38d2cf8bfe0fadc7727f9666721c4e9b5637f4aa2ba92e.png",
@@ -678,9 +578,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6c4eddf8f45fd4270d5557cf747b5319d08705259047cd1f823d326e1dfd76e5.png",
       "file": "assets/items/energy-ammo.png"
     },
-    "equalizer-i": {
+    "equalizer": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b3f9cde8f883d8f923d0c6ae110f44e74dfe5ca1bcdb5dd50f7b95a5d20c4334.png",
-      "file": "assets/items/equalizer-i.png"
+      "file": "assets/items/equalizer.png"
     },
     "equatorial-sundial": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/104fa14ae29ff11237d31bc043c208f71af3940ce5d18676ff33661c4ee4b395.png",
@@ -774,21 +674,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/61c779fcb9ab509bd6fc850992124d4c8a7b23d39a267a258424a745d9d60cad.png",
       "file": "assets/items/familiar-duck.png"
     },
-    "ferro-i": {
+    "ferro": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fe769a6a4d3138fc4ab1cd5dbc9d8894b1f0f7cbfd117d27243d60f4dd251ab5.png",
-      "file": "assets/items/ferro-i.png"
-    },
-    "ferro-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/45417a77ca2997284bf521ac04db54d47571f22fab1fa1a8b702fa1daf31f393.png",
-      "file": "assets/items/ferro-ii.png"
-    },
-    "ferro-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/566ad8fa229d4f158fa872dc1ee56680fedfc1b1a6da597d38aacd01e261a721.png",
-      "file": "assets/items/ferro-iii.png"
-    },
-    "ferro-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f8c37d51249cd6148302ed9b04b05ec5e5fdba9f32445e48d0c906650a6ff2c6.png",
-      "file": "assets/items/ferro-iv.png"
+      "file": "assets/items/ferro.png"
     },
     "fertilizer": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6aa8c273d4dfa82e12d9788cc13589aa386d876ca31e8477baca79d9fc34f255.png",
@@ -926,25 +814,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e1ff112417a46b0da11e7e3fd18a61e4b2c14a3c457f72ae796929307fc962a6.png",
       "file": "assets/items/great-muullein.png"
     },
-    "green-light-stick": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d48dfae88f2a33d6b20c7022cfbfcbeb4ea79a19f60eeb74251929b9b473a022.png",
-      "file": "assets/items/green-light-stick.png"
-    },
-    "hairpin-i": {
+    "hairpin": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5a865fad284b381230c7f98be198e94a0ba848ea049477316947eb52164bd22b.png",
-      "file": "assets/items/hairpin-i.png"
-    },
-    "hairpin-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/aff0dabc783392f9ca70978e7ca8f97159ec6e770d871717e0b3c1ac203a4fae.png",
-      "file": "assets/items/hairpin-ii.png"
-    },
-    "hairpin-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/172e360628db9145ac72354a0996044ab0c92603718d134852841e72440b52df.png",
-      "file": "assets/items/hairpin-iii.png"
-    },
-    "hairpin-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/7259afc7d41cfdd53629b8317fc19ee7da81a0c905ec362185f5a63806d78e21.png",
-      "file": "assets/items/hairpin-iv.png"
+      "file": "assets/items/hairpin.png"
     },
     "happy-jig-emote": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e121179c1cbc8d7fce35ecaffee8a5e13e086ff49f441bdb439096e86f921735.png",
@@ -994,25 +866,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/67370ede81fdd7d9fe5a97e616dbc598082217829e69631b3f4413a1c2665e13.png",
       "file": "assets/items/household-cleaner.png"
     },
-    "bp-target-hullcracker-blueprint": {
+    "hullcracker": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bb34cb6de72f17249fa398720b89d5cdcdce713cc258b24f5bb88cc315908418.png",
-      "file": "assets/items/bp-target-hullcracker-blueprint.png"
-    },
-    "hullcracker-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bb34cb6de72f17249fa398720b89d5cdcdce713cc258b24f5bb88cc315908418.png",
-      "file": "assets/items/hullcracker-i.png"
-    },
-    "hullcracker-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5ce13cda08706c8280e8357967706a5f89a550bf2e228e1922e6f8a6d311a8a0.png",
-      "file": "assets/items/hullcracker-ii.png"
-    },
-    "hullcracker-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0c1410844f060d768cf60052c4b3b46f7346d1a69d67f10b04aac87ee9192a09.png",
-      "file": "assets/items/hullcracker-iii.png"
-    },
-    "hullcracker-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/20edc278e9aadf2e7dce33b48c83e8363806a4db80fac7fd6eb35841cb27dc26.png",
-      "file": "assets/items/hullcracker-iv.png"
+      "file": "assets/items/hullcracker.png"
     },
     "humidifier": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/30ff5da1ee6c148f3add2194e57da9cd847d33da819cac866cdd4c7ff0037cf9.png",
@@ -1022,25 +878,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0787b760b10d5e674096d0ef5aa182d63741358909c9dbf0c07e09bb73f91fa5.png",
       "file": "assets/items/ice-cream-scooper.png"
     },
-    "bp-target-il-toro-recipe": {
+    "il-toro": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/07b56ac03f97e123f766b771a6757aa30d66fd7517af99130accf95d63414ec6.png",
-      "file": "assets/items/bp-target-il-toro-recipe.png"
-    },
-    "il-toro-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/07b56ac03f97e123f766b771a6757aa30d66fd7517af99130accf95d63414ec6.png",
-      "file": "assets/items/il-toro-i.png"
-    },
-    "il-toro-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4191bbf661b13ea1a486c5c7d3486588e02b5eef74f96289266f3c6ce0d0f07a.png",
-      "file": "assets/items/il-toro-ii.png"
-    },
-    "il-toro-iiii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fe67a9c4d84db8e4038ad2e2b308ff09dffe58d03f882d2d21212c1083431561.png",
-      "file": "assets/items/il-toro-iiii.png"
-    },
-    "il-toro-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/350c1e590b8560ef5ebcff48d7cdc6039b09b8ecd0a94bf96701cfd5c18bd8fc.png",
-      "file": "assets/items/il-toro-iv.png"
+      "file": "assets/items/il-toro.png"
     },
     "impure-arc-coolant": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ff2ccb6125f7cb1c760b497bda8f2e031bce29703c17b4097541d1aae8de3c5c.png",
@@ -1070,25 +910,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4cb9a9851919afeba59d328506150dcb345e5280d9fa5019b050bdc01b7f0c12.png",
       "file": "assets/items/junior-outfit.png"
     },
-    "jupiter-i": {
+    "jupiter": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2d362cc57d7afab8806b349868e6ebababf0066c4ced7accdea5cafde1b273ea.png",
-      "file": "assets/items/jupiter-i.png"
+      "file": "assets/items/jupiter.png"
     },
-    "kettle-i": {
+    "kettle": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6eb605bf6b6e2c4fd69593aca5a520936c86f23c5a72ea71e29567650aef9823.png",
-      "file": "assets/items/kettle-i.png"
-    },
-    "kettle-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5c97afc5ff3ece75d199abffbffa7f717f24fc73ab225d89d6361f4927fade4a.png",
-      "file": "assets/items/kettle-ii.png"
-    },
-    "kettle-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b6cfcba7bc060cccddc89b48bee4f0862dd02e8739e8c233f1bb19b3407789e6.png",
-      "file": "assets/items/kettle-iii.png"
-    },
-    "kettle-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d1ff05211c7340f80d117fe23ca1007e69db2f3ac45b0a369cb8b792e99820d9.png",
-      "file": "assets/items/kettle-iv.png"
+      "file": "assets/items/kettle.png"
     },
     "kinetic-converter": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f2890fd902a9650a9327e4f2c6ff5bbdc3b5b9ea81b6266b936a3fed52ce9fc7.png",
@@ -1145,6 +973,22 @@
     "light-shield": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/69a670f5c65d3de75ade59c44b33d3809570eea1b52b79a6acb62f5947df25b8.png",
       "file": "assets/items/light-shield.png"
+    },
+    "blue-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ae0627b40d61747106b940cb528e9c9643c3f4eca78a74fecd0a9a4487bedbd0.png",
+      "file": "assets/items/blue-light-stick.png"
+    },
+    "green-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d48dfae88f2a33d6b20c7022cfbfcbeb4ea79a19f60eeb74251929b9b473a022.png",
+      "file": "assets/items/green-light-stick.png"
+    },
+    "red-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8c893eebbe2ebf4900665c433f601f3be83c285a65ee819905a71a07579c3280.png",
+      "file": "assets/items/red-light-stick.png"
+    },
+    "yellow-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/57070f06e3814e72e7a47695f5b193501bca7c2193471b17518536ec2bfc1e0f.png",
+      "file": "assets/items/yellow-light-stick.png"
     },
     "lightweight-stock": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a3af616e5c40dbd8b5b87471e765569578ebc78725fb8db704637896b9c0694b.png",
@@ -1294,25 +1138,9 @@
       "source": "https://static.metaforge.app/arc-raiders/icons/orange-camo-origin-outfit.webp",
       "file": "assets/items/orange-camo-origin-outfit.webp"
     },
-    "bp-target-osprey-recipe": {
+    "osprey": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/49875185a4588aee78100ca9c47e525183ed257ca1b4d988efc2f649e5f62e82.png",
-      "file": "assets/items/bp-target-osprey-recipe.png"
-    },
-    "osprey-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/49875185a4588aee78100ca9c47e525183ed257ca1b4d988efc2f649e5f62e82.png",
-      "file": "assets/items/osprey-i.png"
-    },
-    "osprey-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1526425e96fd0e27b357d650a34f5fed35838df311e5f833a78dba9e4e8b40a5.png",
-      "file": "assets/items/osprey-ii.png"
-    },
-    "osprey-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/30a3212ed46b499c4164bf32abced01d87d597d7c7d5b0a2660c7f2a0fada6b3.png",
-      "file": "assets/items/osprey-iii.png"
-    },
-    "osprey-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5ba3f710e3606684774255f88e4c7f868a917fa89667cb794d03d2f7c8a75456.png",
-      "file": "assets/items/osprey-iv.png"
+      "file": "assets/items/osprey.png"
     },
     "padded-stock": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0d9ddf9cc48aee1283232cc368a68c4cde522f6ac44557cf4c9adb49eaa554f0.png",
@@ -1434,33 +1262,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0aabb8da784330210cdc35fd3e081f52e12790eb6ebfb2a1ddd1c94ff7e315fe.png",
       "file": "assets/items/rascal.png"
     },
-    "rascal-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3422d23cc6f38fd737ab78969b10c6416c0b6df8a6083b06561b664fcb00ee8d.png",
-      "file": "assets/items/rascal-ii.png"
-    },
-    "rascal-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/557e14c3ffcbf9c088c90bad2032043aea51707d1ecb1a312018107da400adcc.png",
-      "file": "assets/items/rascal-iii.png"
-    },
-    "rascal-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fb8618cb89062279b94d8ce154df2f474d8abc882c8781989f1b17724e8a91c2.png",
-      "file": "assets/items/rascal-iv.png"
-    },
-    "rattler-i": {
+    "rattler": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5a37f4b6b837f6d209a911e1fca050ec11e41b0da36830aac458e7a98443746d.png",
-      "file": "assets/items/rattler-i.png"
-    },
-    "rattler-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d317992beb2ad1ad66efb94480a1bbb9c85654a2fb389901ac9ca6c4070758e7.png",
-      "file": "assets/items/rattler-ii.png"
-    },
-    "rattler-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4dc8f4476f93fa84a22eefaf6f468f0acbd7fa4a416390f767e6de703340c152.png",
-      "file": "assets/items/rattler-iii.png"
-    },
-    "rattler-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6ef9806da320275dfb0c19a89072a11b459f4baf58cc54bbb3445ddd9e8e8c9f.png",
-      "file": "assets/items/rattler-iv.png"
+      "file": "assets/items/rattler.png"
     },
     "recorder": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ff0307a11680e2a9b11e19bd076bb633a184b1eeb888eb9eaffa8468931229bc.png",
@@ -1474,10 +1278,6 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6cefa02d1c62d3545c552a2f01f71351638daa43164846e359b405aa290e460f.png",
       "file": "assets/items/red-coral-jewelry.png"
     },
-    "red-light-stick": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8c893eebbe2ebf4900665c433f601f3be83c285a65ee819905a71a07579c3280.png",
-      "file": "assets/items/red-light-stick.png"
-    },
     "reinforced-reception-security-code": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3e427fa580c510970e66c3082a9e86fb77c248dbdbf63aaddc00fa52b60eaa72.png",
       "file": "assets/items/reinforced-reception-security-code.png"
@@ -1490,21 +1290,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/05dfecbd9531d3cb12ff76726e0f0876e653b801ec411db48aa32d27aa214176.png",
       "file": "assets/items/remote-raider-flare.png"
     },
-    "renegade-i": {
+    "renegade": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b5e14eb05a013525e57114ccaf7e1d0a0248b10eec866e36965df7376350a7eb.png",
-      "file": "assets/items/renegade-i.png"
-    },
-    "renegade-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2b166a4f1beab77b3799534a68722f10dcc5e8fac5312bb172370068ac93d4e5.png",
-      "file": "assets/items/renegade-ii.png"
-    },
-    "renegade-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/54725e7abe56c051fad98a155f473ecdb4bae98889b2be6e17a7bc09349df9d3.png",
-      "file": "assets/items/renegade-iii.png"
-    },
-    "renegade-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/61108ee7390185135a25e5bd30244f5917ba69177616d561e743c991c41c1b03.png",
-      "file": "assets/items/renegade-iv.png"
+      "file": "assets/items/renegade.png"
     },
     "resin": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c79cbe58e6d9772c8f718c53974a9f0805c5e3f22648de36bb84b0335b170bff.png",
@@ -1830,21 +1618,9 @@
       "source": "https://static.metaforge.app/arc-raiders/icons/stiletto.webp",
       "file": "assets/items/stiletto.webp"
     },
-    "stitcher-i": {
+    "stitcher": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f3426ccf14570cd8823771e669ad08dc3650e4464b51bf4a6071d6a1f3a2fada.png",
-      "file": "assets/items/stitcher-i.png"
-    },
-    "stitcher-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/886d6f5b235b674b1e595d6c15b841b9c3dd2ffaa94700e6eac9300541b16545.png",
-      "file": "assets/items/stitcher-ii.png"
-    },
-    "stitcher-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/96e76d4ce4f63a8b20b523104d335dd8a3298e5f999a3149c12bf64acd424f80.png",
-      "file": "assets/items/stitcher-iii.png"
-    },
-    "stitcher-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6974ef8a609ec37b34793e3d97e5f4f7aab184ad0dbabb2bb265e2561363d1d1.png",
-      "file": "assets/items/stitcher-iv.png"
+      "file": "assets/items/stitcher.png"
     },
     "succulent-backpack-charm": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/603425b97960e7ce30c35413820503f06fba4687dd7e554401aff2db59f3cccf.png",
@@ -1918,25 +1694,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/40868dbc02b5ae44a4f8242ecacc9a4ecf6c4c51d919408a7ac71c0d0308af19.png",
       "file": "assets/items/tellurion.png"
     },
-    "bp-target-tempest-i-recipe": {
+    "tempest": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/51f180b2f6cb06bd5fca1aafb988e065a31a950b1cb9e8e7cf074ba26ca9fa35.png",
-      "file": "assets/items/bp-target-tempest-i-recipe.png"
-    },
-    "tempest-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/51f180b2f6cb06bd5fca1aafb988e065a31a950b1cb9e8e7cf074ba26ca9fa35.png",
-      "file": "assets/items/tempest-i.png"
-    },
-    "tempest-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/635fb24a64a6c8bba983b65755063c8b794a7309c34d674ffea45beb31d135d3.png",
-      "file": "assets/items/tempest-ii.png"
-    },
-    "tempest-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f1230dbfc6a219bac543d90f2541cd4426aec299b41a88c3d125c5622c91b2e1.png",
-      "file": "assets/items/tempest-iii.png"
-    },
-    "tempest-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a2650f0beb52259e3971e98c8845c3f82e8ecb5b0651b4060420ed7d2b74e47d.png",
-      "file": "assets/items/tempest-iv.png"
+      "file": "assets/items/tempest.png"
     },
     "tether-launcher": {
       "source": "https://static.metaforge.app/arc-raiders/icons/tether-launcher.webp",
@@ -1966,25 +1726,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0d6467546931c1d111cbd4e2b1c96e1f30b49cdac2186114d88d557ee23e65a6.png",
       "file": "assets/items/torn-book.png"
     },
-    "bp-target-torrent-i-recipe": {
+    "torrente": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f7e3ca5bd3de28e12b6f23219076ade2887e09404ee1b3791fcf1c08fdda9e0b.png",
-      "file": "assets/items/bp-target-torrent-i-recipe.png"
-    },
-    "torrente-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f7e3ca5bd3de28e12b6f23219076ade2887e09404ee1b3791fcf1c08fdda9e0b.png",
-      "file": "assets/items/torrente-i.png"
-    },
-    "torrente-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8c5ae63fd20e83064a4c58068bb1d9b1a3d857a1f96e9d0ddffe328cb67adda6.png",
-      "file": "assets/items/torrente-ii.png"
-    },
-    "torrente-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c543b8737021baebb9b33d7546858ebb2d8d395b122ef9742048cc205d2ffaa0.png",
-      "file": "assets/items/torrente-iii.png"
-    },
-    "torrente-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/322a62f40f76d9ac4efa51f814fc9b845d07226a7318dcce4765891a0b039bcb.png",
-      "file": "assets/items/torrente-iv.png"
+      "file": "assets/items/torrente.png"
     },
     "trailblazer-grenade": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6d3a90c234d0786b4266c9aafab334af98e7fe995d504d9e6566adab25c4bda7.png",
@@ -2022,25 +1766,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/364052ee0d3309222699d528fcd5cdc660ad27b389d8f9ddcf0a8617bdb87d2a.png",
       "file": "assets/items/vase.png"
     },
-    "bp-target-venator-recipe": {
+    "venator": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/096ed6dc7e583d2bdea0a27c04143716ca411a379a79b03e7a5b709618cbdc20.png",
-      "file": "assets/items/bp-target-venator-recipe.png"
-    },
-    "venator-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/096ed6dc7e583d2bdea0a27c04143716ca411a379a79b03e7a5b709618cbdc20.png",
-      "file": "assets/items/venator-i.png"
-    },
-    "venator-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/17b25c16c802873068cad5b26d77008671e533efdc0aaf4164abe73990c4396f.png",
-      "file": "assets/items/venator-ii.png"
-    },
-    "venator-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dc2429ce5de24967256b9ff1a6a80d1e2a94daab064f1303e8a5a33e09b88924.png",
-      "file": "assets/items/venator-iii.png"
-    },
-    "venator-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0dfbc8e5a079d248606701c96bf378a10638256c17f17a525ea6b152594548d3.png",
-      "file": "assets/items/venator-iv.png"
+      "file": "assets/items/venator.png"
     },
     "vertical-grip-i": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/37453e97a432ee7f0b011a7e214f9a1bcc9759fd2ebd22cf97a09588717c696a.png",
@@ -2078,25 +1806,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b9c020266a0b7320e2bc81fabbae36150d394d3c0020876e177ba4b120c3525a.png",
       "file": "assets/items/voltage-converter.png"
     },
-    "bp-target-vulcano-blueprint": {
+    "vulcano": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a166927f097577535968c08df9db2dda5b6142133afcf75cbb0d90af16b9a646.png",
-      "file": "assets/items/bp-target-vulcano-blueprint.png"
-    },
-    "vulcano-i": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a166927f097577535968c08df9db2dda5b6142133afcf75cbb0d90af16b9a646.png",
-      "file": "assets/items/vulcano-i.png"
-    },
-    "vulcano-ii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2d7e072ec7707646ef937b2525decf7546960f0173ded94e1a31defe424f098a.png",
-      "file": "assets/items/vulcano-ii.png"
-    },
-    "vulcano-iii": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/22e7c8063b7d935075a3d5a698ae0e4145da330da08cf68449b3d7661c1a922f.png",
-      "file": "assets/items/vulcano-iii.png"
-    },
-    "vulcano-iv": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b8dea33b155d29e9821b3b7a62281f66d88cc4f72b643a1645087fc7b577fd8f.png",
-      "file": "assets/items/vulcano-iv.png"
+      "file": "assets/items/vulcano.png"
     },
     "warden-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2fa449cc20966598d82e29b0603aa99d9e58aa84bb504f2050c10a7a5a288899.png",
@@ -2137,10 +1849,6 @@
     "yellow-radio-renegade-color": {
       "source": "https://static.metaforge.app/arc-raiders/icons/yellow-radio-renegade-color.webp",
       "file": "assets/items/yellow-radio-renegade-color.webp"
-    },
-    "yellow-light-stick": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/57070f06e3814e72e7a47695f5b193501bca7c2193471b17518536ec2bfc1e0f.png",
-      "file": "assets/items/yellow-light-stick.png"
     },
     "zipline": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2676ef459d89de8b603111c30c7574d64623aeaa78571b3f6b8e77f476a45d81.png",
