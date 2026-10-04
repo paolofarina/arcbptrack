@@ -1,0 +1,43 @@
+name: Assemble ArcTracker UI cache
+
+on:
+  push:
+    paths:
+      - ".github/workflows/assemble-arctracker-ui.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: assemble-arctracker-ui
+  cancel-in-progress: false
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Assemble and validate cache
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat data/.arctracker-ui.part00               data/.arctracker-ui.part01               data/.arctracker-ui.part02               data/.arctracker-ui.part03               data/.arctracker-ui.part04               data/.arctracker-ui.part05             | base64 -d > data/arctracker-ui.json
+          jq -e '.schemaVersion == 1 and .currentVersion.versionString and .blueprints' data/arctracker-ui.json >/dev/null
+          echo "bytes=$(wc -c < data/arctracker-ui.json)"
+          echo "blueprints=$(jq '.blueprints | length' data/arctracker-ui.json)"
+          echo "current=$(jq -r '.currentVersion.versionString' data/arctracker-ui.json)"
+
+      - name: Commit final cache
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/arctracker-ui.json
+          git rm data/.arctracker-ui.part*
+          git commit -m "chore(data): add ArcTracker HAR cache"
+          git pull --rebase origin main
+          git push
