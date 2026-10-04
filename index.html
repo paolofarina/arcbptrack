@@ -17,6 +17,11 @@
       </div>
 
       <section class="filters-panel" aria-label="Filtri catalogo">
+        <div class="filter-group">
+          <p class="filter-label">Blueprint</p>
+          <div id="blueprintFilters" class="chip-wrap"></div>
+        </div>
+
         <div class="filter-group filter-type">
           <p class="filter-label">Tipo</p>
           <div id="typeFilters" class="chip-wrap"></div>
@@ -25,11 +30,6 @@
         <div class="filter-group">
           <p class="filter-label">Rarità</p>
           <div id="rarityFilters" class="chip-wrap"></div>
-        </div>
-
-        <div class="filter-group">
-          <p class="filter-label">Blueprint</p>
-          <div id="blueprintFilters" class="chip-wrap"></div>
         </div>
       </section>
     </div>
@@ -42,7 +42,7 @@
         <input id="searchInput" type="search" placeholder="Cerca oggetto…" autocomplete="off" />
       </label>
 
-      <div class="catalog-count"><strong id="visibleCount">0</strong> oggetti mostrati</div>
+      <div class="catalog-count">Risultati: <strong id="visibleCount">0</strong></div>
 
       <select id="sortSelect" aria-label="Ordina oggetti">
         <option value="name">Nome A–Z</option>
