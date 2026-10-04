@@ -448,10 +448,17 @@ function openDetail(item) {
     </div>
   `;
 
+  const findingTarget = item.hasBlueprint ? "Blueprint" : "oggetto";
+
   els.detailContent.innerHTML = `
     ${variants}
     <section class="detail-section finding-section">
-      <h3>Dove trovarlo</h3>
+      <div class="finding-heading">
+        <div>
+          <h3>Dove trovare il ${findingTarget}</h3>
+          <p class="finding-context">Dati mostrati: spawn del ${findingTarget.toLowerCase()}</p>
+        </div>
+      </div>
       <div class="source-list">
         ${sourceRowMetaForge(item)}
         ${sourceRowArcTracker(item)}
