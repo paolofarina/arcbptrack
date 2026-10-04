@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101316" />
+  <title>Dettaglio · ARC BP Track</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body class="detail-page">
+  <header class="detail-topbar">
+    <button id="backButton" class="back-button" type="button">← Torna ai risultati</button>
+    <a class="detail-brand" href="index.html">ARC BP Track</a>
+  </header>
+
+  <main id="itemDetail" class="detail-page-shell">
+    <div id="detailLoading" class="detail-loading">Caricamento dati…</div>
+    <div id="detailError" class="empty-state" hidden></div>
+
+    <section id="pageHero" class="page-hero" hidden></section>
+    <section id="itemMeta" class="page-section" hidden></section>
+
+    <section id="findingSection" class="page-section finding-page-section" hidden>
+      <div class="page-section-heading">
+        <div>
+          <p class="eyebrow">Spawn & community data</p>
+          <h2 id="findingTitle">Dove trovarlo</h2>
+          <p id="findingContext" class="section-subtitle"></p>
+        </div>
+      </div>
+
+      <div id="metaForgePanel"></div>
+      <div id="arcTrackerPanel"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Dati cache locali nel repository.</span>
+    <a href="https://metaforge.app/arc-raiders" rel="noopener noreferrer">MetaForge attribution</a>
+  </footer>
+
+  <script type="module" src="js/item.js"></script>
+</body>
+</html>
