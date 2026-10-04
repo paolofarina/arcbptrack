@@ -1,0 +1,48 @@
+name: Sync MetaForge data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+  push:
+    paths:
+      - "scripts/sync-metaforge.mjs"
+      - ".github/workflows/sync-metaforge.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-metaforge
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh MetaForge cache
+        run: node scripts/sync-metaforge.mjs
+
+      - name: Commit changed cache
+        shell: bash
+        run: |
+          if git diff --quiet -- data assets/items; then
+            echo "No MetaForge changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data assets/items
+          git commit -m "chore(data): refresh MetaForge cache"
+          git push
