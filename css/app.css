@@ -502,3 +502,123 @@ footer a { color: inherit; }
   border-style: dashed;
   color: var(--accent);
 }
+
+
+.finding-section {
+  padding: 13px;
+}
+
+.source-list {
+  display: grid;
+  gap: 8px;
+}
+
+.source-row {
+  display: grid;
+  grid-template-columns: minmax(128px, auto) minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: #0f1418;
+}
+
+details.source-row {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+
+details.source-row > summary {
+  display: grid;
+  grid-template-columns: minmax(128px, auto) minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+details.source-row > summary::-webkit-details-marker {
+  display: none;
+}
+
+.source-name {
+  color: var(--text);
+  font-weight: 750;
+  font-size: .82rem;
+}
+
+.source-preview {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: .78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-status {
+  padding: 2px 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.source-available {
+  border-color: #34414a;
+}
+
+.source-available .source-status {
+  border-color: rgba(112,186,123,.34);
+  color: var(--uncommon);
+}
+
+.source-empty {
+  opacity: .68;
+}
+
+.source-pending {
+  opacity: .78;
+  border-style: dashed;
+}
+
+.source-pending .source-status {
+  color: var(--accent);
+}
+
+.source-body {
+  padding: 0 10px 10px;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.source-body > div + div {
+  margin-top: 4px;
+}
+
+@media (max-width: 560px) {
+  .source-row,
+  details.source-row > summary {
+    grid-template-columns: 1fr auto;
+    gap: 4px 8px;
+  }
+
+  .source-preview {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    white-space: normal;
+  }
+
+  .source-status {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
