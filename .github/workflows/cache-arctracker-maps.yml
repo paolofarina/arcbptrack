@@ -1,0 +1,56 @@
+name: Cache ArcTracker map assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/cache-arctracker-maps.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cache-arctracker-maps
+  cancel-in-progress: false
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download static map assets once
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="https://arcblueprinttracker.io/images/maps"
+          mkdir -p assets/maps/riven_tides/tiles
+          curl -fL --retry 3 "$base/dam_battlegrounds.webp" -o assets/maps/dam_battlegrounds.webp
+          curl -fL --retry 3 "$base/the_spaceport.webp" -o assets/maps/the_spaceport.webp
+          curl -fL --retry 3 "$base/buried_city.webp" -o assets/maps/buried_city.webp
+          curl -fL --retry 3 "$base/the_blue_gate.webp" -o assets/maps/the_blue_gate.webp
+          curl -fL --retry 3 "$base/the_blue_gate_underground.webp" -o assets/maps/the_blue_gate_underground.webp
+          curl -fL --retry 3 "$base/stella_montis_upper.webp" -o assets/maps/stella_montis_upper.webp
+          curl -fL --retry 3 "$base/stella_montis_lower.webp" -o assets/maps/stella_montis_lower.webp
+          curl -fL --retry 3 "$base/riven_tides/tiles/riven-tides-512.jpg" -o assets/maps/riven_tides/riven-tides-512.jpg
+          for x in 0 1 2; do
+            for y in 0 1 2; do
+              curl -fL --retry 3 "$base/riven_tides/tiles/map_${x}_${y}.jpg" -o "assets/maps/riven_tides/tiles/map_${x}_${y}.jpg"
+            done
+          done
+
+      - name: Commit map cache
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- assets/maps)" ]; then
+            echo "Map cache already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/maps
+          git commit -m "chore(data): cache ArcTracker map assets"
+          git pull --rebase origin main
+          git push
