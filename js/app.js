@@ -272,10 +272,10 @@ function sourceRowMetaForge(item) {
 
   if (!data.hasData) {
     return `
-      <div class="source-row source-empty">
+      <div class="source-row source-pending">
         <div class="source-name">MetaForge</div>
-        <div class="source-preview">Nessun dato utile</div>
-        <span class="source-status">vuoto</span>
+        <div class="source-preview">${item.hasBlueprint ? "Player-Voted Locations non ancora importati" : "Nessun dato locale disponibile"}</div>
+        <span class="source-status">${item.hasBlueprint ? "attesa" : "vuoto"}</span>
       </div>
     `;
   }
