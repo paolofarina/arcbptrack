@@ -40,10 +40,20 @@ async function loadCatalog() {
     data = await response.json();
   }
 
+  let voteCache = {};
+  try {
+    const voteResponse = await fetch("data/metaforge-location-votes.json", { cache: "no-store" });
+    if (voteResponse.ok) {
+      const voteData = await voteResponse.json();
+      voteCache = voteData.items || {};
+    }
+  } catch {}
+
   state.items = (data.items || []).map(item => ({
     ...item,
     hasBlueprint: typeof item.hasBlueprint === "boolean" ? item.hasBlueprint : true,
-    isPrimaryType: item.isPrimaryType ?? MAIN_TYPES.includes(item.type)
+    isPrimaryType: item.isPrimaryType ?? MAIN_TYPES.includes(item.type),
+    metaForgeVotes: voteCache[item.id] || null
   }));
 
   render();
@@ -244,41 +254,104 @@ function createCard(item) {
 }
 
 function metaForgeFindingData(item) {
+  const votes = item.metaForgeVotes || null;
+
+  if (votes?.available) {
+    return {
+      mode: "votes",
+      available: true,
+      votes
+    };
+  }
+
   const lootArea = item.spawn?.lootArea || null;
   const locations = Array.isArray(item.spawn?.locations) ? item.spawn.locations : [];
   const sources = Array.isArray(item.spawn?.sources) ? item.spawn.sources : [];
   const droppedBy = Array.isArray(item.spawn?.droppedBy) ? item.spawn.droppedBy : [];
-
-  const hasData = Boolean(lootArea || locations.length || sources.length || droppedBy.length);
-
-  const previewParts = [];
-  if (lootArea) previewParts.push(lootArea);
-  if (locations.length) previewParts.push(`${locations.length} location`);
-  if (sources.length) previewParts.push(`${sources.length} fonti`);
-  if (droppedBy.length) previewParts.push(`${droppedBy.length} drop`);
+  const hasItemData = Boolean(lootArea || locations.length || sources.length || droppedBy.length);
 
   return {
-    hasData,
+    mode: hasItemData ? "item" : "empty",
+    available: hasItemData,
     lootArea,
     locations,
     sources,
-    droppedBy,
-    preview: previewParts.join(" · ")
+    droppedBy
   };
+}
+
+function formatPercent(value) {
+  if (!Number.isFinite(Number(value))) return "";
+  const n = Number(value);
+  return `${Number.isInteger(n) ? n : n.toFixed(1)}%`;
+}
+
+function votePreview(votes) {
+  const parts = [];
+  if (votes.totalVotes) parts.push(`${votes.totalVotes} voti`);
+
+  for (const type of ["container", "map", "event"]) {
+    const row = votes.top?.[type];
+    if (row) parts.push(`${row.name} ${formatPercent(row.percent)}`);
+  }
+
+  return parts.join(" · ");
+}
+
+function voteGroupHtml(label, rows = []) {
+  if (!rows.length) return "";
+
+  return `
+    <div class="vote-group">
+      <div class="vote-group-title">${escapeHtml(label)}</div>
+      <div class="vote-list">
+        ${rows.map(row => `
+          <div class="vote-row">
+            <span>${escapeHtml(row.name)}</span>
+            <span>${formatPercent(row.percent)}</span>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
 }
 
 function sourceRowMetaForge(item) {
   const data = metaForgeFindingData(item);
 
-  if (!data.hasData) {
+  if (data.mode === "votes") {
+    const votes = data.votes;
     return `
-      <div class="source-row source-pending">
+      <details class="source-row source-available">
+        <summary>
+          <span class="source-name">MetaForge</span>
+          <span class="source-preview">${escapeHtml(votePreview(votes))}</span>
+          <span class="source-status">dati</span>
+        </summary>
+        <div class="source-body source-body-votes">
+          ${voteGroupHtml("Containers", votes.groups?.container)}
+          ${voteGroupHtml("Maps", votes.groups?.map)}
+          ${voteGroupHtml("Events", votes.groups?.event)}
+        </div>
+      </details>
+    `;
+  }
+
+  if (data.mode === "empty") {
+    return `
+      <div class="source-row source-empty">
         <div class="source-name">MetaForge</div>
-        <div class="source-preview">${item.hasBlueprint ? "Player-Voted Locations non ancora importati" : "Nessun dato locale disponibile"}</div>
-        <span class="source-status">${item.hasBlueprint ? "attesa" : "vuoto"}</span>
+        <div class="source-preview">Nessun dato community disponibile</div>
+        <span class="source-status">vuoto</span>
       </div>
     `;
   }
+
+  const previewParts = [];
+  if (data.lootArea) previewParts.push(data.lootArea);
+  if (data.locations.length) previewParts.push(`${data.locations.length} location`);
+  if (data.sources.length) previewParts.push(`${data.sources.length} fonti`);
+  if (data.droppedBy.length) previewParts.push(`${data.droppedBy.length} drop`);
 
   const details = [];
   if (data.lootArea) details.push(`<div><strong>Area:</strong> ${escapeHtml(data.lootArea)}</div>`);
@@ -288,20 +361,12 @@ function sourceRowMetaForge(item) {
       return escapeHtml(map);
     }).join(", ")}</div>`);
   }
-  if (data.sources.length) {
-    details.push(`<div><strong>Fonti:</strong> ${data.sources.map(source => escapeHtml(
-      typeof source === "string" ? source : source?.name || source?.type || JSON.stringify(source)
-    )).join(", ")}</div>`);
-  }
-  if (data.droppedBy.length) {
-    details.push(`<div><strong>Drop ARC:</strong> ${data.droppedBy.map(entry => escapeHtml(entry.name || entry.id || "")).join(", ")}</div>`);
-  }
 
   return `
     <details class="source-row source-available">
       <summary>
         <span class="source-name">MetaForge</span>
-        <span class="source-preview">${escapeHtml(data.preview)}</span>
+        <span class="source-preview">${escapeHtml(previewParts.join(" · "))}</span>
         <span class="source-status">dati</span>
       </summary>
       <div class="source-body">${details.join("")}</div>
