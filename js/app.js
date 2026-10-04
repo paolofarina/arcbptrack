@@ -298,19 +298,34 @@ function votePreview(votes) {
   return parts.join(" · ");
 }
 
+function voteRowsHtml(rows = []) {
+  return rows.map(row => `
+    <div class="vote-row">
+      <span>${escapeHtml(row.name)}</span>
+      <span>${formatPercent(row.percent)}</span>
+    </div>
+  `).join("");
+}
+
 function voteGroupHtml(label, rows = []) {
   if (!rows.length) return "";
+
+  const visible = rows.slice(0, 5);
+  const hidden = rows.slice(5);
 
   return `
     <div class="vote-group">
       <div class="vote-group-title">${escapeHtml(label)}</div>
       <div class="vote-list">
-        ${rows.map(row => `
-          <div class="vote-row">
-            <span>${escapeHtml(row.name)}</span>
-            <span>${formatPercent(row.percent)}</span>
-          </div>
-        `).join("")}
+        ${voteRowsHtml(visible)}
+        ${hidden.length ? `
+          <details class="vote-more">
+            <summary>Altro… (+${hidden.length})</summary>
+            <div class="vote-more-list">
+              ${voteRowsHtml(hidden)}
+            </div>
+          </details>
+        ` : ""}
       </div>
     </div>
   `;
