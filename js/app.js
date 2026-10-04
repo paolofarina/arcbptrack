@@ -40,7 +40,7 @@ async function loadCatalog() {
 
   state.items = (data.items || []).map(item => ({
     ...item,
-    hasBlueprint: item.hasBlueprint ?? true
+    hasBlueprint: typeof item.hasBlueprint === "boolean" ? item.hasBlueprint : true
   }));
 
   buildFilters();
@@ -48,7 +48,7 @@ async function loadCatalog() {
 }
 
 function buildFilters() {
-  const types = ["All", ...new Set(state.items.map(item => item.type))];
+  const types = ["All", ...[...new Set(state.items.map(item => item.type))].sort((a, b) => a.localeCompare(b))];
   const rarities = ["All", ...rarityOrder.filter(rarity => state.items.some(item => item.rarity === rarity))];
 
   renderChips(els.typeFilters, types, "type");
@@ -62,7 +62,16 @@ function renderChips(container, values, key) {
     button.type = "button";
     button.className = "chip";
     const labels = { All: "Tutti", Yes: "Sì", No: "No" };
-    button.textContent = labels[value] || value;
+    let label = labels[value] || value;
+
+    if (key === "blueprint") {
+      const count = value === "All"
+        ? state.items.length
+        : state.items.filter(item => item.hasBlueprint === (value === "Yes")).length;
+      label += ` (${count})`;
+    }
+
+    button.textContent = label;
     button.dataset.value = value;
     button.setAttribute("aria-pressed", String(state[key] === value));
     button.addEventListener("click", () => {
@@ -241,5 +250,5 @@ els.detailDialog.addEventListener("click", event => {
 loadCatalog().catch(error => {
   console.error(error);
   els.emptyState.hidden = false;
-  els.emptyState.textContent = "Impossibile caricare il catalogo locale dei blueprint.";
+  els.emptyState.textContent = "Impossibile caricare il catalogo locale degli oggetti.";
 });

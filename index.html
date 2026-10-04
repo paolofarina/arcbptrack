@@ -9,58 +9,55 @@
 </head>
 <body>
   <header class="site-header">
-    <div>
-      <p class="eyebrow">ARC Raiders</p>
-      <h1>Blueprint Track</h1>
-      <p class="subtitle">Trova il blueprint, filtra, apri i dettagli.</p>
+    <div class="header-layout">
+      <div class="brand-block">
+        <p class="eyebrow">ARC Raiders</p>
+        <h1>Blueprint Track</h1>
+        <p class="subtitle">Oggetti, blueprint e dati di ritrovamento.</p>
+      </div>
+
+      <section class="filters-panel" aria-label="Filtri catalogo">
+        <div class="filter-group filter-type">
+          <p class="filter-label">Tipo</p>
+          <div id="typeFilters" class="chip-wrap"></div>
+        </div>
+
+        <div class="filter-group">
+          <p class="filter-label">Rarità</p>
+          <div id="rarityFilters" class="chip-wrap"></div>
+        </div>
+
+        <div class="filter-group">
+          <p class="filter-label">Blueprint</p>
+          <div id="blueprintFilters" class="chip-wrap"></div>
+        </div>
+      </section>
     </div>
   </header>
 
-  <main class="app-layout">
-    <aside class="filters-panel" aria-label="Filtri blueprint">
+  <main class="catalog-shell">
+    <section class="catalog-toolbar">
       <label class="search-box">
-        <span class="filter-label">Cerca</span>
-        <input id="searchInput" type="search" placeholder="Nome blueprint…" autocomplete="off" />
+        <span class="sr-only">Cerca oggetto</span>
+        <input id="searchInput" type="search" placeholder="Cerca oggetto…" autocomplete="off" />
       </label>
 
-      <section class="filter-group">
-        <p class="filter-label">Tipo</p>
-        <div id="typeFilters" class="chip-stack"></div>
-      </section>
+      <div class="catalog-count"><strong id="visibleCount">0</strong> oggetti mostrati</div>
 
-      <section class="filter-group">
-        <p class="filter-label">Rarità</p>
-        <div id="rarityFilters" class="chip-stack"></div>
-      </section>
-
-      <section class="filter-group">
-        <p class="filter-label">Blueprint</p>
-        <div id="blueprintFilters" class="chip-stack"></div>
-      </section>
+      <select id="sortSelect" aria-label="Ordina oggetti">
+        <option value="name">Nome A–Z</option>
+        <option value="rarity">Rarità</option>
+        <option value="type">Tipo</option>
+      </select>
 
       <button id="clearFilters" class="clear-button" type="button">Azzera filtri</button>
-    </aside>
-
-    <section class="catalog-panel">
-      <div class="catalog-toolbar">
-        <div>
-          <p class="eyebrow">Catalogo</p>
-          <div class="catalog-count"><strong id="visibleCount">0</strong> blueprint mostrati</div>
-        </div>
-
-        <select id="sortSelect" aria-label="Ordina blueprint">
-          <option value="name">Nome A–Z</option>
-          <option value="rarity">Rarità</option>
-          <option value="type">Tipo</option>
-        </select>
-      </div>
-
-      <section id="grid" class="blueprint-grid" aria-live="polite"></section>
-
-      <div id="emptyState" class="empty-state" hidden>
-        Nessun blueprint corrisponde ai filtri selezionati.
-      </div>
     </section>
+
+    <section id="grid" class="blueprint-grid" aria-live="polite"></section>
+
+    <div id="emptyState" class="empty-state" hidden>
+      Nessun oggetto corrisponde ai filtri selezionati.
+    </div>
   </main>
 
   <dialog id="detailDialog" class="detail-dialog">
@@ -72,7 +69,7 @@
   </dialog>
 
   <footer>
-    <span>Dati serviti localmente dal repository.</span>
+    <span>Dati cache locali nel repository.</span>
     <a href="https://metaforge.app/arc-raiders" rel="noopener noreferrer">MetaForge attribution</a>
   </footer>
 
