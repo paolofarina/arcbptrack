@@ -30,7 +30,7 @@ jobs:
           node-version: "20"
 
       - name: Refresh MetaForge cache
-        run: node scripts/sync-metaforge.mjs
+        run: node scripts/sync-metaforge.mjs --all-images
 
       - name: Commit changed cache
         shell: bash
