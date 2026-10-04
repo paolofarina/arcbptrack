@@ -33,6 +33,65 @@ button, input, select { font: inherit; }
 
 .site-header,
 .app-layout,
+
+/* Rarity halo: subtle visual cue around the item image */
+.card-image {
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+.card-image::after,
+.detail-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+.card-image.rarity-common,
+.detail-thumb.rarity-common {
+  box-shadow: inset 0 0 26px rgba(170,179,187,.10);
+}
+
+.card-image.rarity-uncommon,
+.detail-thumb.rarity-uncommon {
+  box-shadow: inset 0 0 30px rgba(112,186,123,.16);
+}
+
+.card-image.rarity-rare,
+.detail-thumb.rarity-rare {
+  box-shadow: inset 0 0 32px rgba(98,169,232,.19);
+}
+
+.card-image.rarity-epic,
+.detail-thumb.rarity-epic {
+  box-shadow: inset 0 0 34px rgba(185,131,239,.22);
+}
+
+.card-image.rarity-legendary,
+.detail-thumb.rarity-legendary {
+  box-shadow: inset 0 0 36px rgba(239,182,77,.23);
+}
+
+.card.rarity-common { border-color: color-mix(in srgb, var(--common) 22%, var(--border)); }
+.card.rarity-uncommon { border-color: color-mix(in srgb, var(--uncommon) 25%, var(--border)); }
+.card.rarity-rare { border-color: color-mix(in srgb, var(--rare) 26%, var(--border)); }
+.card.rarity-epic { border-color: color-mix(in srgb, var(--epic) 28%, var(--border)); }
+.card.rarity-legendary { border-color: color-mix(in srgb, var(--legendary) 30%, var(--border)); }
+
+.detail-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 footer {
   width: min(1480px, calc(100% - 32px));
   margin-inline: auto;
