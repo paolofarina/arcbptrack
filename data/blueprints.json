@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-04",
+  "count": 83,
+  "items": [
+    {
+      "id": "anvil",
+      "name": "Anvil",
+      "type": "Weapon",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "aphelion",
+      "name": "Aphelion",
+      "type": "Weapon",
+      "rarity": "Legendary",
+      "image": null
+    },
+    {
+      "id": "bettina",
+      "name": "Bettina",
+      "type": "Weapon",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "bobcat",
+      "name": "Bobcat",
+      "type": "Weapon",
+      "rarity": "Epic",
+      "image": null,
+      "reward": "Trials"
+    },
+    {
+      "id": "burletta",
+      "name": "Burletta",
+      "type": "Weapon",
+      "rarity": "Uncommon",
+      "image": null,
+      "reward": "Quest"
+    },
+    {
+      "id": "canto",
+      "name": "Canto",
+      "type": "Weapon",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "dolabra",
+      "name": "Dolabra",
+      "type": "Weapon",
+      "rarity": "Legendary",
+      "image": null
+    },
+    {
+      "id": "equalizer",
+      "name": "Equalizer",
+      "type": "Weapon",
+      "rarity": "Legendary",
+      "image": null
+    },
+    {
+      "id": "hullcracker",
+      "name": "Hullcracker",
+      "type": "Weapon",
+      "rarity": "Epic",
+      "image": null,
+      "reward": "Quest"
+    },
+    {
+      "id": "il-toro",
+      "name": "Il Toro",
+      "type": "Weapon",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "type": "Weapon",
+      "rarity": "Legendary",
+      "image": null
+    },
+    {
+      "id": "osprey",
+      "name": "Osprey",
+      "type": "Weapon",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "rascal",
+      "name": "Rascal",
+      "type": "Weapon",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "tempest",
+      "name": "Tempest",
+      "type": "Weapon",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "torrente",
+      "name": "Torrente",
+      "type": "Weapon",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "venator",
+      "name": "Venator",
+      "type": "Weapon",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "vulcano",
+      "name": "Vulcano",
+      "type": "Weapon",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "angled-grip-ii",
+      "name": "Angled Grip II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "angled-grip-iii",
+      "name": "Angled Grip III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "compensator-ii",
+      "name": "Compensator II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "compensator-iii",
+      "name": "Compensator III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "extended-barrel-ii",
+      "name": "Extended Barrel II",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "extended-barrel-iii",
+      "name": "Extended Barrel III",
+      "type": "Mod",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "extended-light-magazine-ii",
+      "name": "Extended Light Magazine II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "extended-light-magazine-iii",
+      "name": "Extended Light Magazine III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "extended-medium-magazine-ii",
+      "name": "Extended Medium Magazine II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "extended-medium-magazine-iii",
+      "name": "Extended Medium Magazine III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "extended-shotgun-magazine-ii",
+      "name": "Extended Shotgun Magazine II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "extended-shotgun-magazine-iii",
+      "name": "Extended Shotgun Magazine III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "lightweight-stock",
+      "name": "Lightweight Stock",
+      "type": "Mod",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "muzzle-brake-ii",
+      "name": "Muzzle Brake II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "muzzle-brake-iii",
+      "name": "Muzzle Brake III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "padded-stock",
+      "name": "Padded Stock",
+      "type": "Mod",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "shotgun-choke-ii",
+      "name": "Shotgun Choke II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "shotgun-choke-iii",
+      "name": "Shotgun Choke III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "shotgun-silencer",
+      "name": "Shotgun Silencer",
+      "type": "Mod",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "silencer-i",
+      "name": "Silencer I",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "silencer-ii",
+      "name": "Silencer II",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "stable-stock-ii",
+      "name": "Stable Stock II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "stable-stock-iii",
+      "name": "Stable Stock III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "vertical-grip-ii",
+      "name": "Vertical Grip II",
+      "type": "Mod",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "vertical-grip-iii",
+      "name": "Vertical Grip III",
+      "type": "Mod",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "blaze-grenade",
+      "name": "Blaze Grenade",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "explosive-mine",
+      "name": "Explosive Mine",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "gas-mine",
+      "name": "Gas Mine",
+      "type": "Grenade",
+      "rarity": "Common",
+      "image": null
+    },
+    {
+      "id": "jolt-mine",
+      "name": "Jolt Mine",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "lure-grenade",
+      "name": "Lure Grenade",
+      "type": "Grenade",
+      "rarity": "Uncommon",
+      "image": null,
+      "reward": "Quest"
+    },
+    {
+      "id": "seeker-grenade",
+      "name": "Seeker Grenade",
+      "type": "Grenade",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "showstopper",
+      "name": "Showstopper",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "smoke-grenade",
+      "name": "Smoke Grenade",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "tagging-grenade",
+      "name": "Tagging Grenade",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "trailblazer",
+      "name": "Trailblazer",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "trigger-nade",
+      "name": "Trigger 'Nade",
+      "type": "Grenade",
+      "rarity": "Rare",
+      "image": null,
+      "reward": "Quest"
+    },
+    {
+      "id": "wolfpack",
+      "name": "Wolfpack",
+      "type": "Grenade",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "barricade-kit",
+      "name": "Barricade Kit",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "crash-mat",
+      "name": "Crash Mat",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "deadline",
+      "name": "Deadline",
+      "type": "Quick Use",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "defibrillator",
+      "name": "Defibrillator",
+      "type": "Quick Use",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "fireworks-box",
+      "name": "Fireworks Box",
+      "type": "Quick Use",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "light-stick-blue",
+      "name": "Light Stick (Blue)",
+      "type": "Quick Use",
+      "rarity": "Common",
+      "image": null
+    },
+    {
+      "id": "light-stick-green",
+      "name": "Light Stick (Green)",
+      "type": "Quick Use",
+      "rarity": "Common",
+      "image": null
+    },
+    {
+      "id": "light-stick-red",
+      "name": "Light Stick (Red)",
+      "type": "Quick Use",
+      "rarity": "Common",
+      "image": null
+    },
+    {
+      "id": "light-stick-yellow",
+      "name": "Light Stick (Yellow)",
+      "type": "Quick Use",
+      "rarity": "Common",
+      "image": null
+    },
+    {
+      "id": "powered-descender",
+      "name": "Powered Descender",
+      "type": "Quick Use",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "pulse-mine",
+      "name": "Pulse Mine",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "remote-raider-flare",
+      "name": "Remote Raider Flare",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "image": null
+    },
+    {
+      "id": "snap-hook",
+      "name": "Snap Hook",
+      "type": "Quick Use",
+      "rarity": "Legendary",
+      "image": null
+    },
+    {
+      "id": "surge-coil",
+      "name": "Surge Coil",
+      "type": "Quick Use",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "vita-shot",
+      "name": "Vita Shot",
+      "type": "Quick Use",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "vita-spray",
+      "name": "Vita Spray",
+      "type": "Quick Use",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "white-flag",
+      "name": "White Flag",
+      "type": "Quick Use",
+      "rarity": "Common",
+      "image": null
+    },
+    {
+      "id": "combat-mk-3-aggressive",
+      "name": "Combat Mk. 3 (Aggressive)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "combat-mk-3-flanking",
+      "name": "Combat Mk. 3 (Flanking)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "looting-mk-3-safekeeper",
+      "name": "Looting Mk. 3 (Safekeeper)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "looting-mk-3-survivor",
+      "name": "Looting Mk. 3 (Survivor)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "tactical-mk-3-defensive",
+      "name": "Tactical Mk. 3 (Defensive)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "tactical-mk-3-healing",
+      "name": "Tactical Mk. 3 (Healing)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "tactical-mk-3-revival",
+      "name": "Tactical Mk. 3 (Revival)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "tactical-mk-3-smoke",
+      "name": "Tactical Mk. 3 (Smoke)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "complex-gun-parts",
+      "name": "Complex Gun Parts",
+      "type": "Material",
+      "rarity": "Epic",
+      "image": null
+    },
+    {
+      "id": "heavy-gun-parts",
+      "name": "Heavy Gun Parts",
+      "type": "Material",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "light-gun-parts",
+      "name": "Light Gun Parts",
+      "type": "Material",
+      "rarity": "Rare",
+      "image": null
+    },
+    {
+      "id": "medium-gun-parts",
+      "name": "Medium Gun Parts",
+      "type": "Material",
+      "rarity": "Rare",
+      "image": null
+    }
+  ]
+}
