@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 
 /**
- * Refreshes the local ARC Raiders item catalog from MetaForge.
+ * Refresh the local ARC Raiders catalog from MetaForge.
  *
- * Runtime users never call MetaForge: GitHub Pages reads the generated JSON
- * and cached images from this repository.
- *
- * Default image policy:
- *   - cache every item that has a blueprint
- *   - cache Rare / Epic / Legendary non-blueprint items
- * Use --all-images to cache every available item icon.
+ * - Runtime users never call MetaForge: the site reads local JSON/images.
+ * - Weapon tiers I/II/III/IV are collapsed into one family card.
+ * - Blueprint data is attached to the corresponding item family.
+ * - The six historical blueprint categories are preserved when known.
  */
 
 import fs from "node:fs/promises";
@@ -23,12 +20,14 @@ const DATA_DIR = path.join(ROOT, "data");
 const IMAGE_DIR = path.join(ROOT, "assets", "items");
 const ITEMS_FILE = path.join(DATA_DIR, "items.json");
 const RAW_FILE = path.join(DATA_DIR, "metaforge-items.json");
+const BLUEPRINTS_FILE = path.join(DATA_DIR, "blueprints.json");
 const MANIFEST_FILE = path.join(DATA_DIR, "image-manifest.json");
 
 const API = "https://metaforge.app/api/arc-raiders/items";
 const PAGE_SIZE = 50;
 const CACHE_ALL_IMAGES = process.argv.includes("--all-images");
 const INTERESTING_RARITIES = new Set(["Rare", "Epic", "Legendary"]);
+const MAIN_TYPES = ["Weapon", "Mod", "Grenade", "Quick Use", "Augment", "Material"];
 
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -55,17 +54,40 @@ function blueprintTargetName(name = "") {
   return name.replace(/\s+blueprint$/i, "").trim();
 }
 
-function key(value = "") {
-  return value
+function familyName(item) {
+  let name = String(item.name || "").trim();
+
+  if (itemType(item) === "Weapon") {
+    name = name.replace(/\s+(I|II|III|IV)\s*$/i, "").trim();
+  }
+
+  if (/^Aphelion Rifle$/i.test(name)) name = "Aphelion";
+  return name;
+}
+
+function matchKey(value = "") {
+  let v = String(value)
     .normalize("NFKD")
     .toLowerCase()
-    .replace(/['’]/g, "")
+    .replace(/[’]/g, "'")
+    .trim()
+    .replace(/\s+blueprint$/i, "");
+
+  v = v.replace(/\bmagazine\b/g, "mag");
+
+  const lightStick = v.match(/^light stick \((blue|green|red|yellow)\)$/);
+  if (lightStick) v = `${lightStick[1]} light stick`;
+
+  if (v === "aphelion rifle") v = "aphelion";
+
+  return v
+    .replace(/['']/g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 }
 
 function safeId(value = "") {
-  return key(value).replace(/\s+/g, "-") || crypto.randomUUID();
+  return matchKey(value).replace(/\s+/g, "-") || crypto.randomUUID();
 }
 
 function normalizeIcon(icon) {
@@ -77,27 +99,100 @@ function normalizeIcon(icon) {
   }
 }
 
+function looksLikeGrenade(name = "") {
+  return /\bgrenade\b|\bmine\b|\bnade\b/i.test(name)
+    || ["showstopper", "trailblazer", "wolfpack"].includes(matchKey(name));
+}
+
+function defaultDisplayType(rawType, name) {
+  if (rawType === "Weapon") return "Weapon";
+  if (rawType === "Modification") return "Mod";
+  if (rawType === "Augment") return "Augment";
+  if (rawType === "Quick Use") return looksLikeGrenade(name) ? "Grenade" : "Quick Use";
+  if (["Basic Material", "Refined Material", "Topside Material", "Material"].includes(rawType)) return "Material";
+  return rawType || "Unknown";
+}
+
+function chooseRepresentative(variants) {
+  if (variants.length === 1) return variants[0];
+
+  const tierRank = { I: 1, II: 2, III: 3, IV: 4 };
+
+  return [...variants].sort((a, b) => {
+    const ta = String(a.name || "").trim().match(/\s+(I|II|III|IV)$/i)?.[1]?.toUpperCase();
+    const tb = String(b.name || "").trim().match(/\s+(I|II|III|IV)$/i)?.[1]?.toUpperCase();
+    return (tierRank[ta] || 99) - (tierRank[tb] || 99);
+  })[0];
+}
+
+function spawnFrom(item) {
+  return {
+    lootArea: item?.loot_area || null,
+    sources: Array.isArray(item?.sources) ? item.sources : [],
+    locations: Array.isArray(item?.locations) ? item.locations : [],
+    droppedBy: Array.isArray(item?.dropped_by)
+      ? item.dropped_by.map(entry => ({
+          id: entry?.arc?.id || entry?.arc_id || entry?.id || null,
+          name: entry?.arc?.name || null
+        })).filter(entry => entry.id || entry.name)
+      : []
+  };
+}
+
+function mergeSpawn(variants) {
+  const lootAreas = new Set();
+  const sources = new Set();
+  const locations = new Set();
+  const droppedBy = new Map();
+
+  for (const item of variants) {
+    const spawn = spawnFrom(item);
+    if (spawn.lootArea) lootAreas.add(spawn.lootArea);
+    spawn.sources.forEach(v => sources.add(v));
+    spawn.locations.forEach(v => locations.add(v));
+    for (const arc of spawn.droppedBy) droppedBy.set(arc.id || arc.name, arc);
+  }
+
+  return {
+    provider: "MetaForge",
+    lootArea: [...lootAreas][0] || null,
+    lootAreas: [...lootAreas],
+    sources: [...sources],
+    locations: [...locations],
+    droppedBy: [...droppedBy.values()]
+  };
+}
+
+async function readJson(file, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(file, "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
 async function fetchWithRetry(url, options = {}, attempts = 4) {
   let lastError;
+
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
       const response = await fetch(url, {
         ...options,
         headers: {
-          "Accept": "application/json",
+          Accept: "application/json",
           "User-Agent": "arcbptrack-data-cache/1.0 (+https://github.com/paolofarina/arcbptrack)",
           ...(options.headers || {})
         }
       });
-      if (!response.ok) {
-        throw new Error(`${response.status} ${response.statusText} for ${url}`);
-      }
+
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText} for ${url}`);
       return response;
     } catch (error) {
       lastError = error;
       if (attempt < attempts) await wait(750 * attempt * attempt);
     }
   }
+
   throw lastError;
 }
 
@@ -114,16 +209,10 @@ async function fetchAllItems() {
     const payload = await response.json();
     const rows = Array.isArray(payload?.data) ? payload.data : [];
 
-    if (!Array.isArray(rows)) {
-      throw new Error("Unexpected MetaForge /items response: data[] missing");
-    }
-
     all.push(...rows);
     console.log(`MetaForge page ${page}: +${rows.length} (total ${all.length})`);
 
-    const hasNext = Boolean(payload?.pagination?.hasNextPage);
-    if (!hasNext) break;
-
+    if (!payload?.pagination?.hasNextPage) break;
     page += 1;
     await wait(200);
   }
@@ -131,98 +220,124 @@ async function fetchAllItems() {
   return all;
 }
 
-function buildCatalog(rawItems) {
-  const blueprints = rawItems.filter(isBlueprint);
+async function buildCatalog(rawItems) {
+  const blueprintSnapshot = await readJson(BLUEPRINTS_FILE, { items: [] });
+  const snapshotByKey = new Map(
+    (blueprintSnapshot.items || []).map(item => [matchKey(item.name), item])
+  );
+
+  const rawBlueprints = rawItems.filter(isBlueprint);
   const baseItems = rawItems.filter(item => !isBlueprint(item));
 
-  const blueprintsByTarget = new Map();
-  for (const bp of blueprints) {
-    const target = key(blueprintTargetName(bp.name));
-    if (!target) continue;
-    if (!blueprintsByTarget.has(target)) blueprintsByTarget.set(target, []);
-    blueprintsByTarget.get(target).push(bp);
+  const rawBlueprintByTarget = new Map();
+  for (const bp of rawBlueprints) {
+    rawBlueprintByTarget.set(matchKey(blueprintTargetName(bp.name)), bp);
   }
 
-  const catalog = baseItems.map(item => {
-    const matches = blueprintsByTarget.get(key(item.name)) || [];
-    const bp = matches[0] || null;
-    const rarity = normalizeRarity(item.rarity);
-    const type = itemType(item);
-    const baseIcon = normalizeIcon(item.icon);
-    const blueprintIcon = normalizeIcon(bp?.icon);
+  const groups = new Map();
 
-    return {
-      id: item.id || safeId(item.name),
-      name: item.name,
-      description: item.description || null,
-      rarity,
-      type,
-      hasBlueprint: Boolean(bp),
-      imageRemote: blueprintIcon || baseIcon,
-      itemImageRemote: baseIcon,
-      blueprint: bp ? {
-        id: bp.id || safeId(bp.name),
-        name: bp.name,
-        rarity: normalizeRarity(bp.rarity),
-        imageRemote: blueprintIcon
-      } : null,
-      spawn: {
-        provider: "MetaForge",
-        lootArea: item.loot_area || null,
-        sources: Array.isArray(item.sources) ? item.sources : [],
-        locations: Array.isArray(item.locations) ? item.locations : [],
-        droppedBy: Array.isArray(item.dropped_by)
-          ? item.dropped_by.map(entry => ({
-              id: entry?.arc?.id || entry?.arc_id || entry?.id || null,
-              name: entry?.arc?.name || null
-            })).filter(entry => entry.id || entry.name)
-          : []
-      },
-      source: {
-        provider: "MetaForge",
-        itemId: item.id || null,
-        itemType: type
-      }
-    };
-  });
+  for (const item of baseItems) {
+    const rawType = itemType(item);
+    const name = familyName(item);
+    const groupKey = rawType === "Weapon"
+      ? `weapon:${matchKey(name)}`
+      : `item:${item.id || safeId(item.name)}`;
 
-  // Keep blueprint records whose craftable target is missing from the API so
-  // new/unusual entries are not silently lost.
-  const baseKeys = new Set(baseItems.map(item => key(item.name)));
-  for (const bp of blueprints) {
-    const targetName = blueprintTargetName(bp.name);
-    if (baseKeys.has(key(targetName))) continue;
+    if (!groups.has(groupKey)) groups.set(groupKey, { name, rawType, variants: [] });
+    groups.get(groupKey).variants.push(item);
+  }
+
+  const catalog = [];
+
+  for (const group of groups.values()) {
+    const representative = chooseRepresentative(group.variants);
+    const bpKey = matchKey(group.name);
+    const rawBlueprint = rawBlueprintByTarget.get(bpKey) || null;
+    const snapshot = snapshotByKey.get(bpKey) || null;
+    const hasBlueprint = Boolean(rawBlueprint || snapshot);
+
+    const displayType = snapshot?.type || defaultDisplayType(group.rawType, group.name);
+    const rarity = snapshot?.rarity || normalizeRarity(representative.rarity);
+    const blueprintIcon = normalizeIcon(rawBlueprint?.icon) || snapshot?.image || null;
+    const itemIcon = normalizeIcon(representative.icon);
+    const familyId = group.rawType === "Weapon"
+      ? safeId(group.name)
+      : (representative.id || safeId(group.name));
 
     catalog.push({
-      id: `bp-target-${bp.id || safeId(targetName)}`,
-      name: targetName,
-      description: bp.description || null,
-      rarity: "Unknown",
-      type: "Unknown",
-      hasBlueprint: true,
-      imageRemote: normalizeIcon(bp.icon),
-      itemImageRemote: null,
-      blueprint: {
-        id: bp.id || safeId(bp.name),
-        name: bp.name,
-        rarity: normalizeRarity(bp.rarity),
-        imageRemote: normalizeIcon(bp.icon)
-      },
-      spawn: {
-        provider: "MetaForge",
-        lootArea: bp.loot_area || null,
-        sources: Array.isArray(bp.sources) ? bp.sources : [],
-        locations: Array.isArray(bp.locations) ? bp.locations : [],
-        droppedBy: Array.isArray(bp.dropped_by)
-          ? bp.dropped_by.map(entry => ({
-              id: entry?.arc?.id || entry?.arc_id || entry?.id || null,
-              name: entry?.arc?.name || null
-            })).filter(entry => entry.id || entry.name)
-          : []
-      },
+      id: familyId,
+      name: snapshot?.name || group.name,
+      description: representative.description || null,
+      rarity,
+      type: displayType,
+      rawType: group.rawType,
+      isPrimaryType: MAIN_TYPES.includes(displayType),
+      hasBlueprint,
+      imageRemote: blueprintIcon || itemIcon,
+      itemImageRemote: itemIcon,
+      blueprint: hasBlueprint ? {
+        id: rawBlueprint?.id || snapshot?.id || safeId(`${group.name}-blueprint`),
+        name: rawBlueprint?.name || `${snapshot?.name || group.name} Blueprint`,
+        rarity: snapshot?.rarity || normalizeRarity(rawBlueprint?.rarity),
+        type: snapshot?.type || displayType,
+        imageRemote: blueprintIcon,
+        reward: snapshot?.reward || null,
+        spawn: rawBlueprint ? {
+          provider: "MetaForge",
+          ...spawnFrom(rawBlueprint)
+        } : null
+      } : null,
+      variants: group.variants.map(item => ({
+        id: item.id || safeId(item.name),
+        name: String(item.name || "").trim(),
+        rarity: normalizeRarity(item.rarity),
+        imageRemote: normalizeIcon(item.icon)
+      })),
+      spawn: mergeSpawn(group.variants),
       source: {
         provider: "MetaForge",
-        itemId: null
+        itemId: representative.id || null,
+        itemType: group.rawType
+      }
+    });
+  }
+
+  const familyKeys = new Set(catalog.map(item => matchKey(item.name)));
+
+  for (const rawBlueprint of rawBlueprints) {
+    const targetName = blueprintTargetName(rawBlueprint.name);
+    const bpKey = matchKey(targetName);
+    if (familyKeys.has(bpKey)) continue;
+
+    const snapshot = snapshotByKey.get(bpKey) || null;
+    const displayType = snapshot?.type || defaultDisplayType("Unknown", targetName);
+
+    catalog.push({
+      id: `bp-target-${rawBlueprint.id || safeId(targetName)}`,
+      name: snapshot?.name || targetName,
+      description: rawBlueprint.description || null,
+      rarity: snapshot?.rarity || normalizeRarity(rawBlueprint.rarity),
+      type: displayType,
+      rawType: "Unknown",
+      isPrimaryType: MAIN_TYPES.includes(displayType),
+      hasBlueprint: true,
+      imageRemote: normalizeIcon(rawBlueprint.icon) || snapshot?.image || null,
+      itemImageRemote: null,
+      blueprint: {
+        id: rawBlueprint.id || snapshot?.id || safeId(rawBlueprint.name),
+        name: rawBlueprint.name,
+        rarity: snapshot?.rarity || normalizeRarity(rawBlueprint.rarity),
+        type: displayType,
+        imageRemote: normalizeIcon(rawBlueprint.icon) || snapshot?.image || null,
+        reward: snapshot?.reward || null,
+        spawn: { provider: "MetaForge", ...spawnFrom(rawBlueprint) }
+      },
+      variants: [],
+      spawn: { provider: "MetaForge", ...spawnFrom(rawBlueprint) },
+      source: {
+        provider: "MetaForge",
+        itemId: null,
+        itemType: "Unknown"
       }
     });
   }
@@ -231,11 +346,13 @@ function buildCatalog(rawItems) {
 
   const byRarity = {};
   const byType = {};
+  const otherTypes = {};
   let withBlueprint = 0;
 
   for (const item of catalog) {
     byRarity[item.rarity] = (byRarity[item.rarity] || 0) + 1;
     byType[item.type] = (byType[item.type] || 0) + 1;
+    if (!item.isPrimaryType) otherTypes[item.type] = (otherTypes[item.type] || 0) + 1;
     if (item.hasBlueprint) withBlueprint += 1;
   }
 
@@ -243,22 +360,18 @@ function buildCatalog(rawItems) {
     items: catalog,
     summary: {
       totalRawRecords: rawItems.length,
-      totalItems: catalog.length,
+      totalItemRecords: baseItems.length,
+      totalFamilies: catalog.length,
+      collapsedWeaponRecords: baseItems.length - groups.size,
       withBlueprint,
       withoutBlueprint: catalog.length - withBlueprint,
-      rawBlueprintRecords: blueprints.length,
+      rawBlueprintRecords: rawBlueprints.length,
       byRarity,
-      byType
+      byType,
+      mainTypes: MAIN_TYPES,
+      otherTypes
     }
   };
-}
-
-async function readJson(file, fallback) {
-  try {
-    return JSON.parse(await fs.readFile(file, "utf8"));
-  } catch {
-    return fallback;
-  }
 }
 
 function extensionFromUrl(url) {
@@ -278,12 +391,11 @@ function shouldCacheImage(item) {
 
 async function syncImages(items) {
   await fs.mkdir(IMAGE_DIR, { recursive: true });
+
   const oldManifest = await readJson(MANIFEST_FILE, { items: {} });
   const manifest = {
     generatedAt: new Date().toISOString(),
-    policy: CACHE_ALL_IMAGES
-      ? "all"
-      : "blueprints plus Rare/Epic/Legendary items",
+    policy: CACHE_ALL_IMAGES ? "all families" : "blueprints plus Rare/Epic/Legendary families",
     items: {}
   };
 
@@ -311,10 +423,11 @@ async function syncImages(items) {
     } else {
       try {
         const response = await fetchWithRetry(item.imageRemote, {
-          headers: { "Accept": "image/avif,image/webp,image/png,image/*,*/*;q=0.8" }
+          headers: { Accept: "image/avif,image/webp,image/png,image/*,*/*;q=0.8" }
         });
         const buffer = Buffer.from(await response.arrayBuffer());
         if (buffer.length < 100) throw new Error("image response unexpectedly small");
+
         await fs.writeFile(absolute, buffer);
         downloaded += 1;
         await wait(80);
@@ -332,7 +445,18 @@ async function syncImages(items) {
     };
   }
 
-  console.log(`Images: ${downloaded} downloaded, ${reused} reused, ${failed} failed`);
+  const keep = new Set(Object.values(manifest.items).map(entry => entry.file));
+  let removed = 0;
+
+  for (const entry of Object.values(oldManifest?.items || {})) {
+    if (!entry?.file || keep.has(entry.file)) continue;
+    try {
+      await fs.unlink(path.join(ROOT, entry.file));
+      removed += 1;
+    } catch {}
+  }
+
+  console.log(`Images: ${downloaded} downloaded, ${reused} reused, ${failed} failed, ${removed} obsolete removed`);
   await fs.writeFile(MANIFEST_FILE, JSON.stringify(manifest, null, 2) + "\n");
 }
 
@@ -341,15 +465,15 @@ async function main() {
 
   const rawItems = await fetchAllItems();
   if (rawItems.length < 100) {
-    throw new Error(`Safety stop: only ${rawItems.length} MetaForge item records returned`);
+    throw new Error(`Safety stop: only ${rawItems.length} MetaForge records returned`);
   }
 
-  const { items, summary } = buildCatalog(rawItems);
+  const { items, summary } = await buildCatalog(rawItems);
   await syncImages(items);
 
   const now = new Date().toISOString();
   const out = {
-    schemaVersion: 2,
+    schemaVersion: 3,
     generatedAt: now,
     source: {
       provider: "MetaForge",
