@@ -661,3 +661,28 @@ details.source-row > summary::-webkit-details-marker {
   color: var(--text);
   font-variant-numeric: tabular-nums;
 }
+
+
+.vote-more {
+  margin-top: 2px;
+}
+
+.vote-more > summary {
+  width: fit-content;
+  padding: 3px 0;
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.vote-more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.vote-more-list {
+  display: grid;
+  gap: 4px;
+  margin-top: 4px;
+}
