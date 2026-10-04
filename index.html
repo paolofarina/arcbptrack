@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,55 +12,62 @@
     <div>
       <p class="eyebrow">ARC Raiders</p>
       <h1>Blueprint Track</h1>
-      <p class="subtitle">Fast blueprint browser built for mobile.</p>
+      <p class="subtitle">Trova il blueprint, filtra, apri i dettagli.</p>
     </div>
-    <div class="count-pill"><strong id="visibleCount">0</strong><span>shown</span></div>
   </header>
 
-  <main>
-    <section class="controls" aria-label="Blueprint filters">
+  <main class="app-layout">
+    <aside class="filters-panel" aria-label="Filtri blueprint">
       <label class="search-box">
-        <span class="sr-only">Search blueprints</span>
-        <input id="searchInput" type="search" placeholder="Search blueprint…" autocomplete="off" />
+        <span class="filter-label">Cerca</span>
+        <input id="searchInput" type="search" placeholder="Nome blueprint…" autocomplete="off" />
       </label>
 
-      <div>
-        <p class="filter-label">Type</p>
-        <div id="typeFilters" class="chip-row"></div>
-      </div>
+      <section class="filter-group">
+        <p class="filter-label">Tipo</p>
+        <div id="typeFilters" class="chip-stack"></div>
+      </section>
 
-      <div>
-        <p class="filter-label">Rarity</p>
-        <div id="rarityFilters" class="chip-row"></div>
-      </div>
+      <section class="filter-group">
+        <p class="filter-label">Rarità</p>
+        <div id="rarityFilters" class="chip-stack"></div>
+      </section>
 
-      <div class="toolbar">
-        <button id="clearFilters" class="text-button" type="button">Clear filters</button>
-        <select id="sortSelect" aria-label="Sort blueprints">
-          <option value="name">Name A–Z</option>
-          <option value="rarity">Rarity</option>
-          <option value="type">Type</option>
+      <button id="clearFilters" class="clear-button" type="button">Azzera filtri</button>
+    </aside>
+
+    <section class="catalog-panel">
+      <div class="catalog-toolbar">
+        <div>
+          <p class="eyebrow">Catalogo</p>
+          <div class="catalog-count"><strong id="visibleCount">0</strong> blueprint mostrati</div>
+        </div>
+
+        <select id="sortSelect" aria-label="Ordina blueprint">
+          <option value="name">Nome A–Z</option>
+          <option value="rarity">Rarità</option>
+          <option value="type">Tipo</option>
         </select>
       </div>
+
+      <section id="grid" class="blueprint-grid" aria-live="polite"></section>
+
+      <div id="emptyState" class="empty-state" hidden>
+        Nessun blueprint corrisponde ai filtri selezionati.
+      </div>
     </section>
-
-    <section id="grid" class="blueprint-grid" aria-live="polite"></section>
-
-    <div id="emptyState" class="empty-state" hidden>
-      No blueprint matches these filters.
-    </div>
   </main>
 
   <dialog id="detailDialog" class="detail-dialog">
     <article>
-      <button id="closeDialog" class="close-button" type="button" aria-label="Close">×</button>
+      <button id="closeDialog" class="close-button" type="button" aria-label="Chiudi">×</button>
       <div id="detailHero" class="detail-hero"></div>
       <div id="detailContent"></div>
     </article>
   </dialog>
 
   <footer>
-    <span>Data cached locally.</span>
+    <span>Dati serviti localmente dal repository.</span>
     <a href="https://metaforge.app/arc-raiders" rel="noopener noreferrer">MetaForge attribution</a>
   </footer>
 
