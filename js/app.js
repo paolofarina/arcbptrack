@@ -20,16 +20,36 @@ const els = {
   blueprintFilters: document.querySelector("#blueprintFilters"),
   sortSelect: document.querySelector("#sortSelect"),
   clearFilters: document.querySelector("#clearFilters"),
-  emptyState: document.querySelector("#emptyState"),
-  detailDialog: document.querySelector("#detailDialog"),
-  detailHero: document.querySelector("#detailHero"),
-  detailContent: document.querySelector("#detailContent"),
-  closeDialog: document.querySelector("#closeDialog")
+  emptyState: document.querySelector("#emptyState")
 };
 
-async function loadCatalog() {
-  let data;
+function readUrlState() {
+  const p = new URLSearchParams(location.search);
+  const bp = (p.get("blueprint") || "yes").toLowerCase();
+  state.blueprint = bp === "no" ? "No" : bp === "all" ? "All" : "Yes";
+  state.type = p.get("type") || "All";
+  state.rarity = p.get("rarity") || "All";
+  state.query = p.get("q") || "";
+  state.sort = ["name", "rarity", "type"].includes(p.get("sort")) ? p.get("sort") : "name";
+  state.showOtherTypes = p.get("other") === "1"
+    || (state.type !== "All" && !MAIN_TYPES.includes(state.type));
+}
 
+function syncUrl() {
+  const p = new URLSearchParams();
+  p.set("blueprint", state.blueprint.toLowerCase());
+  if (state.type !== "All") p.set("type", state.type);
+  if (state.rarity !== "All") p.set("rarity", state.rarity);
+  if (state.query.trim()) p.set("q", state.query.trim());
+  if (state.sort !== "name") p.set("sort", state.sort);
+  if (state.showOtherTypes) p.set("other", "1");
+  history.replaceState(null, "", `${location.pathname}?${p.toString()}`);
+}
+
+async function loadCatalog() {
+  readUrlState();
+
+  let data;
   try {
     const response = await fetch("data/items.json", { cache: "no-store" });
     if (!response.ok) throw new Error("items.json not available");
@@ -40,23 +60,16 @@ async function loadCatalog() {
     data = await response.json();
   }
 
-  let voteCache = {};
-  try {
-    const voteResponse = await fetch("data/metaforge-location-votes.json", { cache: "no-store" });
-    if (voteResponse.ok) {
-      const voteData = await voteResponse.json();
-      voteCache = voteData.items || {};
-    }
-  } catch {}
-
   state.items = (data.items || []).map(item => ({
     ...item,
     hasBlueprint: typeof item.hasBlueprint === "boolean" ? item.hasBlueprint : true,
-    isPrimaryType: item.isPrimaryType ?? MAIN_TYPES.includes(item.type),
-    metaForgeVotes: voteCache[item.id] || null
+    isPrimaryType: item.isPrimaryType ?? MAIN_TYPES.includes(item.type)
   }));
 
+  els.searchInput.value = state.query;
+  els.sortSelect.value = state.sort;
   render();
+  restoreScroll();
 }
 
 function queryMatches(item) {
@@ -71,8 +84,7 @@ function matchesBlueprint(item, value = state.blueprint) {
 }
 
 function matchesType(item, value = state.type) {
-  if (value === "All") return true;
-  return item.type === value;
+  return value === "All" || item.type === value;
 }
 
 function matchesRarity(item, value = state.rarity) {
@@ -91,60 +103,40 @@ function facetBase(ignore) {
 
 function countFacet(key, value) {
   const base = facetBase(key);
-
-  if (key === "type") {
-    if (value === "All") return base.length;
-    return base.filter(item => item.type === value).length;
-  }
-
-  if (key === "rarity") {
-    if (value === "All") return base.length;
-    return base.filter(item => item.rarity === value).length;
-  }
-
-  if (key === "blueprint") {
-    if (value === "All") return base.length;
-    return base.filter(item => item.hasBlueprint === (value === "Yes")).length;
-  }
-
+  if (key === "type") return value === "All" ? base.length : base.filter(item => item.type === value).length;
+  if (key === "rarity") return value === "All" ? base.length : base.filter(item => item.rarity === value).length;
+  if (key === "blueprint") return value === "All"
+    ? base.length
+    : base.filter(item => item.hasBlueprint === (value === "Yes")).length;
   return 0;
 }
 
 function buildFilters() {
   const allOtherTypes = [...new Set(
-    state.items
-      .map(item => item.type)
-      .filter(type => !MAIN_TYPES.includes(type))
+    state.items.map(item => item.type).filter(type => !MAIN_TYPES.includes(type))
   )].sort((a, b) => a.localeCompare(b));
 
   const otherTypes = allOtherTypes.filter(type => countFacet("type", type) > 0);
-
   const typeValues = ["All", ...MAIN_TYPES];
   if (state.showOtherTypes) typeValues.push(...otherTypes);
 
   renderChips(els.typeFilters, typeValues, "type");
 
-  const otherButton = document.createElement("button");
-  otherButton.type = "button";
-  otherButton.className = "chip chip-more";
-  otherButton.textContent = state.showOtherTypes
-    ? "Meno…"
-    : `Altro… (${otherTypes.length})`;
-  otherButton.disabled = otherTypes.length === 0;
-  otherButton.setAttribute("aria-expanded", String(state.showOtherTypes));
-  otherButton.addEventListener("click", () => {
+  const more = document.createElement("button");
+  more.type = "button";
+  more.className = "chip chip-more";
+  more.textContent = state.showOtherTypes ? "Meno…" : `Altro… (${otherTypes.length})`;
+  more.disabled = otherTypes.length === 0;
+  more.setAttribute("aria-expanded", String(state.showOtherTypes));
+  more.addEventListener("click", () => {
     state.showOtherTypes = !state.showOtherTypes;
-    if (!state.showOtherTypes && !MAIN_TYPES.includes(state.type) && state.type !== "All") {
-      state.type = "All";
-    }
+    if (!state.showOtherTypes && state.type !== "All" && !MAIN_TYPES.includes(state.type)) state.type = "All";
+    syncUrl();
     render();
   });
-  els.typeFilters.append(otherButton);
+  els.typeFilters.append(more);
 
-  const rarities = ["All", ...rarityOrder.filter(rarity =>
-    state.items.some(item => item.rarity === rarity)
-  )];
-
+  const rarities = ["All", ...rarityOrder.filter(rarity => state.items.some(item => item.rarity === rarity))];
   renderChips(els.rarityFilters, rarities, "rarity");
   renderChips(els.blueprintFilters, ["Yes", "No", "All"], "blueprint");
 }
@@ -155,12 +147,7 @@ function renderChips(container, values, key) {
     button.type = "button";
     button.className = "chip";
 
-    const labels = {
-      All: "Tutti",
-      Yes: "Sì",
-      No: "No"
-    };
-
+    const labels = { All: "Tutti", Yes: "Sì", No: "No" };
     const count = countFacet(key, value);
     button.textContent = `${labels[value] || value} (${count})`;
     button.dataset.value = value;
@@ -169,9 +156,9 @@ function renderChips(container, values, key) {
 
     button.addEventListener("click", () => {
       state[key] = value;
+      syncUrl();
       render();
     });
-
     return button;
   }));
 }
@@ -187,22 +174,16 @@ function filteredItems() {
         return rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity)
           || a.name.localeCompare(b.name);
       }
-
-      if (state.sort === "type") {
-        return a.type.localeCompare(b.type) || a.name.localeCompare(b.name);
-      }
-
+      if (state.sort === "type") return a.type.localeCompare(b.type) || a.name.localeCompare(b.name);
       return a.name.localeCompare(b.name);
     });
 }
 
 function render() {
   const items = filteredItems();
-
   els.visibleCount.textContent = items.length;
   els.emptyState.hidden = items.length > 0;
   els.grid.replaceChildren(...items.map(createCard));
-
   buildFilters();
 }
 
@@ -213,11 +194,13 @@ function createCard(item) {
   card.tabIndex = 0;
   card.setAttribute("role", "button");
   card.setAttribute("aria-label", `Apri ${item.name}`);
-  card.addEventListener("click", () => openDetail(item));
+
+  const open = () => goToDetail(item);
+  card.addEventListener("click", open);
   card.addEventListener("keydown", event => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
-      openDetail(item);
+      open();
     }
   });
 
@@ -253,252 +236,41 @@ function createCard(item) {
   return card;
 }
 
-function metaForgeFindingData(item) {
-  const votes = item.metaForgeVotes || null;
-
-  if (votes?.available) {
-    return {
-      mode: "votes",
-      available: true,
-      votes
-    };
-  }
-
-  const lootArea = item.spawn?.lootArea || null;
-  const locations = Array.isArray(item.spawn?.locations) ? item.spawn.locations : [];
-  const sources = Array.isArray(item.spawn?.sources) ? item.spawn.sources : [];
-  const droppedBy = Array.isArray(item.spawn?.droppedBy) ? item.spawn.droppedBy : [];
-  const hasItemData = Boolean(lootArea || locations.length || sources.length || droppedBy.length);
-
-  return {
-    mode: hasItemData ? "item" : "empty",
-    available: hasItemData,
-    lootArea,
-    locations,
-    sources,
-    droppedBy
-  };
+function goToDetail(item) {
+  syncUrl();
+  const returnKey = `${location.pathname}${location.search}`;
+  sessionStorage.setItem(`catalogScroll:${returnKey}`, String(window.scrollY));
+  location.href = `item.html?id=${encodeURIComponent(item.id)}`;
 }
 
-function formatPercent(value) {
-  if (!Number.isFinite(Number(value))) return "";
-  const n = Number(value);
-  return `${Number.isInteger(n) ? n : n.toFixed(1)}%`;
-}
-
-function votePreview(votes) {
-  const parts = [];
-  if (votes.totalVotes) parts.push(`${votes.totalVotes} voti`);
-
-  for (const type of ["container", "map", "event"]) {
-    const row = votes.top?.[type];
-    if (row) parts.push(`${row.name} ${formatPercent(row.percent)}`);
-  }
-
-  return parts.join(" · ");
-}
-
-function voteRowsHtml(rows = []) {
-  return rows.map(row => {
-    const label = row.key === "base_container" ? "Container (generico)" : row.name;
-    return `
-      <div class="vote-row">
-        <span>${escapeHtml(label)}</span>
-        <span>${formatPercent(row.percent)}</span>
-      </div>
-    `;
-  }).join("");
-}
-
-function voteGroupHtml(label, rows = []) {
-  if (!rows.length) return "";
-
-  const visible = rows.slice(0, 5);
-  const hidden = rows.slice(5);
-
-  return `
-    <div class="vote-group">
-      <div class="vote-group-title">${escapeHtml(label)}</div>
-      <div class="vote-list">
-        ${voteRowsHtml(visible)}
-        ${hidden.length ? `
-          <details class="vote-more">
-            <summary>Altro… (+${hidden.length})</summary>
-            <div class="vote-more-list">
-              ${voteRowsHtml(hidden)}
-            </div>
-          </details>
-        ` : ""}
-      </div>
-    </div>
-  `;
-}
-
-function sourceRowMetaForge(item) {
-  const data = metaForgeFindingData(item);
-
-  if (data.mode === "votes") {
-    const votes = data.votes;
-    return `
-      <details class="source-row source-available">
-        <summary>
-          <span class="source-name">MetaForge</span>
-          <span class="source-preview">${escapeHtml(votePreview(votes))}</span>
-          <span class="source-status">dati</span>
-        </summary>
-        <div class="source-body source-body-votes">
-          ${voteGroupHtml("Containers", votes.groups?.container)}
-          ${voteGroupHtml("Maps", votes.groups?.map)}
-          ${voteGroupHtml("Events", votes.groups?.event)}
-        </div>
-      </details>
-    `;
-  }
-
-  if (data.mode === "empty") {
-    return `
-      <div class="source-row source-empty">
-        <div class="source-name">MetaForge</div>
-        <div class="source-preview">Nessun dato community disponibile</div>
-        <span class="source-status">vuoto</span>
-      </div>
-    `;
-  }
-
-  const previewParts = [];
-  if (data.lootArea) previewParts.push(data.lootArea);
-  if (data.locations.length) previewParts.push(`${data.locations.length} location`);
-  if (data.sources.length) previewParts.push(`${data.sources.length} fonti`);
-  if (data.droppedBy.length) previewParts.push(`${data.droppedBy.length} drop`);
-
-  const details = [];
-  if (data.lootArea) details.push(`<div><strong>Area:</strong> ${escapeHtml(data.lootArea)}</div>`);
-  if (data.locations.length) {
-    details.push(`<div><strong>Location:</strong> ${data.locations.map(location => {
-      const map = typeof location === "string" ? location : location?.map || location?.name || location?.id || "";
-      return escapeHtml(map);
-    }).join(", ")}</div>`);
-  }
-
-  return `
-    <details class="source-row source-available">
-      <summary>
-        <span class="source-name">MetaForge</span>
-        <span class="source-preview">${escapeHtml(previewParts.join(" · "))}</span>
-        <span class="source-status">dati</span>
-      </summary>
-      <div class="source-body">${details.join("")}</div>
-    </details>
-  `;
-}
-
-function sourceRowArcTracker(item) {
-  if (!item.hasBlueprint) return "";
-
-  const arc = item.arcTracker || item.arcBlueprintTracker || null;
-
-  if (!arc) {
-    return `
-      <div class="source-row source-pending">
-        <div class="source-name">ArcBlueprintTracker</div>
-        <div class="source-preview">Dati non ancora importati</div>
-        <span class="source-status">attesa</span>
-      </div>
-    `;
-  }
-
-  const previewParts = [];
-  if (arc.reports) previewParts.push(`${arc.reports} report`);
-  if (arc.topMap) previewParts.push(arc.topMap);
-  if (arc.topCondition) previewParts.push(arc.topCondition);
-
-  return `
-    <details class="source-row source-available">
-      <summary>
-        <span class="source-name">ArcBlueprintTracker</span>
-        <span class="source-preview">${escapeHtml(previewParts.join(" · ") || "Dati disponibili")}</span>
-        <span class="source-status">dati</span>
-      </summary>
-      <div class="source-body">
-        <div>Statistiche dettagliate e heatmap disponibili.</div>
-      </div>
-    </details>
-  `;
-}
-
-function openDetail(item) {
-  const rarityClass = `rarity-${String(item.rarity || "Unknown").toLowerCase()}`;
-  const detailVisual = item.image
-    ? `<div class="detail-thumb ${rarityClass}"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" onerror="this.remove(); this.parentElement.textContent='${initials(item.name)}'"></div>`
-    : `<div class="detail-thumb ${rarityClass}">${initials(item.name)}</div>`;
-
-  const variants = Array.isArray(item.variants) && item.variants.length > 1
-    ? `<section class="detail-section">
-        <h3>Varianti</h3>
-        <p>${item.variants.map(v => escapeHtml(v.name)).join(" · ")}</p>
-      </section>`
-    : "";
-
-  els.detailHero.innerHTML = `
-    ${detailVisual}
-    <div>
-      <p class="eyebrow">${escapeHtml(item.type)}</p>
-      <h2>${escapeHtml(item.name)}</h2>
-      <div class="badges">
-        <span class="badge ${rarityClass}">${escapeHtml(item.rarity)}</span>
-        ${item.hasBlueprint ? '<span class="badge">Blueprint disponibile</span>' : '<span class="badge">No blueprint</span>'}
-      </div>
-    </div>
-  `;
-
-  const findingTarget = item.hasBlueprint ? "Blueprint" : "oggetto";
-
-  els.detailContent.innerHTML = `
-    ${variants}
-    <section class="detail-section finding-section">
-      <div class="finding-heading">
-        <div>
-          <h3>Dove trovare il ${findingTarget}</h3>
-          <p class="finding-context">Dati mostrati: spawn del ${findingTarget.toLowerCase()}</p>
-        </div>
-      </div>
-      <div class="source-list">
-        ${sourceRowMetaForge(item)}
-        ${sourceRowArcTracker(item)}
-      </div>
-    </section>
-  `;
-
-  els.detailDialog.showModal();
+function restoreScroll() {
+  const key = `catalogScroll:${location.pathname}${location.search}`;
+  const saved = sessionStorage.getItem(key);
+  if (saved == null) return;
+  sessionStorage.removeItem(key);
+  requestAnimationFrame(() => requestAnimationFrame(() => scrollTo(0, Number(saved) || 0)));
 }
 
 function initials(name) {
-  return name
-    .replace(/\([^)]*\)/g, "")
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map(part => part[0])
-    .join("")
-    .toUpperCase();
+  return name.replace(/\([^)]*\)/g, "").split(/\s+/).filter(Boolean).slice(0, 2)
+    .map(part => part[0]).join("").toUpperCase();
 }
 
 function escapeHtml(value) {
   return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 }
 
 els.searchInput.addEventListener("input", event => {
   state.query = event.target.value;
+  syncUrl();
   render();
 });
 
 els.sortSelect.addEventListener("change", event => {
   state.sort = event.target.value;
+  syncUrl();
   render();
 });
 
@@ -507,14 +279,12 @@ els.clearFilters.addEventListener("click", () => {
   state.rarity = "All";
   state.blueprint = "Yes";
   state.query = "";
+  state.sort = "name";
   state.showOtherTypes = false;
   els.searchInput.value = "";
+  els.sortSelect.value = "name";
+  syncUrl();
   render();
-});
-
-els.closeDialog.addEventListener("click", () => els.detailDialog.close());
-els.detailDialog.addEventListener("click", event => {
-  if (event.target === els.detailDialog) els.detailDialog.close();
 });
 
 loadCatalog().catch(error => {
