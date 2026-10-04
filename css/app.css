@@ -74,7 +74,7 @@ h1 {
 
 .filters-panel {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(230px, .85fr) minmax(205px, .75fr);
+  grid-template-columns: minmax(190px, .65fr) minmax(420px, 1.65fr) minmax(280px, 1fr);
   gap: 10px;
   padding: 10px 11px;
   border: 1px solid var(--border);
@@ -452,7 +452,9 @@ footer a { color: inherit; }
 
   .chip {
     flex: 0 0 auto;
-    min-height: 22px;
+    min-height: 28px;
+    padding: 4px 8px;
+    font-size: .78rem;
   }
 
   .catalog-toolbar {
