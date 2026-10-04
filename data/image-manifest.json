@@ -1,0 +1,1182 @@
+{
+  "generatedAt": "2026-10-04T12:03:49.401Z",
+  "policy": "blueprints plus Rare/Epic/Legendary items",
+  "items": {
+    "leviathans-crown-ship-model": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e8c8a35381f8d4b7ab33eca0f8d75468be0b78954901c039872a0f5befdd0677.png",
+      "file": "assets/items/leviathans-crown-ship-model.png"
+    },
+    "sirena-dorata-ship-model": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e14d0204852ad6de561b3920e007b4b63656efad5f6acfc9c288e0c936a7ff08.png",
+      "file": "assets/items/sirena-dorata-ship-model.png"
+    },
+    "velocity-ship-model": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/506379c70a5b50827d49e2d043f43d1e223c25fb42604daba077fa124b5b123b.png",
+      "file": "assets/items/velocity-ship-model.png"
+    },
+    "acoustic-guitar": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d9c60835c6d1d5f982988a666035a351d4c88621881909d11ad532e488726332.png",
+      "file": "assets/items/acoustic-guitar.png"
+    },
+    "advanced-arc-powercell": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/975eecb740a2008634dfc95432654ed902ff11b68e175803d02631e59eac626a.png",
+      "file": "assets/items/advanced-arc-powercell.png"
+    },
+    "advanced-electrical-components": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2dba43ac8c214c291a168d1d3eca52e992527fce6319ffe5d71620c330666876.png",
+      "file": "assets/items/advanced-electrical-components.png"
+    },
+    "advanced-mechanical-components": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f4c5d01a6dd5e4e637a8914dff7b43ed34507a105b829baed5960967461fab0d.png",
+      "file": "assets/items/advanced-mechanical-components.png"
+    },
+    "alarm-clock": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2d9ee3e8bb95ad34f17f14834133713b1becd343476dd7c4150c1c4ce3fe70e5.png",
+      "file": "assets/items/alarm-clock.png"
+    },
+    "angled-grip-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ca9c7e950391d0bd2178e314d76a2a2416cc5e157873b8093f543fd6a8b69944.png",
+      "file": "assets/items/angled-grip-ii.png"
+    },
+    "angled-grip-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a1be5d197069e1627c19c78c9983e6a94719d88600a48308756126640c62c008.png",
+      "file": "assets/items/angled-grip-iii.png"
+    },
+    "antiseptic": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c4d0c8aa01f64123e0b8b1ffee347026f9b839b1c177362f6c85b23d8b662738.png",
+      "file": "assets/items/antiseptic.png"
+    },
+    "bp-target-anvil-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a6f5ae7dd4f8bb866752445dad31655a1d934feb2aa2cd106c2ff8b9d70d10e1.png",
+      "file": "assets/items/bp-target-anvil-recipe.png"
+    },
+    "anvil-splitter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
+      "file": "assets/items/anvil-splitter.png"
+    },
+    "bp-target-aphelion-rifle-blueprint": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c1c59f3cf0cd556bd66aeacc32db364e8db92fc8da6986f5f4fd60c1a3476ec2.png",
+      "file": "assets/items/bp-target-aphelion-rifle-blueprint.png"
+    },
+    "aphelion-rifle": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c1c59f3cf0cd556bd66aeacc32db364e8db92fc8da6986f5f4fd60c1a3476ec2.png",
+      "file": "assets/items/aphelion-rifle.png"
+    },
+    "arc-circuitry": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a5d1213670c71db6f68b599156bafba4a44984aec40211360a040de4c2e15421.png",
+      "file": "assets/items/arc-circuitry.png"
+    },
+    "arc-coolant": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/90dac6c4596c47c44ac12ce81facd03ec9616303b58074bae90b2f5a3179ec85.png",
+      "file": "assets/items/arc-coolant.png"
+    },
+    "arc-flex-rubber": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c8e12ec606daf327c8235bae37a183b7be6c6c9c680dd9ba5dd1901b08d67d05.png",
+      "file": "assets/items/arc-flex-rubber.png"
+    },
+    "arc-motion-core": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3b35aebb2f26fd1ff84ff9673e506fe65bc026bc1fedd043aee649c7a5f3c6c3.png",
+      "file": "assets/items/arc-motion-core.png"
+    },
+    "arc-performance-steel": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5f44f0fef46cc87758607a419ef3b590f4048418c4e17f0976db6cfbdfe5e344.png",
+      "file": "assets/items/arc-performance-steel.png"
+    },
+    "arc-synthetic-resin": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/54fd52d1fc2b677d6788f07df6008c7e95166bf2ade5d514ec5eda77af85d83d.png",
+      "file": "assets/items/arc-synthetic-resin.png"
+    },
+    "arc-thermo-lining": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f6cfa0b7e2c90849ea32acc3ffeb9e03e8b992ce1765af8b241ef6595880b498.png",
+      "file": "assets/items/arc-thermo-lining.png"
+    },
+    "arcade-duck": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/af2e01a820f57ab9885026b2759dd19ea88b6182838fc4e43e5e8a7b8369892f.png",
+      "file": "assets/items/arcade-duck.png"
+    },
+    "assessor-matrix": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/497a1baeb42dc045d4f83ad1f1561932fb0f0db0dd2b64aa71fd8c351cb6b2f1.png",
+      "file": "assets/items/assessor-matrix.png"
+    },
+    "barricade-kit": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ba60825f710a56390176a874af212a413552a4a7a458d7a0ff55ae75f547a911.png",
+      "file": "assets/items/barricade-kit.png"
+    },
+    "bastion-part": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5e3e1a4b33599ec350dcc073b8857c25b9bb918ab85d40efe88d90b9c8941943.png",
+      "file": "assets/items/bastion-part.png"
+    },
+    "bp-target-bettina-blueprint": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/06d8b439ec8641b72149d65110cb898fd16164349ed124f14c9391810d56e526.png",
+      "file": "assets/items/bp-target-bettina-blueprint.png"
+    },
+    "bettina-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/06d8b439ec8641b72149d65110cb898fd16164349ed124f14c9391810d56e526.png",
+      "file": "assets/items/bettina-i.png"
+    },
+    "bettina-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4fc672f8fcabc4876595f038a506fe0050a8eac240f625f1f6e8d382d9623d17.png",
+      "file": "assets/items/bettina-ii.png"
+    },
+    "bettina-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bf0398d3b57367e6d6b0412bb9874c8e6817e1b6f73ab37c67832e060d43bac7.png",
+      "file": "assets/items/bettina-iii.png"
+    },
+    "bettina-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ddcf8d89363364a27691ae405658c22d582ae155a1c7b3f256e762cdbcff594e.png",
+      "file": "assets/items/bettina-iv.png"
+    },
+    "bicycle-pump": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/22b9b6db5c83fc8b7935a2fd9be3dd7c9901c0514190c6ae0b3ca0b49a1a14e5.png",
+      "file": "assets/items/bicycle-pump.png"
+    },
+    "bison-driver": {
+      "source": "https://static.metaforge.app/arc-raiders/icons/bison-driver.webp",
+      "file": "assets/items/bison-driver.webp"
+    },
+    "blaze-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/04aa543b63dda602e46d32d16f106e30cdde922af601538981bf3d9c68247da2.png",
+      "file": "assets/items/blaze-grenade.png"
+    },
+    "blaze-grenade-trap": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9d18194935535872b01fa72626f28a3e643e05530efca52143cb90ebaf069944.png",
+      "file": "assets/items/blaze-grenade-trap.png"
+    },
+    "blue-gate-cellar-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c9de0cafc139dfd3b92ed5c8b78a398fee7fe9af4aa37cb798421b545c71db2a.png",
+      "file": "assets/items/blue-gate-cellar-key.png"
+    },
+    "blue-gate-communication-tower-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/64fcf5ff7a35a0c1b64ff61967871a562142961a1d021daabfd219dec6048fb7.png",
+      "file": "assets/items/blue-gate-communication-tower-key.png"
+    },
+    "blue-gate-confiscation-room-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/03bd6352cd38f4747b4345bc9e1642ff09542e5af6177fc38de15213edbb4e83.png",
+      "file": "assets/items/blue-gate-confiscation-room-key.png"
+    },
+    "blue-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ae0627b40d61747106b940cb528e9c9643c3f4eca78a74fecd0a9a4487bedbd0.png",
+      "file": "assets/items/blue-light-stick.png"
+    },
+    "bp-target-bobcat-i-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/234ed5bfd984b29d6c08c0bd3290a9ef862ad0b1b97e9c8d8b145c7d4c43d2bb.png",
+      "file": "assets/items/bp-target-bobcat-i-recipe.png"
+    },
+    "bobcat-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/234ed5bfd984b29d6c08c0bd3290a9ef862ad0b1b97e9c8d8b145c7d4c43d2bb.png",
+      "file": "assets/items/bobcat-i.png"
+    },
+    "bobcat-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3ec89eff99acc08c759962a9303bfd9340b965087b2e6b841129eaf3e8040020.png",
+      "file": "assets/items/bobcat-ii.png"
+    },
+    "bobcat-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f570bcfde11008e72746eb29edaf7b8aa07b75b5f7fada83fac208e7e714fd58.png",
+      "file": "assets/items/bobcat-iii.png"
+    },
+    "bobcat-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/41effd20b3bd61678406ac46591c9acc12c5da364234150d1a6a334f46e57545.png",
+      "file": "assets/items/bobcat-iv.png"
+    },
+    "bombardier-cell": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a143610219120c46c6f439e9506f342ac016fc93c3d3d1675e3edd24115a7963.png",
+      "file": "assets/items/bombardier-cell.png"
+    },
+    "breathtaking-snow-globe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6d739cddfeee277a4771c0571d6c966bf18f624a0cd8d0fce8dec4dece2d2357.png",
+      "file": "assets/items/breathtaking-snow-globe.png"
+    },
+    "broken-flashlight": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9216e014321b8799b2f80d4e98e390bb7a8ae04973ad39135e1e1d390f7f829d.png",
+      "file": "assets/items/broken-flashlight.png"
+    },
+    "broken-guidance-system": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fd13d1f87e21146aca195fba48d2ae4603aac7a8ebe3cde8375aef96374ab5bd.png",
+      "file": "assets/items/broken-guidance-system.png"
+    },
+    "broken-handheld-radio": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c9089e06da9e7202b370e2363110e04aa83e347a4638acc4d7ee961e30a118a8.png",
+      "file": "assets/items/broken-handheld-radio.png"
+    },
+    "broken-taser": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/af10652b5d9e5c1a809236881cceff188d17c64601f7be4b6855cd232ad2fd65.png",
+      "file": "assets/items/broken-taser.png"
+    },
+    "bronze-statuette": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ad1f5145b2580a6ed5e5a2e3b4abf6adedee9b97cb674c69371d68bf7f97eb7d.png",
+      "file": "assets/items/bronze-statuette.png"
+    },
+    "buried-city-hospital-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/587e43ae3fc2a3889252f83db9913c37edacf93dcad014debf06f58d30169d74.png",
+      "file": "assets/items/buried-city-hospital-key.png"
+    },
+    "buried-city-town-hall-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cce7ada0a17b10c668600d5b24ffe9fddac1924b6379c742118c540946fabce9.png",
+      "file": "assets/items/buried-city-town-hall-key.png"
+    },
+    "bp-target-burltetta-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9ecca70d1bb2420829cdcf6cc7a868dc14b70c1217ae689863f5b3a9adaf35f2.png",
+      "file": "assets/items/bp-target-burltetta-recipe.png"
+    },
+    "candleberries": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f96045b0202ae322c5f61054522f795b4355ab9d8aec8e6f9e3c56371299d1bb.png",
+      "file": "assets/items/candleberries.png"
+    },
+    "bp-target-canto-blueprint": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/98ca26be2da12d290d00b451ed6b738581335d77b2a36d9ba3317c160923c331.png",
+      "file": "assets/items/bp-target-canto-blueprint.png"
+    },
+    "canto": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/98ca26be2da12d290d00b451ed6b738581335d77b2a36d9ba3317c160923c331.png",
+      "file": "assets/items/canto.png"
+    },
+    "canto-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9154faffe59797e1a50af6df972c0b7d32b7c5b0629e8e132bb44208d3f8c26c.png",
+      "file": "assets/items/canto-ii.png"
+    },
+    "canto-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c9f9505f466450f059a27c4bb9b01bc7b7aa97d0d2a5f5471559e2d5eeaf4adb.png",
+      "file": "assets/items/canto-iii.png"
+    },
+    "canto-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/42a6c1ed0ab176fa58e04a8060d35ca8e5db52606399ab3dafe3947c4db1fc46.png",
+      "file": "assets/items/canto-iv.png"
+    },
+    "colorful-shoes-epic": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
+      "file": "assets/items/colorful-shoes-epic.png"
+    },
+    "colorful-shoes": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e0962dec98e6ee40851b3cbf6b2f5a1f25fc28ebf856ef113b0675fc8c430460.png",
+      "file": "assets/items/colorful-shoes.png"
+    },
+    "colorful-shoes-rare": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ba5395eaf8baa43d11946f3a9ee0b0f2975da4100c0c21c83bc2c428680f6ba6.png",
+      "file": "assets/items/colorful-shoes-rare.png"
+    },
+    "combat-mk-2": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/02a71d61c0f0ebf1335239d98081e63253b6a5811ced40d2f3130d36808fc7b6.png",
+      "file": "assets/items/combat-mk-2.png"
+    },
+    "combat-mk-3-aggressive": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cc8898f40ea215bb6d3436830b6bca2bbe70b6565caa07801fbc06ba6221bfab.png",
+      "file": "assets/items/combat-mk-3-aggressive.png"
+    },
+    "combat-mk3-flanking": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b3edb8677edcedbbae18bf33ae761786cabb3f542fb94161056b0078a3aa833b.png",
+      "file": "assets/items/combat-mk3-flanking.png"
+    },
+    "comet-igniter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1803dd360df188f6a0572ac9940e409cc88a134d82037340508ae805ffc1a894.png",
+      "file": "assets/items/comet-igniter.png"
+    },
+    "compensator-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d7f730b4f4809fff3b1e2065e4856fc8bcf72176d59cde06a5c62c1f9986e910.png",
+      "file": "assets/items/compensator-ii.png"
+    },
+    "compensator-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/294d7f82b4da2e39c9c89c19f7cedc8ae90fadad4af33305150806b11065a118.png",
+      "file": "assets/items/compensator-iii.png"
+    },
+    "complex-gun-parts": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f89ec15fe5f8d48de02a92dd5cccc8537281af9eaa1e75740c4238be64978965.png",
+      "file": "assets/items/complex-gun-parts.png"
+    },
+    "coolant": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ba600724a6a8ee2e7889e04b1fecbc389f225ed790a07f833fd4b003aa663bfe.png",
+      "file": "assets/items/coolant.png"
+    },
+    "cooling-coil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/aacbb935223fb08d77fa92d557d585db5c344a6c317200771bfd1390232315fd.png",
+      "file": "assets/items/cooling-coil.png"
+    },
+    "cooling-fan": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ca0c1529f5367e45ef2b183e27177996fe48309459ac5378bfd3637c4496d819.png",
+      "file": "assets/items/cooling-fan.png"
+    },
+    "cracked-bioscanner": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/762d4c34175da1ad968ecdd31f409aa110c687c8e52b219fc012e2af07d66929.png",
+      "file": "assets/items/cracked-bioscanner.png"
+    },
+    "crash-mat": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6581de6faad5f93d3955f209b0790a88f796a5b967531aa10b8913dc3d4aa670.png",
+      "file": "assets/items/crash-mat.png"
+    },
+    "dam-control-center-tower-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9c7bfdd8eb77b2c8d4d90a1ff0ce79c8899e0b115e6c8a1cce70648d584a73a3.png",
+      "file": "assets/items/dam-control-center-tower-key.png"
+    },
+    "dam-controlled-access-zone-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b3cd601ea54296b82fdf8226c62dfc02f8e1cc7c97620e6b5f6271579100e14c.png",
+      "file": "assets/items/dam-controlled-access-zone-key.png"
+    },
+    "dam-testing-annex-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/15751c4b173b7dde5e1da76c76fbce79a459b3d55b94aea0a496f6ff4dc40899.png",
+      "file": "assets/items/dam-testing-annex-key.png"
+    },
+    "damaged-heat-sink": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/7044440d0b71521ffd7baa00b3d19a371061edf6fdd06ce87483e4c00b3a2f16.png",
+      "file": "assets/items/damaged-heat-sink.png"
+    },
+    "deadline": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
+      "file": "assets/items/deadline.png"
+    },
+    "defibrillator": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1aef07229aa99c8801612a889958b02f7faf5928905d6912bb6af480bbe403f1.png",
+      "file": "assets/items/defibrillator.png"
+    },
+    "diving-googles": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cb2b9945b4464e4331acd336d87a9755f02d59217356b07a58780d7d95e5ab41.png",
+      "file": "assets/items/diving-googles.png"
+    },
+    "dog-collar": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b07802d848f35a849996b3d4a89ad610f9b2345bd1d4f447f99c2837036d4372.png",
+      "file": "assets/items/dog-collar.png"
+    },
+    "dolabra": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b2827c8b5214e825d552056b77e93b6b40302868e25d51fe4273af47ce8ee399.png",
+      "file": "assets/items/dolabra.png"
+    },
+    "doodly-duck": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a91f67fb3cc34b09bc7e9c53c8630e264a2223a99bc9941c8f6ccda535cf9931.png",
+      "file": "assets/items/doodly-duck.png"
+    },
+    "elephant-obelisk": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/46894ec875ea4ba92831afc18162b343346e88d2f4fd3b3a05f4b11da56f2927.png",
+      "file": "assets/items/elephant-obelisk.png"
+    },
+    "energy-ammo": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6c4eddf8f45fd4270d5557cf747b5319d08705259047cd1f823d326e1dfd76e5.png",
+      "file": "assets/items/energy-ammo.png"
+    },
+    "equalizer-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b3f9cde8f883d8f923d0c6ae110f44e74dfe5ca1bcdb5dd50f7b95a5d20c4334.png",
+      "file": "assets/items/equalizer-i.png"
+    },
+    "equatorial-sundial": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/104fa14ae29ff11237d31bc043c208f71af3940ce5d18676ff33661c4ee4b395.png",
+      "file": "assets/items/equatorial-sundial.png"
+    },
+    "exodus-modules": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/07b7aa8f75375f582296702085751a2a164090aa994b4ec7ca083807cb13146b.png",
+      "file": "assets/items/exodus-modules.png"
+    },
+    "expired-respirator": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8fb2f093b5943a405c309539d841b15bde3e80706d92ba8d776823b8a6bf97ae.png",
+      "file": "assets/items/expired-respirator.png"
+    },
+    "explosive-compound": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/7a1a45b8c5aeddcdf7d539e3c2facd2d1b98aa5df7f1c74e84a150f35c7bfe28.png",
+      "file": "assets/items/explosive-compound.png"
+    },
+    "explosive-mine": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8f9763acaff22b5030b063a28f73f7b3bc97b30016cfd0a3d06437fa6a1b297e.png",
+      "file": "assets/items/explosive-mine.png"
+    },
+    "extended-barrel-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/38b672c44d34919e1c3290674ec672cdd59ac192046c0388abd32801760186a7.png",
+      "file": "assets/items/extended-barrel-ii.png"
+    },
+    "extended-barrel": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b145aae2d954220de3ca426e3963d4775e17a5eac150a6455ca8a7b92414a2bc.png",
+      "file": "assets/items/extended-barrel.png"
+    },
+    "extended-light-mag-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2c3769fa21cd983c0803ddd5b2db2cd07ce3962a3a676acafcecc7258f503930.png",
+      "file": "assets/items/extended-light-mag-ii.png"
+    },
+    "extended-light-mag-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6ed9285787a45c859de10dffe895b1c6e7c16bf3a028f5e9581186aec01f9041.png",
+      "file": "assets/items/extended-light-mag-iii.png"
+    },
+    "extended-medium-mag-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f119f93a0345d1e7c439f2c4262401d9d364422f74a17435541895d2bd5cb834.png",
+      "file": "assets/items/extended-medium-mag-ii.png"
+    },
+    "extended-medium-mag-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cd860795ceab3ce1b622a3583d12b44b44c81b2c6b739ae30d53d7a2cf0283b4.png",
+      "file": "assets/items/extended-medium-mag-iii.png"
+    },
+    "extended-shotgun-mag-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/418e6b3b8b3c99f38da5a7ffdb669f97ef26c80b490619105434964101cca2a5.png",
+      "file": "assets/items/extended-shotgun-mag-ii.png"
+    },
+    "extended-shotgun-mag-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/eade70ed836f18d3d9d49cf96d654a0e81b8cbc0c4cfbcea83720833de06ff69.png",
+      "file": "assets/items/extended-shotgun-mag-iii.png"
+    },
+    "familiar-duck": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/61c779fcb9ab509bd6fc850992124d4c8a7b23d39a267a258424a745d9d60cad.png",
+      "file": "assets/items/familiar-duck.png"
+    },
+    "film-reel": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/18f2ed822b2b11407b536e2353f858b9d5b283c65fe47936949fac50c8aa2a6a.png",
+      "file": "assets/items/film-reel.png"
+    },
+    "fine-wristwatch": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/79deebf9edc5808c0bb7d188f503160e64c575df5758791f479848baf47e702a.png",
+      "file": "assets/items/fine-wristwatch.png"
+    },
+    "firefly-burner": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/87387b926fc32cd23b01e135ab19e234d44db34976618fefc8ba81d51d60c634.png",
+      "file": "assets/items/firefly-burner.png"
+    },
+    "fireworks-box": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fa7ca398b8d73c60cfb9583abc7e9935c0fda58f9d288011fac09a2f1204a34c.png",
+      "file": "assets/items/fireworks-box.png"
+    },
+    "flashy-duck": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/7ccbfa19dff852bc7daac05884d9f3ffe41ce91ce05eb0247f5170cdc66df936.png",
+      "file": "assets/items/flashy-duck.png"
+    },
+    "flow-controller": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/58530431cc886403c5eddaf93b11b6c0cf612fe3f22fcdf34719374186694f52.png",
+      "file": "assets/items/flow-controller.png"
+    },
+    "fossilized-lightning": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/042ca30b6c7b7cbe0fddf9357018404aa6d7c7528b662c04a8c460dd3baabfbb.png",
+      "file": "assets/items/fossilized-lightning.png"
+    },
+    "frequency-modulation-box": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cf6d19f9ac760fc708bd4ecdabe8b78ec1d5dfe657e34eb6fd90e1c924b86b5b.png",
+      "file": "assets/items/frequency-modulation-box.png"
+    },
+    "fried-motherboard": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/32258abc35ce5ccbcd7e048275e40775cb1c2b97f97f62e5f02e852d007b515c.png",
+      "file": "assets/items/fried-motherboard.png"
+    },
+    "frosty-duck": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/810398ad6e8c92482a408fadd9a18625a4faa0fc28fda8ec35d585698be780f0.png",
+      "file": "assets/items/frosty-duck.png"
+    },
+    "frying-pan": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f05b26c6d1dc01292aec76dc3234764b6696998274a10b231c41fb462dd6dcaa.png",
+      "file": "assets/items/frying-pan.png"
+    },
+    "gas-mine": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ed58f4a842dd36a2abf3b7e18e24170f2bdaad057c047b8bc7bb808d9567ad2e.png",
+      "file": "assets/items/gas-mine.png"
+    },
+    "geiger-counter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/18a9aa28742da8c0e07ea06412a703b75dd1dd4d0d28a4bb27345a4dfc40f079.png",
+      "file": "assets/items/geiger-counter.png"
+    },
+    "glitched-arc-circuitry": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0005ec0193de75d03888fdde62d5f7d43745b019dde4f1c653aadb3fd37a8025.png",
+      "file": "assets/items/glitched-arc-circuitry.png"
+    },
+    "glitched-arc-light-ring": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/59782ecefcce6422dc56c5b0fbcd27e07397666bed0676b0a054d8310a2edd93.png",
+      "file": "assets/items/glitched-arc-light-ring.png"
+    },
+    "glitched-arc-phased-array": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/39beb05ccaee582fb418744db37f6054d7e2d32f84fb11162fd7b8cd00174fea.png",
+      "file": "assets/items/glitched-arc-phased-array.png"
+    },
+    "green-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d48dfae88f2a33d6b20c7022cfbfcbeb4ea79a19f60eeb74251929b9b473a022.png",
+      "file": "assets/items/green-light-stick.png"
+    },
+    "headphones": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/380d9392686cb2107b66449521150961325f49bf50f26b8c173ccc1604b10397.png",
+      "file": "assets/items/headphones.png"
+    },
+    "heavy-fuze-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c796c3f134a51ab984cdf1d425d55bcb4af05ee6222dbf842de77621d423be20.png",
+      "file": "assets/items/heavy-fuze-grenade.png"
+    },
+    "heavy-gun-parts": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f2ede9fe29a567c0a343d6ada527f6e925ef2543920a4a750cc06fc2dd0bbb7d.png",
+      "file": "assets/items/heavy-gun-parts.png"
+    },
+    "heavy-shield": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e2112dd94fda71e137a147a9e336c9e10feb7cb8b5a304de1830f732ac800efe.png",
+      "file": "assets/items/heavy-shield.png"
+    },
+    "horizontal-grip": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2739ccfc9d37bb54f76e7ec96d78b812be6fe59c2b29fd72e6399871599566dc.png",
+      "file": "assets/items/horizontal-grip.png"
+    },
+    "hornet-driver": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/95daafc88d936d778cf46dbb1c960dbd1926b6d0c4fcdaf71eaa354c6a82300f.png",
+      "file": "assets/items/hornet-driver.png"
+    },
+    "bp-target-hullcracker-blueprint": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bb34cb6de72f17249fa398720b89d5cdcdce713cc258b24f5bb88cc315908418.png",
+      "file": "assets/items/bp-target-hullcracker-blueprint.png"
+    },
+    "hullcracker-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bb34cb6de72f17249fa398720b89d5cdcdce713cc258b24f5bb88cc315908418.png",
+      "file": "assets/items/hullcracker-i.png"
+    },
+    "hullcracker-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5ce13cda08706c8280e8357967706a5f89a550bf2e228e1922e6f8a6d311a8a0.png",
+      "file": "assets/items/hullcracker-ii.png"
+    },
+    "hullcracker-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0c1410844f060d768cf60052c4b3b46f7346d1a69d67f10b04aac87ee9192a09.png",
+      "file": "assets/items/hullcracker-iii.png"
+    },
+    "hullcracker-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/20edc278e9aadf2e7dce33b48c83e8363806a4db80fac7fd6eb35841cb27dc26.png",
+      "file": "assets/items/hullcracker-iv.png"
+    },
+    "humidifier": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/30ff5da1ee6c148f3add2194e57da9cd847d33da819cac866cdd4c7ff0037cf9.png",
+      "file": "assets/items/humidifier.png"
+    },
+    "bp-target-il-toro-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/07b56ac03f97e123f766b771a6757aa30d66fd7517af99130accf95d63414ec6.png",
+      "file": "assets/items/bp-target-il-toro-recipe.png"
+    },
+    "industrial-battery": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/99dfc1e3b0483e7470dddff02ed50e9317ddf314c7dd28511399ebd25232f5f3.png",
+      "file": "assets/items/industrial-battery.png"
+    },
+    "industrial-charger": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/cc4866a17970c58c7d9eee96d465ff753006cfb8fe040128e070cc3db2bbca44.png",
+      "file": "assets/items/industrial-charger.png"
+    },
+    "industrial-magnet": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0be5be85dc2bc498e44fefcf70eba1b08dd6016945f71d2bbb3edbbf5d9af23a.png",
+      "file": "assets/items/industrial-magnet.png"
+    },
+    "ion-sputter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6223d13e27cf3f0c1822e29fce20ece2274ea81d481deb957c04d1ec0de76c9d.png",
+      "file": "assets/items/ion-sputter.png"
+    },
+    "jolt-mine": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2666019a2bd9bf9cc0bb76b8791dab4da5c58adffb3d6b59434538d6ed0a07bb.png",
+      "file": "assets/items/jolt-mine.png"
+    },
+    "jupiter-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2d362cc57d7afab8806b349868e6ebababf0066c4ced7accdea5cafde1b273ea.png",
+      "file": "assets/items/jupiter-i.png"
+    },
+    "kinetic-converter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f2890fd902a9650a9327e4f2c6ff5bbdc3b5b9ea81b6266b936a3fed52ce9fc7.png",
+      "file": "assets/items/kinetic-converter.png"
+    },
+    "laboratory-reagents": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9669edd69074892d930a799af1110bb4ead0c2c5281c93ae6009217c69c6bc0c.png",
+      "file": "assets/items/laboratory-reagents.png"
+    },
+    "lances-mixtape-5th-edition": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a7a2a183ffb112e87c7f3accfafb08f4a07e4849ad4f19cf008c5c8bf70122a3.png",
+      "file": "assets/items/lances-mixtape-5th-edition.png"
+    },
+    "launcher-ammo": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/91687ed2ba3b3e1af1f3586f7b51caf4d45c57f614e92fe237eb2018e8a9105d.png",
+      "file": "assets/items/launcher-ammo.png"
+    },
+    "leaper-pulse-unit": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a6bb7b994fbb89af1af900abb7cabd8f2faede6b751a4e4fde311c7d20cfadc5.png",
+      "file": "assets/items/leaper-pulse-unit.png"
+    },
+    "light-gun-parts": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1be7419fdc6f633471990d0feb957b7c40be01df270060177ca42724a03669d8.png",
+      "file": "assets/items/light-gun-parts.png"
+    },
+    "lightweight-stock": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a3af616e5c40dbd8b5b87471e765569578ebc78725fb8db704637896b9c0694b.png",
+      "file": "assets/items/lightweight-stock.png"
+    },
+    "looting-mk-2": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e582ebf209d8d98b93ebc6dadd3053c016cb13e550000e7afb2e5eb21eeb5da6.png",
+      "file": "assets/items/looting-mk-2.png"
+    },
+    "looting-mk-3-cautious": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a00f1cb1cfbe79b43dc8f2230dd3cbc73ba75ad99bdb3635b50ac5478ed5a52c.png",
+      "file": "assets/items/looting-mk-3-cautious.png"
+    },
+    "looting-mk-3-safekeeper": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/611c3bb83f041b0785dfca6e14b429aae80c7f59688d13cec07ba9e1c8b45802.png",
+      "file": "assets/items/looting-mk-3-safekeeper.png"
+    },
+    "looting-mk-3-survivor": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3d24268f3a4fd2270296d4b550bc39d5f5a2a5f4c3ac68becd0be8e81f142fa5.png",
+      "file": "assets/items/looting-mk-3-survivor.png"
+    },
+    "lure-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4c403880e106a69575813cb0c8052a335704bd3034f1580ca30d93b826a8f53b.png",
+      "file": "assets/items/lure-grenade.png"
+    },
+    "magnetic-accelerator": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8a136a7596eb18e81f844b64438f59f51ea505f4f49963c48f6b80d11a232816.png",
+      "file": "assets/items/magnetic-accelerator.png"
+    },
+    "magnetron": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8c3a644056ea6a9544ebc336325606e2a4edad3a2ff2a1d446f32f4a66cc63de.png",
+      "file": "assets/items/magnetron.png"
+    },
+    "matriarch-reactor": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a7622580bfda74425e46b8f36c42cf416f366641ae583c8157f404ff5b697a13.png",
+      "file": "assets/items/matriarch-reactor.png"
+    },
+    "medium-gun-parts": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/40186d5a2191a5a8c06242c8a8465a03abe3133ab1c12739beeaa2be79e870b7.png",
+      "file": "assets/items/medium-gun-parts.png"
+    },
+    "medium-shield": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9090000bcb5da124d410c257b3fc865f61203b34931b0bcb2b56b7fc810e6e7b.png",
+      "file": "assets/items/medium-shield.png"
+    },
+    "microscope": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b0fa032971c3c308ca4f24b434da3eac3c9a6c00e2fd702b1cc314cf8ca8e16a.png",
+      "file": "assets/items/microscope.png"
+    },
+    "mini-centrifuge": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/43f87adaf51d555b87cc55ac71771d952dfd15d60ba05dc78ec9951987347c9d.png",
+      "file": "assets/items/mini-centrifuge.png"
+    },
+    "mod-components": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b89dcbc0cb98a02d4c84d0820dc64da7a24b04b8719ec6561bf0713133d05356.png",
+      "file": "assets/items/mod-components.png"
+    },
+    "moss": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/abcd24ce46df9b9a0c5d8b14c78bf8a3dfece3c8655180fdbe8ae86fa771e16c.png",
+      "file": "assets/items/moss.png"
+    },
+    "motor": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a6d48084b84fd4c4d2c3b7e28a02cd22e0c21b850c1b6988abb65d917632cc89.png",
+      "file": "assets/items/motor.png"
+    },
+    "mri-duck": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d5192f930325487266bbf939058bb0172631da9eac5e659c02be102da1a4aaf0.png",
+      "file": "assets/items/mri-duck.png"
+    },
+    "music-album": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/15dae0929a2f2c5e687cdf3799d061409f9dae79ea207218b2a148a2aa0caf77.png",
+      "file": "assets/items/music-album.png"
+    },
+    "music-box": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/99e2208eb41a50e561aeb380611173a132f4d85a64029bd118b1b18c43cc5bf2.png",
+      "file": "assets/items/music-box.png"
+    },
+    "muzzle-brake-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e3ce53319076513a3879386aab647eb59231401929fd27341a30ca2b918841ec.png",
+      "file": "assets/items/muzzle-brake-ii.png"
+    },
+    "muzzle-brake-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/686a0ee2ddcfbaeaed9972fd3d8e60204b4a5fd8cd51f43d8808d69dd7af2fc9.png",
+      "file": "assets/items/muzzle-brake-iii.png"
+    },
+    "bp-target-osprey-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/49875185a4588aee78100ca9c47e525183ed257ca1b4d988efc2f649e5f62e82.png",
+      "file": "assets/items/bp-target-osprey-recipe.png"
+    },
+    "osprey-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/49875185a4588aee78100ca9c47e525183ed257ca1b4d988efc2f649e5f62e82.png",
+      "file": "assets/items/osprey-i.png"
+    },
+    "osprey-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1526425e96fd0e27b357d650a34f5fed35838df311e5f833a78dba9e4e8b40a5.png",
+      "file": "assets/items/osprey-ii.png"
+    },
+    "osprey-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/30a3212ed46b499c4164bf32abced01d87d597d7c7d5b0a2660c7f2a0fada6b3.png",
+      "file": "assets/items/osprey-iii.png"
+    },
+    "osprey-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5ba3f710e3606684774255f88e4c7f868a917fa89667cb794d03d2f7c8a75456.png",
+      "file": "assets/items/osprey-iv.png"
+    },
+    "padded-stock": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0d9ddf9cc48aee1283232cc368a68c4cde522f6ac44557cf4c9adb49eaa554f0.png",
+      "file": "assets/items/padded-stock.png"
+    },
+    "photoelectric-cloak": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/639d21fa0d5a93e251c286c3ad793b66e386cde43c17c58b1361a03612328a61.png",
+      "file": "assets/items/photoelectric-cloak.png"
+    },
+    "playing-cards": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e78e457bcacda78e5c39ad9eb1385164a3f0127042cbe9ce2bb4f5d80febfd94.png",
+      "file": "assets/items/playing-cards.png"
+    },
+    "polluted-air-filter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/144e75d2219cb5d40d981e8dd22ec0a42ef4ca007fe11930488e69fc617570d5.png",
+      "file": "assets/items/polluted-air-filter.png"
+    },
+    "portable-television": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/28fd2d3759fd40f986cdd2dc573c072d1a835a8cc9471c39ff4b2f718d6aae43.png",
+      "file": "assets/items/portable-television.png"
+    },
+    "power-bank": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/52217ba2f8102bea1ee7cb431e8c4813fed087196c3c161531e6d9db4b69328b.png",
+      "file": "assets/items/power-bank.png"
+    },
+    "power-cable": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2928410a6267f98caf8cd4d4d1e3a559fdbb8620c124f5384910ae0013245735.png",
+      "file": "assets/items/power-cable.png"
+    },
+    "power-rod": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e4ff63d3b3654582854cc9e53964fca9cabb9e975542074e718e5d7c914ff62e.png",
+      "file": "assets/items/power-rod.png"
+    },
+    "powered-descender": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9af66ed2b5b80b2445a3a8d8cad66676f055f3955c8ee90d5c05cac6f9dfd1d2.png",
+      "file": "assets/items/powered-descender.png"
+    },
+    "processor": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/64167940ac8cd97144ef720a2979e1b6af99ff241ecc0ee4adb3463d4bd32f33.png",
+      "file": "assets/items/processor.png"
+    },
+    "projector": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/81c44f765155a0724f42076773f8fda2b5514350600ca8704181fb81d291cfb6.png",
+      "file": "assets/items/projector.png"
+    },
+    "pulse-mine": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d36042196f569ee41bdc9648e8dbd7b4ec3f8113cc7657141165fd4a3d31ddf0.png",
+      "file": "assets/items/pulse-mine.png"
+    },
+    "queen-reactor": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/12928d56bcbb13e33eade0536af129c71b37106a675bf4c21009285678258c20.png",
+      "file": "assets/items/queen-reactor.png"
+    },
+    "radio": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e4bf7e878a976dbcc333d19dbb701bb0601e138296b1854f3b61ca4592db848f.png",
+      "file": "assets/items/radio.png"
+    },
+    "radio-relay": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/29409e630f800289264a57fd239b86a3c2568f9a8011c0cc3e3444b3e87c50fd.png",
+      "file": "assets/items/radio-relay.png"
+    },
+    "raider-hatch-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b74d87a841bb5b2cec8f0bc8212f3d32ec7c493ce4a675ca207b1bfc84264449.png",
+      "file": "assets/items/raider-hatch-key.png"
+    },
+    "rascal": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0aabb8da784330210cdc35fd3e081f52e12790eb6ebfb2a1ddd1c94ff7e315fe.png",
+      "file": "assets/items/rascal.png"
+    },
+    "rascal-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3422d23cc6f38fd737ab78969b10c6416c0b6df8a6083b06561b664fcb00ee8d.png",
+      "file": "assets/items/rascal-ii.png"
+    },
+    "rascal-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/557e14c3ffcbf9c088c90bad2032043aea51707d1ecb1a312018107da400adcc.png",
+      "file": "assets/items/rascal-iii.png"
+    },
+    "rascal-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fb8618cb89062279b94d8ce154df2f474d8abc882c8781989f1b17724e8a91c2.png",
+      "file": "assets/items/rascal-iv.png"
+    },
+    "red-coral-jewelry": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6cefa02d1c62d3545c552a2f01f71351638daa43164846e359b405aa290e460f.png",
+      "file": "assets/items/red-coral-jewelry.png"
+    },
+    "red-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8c893eebbe2ebf4900665c433f601f3be83c285a65ee819905a71a07579c3280.png",
+      "file": "assets/items/red-light-stick.png"
+    },
+    "remote-control": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9a05efd8b1249563e1ed78db6fa6b8d9d1a289f542f85f03811b48fc19ac001f.png",
+      "file": "assets/items/remote-control.png"
+    },
+    "remote-raider-flare": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/05dfecbd9531d3cb12ff76726e0f0876e653b801ec411db48aa32d27aa214176.png",
+      "file": "assets/items/remote-raider-flare.png"
+    },
+    "renegade-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b5e14eb05a013525e57114ccaf7e1d0a0248b10eec866e36965df7376350a7eb.png",
+      "file": "assets/items/renegade-i.png"
+    },
+    "renegade-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2b166a4f1beab77b3799534a68722f10dcc5e8fac5312bb172370068ac93d4e5.png",
+      "file": "assets/items/renegade-ii.png"
+    },
+    "renegade-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/54725e7abe56c051fad98a155f473ecdb4bae98889b2be6e17a7bc09349df9d3.png",
+      "file": "assets/items/renegade-iii.png"
+    },
+    "renegade-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/61108ee7390185135a25e5bd30244f5917ba69177616d561e743c991c41c1b03.png",
+      "file": "assets/items/renegade-iv.png"
+    },
+    "riven-tides-secure-storage-keycard": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/75784acd2d03b6194b3fc064c927d92177751dfbffa9e30eac10b4635ee5f0aa.png",
+      "file": "assets/items/riven-tides-secure-storage-keycard.png"
+    },
+    "rocket-thruster": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6fe21fd8b8d4507dfefd0580e5fd98419ba0bad439461005e3e54bf04da2a846.png",
+      "file": "assets/items/rocket-thruster.png"
+    },
+    "rocketeer-part": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/edce8880f66f1740c1b57ed0ee1090ec249b9c4eb7ae29f6280120da743ca0cd.png",
+      "file": "assets/items/rocketeer-part.png"
+    },
+    "rope": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/43b194594b1ba9166e17c0787ee75d929a3a3dbc1dfcc90d94f253496b052b1d.png",
+      "file": "assets/items/rope.png"
+    },
+    "rosary": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d8b14f1e7190a099674bd3c372e78f1361e7610d11fc93a8e6f17de9fd14a879.png",
+      "file": "assets/items/rosary.png"
+    },
+    "rotary-encoder": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/51e2e9a683fa9c9b4004348d89d16d7d6b474b68f1e51df65c01d096358fc2e5.png",
+      "file": "assets/items/rotary-encoder.png"
+    },
+    "rubber-pad": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9ae36dbedf9f62bb7dfa817e3769509ed9d74604f3fa97939463ffc1f1cc0834.png",
+      "file": "assets/items/rubber-pad.png"
+    },
+    "ruined-accordion": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9be7564f107939df445a4bb5b36ae309b836bbe3620c2a097e53e56a9a47c40f.png",
+      "file": "assets/items/ruined-accordion.png"
+    },
+    "ruined-riot-shield": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/56170e3959d984b9ce2f1351bc21c4a321da52766c0473f3edbff3da35249344.png",
+      "file": "assets/items/ruined-riot-shield.png"
+    },
+    "rusted-gear": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/103fa634adfa818a5d37b637329abfcbe25c3c7d3d39e303a8af6f3527d06111.png",
+      "file": "assets/items/rusted-gear.png"
+    },
+    "rusted-shut-medical-kit": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/94869fe0b2785db6c113fcfa36d9473e2fce53d2fd046f05b2c296a4aa2f631d.png",
+      "file": "assets/items/rusted-shut-medical-kit.png"
+    },
+    "rusted-tools": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/da5edc20389ade4c82750e6c2e5376af3e20ba4e0b78b4868acbfb7f8d07c857.png",
+      "file": "assets/items/rusted-tools.png"
+    },
+    "sample-cleaner": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fe3f038da6f8a0952a711bd6bbe11c6b39e70d34ad14c39a1afcce6925660d26.png",
+      "file": "assets/items/sample-cleaner.png"
+    },
+    "seeker-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/336cef5ecc82b2f0a3f51e4bcd554a52cf2e8c9627b6a7a9726d5deb18716575.png",
+      "file": "assets/items/seeker-grenade.png"
+    },
+    "sensors-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8f716bdbcac8c0d1336a58c4f8b77a30d0512eda5efc7fa7c6e824be63ff1093.png",
+      "file": "assets/items/sensors-recipe.png"
+    },
+    "sentinel-part": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e5ed547883345a82c18c499dea0a5c2cb3eb04b361d4ee277ede460910116e11.png",
+      "file": "assets/items/sentinel-part.png"
+    },
+    "shotgun-choke-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/93a51965b523f0599e50ab631e220b2961065f9fc5252483acc0fb9959c3bc65.png",
+      "file": "assets/items/shotgun-choke-ii.png"
+    },
+    "shotgun-choke-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b965b92d3fda34264be42e0b565bab4a3c823ec13b9f23801f94851edde880c3.png",
+      "file": "assets/items/shotgun-choke-iii.png"
+    },
+    "shotgun-silencer": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4fefc79ca6e661f11222d62d7fb66658d25398e0b8adbe9fbe97ca94fa987737.png",
+      "file": "assets/items/shotgun-silencer.png"
+    },
+    "showstopper": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1eff7156ed2d249410b310dc0bee59917ced50e41db9adaba18ea0a84414e755.png",
+      "file": "assets/items/showstopper.png"
+    },
+    "shredder-gyro": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4dc7cbacfbd920fc70debe34ff04a1c0b1c0ca3777bb34a56a440d0579043a76.png",
+      "file": "assets/items/shredder-gyro.png"
+    },
+    "signal-amplifier": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e08596e98ae9ba5ec0adee4491db5839065405f0ad8073b56532162345757f2c.png",
+      "file": "assets/items/signal-amplifier.png"
+    },
+    "silencer-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3de4387123e8094140ebb2db9373c71c07b2afa52a3711d10958fe23d4fc7153.png",
+      "file": "assets/items/silencer-i.png"
+    },
+    "silencer-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3ef02e9b50b103ef4fab56063981ce8beb6b4748cafb3f87fa637fc1ea811a1c.png",
+      "file": "assets/items/silencer-ii.png"
+    },
+    "silencer-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5f484dd445b1b1a444522a5b4754d8f7f230d4408dca72f480c9468682859b9d.png",
+      "file": "assets/items/silencer-iii.png"
+    },
+    "silver-teaspoon-set": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f5a2d9b4f2308e7d66922911699ad122c5d7ecf5a8e03845b5179a001a61212c.png",
+      "file": "assets/items/silver-teaspoon-set.png"
+    },
+    "smoke-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/81b720e276f139362d59b6ffa79fc4470634a4d36662772b4dff421ca6d30719.png",
+      "file": "assets/items/smoke-grenade.png"
+    },
+    "laser-trap-smoke-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fcb29d93dcef8ee35f79dfa3453e00212339002a26081284a2526b0841d1ecab.png",
+      "file": "assets/items/laser-trap-smoke-recipe.png"
+    },
+    "snap-hook": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/47b3fca0293a250f1ea89bc67025a2378f74e015fcf7ad6a4b781182f225e0ea.png",
+      "file": "assets/items/snap-hook.png"
+    },
+    "spaceport-container-storage-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dd4433afd42a4d612bd48bf637121bf1c2d5942a98c0312ffa5800058527e027.png",
+      "file": "assets/items/spaceport-container-storage-key.png"
+    },
+    "spaceport-ground-control-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1b9de31b40f6f2691d4daa6c9be9111461e669f3886a976b658b758e504e20a1.png",
+      "file": "assets/items/spaceport-ground-control-key.png"
+    },
+    "speaker-component": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/be91b33ecf8ea9146bb672a4ebe48d976efb4c56e3ca5ec93d62746f864155db.png",
+      "file": "assets/items/speaker-component.png"
+    },
+    "spectrometer": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4f1c817415d17e533dc7d980d947ae44b87b24ed99cda24ebf3e0c0bb7fb3ca6.png",
+      "file": "assets/items/spectrometer.png"
+    },
+    "spectrum-analyzer": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/baac10d33db290d7aa965e16273ef74663ff65956479e142f4f8eb1d5ab4fc67.png",
+      "file": "assets/items/spectrum-analyzer.png"
+    },
+    "spring-cushion": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4f3a8175c8167b8f83e921bfffad932eb248e62476a06e0c39369c754b7e635c.png",
+      "file": "assets/items/spring-cushion.png"
+    },
+    "stable-stock-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9aa1618879abe135929039f107cae63ab73dd4cad10089e829c5b83b7bce15c9.png",
+      "file": "assets/items/stable-stock-ii.png"
+    },
+    "stable-stock-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b898b53324aeafe90c32c522f175ccc9f3ef98c6cbe8a5ecab1eeaa87554730f.png",
+      "file": "assets/items/stable-stock-iii.png"
+    },
+    "statuette": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d3bdb0201a114ba1d1b0c3f34c5224d9e4935c352afe4ccb0ddc4a8ebc2577b1.png",
+      "file": "assets/items/statuette.png"
+    },
+    "stella-montis-archives-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c227c6594326f7f473e78f9b44b2986c2e93437fb78ddc897ea54833aed8428c.png",
+      "file": "assets/items/stella-montis-archives-key.png"
+    },
+    "stella-montis-security-checkpoint-key": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c227c6594326f7f473e78f9b44b2986c2e93437fb78ddc897ea54833aed8428c.png",
+      "file": "assets/items/stella-montis-security-checkpoint-key.png"
+    },
+    "sterilized-bandage": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/351ae673886bcb208d2b73344ecffade9e42b3234de6148bb09b09c851bc026b.png",
+      "file": "assets/items/sterilized-bandage.png"
+    },
+    "surge-coil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8d3eb5bd13f02e1bf83416336d5e7bef5b8523cb157927eefceca758c5e9f51a.png",
+      "file": "assets/items/surge-coil.png"
+    },
+    "surge-shield-recharger": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/477345cf41f6fcddf7e8d8de18bf0cf4cf4eca3d73a41030b995ed3f38d6fb36.png",
+      "file": "assets/items/surge-shield-recharger.png"
+    },
+    "surveyor-vault": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5fe2a22c4a7233cb230cf109f52f12efdc34ec0d7a3ac8f410f776f360e21af0.png",
+      "file": "assets/items/surveyor-vault.png"
+    },
+    "synthesized-fuel": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d1a549568d9b25ca7d96f773485cd029adb40a7a955c38904acea7233757d1d6.png",
+      "file": "assets/items/synthesized-fuel.png"
+    },
+    "syringe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/336fa84de207dc30117927e4b62a17d481451e8ae23bc51c9011689df8c46caa.png",
+      "file": "assets/items/syringe.png"
+    },
+    "tactical-mk-2": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/93daa92420665aade905500bab42cb7d84774f365131ac1e60e523294a3c8c74.png",
+      "file": "assets/items/tactical-mk-2.png"
+    },
+    "tactical-mk3-defensive": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png",
+      "file": "assets/items/tactical-mk3-defensive.png"
+    },
+    "tactical-mk-3-healing": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png",
+      "file": "assets/items/tactical-mk-3-healing.png"
+    },
+    "tactical-mk-3-revival": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/09979fa9a2505e367c5d5e568a2cee6b24b7ff94141b93ebb411dbc465598101.png",
+      "file": "assets/items/tactical-mk-3-revival.png"
+    },
+    "tactical-mk-3-smoke": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ae0d6b3a3f145d88622835abf56bb5eb2ea21043348f1b89225f8f0507ad9a3e.png",
+      "file": "assets/items/tactical-mk-3-smoke.png"
+    },
+    "tagging-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/4a3ce0cbe8fe87cf44cd051e675901a17af99ea46231fd15ac5bb485d264632d.png",
+      "file": "assets/items/tagging-grenade.png"
+    },
+    "telemetry-transceiver": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b4bdea08ca7276b601fa1dcb788eafb6d198f02736a68f9fffd1364399ad139c.png",
+      "file": "assets/items/telemetry-transceiver.png"
+    },
+    "tellurion": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/40868dbc02b5ae44a4f8242ecacc9a4ecf6c4c51d919408a7ac71c0d0308af19.png",
+      "file": "assets/items/tellurion.png"
+    },
+    "bp-target-tempest-i-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/51f180b2f6cb06bd5fca1aafb988e065a31a950b1cb9e8e7cf074ba26ca9fa35.png",
+      "file": "assets/items/bp-target-tempest-i-recipe.png"
+    },
+    "tempest-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/51f180b2f6cb06bd5fca1aafb988e065a31a950b1cb9e8e7cf074ba26ca9fa35.png",
+      "file": "assets/items/tempest-i.png"
+    },
+    "tempest-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/635fb24a64a6c8bba983b65755063c8b794a7309c34d674ffea45beb31d135d3.png",
+      "file": "assets/items/tempest-ii.png"
+    },
+    "tempest-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f1230dbfc6a219bac543d90f2541cd4426aec299b41a88c3d125c5622c91b2e1.png",
+      "file": "assets/items/tempest-iii.png"
+    },
+    "tempest-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a2650f0beb52259e3971e98c8845c3f82e8ecb5b0651b4060420ed7d2b74e47d.png",
+      "file": "assets/items/tempest-iv.png"
+    },
+    "thermostat": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f4627866c430340698413257a39eddab8751be904e4404fd9bcd6dbe6d6a5db7.png",
+      "file": "assets/items/thermostat.png"
+    },
+    "toaster": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/af37007836a4511f74ef86d4639975b8465f6d0e59fbf1aeab91ae8540f979b8.png",
+      "file": "assets/items/toaster.png"
+    },
+    "torn-blanket": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a5245e92670397e16e78c1b0ef5c5432e41a2e6f0a1cbf1e09ca31db91089a04.png",
+      "file": "assets/items/torn-blanket.png"
+    },
+    "bp-target-torrent-i-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f7e3ca5bd3de28e12b6f23219076ade2887e09404ee1b3791fcf1c08fdda9e0b.png",
+      "file": "assets/items/bp-target-torrent-i-recipe.png"
+    },
+    "torrente-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/f7e3ca5bd3de28e12b6f23219076ade2887e09404ee1b3791fcf1c08fdda9e0b.png",
+      "file": "assets/items/torrente-i.png"
+    },
+    "torrente-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8c5ae63fd20e83064a4c58068bb1d9b1a3d857a1f96e9d0ddffe328cb67adda6.png",
+      "file": "assets/items/torrente-ii.png"
+    },
+    "torrente-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c543b8737021baebb9b33d7546858ebb2d8d395b122ef9742048cc205d2ffaa0.png",
+      "file": "assets/items/torrente-iii.png"
+    },
+    "torrente-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/322a62f40f76d9ac4efa51f814fc9b845d07226a7318dcce4765891a0b039bcb.png",
+      "file": "assets/items/torrente-iv.png"
+    },
+    "trailblazer-grenade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6d3a90c234d0786b4266c9aafab334af98e7fe995d504d9e6566adab25c4bda7.png",
+      "file": "assets/items/trailblazer-grenade.png"
+    },
+    "trigger-nade": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d0a7d586ba65a83857a075ab8bccbeaaa682b14b9366e2eef2965fc418f01984.png",
+      "file": "assets/items/trigger-nade.png"
+    },
+    "turbine-compressor": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a0ed6194f931a0684b19df15f71e498d665181a4a528383539573384089fe7f8.png",
+      "file": "assets/items/turbine-compressor.png"
+    },
+    "turbo-pump": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/21d77ed401948e8b28d81bdecddb29ebd55b7f4af541587dc27a70ea3272343a.png",
+      "file": "assets/items/turbo-pump.png"
+    },
+    "unusable-weapon": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8efd96c2a4b8746f2dff2a5f54daf62dc03e1dff122840f421e46c9b62d797f9.png",
+      "file": "assets/items/unusable-weapon.png"
+    },
+    "vaporizer-regulator": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/89bba9cb47ff404446892a8a51efbd7d59340a6f46cc2ad274afd630f1747e50.png",
+      "file": "assets/items/vaporizer-regulator.png"
+    },
+    "vase": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/364052ee0d3309222699d528fcd5cdc660ad27b389d8f9ddcf0a8617bdb87d2a.png",
+      "file": "assets/items/vase.png"
+    },
+    "bp-target-venator-recipe": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/096ed6dc7e583d2bdea0a27c04143716ca411a379a79b03e7a5b709618cbdc20.png",
+      "file": "assets/items/bp-target-venator-recipe.png"
+    },
+    "venator-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/096ed6dc7e583d2bdea0a27c04143716ca411a379a79b03e7a5b709618cbdc20.png",
+      "file": "assets/items/venator-i.png"
+    },
+    "venator-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/17b25c16c802873068cad5b26d77008671e533efdc0aaf4164abe73990c4396f.png",
+      "file": "assets/items/venator-ii.png"
+    },
+    "venator-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dc2429ce5de24967256b9ff1a6a80d1e2a94daab064f1303e8a5a33e09b88924.png",
+      "file": "assets/items/venator-iii.png"
+    },
+    "venator-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0dfbc8e5a079d248606701c96bf378a10638256c17f17a525ea6b152594548d3.png",
+      "file": "assets/items/venator-iv.png"
+    },
+    "vertical-grip-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/030c1af748f7e628893a095f76a675df22bda11f53f5d5744a45b65601dca262.png",
+      "file": "assets/items/vertical-grip-ii.png"
+    },
+    "vertical-grip-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c1d998cab906f28edb22f22198faa731e89e3b7cb0ec2b739d034e7eee297ec7.png",
+      "file": "assets/items/vertical-grip-iii.png"
+    },
+    "vita-shot": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1844ef6c22fc27909cd5ccc4e5b3ec411b6e49098c6a32043aa585e9548b562f.png",
+      "file": "assets/items/vita-shot.png"
+    },
+    "vita-spray": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0f36b9acf8cb90ab29bbc3cc360bacbf3d6577dca0b093797b42f324ecd0f71a.png",
+      "file": "assets/items/vita-spray.png"
+    },
+    "voltage-converter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b9c020266a0b7320e2bc81fabbae36150d394d3c0020876e177ba4b120c3525a.png",
+      "file": "assets/items/voltage-converter.png"
+    },
+    "bp-target-vulcano-blueprint": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a166927f097577535968c08df9db2dda5b6142133afcf75cbb0d90af16b9a646.png",
+      "file": "assets/items/bp-target-vulcano-blueprint.png"
+    },
+    "vulcano-i": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a166927f097577535968c08df9db2dda5b6142133afcf75cbb0d90af16b9a646.png",
+      "file": "assets/items/vulcano-i.png"
+    },
+    "vulcano-ii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2d7e072ec7707646ef937b2525decf7546960f0173ded94e1a31defe424f098a.png",
+      "file": "assets/items/vulcano-ii.png"
+    },
+    "vulcano-iii": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/22e7c8063b7d935075a3d5a698ae0e4145da330da08cf68449b3d7661c1a922f.png",
+      "file": "assets/items/vulcano-iii.png"
+    },
+    "vulcano-iv": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/b8dea33b155d29e9821b3b7a62281f66d88cc4f72b643a1645087fc7b577fd8f.png",
+      "file": "assets/items/vulcano-iv.png"
+    },
+    "wasp-driver": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6c4825f3b5911795421c1764532f072972cade677679f4972da5c929c7611840.png",
+      "file": "assets/items/wasp-driver.png"
+    },
+    "water-filter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/aa42e151a58354785fce1e57004500ba4230729b4fb863dfa590e794d7a6c19e.png",
+      "file": "assets/items/water-filter.png"
+    },
+    "water-pump": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/06568b133e33eee0615cc90ebf58ccb401bd44c93d72e1f20a7153cd6ae888fe.png",
+      "file": "assets/items/water-pump.png"
+    },
+    "white-flag": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/16febcfdfb27c60df2d593d5ef03f1a41eacf31fd85bb8235f733d0f808abccc.png",
+      "file": "assets/items/white-flag.png"
+    },
+    "wolfpack": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/5049f52ab01f27e18bc938a171317b4ee69173612968aa43b914e90665b2a275.png",
+      "file": "assets/items/wolfpack.png"
+    },
+    "yellow-light-stick": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/57070f06e3814e72e7a47695f5b193501bca7c2193471b17518536ec2bfc1e0f.png",
+      "file": "assets/items/yellow-light-stick.png"
+    },
+    "zipline": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2676ef459d89de8b603111c30c7574d64623aeaa78571b3f6b8e77f476a45d81.png",
+      "file": "assets/items/zipline.png"
+    }
+  }
+}
