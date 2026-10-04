@@ -86,7 +86,7 @@ function render() {
 
 function createCard(item) {
   const card = document.createElement("article");
-  card.className = "card";
+  card.className = `card rarity-${item.rarity.toLowerCase()}`;
   card.tabIndex = 0;
   card.setAttribute("role", "button");
   card.setAttribute("aria-label", `Apri ${item.name}`);
@@ -99,7 +99,7 @@ function createCard(item) {
   });
 
   const image = document.createElement("div");
-  image.className = "card-image";
+  image.className = `card-image rarity-${item.rarity.toLowerCase()}`;
   if (item.image) {
     const img = document.createElement("img");
     img.src = item.image;
@@ -139,8 +139,8 @@ function createCard(item) {
 
 function openDetail(item) {
   const detailVisual = item.image
-    ? `<div class="detail-thumb"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" onerror="this.remove(); this.parentElement.textContent='${initials(item.name)}'"></div>`
-    : `<div class="detail-thumb">${initials(item.name)}</div>`;
+    ? `<div class="detail-thumb rarity-${item.rarity.toLowerCase()}"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" onerror="this.remove(); this.parentElement.textContent='${initials(item.name)}'"></div>`
+    : `<div class="detail-thumb rarity-${item.rarity.toLowerCase()}">${initials(item.name)}</div>`;
 
   els.detailHero.innerHTML = `
     ${detailVisual}
