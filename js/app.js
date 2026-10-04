@@ -1,13 +1,15 @@
+const MAIN_TYPES = ["Weapon", "Mod", "Grenade", "Quick Use", "Augment", "Material"];
+const rarityOrder = ["Legendary", "Epic", "Rare", "Uncommon", "Common", "Unknown"];
+
 const state = {
   items: [],
   type: "All",
   rarity: "All",
-  blueprint: "All",
+  blueprint: "Yes",
   query: "",
-  sort: "name"
+  sort: "name",
+  showOtherTypes: false
 };
-
-const rarityOrder = ["Legendary", "Epic", "Rare", "Uncommon", "Common"];
 
 const els = {
   grid: document.querySelector("#grid"),
@@ -40,20 +42,98 @@ async function loadCatalog() {
 
   state.items = (data.items || []).map(item => ({
     ...item,
-    hasBlueprint: typeof item.hasBlueprint === "boolean" ? item.hasBlueprint : true
+    hasBlueprint: typeof item.hasBlueprint === "boolean" ? item.hasBlueprint : true,
+    isPrimaryType: item.isPrimaryType ?? MAIN_TYPES.includes(item.type)
   }));
 
-  buildFilters();
   render();
 }
 
-function buildFilters() {
-  const types = ["All", ...[...new Set(state.items.map(item => item.type))].sort((a, b) => a.localeCompare(b))];
-  const rarities = ["All", ...rarityOrder.filter(rarity => state.items.some(item => item.rarity === rarity))];
+function queryMatches(item) {
+  const query = state.query.trim().toLowerCase();
+  return !query || item.name.toLowerCase().includes(query);
+}
 
-  renderChips(els.typeFilters, types, "type");
+function matchesBlueprint(item, value = state.blueprint) {
+  return value === "All"
+    || (value === "Yes" && item.hasBlueprint)
+    || (value === "No" && !item.hasBlueprint);
+}
+
+function matchesType(item, value = state.type) {
+  if (value === "All") return true;
+  return item.type === value;
+}
+
+function matchesRarity(item, value = state.rarity) {
+  return value === "All" || item.rarity === value;
+}
+
+function facetBase(ignore) {
+  return state.items.filter(item => {
+    if (!queryMatches(item)) return false;
+    if (ignore !== "type" && !matchesType(item)) return false;
+    if (ignore !== "rarity" && !matchesRarity(item)) return false;
+    if (ignore !== "blueprint" && !matchesBlueprint(item)) return false;
+    return true;
+  });
+}
+
+function countFacet(key, value) {
+  const base = facetBase(key);
+
+  if (key === "type") {
+    if (value === "All") return base.length;
+    return base.filter(item => item.type === value).length;
+  }
+
+  if (key === "rarity") {
+    if (value === "All") return base.length;
+    return base.filter(item => item.rarity === value).length;
+  }
+
+  if (key === "blueprint") {
+    if (value === "All") return base.length;
+    return base.filter(item => item.hasBlueprint === (value === "Yes")).length;
+  }
+
+  return 0;
+}
+
+function buildFilters() {
+  const otherTypes = [...new Set(
+    state.items
+      .map(item => item.type)
+      .filter(type => !MAIN_TYPES.includes(type))
+  )].sort((a, b) => a.localeCompare(b));
+
+  const typeValues = ["All", ...MAIN_TYPES];
+  if (state.showOtherTypes) typeValues.push(...otherTypes);
+
+  renderChips(els.typeFilters, typeValues, "type");
+
+  const otherButton = document.createElement("button");
+  otherButton.type = "button";
+  otherButton.className = "chip chip-more";
+  otherButton.textContent = state.showOtherTypes
+    ? "Meno…"
+    : `Altro… (${otherTypes.length})`;
+  otherButton.setAttribute("aria-expanded", String(state.showOtherTypes));
+  otherButton.addEventListener("click", () => {
+    state.showOtherTypes = !state.showOtherTypes;
+    if (!state.showOtherTypes && !MAIN_TYPES.includes(state.type) && state.type !== "All") {
+      state.type = "All";
+    }
+    render();
+  });
+  els.typeFilters.append(otherButton);
+
+  const rarities = ["All", ...rarityOrder.filter(rarity =>
+    state.items.some(item => item.rarity === rarity)
+  )];
+
   renderChips(els.rarityFilters, rarities, "rarity");
-  renderChips(els.blueprintFilters, ["All", "Yes", "No"], "blueprint");
+  renderChips(els.blueprintFilters, ["Yes", "No", "All"], "blueprint");
 }
 
 function renderChips(container, values, key) {
@@ -61,61 +141,62 @@ function renderChips(container, values, key) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "chip";
-    const labels = { All: "Tutti", Yes: "Sì", No: "No" };
-    let label = labels[value] || value;
 
-    if (key === "blueprint") {
-      const count = value === "All"
-        ? state.items.length
-        : state.items.filter(item => item.hasBlueprint === (value === "Yes")).length;
-      label += ` (${count})`;
-    }
+    const labels = {
+      All: "Tutti",
+      Yes: "Sì",
+      No: "No"
+    };
 
-    button.textContent = label;
+    const count = countFacet(key, value);
+    button.textContent = `${labels[value] || value} (${count})`;
     button.dataset.value = value;
     button.setAttribute("aria-pressed", String(state[key] === value));
+    button.disabled = count === 0 && state[key] !== value;
+
     button.addEventListener("click", () => {
       state[key] = value;
-      [...container.children].forEach(child =>
-        child.setAttribute("aria-pressed", String(child.dataset.value === value))
-      );
       render();
     });
+
     return button;
   }));
 }
 
 function filteredItems() {
-  const query = state.query.trim().toLowerCase();
-
   return state.items
-    .filter(item => state.type === "All" || item.type === state.type)
-    .filter(item => state.rarity === "All" || item.rarity === state.rarity)
-    .filter(item => state.blueprint === "All"
-      || (state.blueprint === "Yes" && item.hasBlueprint)
-      || (state.blueprint === "No" && !item.hasBlueprint))
-    .filter(item => !query || item.name.toLowerCase().includes(query))
+    .filter(queryMatches)
+    .filter(item => matchesType(item))
+    .filter(item => matchesRarity(item))
+    .filter(item => matchesBlueprint(item))
     .sort((a, b) => {
       if (state.sort === "rarity") {
-        return rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity) || a.name.localeCompare(b.name);
+        return rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity)
+          || a.name.localeCompare(b.name);
       }
+
       if (state.sort === "type") {
         return a.type.localeCompare(b.type) || a.name.localeCompare(b.name);
       }
+
       return a.name.localeCompare(b.name);
     });
 }
 
 function render() {
   const items = filteredItems();
+
   els.visibleCount.textContent = items.length;
   els.emptyState.hidden = items.length > 0;
   els.grid.replaceChildren(...items.map(createCard));
+
+  buildFilters();
 }
 
 function createCard(item) {
+  const rarityClass = `rarity-${String(item.rarity || "Unknown").toLowerCase()}`;
   const card = document.createElement("article");
-  card.className = `card rarity-${item.rarity.toLowerCase()}`;
+  card.className = `card ${rarityClass}`;
   card.tabIndex = 0;
   card.setAttribute("role", "button");
   card.setAttribute("aria-label", `Apri ${item.name}`);
@@ -128,13 +209,13 @@ function createCard(item) {
   });
 
   const image = document.createElement("div");
-  image.className = `card-image rarity-${item.rarity.toLowerCase()}`;
+  image.className = `card-image ${rarityClass}`;
+
   if (item.image) {
     const img = document.createElement("img");
     img.src = item.image;
     img.alt = item.name;
     img.loading = "lazy";
-    img.referrerPolicy = "no-referrer";
     img.addEventListener("error", () => {
       image.replaceChildren();
       image.textContent = initials(item.name);
@@ -150,27 +231,32 @@ function createCard(item) {
     <h2>${escapeHtml(item.name)}</h2>
     <div class="badges">
       <span class="badge">${escapeHtml(item.type)}</span>
-      <span class="badge rarity-${item.rarity.toLowerCase()}">${escapeHtml(item.rarity)}</span>
+      <span class="badge ${rarityClass}">${escapeHtml(item.rarity)}</span>
       ${item.hasBlueprint ? '<span class="badge">BP</span>' : ""}
     </div>
   `;
 
   card.append(image, body);
-
-  if (item.reward) {
-    const reward = document.createElement("span");
-    reward.className = "badge reward-badge";
-    reward.textContent = `${item.reward} reward`;
-    card.append(reward);
-  }
-
   return card;
 }
 
 function openDetail(item) {
+  const rarityClass = `rarity-${String(item.rarity || "Unknown").toLowerCase()}`;
   const detailVisual = item.image
-    ? `<div class="detail-thumb rarity-${item.rarity.toLowerCase()}"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" onerror="this.remove(); this.parentElement.textContent='${initials(item.name)}'"></div>`
-    : `<div class="detail-thumb rarity-${item.rarity.toLowerCase()}">${initials(item.name)}</div>`;
+    ? `<div class="detail-thumb ${rarityClass}"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" onerror="this.remove(); this.parentElement.textContent='${initials(item.name)}'"></div>`
+    : `<div class="detail-thumb ${rarityClass}">${initials(item.name)}</div>`;
+
+  const variants = Array.isArray(item.variants) && item.variants.length > 1
+    ? `<section class="detail-section">
+        <h3>Varianti</h3>
+        <p>${item.variants.map(v => escapeHtml(v.name)).join(" · ")}</p>
+      </section>`
+    : "";
+
+  const spawnParts = [];
+  if (item.spawn?.lootArea) spawnParts.push(`Area: ${escapeHtml(item.spawn.lootArea)}`);
+  if (item.spawn?.locations?.length) spawnParts.push(`Location: ${item.spawn.locations.map(escapeHtml).join(", ")}`);
+  if (item.spawn?.sources?.length) spawnParts.push(`Fonti: ${item.spawn.sources.map(escapeHtml).join(", ")}`);
 
   els.detailHero.innerHTML = `
     ${detailVisual}
@@ -178,25 +264,24 @@ function openDetail(item) {
       <p class="eyebrow">${escapeHtml(item.type)}</p>
       <h2>${escapeHtml(item.name)}</h2>
       <div class="badges">
-        <span class="badge rarity-${item.rarity.toLowerCase()}">${escapeHtml(item.rarity)}</span>
-        ${item.reward ? `<span class="badge">${escapeHtml(item.reward)} reward</span>` : ""}
+        <span class="badge ${rarityClass}">${escapeHtml(item.rarity)}</span>
+        ${item.hasBlueprint ? '<span class="badge">Blueprint disponibile</span>' : '<span class="badge">No blueprint</span>'}
       </div>
     </div>
   `;
 
   els.detailContent.innerHTML = `
+    ${variants}
     <section class="detail-section">
-      <h3>Mappe e condizioni</h3>
-      <p>Qui compariranno le statistiche locali per mappa e condizione. Aprire il dettaglio non genera richieste esterne.</p>
+      <h3>MetaForge · dove trovarlo</h3>
+      <p>${spawnParts.length ? spawnParts.join("<br>") : "Dati di ritrovamento non presenti nel record corrente."}</p>
     </section>
-    <section class="detail-section">
-      <h3>Contenitori</h3>
-      <p>Qui comparirà la distribuzione dei contenitori quando aggiungeremo il dataset locale.</p>
-    </section>
-    <section class="detail-section">
-      <h3>Heatmap</h3>
-      <p>La heatmap verrà generata localmente usando coordinate salvate nel repository.</p>
-    </section>
+    ${item.hasBlueprint ? `
+      <section class="detail-section">
+        <h3>Blueprint</h3>
+        <p>Questo oggetto ha un blueprint. Qui agganceremo anche le statistiche/heatmap di ArcBlueprintTracker come fonte aggiuntiva.</p>
+      </section>
+    ` : ""}
   `;
 
   els.detailDialog.showModal();
@@ -235,10 +320,10 @@ els.sortSelect.addEventListener("change", event => {
 els.clearFilters.addEventListener("click", () => {
   state.type = "All";
   state.rarity = "All";
-  state.blueprint = "All";
+  state.blueprint = "Yes";
   state.query = "";
+  state.showOtherTypes = false;
   els.searchInput.value = "";
-  buildFilters();
   render();
 });
 
