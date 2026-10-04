@@ -45,4 +45,5 @@ jobs:
 
           git add data/metaforge-location-votes.json
           git commit -m "chore(data): refresh MetaForge location votes"
+          git pull --rebase origin main
           git push
