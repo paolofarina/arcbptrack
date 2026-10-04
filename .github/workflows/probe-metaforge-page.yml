@@ -9,15 +9,14 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect Anvil page
+      - name: Inspect Anvil page shell
         shell: bash
         run: |
           set -e
           curl -L --compressed -A "Mozilla/5.0" -sS "https://metaforge.app/arc-raiders/database/item/anvil-recipe" -o /tmp/anvil.html
           echo "bytes=$(wc -c < /tmp/anvil.html)"
-          echo "--- vote markers ---"
-          grep -o -E '.{0,120}(Top Anvil Blueprint Locations|votes|Raider Cache|Dam Battlegrounds|Uncovered Caches).{0,220}' /tmp/anvil.html | head -40 || true
-          echo "--- api-looking paths ---"
-          grep -o -E '/api/[A-Za-z0-9_?&=./:-]+' /tmp/anvil.html | sort -u | head -80 || true
-          echo "--- script src ---"
-          grep -o -E 'src="[^"]+\.js[^"]*"' /tmp/anvil.html | head -80 || true
+          echo "--- response ---"
+          cat /tmp/anvil.html
+          echo
+          echo "--- asset refs ---"
+          grep -o -E '(src|href)="[^"]+"' /tmp/anvil.html | head -100 || true
