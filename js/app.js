@@ -105,6 +105,11 @@ function createCard(item) {
     img.src = item.image;
     img.alt = item.name;
     img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+    img.addEventListener("error", () => {
+      image.replaceChildren();
+      image.textContent = initials(item.name);
+    }, { once: true });
     image.append(img);
   } else {
     image.textContent = initials(item.name);
@@ -133,8 +138,12 @@ function createCard(item) {
 }
 
 function openDetail(item) {
+  const detailVisual = item.image
+    ? `<div class="detail-thumb"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" onerror="this.remove(); this.parentElement.textContent='${initials(item.name)}'"></div>`
+    : `<div class="detail-thumb">${initials(item.name)}</div>`;
+
   els.detailHero.innerHTML = `
-    <div class="detail-thumb">${initials(item.name)}</div>
+    ${detailVisual}
     <div>
       <p class="eyebrow">${escapeHtml(item.type)}</p>
       <h2>${escapeHtml(item.name)}</h2>
