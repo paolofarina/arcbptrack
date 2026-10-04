@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "catalog": {
+    "snapshotDate": "2026-10-04",
+    "source": "Arc Blueprint Tracker public grid",
+    "runtimeDependency": false
+  },
+  "preferredRefreshSource": {
+    "name": "MetaForge ARC Raiders API",
+    "url": "https://metaforge.app/arc-raiders/api",
+    "runtimeDependency": false,
+    "policy": "Cache locally; public projects must include attribution."
+  },
+  "arcBlueprintTrackerSync": {
+    "enabled": false,
+    "reason": "No automated synchronization without explicit permission from the service maintainers."
+  }
+}
