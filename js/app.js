@@ -2,6 +2,7 @@ const state = {
   items: [],
   type: "All",
   rarity: "All",
+  blueprint: "All",
   query: "",
   sort: "name"
 };
@@ -14,6 +15,7 @@ const els = {
   searchInput: document.querySelector("#searchInput"),
   typeFilters: document.querySelector("#typeFilters"),
   rarityFilters: document.querySelector("#rarityFilters"),
+  blueprintFilters: document.querySelector("#blueprintFilters"),
   sortSelect: document.querySelector("#sortSelect"),
   clearFilters: document.querySelector("#clearFilters"),
   emptyState: document.querySelector("#emptyState"),
@@ -24,10 +26,23 @@ const els = {
 };
 
 async function loadCatalog() {
-  const response = await fetch("data/blueprints.json", { cache: "no-store" });
-  if (!response.ok) throw new Error(`Catalog load failed: ${response.status}`);
-  const data = await response.json();
-  state.items = data.items;
+  let data;
+
+  try {
+    const response = await fetch("data/items.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("items.json not available");
+    data = await response.json();
+  } catch {
+    const response = await fetch("data/blueprints.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Catalog load failed: ${response.status}`);
+    data = await response.json();
+  }
+
+  state.items = (data.items || []).map(item => ({
+    ...item,
+    hasBlueprint: item.hasBlueprint ?? true
+  }));
+
   buildFilters();
   render();
 }
@@ -38,6 +53,7 @@ function buildFilters() {
 
   renderChips(els.typeFilters, types, "type");
   renderChips(els.rarityFilters, rarities, "rarity");
+  renderChips(els.blueprintFilters, ["All", "Yes", "No"], "blueprint");
 }
 
 function renderChips(container, values, key) {
@@ -45,7 +61,8 @@ function renderChips(container, values, key) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "chip";
-    button.textContent = value === "All" ? "Tutti" : value;
+    const labels = { All: "Tutti", Yes: "Sì", No: "No" };
+    button.textContent = labels[value] || value;
     button.dataset.value = value;
     button.setAttribute("aria-pressed", String(state[key] === value));
     button.addEventListener("click", () => {
@@ -65,6 +82,9 @@ function filteredItems() {
   return state.items
     .filter(item => state.type === "All" || item.type === state.type)
     .filter(item => state.rarity === "All" || item.rarity === state.rarity)
+    .filter(item => state.blueprint === "All"
+      || (state.blueprint === "Yes" && item.hasBlueprint)
+      || (state.blueprint === "No" && !item.hasBlueprint))
     .filter(item => !query || item.name.toLowerCase().includes(query))
     .sort((a, b) => {
       if (state.sort === "rarity") {
@@ -122,6 +142,7 @@ function createCard(item) {
     <div class="badges">
       <span class="badge">${escapeHtml(item.type)}</span>
       <span class="badge rarity-${item.rarity.toLowerCase()}">${escapeHtml(item.rarity)}</span>
+      ${item.hasBlueprint ? '<span class="badge">BP</span>' : ""}
     </div>
   `;
 
@@ -205,6 +226,7 @@ els.sortSelect.addEventListener("change", event => {
 els.clearFilters.addEventListener("click", () => {
   state.type = "All";
   state.rarity = "All";
+  state.blueprint = "All";
   state.query = "";
   els.searchInput.value = "";
   buildFilters();
