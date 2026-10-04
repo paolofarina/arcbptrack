@@ -45,7 +45,7 @@ function renderChips(container, values, key) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "chip";
-    button.textContent = value;
+    button.textContent = value === "All" ? "Tutti" : value;
     button.dataset.value = value;
     button.setAttribute("aria-pressed", String(state[key] === value));
     button.addEventListener("click", () => {
@@ -89,7 +89,7 @@ function createCard(item) {
   card.className = "card";
   card.tabIndex = 0;
   card.setAttribute("role", "button");
-  card.setAttribute("aria-label", `Open ${item.name}`);
+  card.setAttribute("aria-label", `Apri ${item.name}`);
   card.addEventListener("click", () => openDetail(item));
   card.addEventListener("keydown", event => {
     if (event.key === "Enter" || event.key === " ") {
@@ -147,16 +147,16 @@ function openDetail(item) {
 
   els.detailContent.innerHTML = `
     <section class="detail-section">
-      <h3>Maps & conditions</h3>
-      <p>Prepared for locally cached location statistics. No external request is made when this panel opens.</p>
+      <h3>Mappe e condizioni</h3>
+      <p>Qui compariranno le statistiche locali per mappa e condizione. Aprire il dettaglio non genera richieste esterne.</p>
     </section>
     <section class="detail-section">
-      <h3>Containers</h3>
-      <p>Container distribution will appear here once the local stats dataset is added.</p>
+      <h3>Contenitori</h3>
+      <p>Qui comparirà la distribuzione dei contenitori quando aggiungeremo il dataset locale.</p>
     </section>
     <section class="detail-section">
       <h3>Heatmap</h3>
-      <p>The detail model is ready for coordinate data. The heatmap will be generated locally from cached points.</p>
+      <p>La heatmap verrà generata localmente usando coordinate salvate nel repository.</p>
     </section>
   `;
 
@@ -210,5 +210,5 @@ els.detailDialog.addEventListener("click", event => {
 loadCatalog().catch(error => {
   console.error(error);
   els.emptyState.hidden = false;
-  els.emptyState.textContent = "Unable to load the local blueprint catalog.";
+  els.emptyState.textContent = "Impossibile caricare il catalogo locale dei blueprint.";
 });
