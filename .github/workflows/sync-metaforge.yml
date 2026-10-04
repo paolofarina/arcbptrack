@@ -35,7 +35,7 @@ jobs:
       - name: Commit changed cache
         shell: bash
         run: |
-          if git diff --quiet -- data assets/items; then
+          if [ -z "$(git status --porcelain -- data assets/items)" ]; then
             echo "No MetaForge changes."
             exit 0
           fi

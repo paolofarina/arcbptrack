@@ -42,8 +42,12 @@ function normalizeType(value) {
   return value ? String(value).trim() : "Unknown";
 }
 
+function itemType(item) {
+  return normalizeType(item.item_type ?? item.type);
+}
+
 function isBlueprint(item) {
-  return normalizeType(item.type).toLowerCase() === "blueprint"
+  return itemType(item).toLowerCase() === "blueprint"
     || /\sblueprint$/i.test(item.name || "");
 }
 
@@ -143,7 +147,7 @@ function buildCatalog(rawItems) {
     const matches = blueprintsByTarget.get(key(item.name)) || [];
     const bp = matches[0] || null;
     const rarity = normalizeRarity(item.rarity);
-    const type = normalizeType(item.type);
+    const type = itemType(item);
     const baseIcon = normalizeIcon(item.icon);
     const blueprintIcon = normalizeIcon(bp?.icon);
 
@@ -162,9 +166,22 @@ function buildCatalog(rawItems) {
         rarity: normalizeRarity(bp.rarity),
         imageRemote: blueprintIcon
       } : null,
+      spawn: {
+        provider: "MetaForge",
+        lootArea: item.loot_area || null,
+        sources: Array.isArray(item.sources) ? item.sources : [],
+        locations: Array.isArray(item.locations) ? item.locations : [],
+        droppedBy: Array.isArray(item.dropped_by)
+          ? item.dropped_by.map(entry => ({
+              id: entry?.arc?.id || entry?.arc_id || entry?.id || null,
+              name: entry?.arc?.name || null
+            })).filter(entry => entry.id || entry.name)
+          : []
+      },
       source: {
         provider: "MetaForge",
-        itemId: item.id || null
+        itemId: item.id || null,
+        itemType: type
       }
     };
   });
@@ -190,6 +207,18 @@ function buildCatalog(rawItems) {
         name: bp.name,
         rarity: normalizeRarity(bp.rarity),
         imageRemote: normalizeIcon(bp.icon)
+      },
+      spawn: {
+        provider: "MetaForge",
+        lootArea: bp.loot_area || null,
+        sources: Array.isArray(bp.sources) ? bp.sources : [],
+        locations: Array.isArray(bp.locations) ? bp.locations : [],
+        droppedBy: Array.isArray(bp.dropped_by)
+          ? bp.dropped_by.map(entry => ({
+              id: entry?.arc?.id || entry?.arc_id || entry?.id || null,
+              name: entry?.arc?.name || null
+            })).filter(entry => entry.id || entry.name)
+          : []
       },
       source: {
         provider: "MetaForge",
