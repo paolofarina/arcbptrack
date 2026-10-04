@@ -16,7 +16,7 @@
       "name": "Aphelion",
       "type": "Weapon",
       "rarity": "Legendary",
-      "image": "https://static.metaforge.app/arc-raiders/icons/aphelion-rifle.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/aphelion-rifle-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -24,7 +24,7 @@
       "name": "Bettina",
       "type": "Weapon",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/bettina.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/bettina-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -32,7 +32,7 @@
       "name": "Bobcat",
       "type": "Weapon",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/bobcat.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/bobcat-i-recipe.webp",
       "reward": "Trials",
       "imageSource": "MetaForge"
     },
@@ -41,7 +41,7 @@
       "name": "Burletta",
       "type": "Weapon",
       "rarity": "Uncommon",
-      "image": "https://static.metaforge.app/arc-raiders/icons/burletta.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/burltetta-recipe.webp",
       "reward": "Quest",
       "imageSource": "MetaForge"
     },
@@ -50,7 +50,7 @@
       "name": "Canto",
       "type": "Weapon",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/canto.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/canto-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -58,7 +58,7 @@
       "name": "Dolabra",
       "type": "Weapon",
       "rarity": "Legendary",
-      "image": "https://static.metaforge.app/arc-raiders/icons/dolabra.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/dolabra-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -83,7 +83,7 @@
       "name": "Il Toro",
       "type": "Weapon",
       "rarity": "Uncommon",
-      "image": "https://static.metaforge.app/arc-raiders/icons/il-toro.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/il-toro-recipe.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -91,7 +91,7 @@
       "name": "Jupiter",
       "type": "Weapon",
       "rarity": "Legendary",
-      "image": "https://static.metaforge.app/arc-raiders/icons/jupiter.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/jupiter-i-recipe.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -107,7 +107,7 @@
       "name": "Rascal",
       "type": "Weapon",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/rascal.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/rascal-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -115,7 +115,7 @@
       "name": "Tempest",
       "type": "Weapon",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/tempest.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/tempest-i.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -123,7 +123,7 @@
       "name": "Torrente",
       "type": "Weapon",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/torrente.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/torrent-i-recipe.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -155,7 +155,7 @@
       "name": "Angled Grip III",
       "type": "Mod",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/angled-grip-iii.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/angled-grip-iii-recipe.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -179,7 +179,7 @@
       "name": "Extended Barrel II",
       "type": "Mod",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/extended-barrel-ii.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/extended-barrel-ii-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -187,7 +187,7 @@
       "name": "Extended Barrel III",
       "type": "Mod",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/extended-barrel.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/extended-barrel-recipe.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -355,7 +355,7 @@
       "name": "Explosive Mine",
       "type": "Grenade",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/explosive-mine.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/explosive-mine-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -420,7 +420,7 @@
       "name": "Trailblazer",
       "type": "Grenade",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/trailblazer.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/trailblazer-grenade.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -453,7 +453,7 @@
       "name": "Crash Mat",
       "type": "Quick Use",
       "rarity": "Uncommon",
-      "image": "https://static.metaforge.app/arc-raiders/icons/crash-mat.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/crash-mat-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -477,7 +477,7 @@
       "name": "Fireworks Box",
       "type": "Quick Use",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/fireworks-box.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/fireworks-box-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -485,7 +485,7 @@
       "name": "Light Stick (Blue)",
       "type": "Quick Use",
       "rarity": "Common",
-      "image": "https://static.metaforge.app/arc-raiders/icons/light-stick-blue.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/blue-light-stick.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -493,7 +493,7 @@
       "name": "Light Stick (Green)",
       "type": "Quick Use",
       "rarity": "Common",
-      "image": "https://static.metaforge.app/arc-raiders/icons/light-stick-green.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/green-light-stick.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -501,7 +501,7 @@
       "name": "Light Stick (Red)",
       "type": "Quick Use",
       "rarity": "Common",
-      "image": "https://static.metaforge.app/arc-raiders/icons/light-stick-red.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/red-light-stick.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -509,7 +509,7 @@
       "name": "Light Stick (Yellow)",
       "type": "Quick Use",
       "rarity": "Common",
-      "image": "https://static.metaforge.app/arc-raiders/icons/light-stick-yellow.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/yellow-light-stick-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -517,7 +517,7 @@
       "name": "Powered Descender",
       "type": "Quick Use",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/powered-descender.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/powered-descender-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -549,7 +549,7 @@
       "name": "Surge Coil",
       "type": "Quick Use",
       "rarity": "Rare",
-      "image": "https://static.metaforge.app/arc-raiders/icons/surge-coil.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/surge-coil-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -573,7 +573,7 @@
       "name": "White Flag",
       "type": "Quick Use",
       "rarity": "Common",
-      "image": "https://static.metaforge.app/arc-raiders/icons/white-flag.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/white-flag-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -581,7 +581,7 @@
       "name": "Combat Mk. 3 (Aggressive)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/combat-mk3-aggressive.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/combat-mk3-aggressive-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -589,7 +589,7 @@
       "name": "Combat Mk. 3 (Flanking)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/combat-mk3-flanking.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/combat-mk-3-flanking.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -597,7 +597,7 @@
       "name": "Looting Mk. 3 (Safekeeper)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/looting-mk3-safekeeper.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/looting-mk-3-safekeeper-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -605,7 +605,7 @@
       "name": "Looting Mk. 3 (Survivor)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/looting-mk3-survivor.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/looting-mk-3-survivor.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -621,7 +621,7 @@
       "name": "Tactical Mk. 3 (Healing)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/tactical-mk3-healing.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/tacical-mk3-healing-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -629,7 +629,7 @@
       "name": "Tactical Mk. 3 (Revival)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/tactical-mk3-revival.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/tactical-mk-3-revival.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -637,7 +637,7 @@
       "name": "Tactical Mk. 3 (Smoke)",
       "type": "Augment",
       "rarity": "Epic",
-      "image": "https://static.metaforge.app/arc-raiders/icons/tactical-mk3-smoke.webp",
+      "image": "https://static.metaforge.app/arc-raiders/icons/utility-augment-t3-smoke-blueprint.webp",
       "imageSource": "MetaForge"
     },
     {
@@ -675,6 +675,7 @@
   ],
   "imageSource": {
     "name": "MetaForge",
-    "note": "Temporary remote image source; planned to be cached locally in this repository."
+    "page": "https://metaforge.app/arc-raiders/blueprint-tracker",
+    "note": "Exact image URLs mapped from MetaForge's public blueprint tracker; planned to be cached locally."
   }
 }
