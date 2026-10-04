@@ -243,6 +243,106 @@ function createCard(item) {
   return card;
 }
 
+function metaForgeFindingData(item) {
+  const lootArea = item.spawn?.lootArea || null;
+  const locations = Array.isArray(item.spawn?.locations) ? item.spawn.locations : [];
+  const sources = Array.isArray(item.spawn?.sources) ? item.spawn.sources : [];
+  const droppedBy = Array.isArray(item.spawn?.droppedBy) ? item.spawn.droppedBy : [];
+
+  const hasData = Boolean(lootArea || locations.length || sources.length || droppedBy.length);
+
+  const previewParts = [];
+  if (lootArea) previewParts.push(lootArea);
+  if (locations.length) previewParts.push(`${locations.length} location`);
+  if (sources.length) previewParts.push(`${sources.length} fonti`);
+  if (droppedBy.length) previewParts.push(`${droppedBy.length} drop`);
+
+  return {
+    hasData,
+    lootArea,
+    locations,
+    sources,
+    droppedBy,
+    preview: previewParts.join(" · ")
+  };
+}
+
+function sourceRowMetaForge(item) {
+  const data = metaForgeFindingData(item);
+
+  if (!data.hasData) {
+    return `
+      <div class="source-row source-empty">
+        <div class="source-name">MetaForge</div>
+        <div class="source-preview">Nessun dato utile</div>
+        <span class="source-status">vuoto</span>
+      </div>
+    `;
+  }
+
+  const details = [];
+  if (data.lootArea) details.push(`<div><strong>Area:</strong> ${escapeHtml(data.lootArea)}</div>`);
+  if (data.locations.length) {
+    details.push(`<div><strong>Location:</strong> ${data.locations.map(location => {
+      const map = typeof location === "string" ? location : location?.map || location?.name || location?.id || "";
+      return escapeHtml(map);
+    }).join(", ")}</div>`);
+  }
+  if (data.sources.length) {
+    details.push(`<div><strong>Fonti:</strong> ${data.sources.map(source => escapeHtml(
+      typeof source === "string" ? source : source?.name || source?.type || JSON.stringify(source)
+    )).join(", ")}</div>`);
+  }
+  if (data.droppedBy.length) {
+    details.push(`<div><strong>Drop ARC:</strong> ${data.droppedBy.map(entry => escapeHtml(entry.name || entry.id || "")).join(", ")}</div>`);
+  }
+
+  return `
+    <details class="source-row source-available">
+      <summary>
+        <span class="source-name">MetaForge</span>
+        <span class="source-preview">${escapeHtml(data.preview)}</span>
+        <span class="source-status">dati</span>
+      </summary>
+      <div class="source-body">${details.join("")}</div>
+    </details>
+  `;
+}
+
+function sourceRowArcTracker(item) {
+  if (!item.hasBlueprint) return "";
+
+  const arc = item.arcTracker || item.arcBlueprintTracker || null;
+
+  if (!arc) {
+    return `
+      <div class="source-row source-pending">
+        <div class="source-name">ArcBlueprintTracker</div>
+        <div class="source-preview">Dati non ancora importati</div>
+        <span class="source-status">attesa</span>
+      </div>
+    `;
+  }
+
+  const previewParts = [];
+  if (arc.reports) previewParts.push(`${arc.reports} report`);
+  if (arc.topMap) previewParts.push(arc.topMap);
+  if (arc.topCondition) previewParts.push(arc.topCondition);
+
+  return `
+    <details class="source-row source-available">
+      <summary>
+        <span class="source-name">ArcBlueprintTracker</span>
+        <span class="source-preview">${escapeHtml(previewParts.join(" · ") || "Dati disponibili")}</span>
+        <span class="source-status">dati</span>
+      </summary>
+      <div class="source-body">
+        <div>Statistiche dettagliate e heatmap disponibili.</div>
+      </div>
+    </details>
+  `;
+}
+
 function openDetail(item) {
   const rarityClass = `rarity-${String(item.rarity || "Unknown").toLowerCase()}`;
   const detailVisual = item.image
@@ -255,11 +355,6 @@ function openDetail(item) {
         <p>${item.variants.map(v => escapeHtml(v.name)).join(" · ")}</p>
       </section>`
     : "";
-
-  const spawnParts = [];
-  if (item.spawn?.lootArea) spawnParts.push(`Area: ${escapeHtml(item.spawn.lootArea)}`);
-  if (item.spawn?.locations?.length) spawnParts.push(`Location: ${item.spawn.locations.map(escapeHtml).join(", ")}`);
-  if (item.spawn?.sources?.length) spawnParts.push(`Fonti: ${item.spawn.sources.map(escapeHtml).join(", ")}`);
 
   els.detailHero.innerHTML = `
     ${detailVisual}
@@ -275,16 +370,13 @@ function openDetail(item) {
 
   els.detailContent.innerHTML = `
     ${variants}
-    <section class="detail-section">
-      <h3>MetaForge · dove trovarlo</h3>
-      <p>${spawnParts.length ? spawnParts.join("<br>") : "Dati di ritrovamento non presenti nel record corrente."}</p>
+    <section class="detail-section finding-section">
+      <h3>Dove trovarlo</h3>
+      <div class="source-list">
+        ${sourceRowMetaForge(item)}
+        ${sourceRowArcTracker(item)}
+      </div>
     </section>
-    ${item.hasBlueprint ? `
-      <section class="detail-section">
-        <h3>Blueprint</h3>
-        <p>Questo oggetto ha un blueprint. Qui agganceremo anche le statistiche/heatmap di ArcBlueprintTracker come fonte aggiuntiva.</p>
-      </section>
-    ` : ""}
   `;
 
   els.detailDialog.showModal();
