@@ -101,11 +101,13 @@ function countFacet(key, value) {
 }
 
 function buildFilters() {
-  const otherTypes = [...new Set(
+  const allOtherTypes = [...new Set(
     state.items
       .map(item => item.type)
       .filter(type => !MAIN_TYPES.includes(type))
   )].sort((a, b) => a.localeCompare(b));
+
+  const otherTypes = allOtherTypes.filter(type => countFacet("type", type) > 0);
 
   const typeValues = ["All", ...MAIN_TYPES];
   if (state.showOtherTypes) typeValues.push(...otherTypes);
@@ -118,6 +120,7 @@ function buildFilters() {
   otherButton.textContent = state.showOtherTypes
     ? "Meno…"
     : `Altro… (${otherTypes.length})`;
+  otherButton.disabled = otherTypes.length === 0;
   otherButton.setAttribute("aria-expanded", String(state.showOtherTypes));
   otherButton.addEventListener("click", () => {
     state.showOtherTypes = !state.showOtherTypes;
