@@ -299,12 +299,15 @@ function votePreview(votes) {
 }
 
 function voteRowsHtml(rows = []) {
-  return rows.map(row => `
-    <div class="vote-row">
-      <span>${escapeHtml(row.name)}</span>
-      <span>${formatPercent(row.percent)}</span>
-    </div>
-  `).join("");
+  return rows.map(row => {
+    const label = row.key === "base_container" ? "Container (generico)" : row.name;
+    return `
+      <div class="vote-row">
+        <span>${escapeHtml(label)}</span>
+        <span>${formatPercent(row.percent)}</span>
+      </div>
+    `;
+  }).join("");
 }
 
 function voteGroupHtml(label, rows = []) {
