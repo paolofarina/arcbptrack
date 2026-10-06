@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-05T12:14:52.481Z",
+  "generatedAt": "2026-10-06T12:01:00.534Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
@@ -3684,41 +3684,6 @@
       "image": "assets/items/coins.webp"
     },
     {
-      "id": "colorful-shoes-epic",
-      "name": "Colorful Shoes",
-      "description": "This specialized footwear is adorned with vibrant ceremonial designs, and designed to anchor the wearer to the ground. It is thought to have belonged to ancient wanderers of great renown.",
-      "rarity": "Epic",
-      "type": "Trinket",
-      "rawType": "Trinket",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "colorful-shoes-epic",
-          "name": "Colorful Shoes",
-          "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "colorful-shoes-epic",
-        "itemType": "Trinket"
-      },
-      "image": "assets/items/colorful-shoes-epic.png"
-    },
-    {
       "id": "colorful-shoes",
       "name": "Colorful Shoes",
       "description": "This specialized footwear is adorned with vibrant ceremonial designs, and designed to anchor the wearer to the ground. It is thought to have belonged to ancient wanderers of great renown.",
@@ -3787,6 +3752,41 @@
         "itemType": "Trinket"
       },
       "image": "assets/items/colorful-shoes-rare.png"
+    },
+    {
+      "id": "colorful-shoes-epic",
+      "name": "Colorful Shoes",
+      "description": "This specialized footwear is adorned with vibrant ceremonial designs, and designed to anchor the wearer to the ground. It is thought to have belonged to ancient wanderers of great renown.",
+      "rarity": "Epic",
+      "type": "Trinket",
+      "rawType": "Trinket",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "colorful-shoes-epic",
+          "name": "Colorful Shoes",
+          "rarity": "Epic",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "colorful-shoes-epic",
+        "itemType": "Trinket"
+      },
+      "image": "assets/items/colorful-shoes-epic.png"
     },
     {
       "id": "combat-mk-1",

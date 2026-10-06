@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:14:52.465Z",
+  "generatedAt": "2026-10-06T12:01:00.503Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -366,10 +366,6 @@
       "source": "https://static.metaforge.app/arc-raiders/icons/coins.webp",
       "file": "assets/items/coins.webp"
     },
-    "colorful-shoes-epic": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
-      "file": "assets/items/colorful-shoes-epic.png"
-    },
     "colorful-shoes": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e0962dec98e6ee40851b3cbf6b2f5a1f25fc28ebf856ef113b0675fc8c430460.png",
       "file": "assets/items/colorful-shoes.png"
@@ -377,6 +373,10 @@
     "colorful-shoes-rare": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ba5395eaf8baa43d11946f3a9ee0b0f2975da4100c0c21c83bc2c428680f6ba6.png",
       "file": "assets/items/colorful-shoes-rare.png"
+    },
+    "colorful-shoes-epic": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/19ff4c211683938bf44c2d58b4d48af1ce9eedef71112e36cdde26d5840116e3.png",
+      "file": "assets/items/colorful-shoes-epic.png"
     },
     "combat-mk-1": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d412eeea0c8bfeb131a25573c1674618c094db3b45a4f1dc0ad9f5838cf7ea32.png",
