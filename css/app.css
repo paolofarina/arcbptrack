@@ -1586,3 +1586,29 @@ button.bp-map-row[aria-pressed="true"] .bp-map-check {
     justify-self:start;
   }
 }
+
+
+.bp-sort-button {
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  font:inherit;
+  font-weight:800;
+  letter-spacing:inherit;
+  text-transform:inherit;
+  cursor:pointer;
+}
+
+.bp-sort-button:hover,
+.bp-sort-button[aria-pressed="true"] {
+  color:var(--accent);
+}
+
+.bp-sort-button span {
+  font-size:.58rem;
+  opacity:.75;
+}
