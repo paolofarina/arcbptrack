@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101316" />
+  <title>Blueprint per mappa · ARC BP Track</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body class="map-page">
+  <header class="detail-topbar">
+    <a class="back-button map-back-link" href="index.html?blueprint=yes">← Catalogo</a>
+    <a class="detail-brand" href="index.html">ARC BP Track</a>
+  </header>
+
+  <main class="map-page-shell">
+    <section class="map-page-intro">
+      <div>
+        <p class="eyebrow">ARC BlueprintTracker · snapshot locale</p>
+        <h1>Blueprint per mappa</h1>
+        <p class="section-subtitle">Scegli la mappa, confronta dove si concentrano le segnalazioni e componi una heatmap con uno o più blueprint.</p>
+      </div>
+      <div id="versionBadge" class="map-version-badge"></div>
+    </section>
+
+    <section class="page-section">
+      <div class="map-explorer-controls">
+        <div>
+          <span class="heat-control-label">Mappa</span>
+          <div id="mapSelector" class="heat-chip-row"></div>
+        </div>
+        <div id="layerSelector"></div>
+        <label class="heat-condition">
+          <span class="heat-control-label">Condizione</span>
+          <select id="conditionSelect"></select>
+        </label>
+      </div>
+
+      <div id="mapStats" class="map-stat-grid"></div>
+    </section>
+
+    <section class="map-explorer-layout">
+      <section class="page-section map-targets-panel">
+        <div class="page-section-heading map-targets-heading">
+          <div>
+            <p class="eyebrow">Target</p>
+            <h2>Blueprint segnalati qui</h2>
+            <p class="section-subtitle">La percentuale indica la quota delle segnalazioni del blueprint che ricade su questa mappa, non una drop-rate.</p>
+          </div>
+        </div>
+
+        <div class="map-target-actions">
+          <button id="selectExclusive" type="button">Solo esclusivi</button>
+          <button id="selectTop" type="button">Top 5</button>
+          <button id="clearSelected" type="button">Nessuno</button>
+        </div>
+
+        <div id="exclusiveTable"></div>
+        <div id="sharedTable"></div>
+      </section>
+
+      <section class="page-section map-heat-panel">
+        <div class="page-section-heading heatmap-heading">
+          <div>
+            <p class="eyebrow">Heatmap combinata</p>
+            <h2 id="heatmapTitle">Seleziona i blueprint</h2>
+            <p id="heatmapSubtitle" class="section-subtitle"></p>
+          </div>
+        </div>
+
+        <div id="selectedBlueprints" class="selected-blueprints"></div>
+
+        <div id="mapHeatViewport" class="heatmap-viewport map-explorer-viewport" aria-label="Heatmap combinata blueprint">
+          <div id="mapHeatWorld" class="heatmap-world"></div>
+          <div id="mapHeatOverlay" class="heatmap-overlay"></div>
+          <div class="heatmap-zoom">
+            <button id="mapZoomIn" type="button" aria-label="Zoom avanti">+</button>
+            <button id="mapZoomOut" type="button" aria-label="Zoom indietro">−</button>
+            <button id="mapReset" type="button">Reset</button>
+          </div>
+          <div class="heatmap-legend">
+            <span>bassa</span>
+            <i class="legend-gradient"></i>
+            <span>alta</span>
+          </div>
+          <div id="heatmapEmpty" class="map-heat-empty">Seleziona almeno un blueprint dalla tabella.</div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <span>Dati ArcBlueprintTracker importati da snapshot HAR locale.</span>
+    <a href="index.html?blueprint=yes">Catalogo</a>
+  </footer>
+
+  <script type="module" src="js/map.js"></script>
+</body>
+</html>
