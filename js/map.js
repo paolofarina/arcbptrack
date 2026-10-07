@@ -44,6 +44,8 @@ const state = {
   condition: "all",
   selected: new Set(),
   stats: [],
+  sortKey: null,
+  sortDir: "desc",
   scale: 1,
   fitScale: 1,
   tx: 0,
@@ -294,6 +296,27 @@ function renderStats() {
   `;
 }
 
+function sortRows(rows, fallback) {
+  const sorted = [...rows];
+  if (!state.sortKey) return sorted.sort(fallback);
+
+  const dir = state.sortDir === "asc" ? 1 : -1;
+  return sorted.sort((a, b) => {
+    let cmp = 0;
+    if (state.sortKey === "name") cmp = a.name.localeCompare(b.name);
+    if (state.sortKey === "reports") cmp = a.mapReports - b.mapReports;
+    if (state.sortKey === "quota") cmp = a.concentration - b.concentration;
+    if (state.sortKey === "sample") cmp = a.mapReports - b.mapReports;
+    return cmp * dir || a.name.localeCompare(b.name);
+  });
+}
+
+function sortHeader(key, label) {
+  const active = state.sortKey === key;
+  const arrow = active ? (state.sortDir === "asc" ? "▲" : "▼") : "↕";
+  return `<button type="button" class="bp-sort-button" data-sort="${key}" aria-pressed="${active}">${label} <span>${arrow}</span></button>`;
+}
+
 function blueprintTable(title, rows, emptyText) {
   if (!rows.length) {
     return `
@@ -309,10 +332,10 @@ function blueprintTable(title, rows, emptyText) {
       <h3>${escapeHtml(title)} <small>${rows.length}</small></h3>
       <div class="bp-map-table">
         <div class="bp-map-row bp-map-row-head">
-          <span>Blueprint</span>
-          <span>Report</span>
-          <span>Quota</span>
-          <span>Campione</span>
+          <span>${sortHeader("name", "Blueprint")}</span>
+          <span>${sortHeader("reports", "Report")}</span>
+          <span>${sortHeader("quota", "Quota")}</span>
+          <span>${sortHeader("sample", "Campione")}</span>
         </div>
         ${rows.map(row => `
           <button type="button" class="bp-map-row" data-blueprint="${escapeHtml(row.name)}" aria-pressed="${state.selected.has(row.name)}">
@@ -331,13 +354,15 @@ function blueprintTable(title, rows, emptyText) {
 }
 
 function renderTables() {
-  const exclusive = state.stats
-    .filter(row => row.exclusive)
-    .sort((a, b) => b.mapReports - a.mapReports || a.name.localeCompare(b.name));
+  const exclusive = sortRows(
+    state.stats.filter(row => row.exclusive),
+    (a, b) => b.mapReports - a.mapReports || a.name.localeCompare(b.name)
+  );
 
-  const shared = state.stats
-    .filter(row => !row.exclusive)
-    .sort((a, b) => b.concentration - a.concentration || b.mapReports - a.mapReports || a.name.localeCompare(b.name));
+  const shared = sortRows(
+    state.stats.filter(row => !row.exclusive),
+    (a, b) => b.concentration - a.concentration || b.mapReports - a.mapReports || a.name.localeCompare(b.name)
+  );
 
   els.exclusiveTable.innerHTML = blueprintTable(
     "Segnalati solo su questa mappa",
@@ -354,6 +379,19 @@ function renderTables() {
   document.querySelectorAll("[data-blueprint]").forEach(button => {
     button.addEventListener("click", () => {
       toggleBlueprint(button.dataset.blueprint);
+    });
+  });
+
+  document.querySelectorAll("[data-sort]").forEach(button => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.sort;
+      if (state.sortKey === key) {
+        state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+      } else {
+        state.sortKey = key;
+        state.sortDir = key === "name" ? "asc" : "desc";
+      }
+      renderTables();
     });
   });
 }
