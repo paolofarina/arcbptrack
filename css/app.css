@@ -1227,3 +1227,362 @@ details.source-row > summary::-webkit-details-marker {
     min-height: 390px;
   }
 }
+
+
+/* Blueprint map explorer */
+.map-back-link {
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+}
+
+.map-page-shell {
+  width:min(1480px, calc(100% - 28px));
+  margin:0 auto;
+  padding-bottom:28px;
+}
+
+.map-page-intro {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:20px;
+  padding:18px 0 4px;
+}
+
+.map-page-intro h1 {
+  margin:0;
+  font-size:clamp(2.2rem, 5vw, 4.4rem);
+  line-height:.96;
+  letter-spacing:-.045em;
+}
+
+.map-version-badge {
+  display:grid;
+  gap:2px;
+  min-width:190px;
+  padding:11px 13px;
+  border:1px solid rgba(242,184,75,.3);
+  border-radius:12px;
+  background:rgba(242,184,75,.05);
+}
+
+.map-version-badge span,
+.map-version-badge small {
+  color:var(--muted);
+  font-size:.68rem;
+}
+
+.map-version-badge strong {
+  color:var(--text);
+  font-size:1.2rem;
+}
+
+.map-explorer-controls {
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) auto auto;
+  gap:16px;
+  align-items:end;
+}
+
+.map-stat-grid {
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:8px;
+  margin-top:14px;
+}
+
+.map-stat {
+  padding:10px 11px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:rgba(255,255,255,.025);
+}
+
+.map-stat span,
+.map-stat small {
+  display:block;
+  color:var(--muted);
+  font-size:.68rem;
+}
+
+.map-stat strong {
+  display:block;
+  margin:4px 0;
+  color:var(--text);
+  font-size:1.3rem;
+}
+
+.map-explorer-layout {
+  display:grid;
+  grid-template-columns:minmax(430px, .82fr) minmax(520px, 1.18fr);
+  gap:16px;
+  align-items:start;
+}
+
+.map-targets-panel,
+.map-heat-panel {
+  min-width:0;
+}
+
+.map-targets-heading,
+.heatmap-heading {
+  margin-bottom:10px;
+}
+
+.map-target-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-bottom:14px;
+}
+
+.map-target-actions button {
+  min-height:32px;
+  padding:0 9px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:#11161a;
+  color:var(--muted);
+  font-size:.72rem;
+  cursor:pointer;
+}
+
+.map-target-actions button:hover {
+  border-color:#4a5660;
+  color:var(--text);
+}
+
+.bp-map-table-section + .bp-map-table-section {
+  margin-top:18px;
+}
+
+.bp-map-table-section h3 {
+  display:flex;
+  align-items:center;
+  gap:7px;
+  margin:0 0 7px;
+  font-size:.88rem;
+}
+
+.bp-map-table-section h3 small {
+  color:var(--muted);
+  font-size:.68rem;
+  font-weight:700;
+}
+
+.bp-map-table {
+  display:grid;
+  gap:3px;
+}
+
+.bp-map-row {
+  display:grid;
+  grid-template-columns:minmax(170px, 1fr) 72px 70px 74px;
+  gap:8px;
+  align-items:center;
+  width:100%;
+  min-height:36px;
+  padding:6px 7px;
+  border:1px solid transparent;
+  border-radius:8px;
+  background:rgba(255,255,255,.025);
+  color:var(--muted);
+  text-align:left;
+  font-size:.72rem;
+}
+
+button.bp-map-row {
+  cursor:pointer;
+}
+
+button.bp-map-row:hover {
+  border-color:var(--border);
+  background:rgba(255,255,255,.04);
+}
+
+button.bp-map-row[aria-pressed="true"] {
+  border-color:rgba(242,184,75,.42);
+  background:rgba(242,184,75,.075);
+  color:var(--text);
+}
+
+.bp-map-row-head {
+  min-height:0;
+  padding-block:3px;
+  background:transparent;
+  color:#707d87;
+  font-size:.62rem;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.bp-map-name {
+  display:flex;
+  min-width:0;
+  align-items:center;
+  gap:7px;
+}
+
+.bp-map-name strong {
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.bp-map-check {
+  flex:0 0 auto;
+  width:13px;
+  height:13px;
+  border:1px solid #53606a;
+  border-radius:3px;
+  background:#0d1216;
+}
+
+button.bp-map-row[aria-pressed="true"] .bp-map-check {
+  border-color:var(--accent);
+  background:var(--accent);
+  box-shadow:inset 0 0 0 3px #171b1f;
+}
+
+.bp-sample {
+  width:fit-content;
+  padding:2px 5px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  font-size:.62rem;
+}
+
+.sample-high {
+  border-color:rgba(112,186,123,.34);
+  color:var(--uncommon);
+}
+
+.sample-mid {
+  border-color:rgba(242,184,75,.32);
+  color:var(--accent);
+}
+
+.sample-low {
+  color:var(--muted);
+  opacity:.76;
+}
+
+.selected-blueprints {
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  min-height:28px;
+  margin-bottom:9px;
+}
+
+.selected-blueprint-pill {
+  padding:4px 7px;
+  border:1px solid rgba(242,184,75,.3);
+  border-radius:999px;
+  background:rgba(242,184,75,.075);
+  color:var(--text);
+  font-size:.68rem;
+  cursor:pointer;
+}
+
+.selected-blueprint-pill span {
+  color:var(--accent);
+  font-weight:900;
+}
+
+.map-explorer-viewport {
+  height:min(74vh, 760px);
+  min-height:520px;
+}
+
+.map-heat-empty {
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:4;
+  transform:translate(-50%, -50%);
+  max-width:300px;
+  padding:10px 12px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;
+  background:rgba(10,14,18,.8);
+  color:var(--muted);
+  font-size:.78rem;
+  text-align:center;
+  pointer-events:none;
+}
+
+.catalog-map-link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:0 12px;
+  border:1px solid rgba(242,184,75,.35);
+  border-radius:10px;
+  background:rgba(242,184,75,.06);
+  color:var(--accent);
+  font-size:.78rem;
+  font-weight:800;
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+.catalog-map-link:hover {
+  background:rgba(242,184,75,.1);
+}
+
+@media (max-width: 1100px) {
+  .map-explorer-layout {
+    grid-template-columns:1fr;
+  }
+
+  .map-heat-panel {
+    order:-1;
+  }
+}
+
+@media (max-width: 760px) {
+  .map-page-shell {
+    width:min(100% - 20px, 1480px);
+  }
+
+  .map-page-intro {
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .map-version-badge {
+    min-width:0;
+  }
+
+  .map-explorer-controls {
+    grid-template-columns:1fr;
+    align-items:stretch;
+  }
+
+  .map-stat-grid {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .bp-map-row {
+    grid-template-columns:minmax(130px, 1fr) 62px 58px;
+  }
+
+  .bp-map-row > :last-child {
+    display:none;
+  }
+
+  .map-explorer-viewport {
+    height:62vh;
+    min-height:430px;
+  }
+
+  .catalog-map-link {
+    grid-column:1 / -1;
+    justify-self:start;
+  }
+}
