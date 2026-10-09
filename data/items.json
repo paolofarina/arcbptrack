@@ -1,18 +1,18 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-08T12:01:14.200Z",
+  "generatedAt": "2026-10-09T11:52:48.779Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
     "attribution": "https://metaforge.app/arc-raiders"
   },
   "summary": {
-    "totalRawRecords": 1004,
-    "totalItemRecords": 912,
-    "totalFamilies": 847,
+    "totalRawRecords": 1003,
+    "totalItemRecords": 911,
+    "totalFamilies": 846,
     "collapsedWeaponRecords": 66,
     "withBlueprint": 92,
-    "withoutBlueprint": 755,
+    "withoutBlueprint": 754,
     "rawBlueprintRecords": 92,
     "byRarity": {
       "Legendary": 26,
@@ -20,14 +20,13 @@
       "Uncommon": 154,
       "Rare": 199,
       "Common": 135,
-      "Unknown": 218,
+      "Unknown": 217,
       "Amplified": 20
     },
     "byType": {
       "Trinket": 90,
       "Outfits": 86,
       "Quick Use": 48,
-      "Research": 15,
       "Material": 67,
       "Nature": 13,
       "Recyclable": 136,
@@ -35,12 +34,13 @@
       "Design": 100,
       "Weapon": 41,
       "Key": 44,
-      "Mod": 39,
+      "Mod": 38,
+      "Misc": 5,
       "Research Item": 5,
       "Cosmetic": 26,
+      "Research": 14,
       "Grenade": 23,
       "Stencil": 14,
-      "Misc": 4,
       "Augment": 16,
       "Quest Item": 1,
       "Ammunition": 6,
@@ -58,16 +58,16 @@
     "otherTypes": {
       "Trinket": 90,
       "Outfits": 86,
-      "Research": 15,
       "Nature": 13,
       "Recyclable": 136,
       "Furniture": 69,
       "Design": 100,
       "Key": 44,
+      "Misc": 5,
       "Research Item": 5,
       "Cosmetic": 26,
+      "Research": 14,
       "Stencil": 14,
-      "Misc": 4,
       "Quest Item": 1,
       "Ammunition": 6,
       "Shield": 3,
@@ -319,41 +319,6 @@
         "itemType": "Quick Use"
       },
       "image": "assets/items/acoustic-guitar.png"
-    },
-    {
-      "id": "action-economy",
-      "name": "Action Economy",
-      "description": "The Hairpin wastes very little motion between shots. That sort of efficiency gets more interesting once a scope is involved.",
-      "rarity": "Unknown",
-      "type": "Research",
-      "rawType": "Research",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/b00e469dca45eea47f025aabe3899e64705f94904c6bbf60b6550d5b441070ce.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/b00e469dca45eea47f025aabe3899e64705f94904c6bbf60b6550d5b441070ce.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "action-economy",
-          "name": "Action Economy",
-          "rarity": "Unknown",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/b00e469dca45eea47f025aabe3899e64705f94904c6bbf60b6550d5b441070ce.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "action-economy",
-        "itemType": "Research"
-      },
-      "image": "assets/items/action-economy.png"
     },
     {
       "id": "adrenaline-shot",
@@ -1953,9 +1918,9 @@
       "name": "Anvil Splitter",
       "description": "Tech mod for the Anvil that replaces its bullets with ones that split into 4 weaker projectiles.",
       "rarity": "Legendary",
-      "type": "Mod",
-      "rawType": "Modification",
-      "isPrimaryType": true,
+      "type": "Misc",
+      "rawType": "Misc",
+      "isPrimaryType": false,
       "hasBlueprint": false,
       "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
       "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
@@ -1979,7 +1944,7 @@
       "source": {
         "provider": "MetaForge",
         "itemId": "anvil-splitter",
-        "itemType": "Modification"
+        "itemType": "Misc"
       },
       "image": "assets/items/anvil-splitter.png"
     },

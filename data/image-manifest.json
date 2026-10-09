@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:00:29.109Z",
+  "generatedAt": "2026-10-09T11:52:48.713Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -29,10 +29,6 @@
     "acoustic-guitar": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d9c60835c6d1d5f982988a666035a351d4c88621881909d11ad532e488726332.png",
       "file": "assets/items/acoustic-guitar.png"
-    },
-    "action-economy": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/b00e469dca45eea47f025aabe3899e64705f94904c6bbf60b6550d5b441070ce.png",
-      "file": "assets/items/action-economy.png"
     },
     "adrenaline-shot": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/9e21d8cae98c65d55483bf37c7cf06d9dbff738d2a3c645d4d2f7abd7fc83941.png",
