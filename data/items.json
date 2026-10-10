@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-09T11:52:48.779Z",
+  "generatedAt": "2026-10-10T11:09:34.006Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
@@ -17,8 +17,8 @@
     "byRarity": {
       "Legendary": 26,
       "Epic": 95,
-      "Uncommon": 154,
-      "Rare": 199,
+      "Uncommon": 155,
+      "Rare": 198,
       "Common": 135,
       "Unknown": 217,
       "Amplified": 20
@@ -858,8 +858,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -893,8 +895,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -928,8 +932,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -963,8 +969,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -998,8 +1006,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -1243,8 +1253,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -1876,25 +1888,25 @@
         {
           "id": "anvil-i",
           "name": "Anvil I",
-          "rarity": "Uncommon",
+          "rarity": "Rare",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/a6f5ae7dd4f8bb866752445dad31655a1d934feb2aa2cd106c2ff8b9d70d10e1.png"
         },
         {
           "id": "anvil-ii",
           "name": "Anvil II",
-          "rarity": "Uncommon",
+          "rarity": "Rare",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/1b66f01227d5480212a81d6d7ef0d11cf0f6ee580668b87f6bb46557d4f749b9.png"
         },
         {
           "id": "anvil-iii",
           "name": "Anvil III",
-          "rarity": "Uncommon",
+          "rarity": "Rare",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/f9100304f28f764bd3cda141058f2304e836eade07083139c364e449446beb4d.png"
         },
         {
           "id": "anvil-iv",
           "name": "Anvil IV",
-          "rarity": "Uncommon",
+          "rarity": "Rare",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/3704776b8a4dc4cb2015920d5f66a8820cca8c7f5b04744875d15989559a139c.png"
         }
       ],
@@ -1916,7 +1928,7 @@
     {
       "id": "anvil-splitter",
       "name": "Anvil Splitter",
-      "description": "Tech mod for the Anvil that replaces its bullets with ones that split into 4 weaker projectiles.",
+      "description": "Can be recycled into crafting materials.",
       "rarity": "Legendary",
       "type": "Misc",
       "rawType": "Misc",
@@ -2130,8 +2142,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -2202,8 +2216,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -2274,8 +2290,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -2383,8 +2401,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -2510,7 +2530,7 @@
     {
       "id": "arcade-duck",
       "name": "Arcade Duck",
-      "description": "Can be thrown to create noise.",
+      "description": "For some reason, it feels oddly nostalgic.",
       "rarity": "Epic",
       "type": "Trinket",
       "rawType": "Trinket",
@@ -2564,8 +2584,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Commercial, Residential, Old World",
+        "lootAreas": [
+          "Commercial, Residential, Old World"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -2722,10 +2744,8 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": "ARC",
-        "lootAreas": [
-          "ARC"
-        ],
+        "lootArea": null,
+        "lootAreas": [],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -5583,7 +5603,7 @@
     {
       "id": "bronze-statuette",
       "name": "Bronze Statuette",
-      "description": null,
+      "description": "An aged but beautiful bronze statuette. Rumor has it that the Nomad Envoy collects these.",
       "rarity": "Legendary",
       "type": "Trinket",
       "rawType": "Trinket",
@@ -5637,8 +5657,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -5777,8 +5799,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Commercial, Residential, Old World",
+        "lootAreas": [
+          "Commercial, Residential, Old World"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -6184,8 +6208,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Mechanical, Industrial",
+        "lootAreas": [
+          "Mechanical, Industrial"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -6254,8 +6280,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Technological, Electrical",
+        "lootAreas": [
+          "Technological, Electrical"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -6363,8 +6391,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Nature",
+        "lootAreas": [
+          "Nature"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -7621,8 +7651,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -8664,8 +8696,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -8736,8 +8770,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -8771,8 +8807,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -8843,8 +8881,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -9196,8 +9236,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Commercial, Residential",
+        "lootAreas": [
+          "Commercial, Residential"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -9266,8 +9308,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Technological, Electrical",
+        "lootAreas": [
+          "Technological, Electrical"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -10846,8 +10890,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -11214,8 +11260,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Exodus",
+        "lootAreas": [
+          "Exodus"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -12383,8 +12431,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Nature",
+        "lootAreas": [
+          "Nature"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -12634,8 +12684,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -13140,8 +13192,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Nature",
+        "lootAreas": [
+          "Nature"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -13284,8 +13338,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -13319,8 +13375,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -13335,7 +13393,7 @@
     {
       "id": "frosty-duck",
       "name": "Frosty Duck",
-      "description": "Can be thrown to create noise.",
+      "description": "A dapper little fellow.",
       "rarity": "Rare",
       "type": "Trinket",
       "rawType": "Trinket",
@@ -14423,8 +14481,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Mechanical, Industrial",
+        "lootAreas": [
+          "Mechanical, Industrial"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -14493,8 +14553,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Residential",
+        "lootAreas": [
+          "Residential"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -16288,8 +16350,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Mechanical, Industrial",
+        "lootAreas": [
+          "Mechanical, Industrial"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -18134,8 +18198,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Exodus",
+        "lootAreas": [
+          "Exodus"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -18169,8 +18235,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Technological, Electrical",
+        "lootAreas": [
+          "Technological, Electrical"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -18471,7 +18539,7 @@
     {
       "id": "mri-duck",
       "name": "MRI Duck",
-      "description": "Can be thrown to create noise.",
+      "description": "Has technology gone too far?",
       "rarity": "Legendary",
       "type": "Trinket",
       "rawType": "Trinket",
@@ -20055,8 +20123,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Residential",
+        "lootAreas": [
+          "Residential"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -20905,8 +20975,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Residential",
+        "lootAreas": [
+          "Residential"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -21655,8 +21727,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Mechanical, Industrial",
+        "lootAreas": [
+          "Mechanical, Industrial"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -21869,8 +21943,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Raider",
+        "lootAreas": [
+          "Raider"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -23249,7 +23325,7 @@
       "id": "rope",
       "name": "Rope",
       "description": "Used in crafting.",
-      "rarity": "Rare",
+      "rarity": "Uncommon",
       "type": "Material",
       "rawType": "Topside Material",
       "isPrimaryType": true,
@@ -23261,7 +23337,7 @@
         {
           "id": "rope",
           "name": "Rope",
-          "rarity": "Rare",
+          "rarity": "Uncommon",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/43b194594b1ba9166e17c0787ee75d929a3a3dbc1dfcc90d94f253496b052b1d.png"
         }
       ],
@@ -23341,8 +23417,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Exodus",
+        "lootAreas": [
+          "Exodus"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -23376,8 +23454,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Residential",
+        "lootAreas": [
+          "Residential"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -23483,9 +23563,9 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": "Medical, Industrial, Technological",
+        "lootArea": "Mechanical, Industrial, Electrical",
         "lootAreas": [
-          "Medical, Industrial, Technological"
+          "Mechanical, Industrial, Electrical"
         ],
         "sources": [],
         "locations": [],
@@ -24612,8 +24692,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Residential",
+        "lootAreas": [
+          "Residential"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -25369,8 +25451,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -25404,8 +25488,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -26726,8 +26812,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Commercial, Residential, Industrial",
+        "lootAreas": [
+          "Commercial, Residential, Industrial"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -29018,8 +29106,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "Technological, Electrical",
+        "lootAreas": [
+          "Technological, Electrical"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
@@ -30076,8 +30166,10 @@
       ],
       "spawn": {
         "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
+        "lootArea": "ARC",
+        "lootAreas": [
+          "ARC"
+        ],
         "sources": [],
         "locations": [],
         "droppedBy": []
