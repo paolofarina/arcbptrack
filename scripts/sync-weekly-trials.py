@@ -81,7 +81,7 @@ def scoring_rows(fragment):
         end = matches[i + 1].start() if i + 1 < len(matches) else len(fragment)
         block_text = clean_text(fragment[match.end():end])
 
-        score_match = re.search(r"(Earn\s+[^.]+(?:\.)?)", block_text, re.I)
+        score_match = re.search(r"(Earn\s+.+)$", block_text, re.I)
         score = score_match.group(1).strip() if score_match else ""
 
         map_name = ""
