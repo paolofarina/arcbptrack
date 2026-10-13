@@ -1888,3 +1888,39 @@ a.weekly-map:hover {
     );
   opacity:.3;
 }
+
+
+/* Weekly cards alignment + image crop refinement */
+.weekly-map-banner {
+  min-height:29px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:-9px -10px 8px;
+}
+
+.weekly-map-banner.is-empty {
+  color:transparent;
+  background:rgba(242,184,75,.025);
+  border-bottom-color:rgba(242,184,75,.08);
+}
+
+.weekly-image-strip {
+  height:86px;
+}
+
+.weekly-image-strip img {
+  left:-5%;
+  top:-7%;
+  width:110%;
+  height:137%;
+  object-fit:cover;
+  object-position:center 28%;
+  transform:none;
+}
+
+@media (max-width:620px) {
+  .weekly-image-strip {
+    height:92px;
+  }
+}
