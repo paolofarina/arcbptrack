@@ -19,6 +19,16 @@ def fetch_json():
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.load(response)
 
+def inferred_maps(row):
+    image = (row.get("image_url") or "").lower()
+    name = (row.get("name") or row.get("content_name") or "").lower()
+
+    inferred = []
+    if "pendola-pass" in image or "pendola pass" in name:
+        inferred.append({"id": "pendola-pass", "name": "Pendola Pass"})
+
+    return inferred
+
 def compact_trial(row):
     map_links = []
     seen = set()
@@ -32,6 +42,15 @@ def compact_trial(row):
             "id": map_id,
             "name": map_name or map_id,
         })
+
+    if not map_links:
+        explicit_names = row.get("map_names") or []
+        for value in explicit_names:
+            if isinstance(value, str) and value.strip():
+                map_links.append({"id": value.strip().lower().replace(" ", "-"), "name": value.strip()})
+
+    if not map_links:
+        map_links = inferred_maps(row)
 
     return {
         "id": row.get("id"),
