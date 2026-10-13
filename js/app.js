@@ -360,7 +360,7 @@ function weeklyCard(trial) {
   const image = trial.localImage || trial.image || "";
   return `
     <article class="weekly-card">
-      ${singleMap ? `<div class="weekly-map-banner">${escapeHtml(singleMap)}</div>` : ""}
+      <div class="weekly-map-banner${singleMap ? "" : " is-empty"}">${singleMap ? escapeHtml(singleMap) : "&nbsp;"}</div>
       ${image ? `
         <div class="weekly-image-strip">
           <img src="${escapeHtml(image)}" alt="" loading="lazy">
