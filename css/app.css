@@ -1741,3 +1741,21 @@ a.weekly-map:hover {
     min-height:0;
   }
 }
+
+
+.weekly-card {
+  overflow:hidden;
+}
+
+.weekly-map-banner {
+  margin:-9px -10px 8px;
+  padding:5px 8px;
+  border-bottom:1px solid rgba(242,184,75,.22);
+  background:rgba(242,184,75,.08);
+  color:var(--accent);
+  font-size:.62rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-align:center;
+  text-transform:uppercase;
+}
