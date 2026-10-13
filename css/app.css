@@ -1776,3 +1776,62 @@ a.weekly-map:hover {
   margin-top:auto;
   padding-top:10px;
 }
+
+
+.weekly-image-strip {
+  position:relative;
+  height:64px;
+  margin:-1px -10px 9px;
+  overflow:hidden;
+  border-bottom:1px solid rgba(242,184,75,.18);
+  background:#0b0f12;
+}
+
+.weekly-image-strip img {
+  position:absolute;
+  left:0;
+  top:-33%;
+  width:100%;
+  height:166%;
+  object-fit:cover;
+  object-position:center;
+  filter:saturate(.72) contrast(1.1) brightness(.7);
+  transform:scale(1.015);
+}
+
+.weekly-image-strip::before,
+.weekly-image-strip::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+}
+
+.weekly-image-strip::before {
+  background:
+    linear-gradient(90deg, rgba(10,14,18,.82), rgba(10,14,18,.08) 28%, rgba(10,14,18,.08) 72%, rgba(10,14,18,.78)),
+    linear-gradient(180deg, rgba(242,184,75,.07), transparent 45%, rgba(10,14,18,.48));
+  mix-blend-mode:normal;
+}
+
+.weekly-image-strip::after {
+  opacity:.22;
+  background:repeating-linear-gradient(
+    180deg,
+    rgba(255,255,255,.028) 0,
+    rgba(255,255,255,.028) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+.weekly-card:has(.weekly-image-strip) .weekly-card-main {
+  padding-top:0;
+}
+
+@media (max-width:620px) {
+  .weekly-image-strip {
+    height:72px;
+  }
+}
