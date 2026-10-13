@@ -342,9 +342,11 @@ function weeklyCard(trial) {
   const maps = Array.isArray(trial.maps) ? trial.maps : [];
   const mapText = maps.length === 1
     ? maps[0].name
-    : maps.length > 1
-      ? `${maps.length} mappe`
-      : "";
+    : maps.length === Object.keys(WEEKLY_MAP_LINKS).length
+      ? "Tutte le mappe"
+      : maps.length > 1
+        ? `${maps.length} mappe`
+        : "";
   const mapHref = weeklyMapLink(trial);
 
   const singleMap = maps.length === 1 ? maps[0].name : "";
