@@ -20,7 +20,13 @@ const els = {
   blueprintFilters: document.querySelector("#blueprintFilters"),
   sortSelect: document.querySelector("#sortSelect"),
   clearFilters: document.querySelector("#clearFilters"),
-  emptyState: document.querySelector("#emptyState")
+  emptyState: document.querySelector("#emptyState"),
+  weeklyTrials: document.querySelector("#weeklyTrials"),
+  weeklyMeta: document.querySelector("#weeklyMeta"),
+  weeklyCurrent: document.querySelector("#weeklyCurrent"),
+  weeklyUpcoming: document.querySelector("#weeklyUpcoming"),
+  weeklyUpcomingGrid: document.querySelector("#weeklyUpcomingGrid"),
+  weeklyUpcomingToggle: document.querySelector("#weeklyUpcomingToggle")
 };
 
 function readUrlState() {
@@ -291,4 +297,111 @@ loadCatalog().catch(error => {
   console.error(error);
   els.emptyState.hidden = false;
   els.emptyState.textContent = "Impossibile caricare il catalogo locale degli oggetti.";
+});
+
+
+const WEEKLY_MAP_LINKS = {
+  "dam": "dam_battlegrounds",
+  "buried-city": "buried_city",
+  "spaceport": "the_spaceport",
+  "blue-gate": "the_blue_gate",
+  "stella-montis": "stella_montis",
+  "riven-tides": "riven_tides"
+};
+
+function weeklyScoreLabel(trial) {
+  const n = Number(trial.multiplier);
+  if (!Number.isFinite(n)) return "";
+  if (trial.type === "Damage") return `${n} pt / danno`;
+  if (trial.type === "KillEnemy") return `${n} pt / kill`;
+  return `${n} pt`;
+}
+
+function weeklyDateLabel(epoch) {
+  const n = Number(epoch);
+  if (!Number.isFinite(n) || !n) return "";
+  return new Intl.DateTimeFormat("it-IT", {
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(new Date(n * 1000));
+}
+
+function weeklyMapLink(trial) {
+  const maps = Array.isArray(trial.maps) ? trial.maps : [];
+  if (maps.length !== 1) return "";
+  const localId = WEEKLY_MAP_LINKS[maps[0].id];
+  if (!localId) return "";
+  return `map.html?map=${encodeURIComponent(localId)}`;
+}
+
+function weeklyCard(trial) {
+  const score = weeklyScoreLabel(trial);
+  const maps = Array.isArray(trial.maps) ? trial.maps : [];
+  const mapText = maps.length === 1
+    ? maps[0].name
+    : maps.length > 1
+      ? `${maps.length} mappe`
+      : "";
+  const mapHref = weeklyMapLink(trial);
+
+  return `
+    <article class="weekly-card">
+      <div class="weekly-card-main">
+        <h3>${escapeHtml(trial.name)}</h3>
+        <div class="weekly-card-tags">
+          ${score ? `<span class="weekly-score">${escapeHtml(score)}</span>` : ""}
+          ${trial.type ? `<span class="weekly-type">${escapeHtml(trial.type)}</span>` : ""}
+          ${mapHref
+            ? `<a class="weekly-map" href="${mapHref}">${escapeHtml(mapText)} →</a>`
+            : mapText
+              ? `<span class="weekly-map">${escapeHtml(mapText)}</span>`
+              : ""}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+async function loadWeeklyTrials() {
+  if (!els.weeklyTrials) return;
+
+  const response = await fetch("data/weekly-trials.json", { cache: "no-store" });
+  if (!response.ok) return;
+  const data = await response.json();
+
+  const current = Array.isArray(data.current) ? data.current : [];
+  const upcoming = Array.isArray(data.upcoming) ? data.upcoming : [];
+  if (!current.length) return;
+
+  const end = current.find(trial => trial.windowEnd)?.windowEnd;
+  const endText = weeklyDateLabel(end);
+  const generated = data.generatedAt
+    ? new Intl.DateTimeFormat("it-IT", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })
+        .format(new Date(data.generatedAt))
+    : "";
+
+  els.weeklyMeta.textContent = [
+    `${current.length} trial attive`,
+    endText ? `fino a ${endText}` : "",
+    generated ? `cache ${generated}` : ""
+  ].filter(Boolean).join(" · ");
+
+  els.weeklyCurrent.innerHTML = current.map(weeklyCard).join("");
+  els.weeklyUpcomingGrid.innerHTML = upcoming.map(weeklyCard).join("");
+  els.weeklyUpcomingToggle.hidden = upcoming.length === 0;
+  els.weeklyTrials.hidden = false;
+
+  els.weeklyUpcomingToggle?.addEventListener("click", () => {
+    const open = els.weeklyUpcoming.hidden;
+    els.weeklyUpcoming.hidden = !open;
+    els.weeklyUpcomingToggle.setAttribute("aria-expanded", String(open));
+    els.weeklyUpcomingToggle.textContent = open ? "Nascondi prossime ↑" : "Prossime →";
+  });
+}
+
+loadWeeklyTrials().catch(error => {
+  console.warn("Weekly trials non disponibili", error);
 });
