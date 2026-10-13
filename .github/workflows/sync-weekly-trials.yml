@@ -26,14 +26,14 @@ jobs:
 
       - name: Commit cache when changed
         run: |
-          if git diff --quiet -- data/weekly-trials.json && git ls-files --error-unmatch data/weekly-trials.json >/dev/null 2>&1; then
+          if git diff --quiet -- data/weekly-trials.json assets/weekly-trials && git ls-files --error-unmatch data/weekly-trials.json >/dev/null 2>&1; then
             echo "No weekly trial changes."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/weekly-trials.json
+          git add data/weekly-trials.json assets/weekly-trials
           git commit -m "Update weekly trials cache"
           git pull --rebase origin main
           git push
