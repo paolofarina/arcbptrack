@@ -7,6 +7,7 @@ from pathlib import Path
 
 API_URL = "https://metaforge.app/api/arc-raiders/weekly-trials"
 OUTPUT = Path("data/weekly-trials.json")
+IMAGE_DIR = Path("assets/weekly-trials")
 
 def fetch_json():
     req = urllib.request.Request(
@@ -28,6 +29,28 @@ def inferred_maps(row):
         inferred.append({"id": "pendola-pass", "name": "Pendola Pass"})
 
     return inferred
+
+def cache_image(row):
+    url = row.get("image_url") or ""
+    trial_id = row.get("trial_id") or ""
+    if not url or not trial_id:
+        return ""
+
+    suffix = Path(url.split("?", 1)[0]).suffix.lower()
+    if suffix not in {".webp", ".jpg", ".jpeg", ".png"}:
+        suffix = ".webp"
+
+    IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    target = IMAGE_DIR / f"{trial_id}{suffix}"
+
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "arcbptrack-weekly-trials-cache/2.1 (+https://github.com/paolofarina/arcbptrack)"}
+    )
+    with urllib.request.urlopen(req, timeout=30) as response:
+        target.write_bytes(response.read())
+
+    return target.as_posix()
 
 def compact_trial(row):
     map_links = []
@@ -57,6 +80,7 @@ def compact_trial(row):
         "trialId": row.get("trial_id"),
         "name": row.get("name") or row.get("content_name") or "",
         "image": row.get("image_url") or "",
+        "localImage": cache_image(row),
         "guideLink": row.get("guide_link") or "",
         "multiplier": row.get("multiplier"),
         "type": row.get("type") or "",
@@ -94,6 +118,7 @@ def main():
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print(f"Weekly trials API: {API_URL}")
