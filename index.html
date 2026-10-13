@@ -37,6 +37,22 @@
   </header>
 
   <main class="catalog-shell">
+    <section id="weeklyTrials" class="weekly-trials" hidden>
+      <div class="weekly-heading">
+        <div>
+          <p class="eyebrow">MetaForge</p>
+          <h2>Weekly Trials</h2>
+          <p id="weeklyMeta" class="weekly-meta"></p>
+        </div>
+        <button id="weeklyUpcomingToggle" class="weekly-toggle" type="button" aria-expanded="false">Prossime →</button>
+      </div>
+      <div id="weeklyCurrent" class="weekly-grid"></div>
+      <div id="weeklyUpcoming" class="weekly-upcoming" hidden>
+        <p class="weekly-subheading">Prossima rotazione</p>
+        <div id="weeklyUpcomingGrid" class="weekly-grid"></div>
+      </div>
+    </section>
+
     <section class="catalog-toolbar">
       <label class="search-box">
         <span class="sr-only">Cerca oggetto</span>
