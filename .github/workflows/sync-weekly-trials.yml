@@ -1,0 +1,39 @@
+name: Sync weekly trials
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+  push:
+    paths:
+      - "scripts/sync-weekly-trials.py"
+      - ".github/workflows/sync-weekly-trials.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync MetaForge weekly trials
+        run: python3 scripts/sync-weekly-trials.py
+
+      - name: Commit cache when changed
+        run: |
+          if git diff --quiet -- data/weekly-trials.json && git ls-files --error-unmatch data/weekly-trials.json >/dev/null 2>&1; then
+            echo "No weekly trial changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/weekly-trials.json
+          git commit -m "Update weekly trials cache"
+          git pull --rebase origin main
+          git push
