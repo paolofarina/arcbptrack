@@ -362,9 +362,10 @@ function weeklyCard(trial) {
     <article class="weekly-card">
       <div class="weekly-map-banner${singleMap ? "" : " is-empty"}">${singleMap ? escapeHtml(singleMap) : "&nbsp;"}</div>
       ${image ? `
-        <div class="weekly-image-strip">
+        <button class="weekly-image-strip" type="button" aria-expanded="false" aria-label="Espandi immagine ${escapeHtml(trial.name)}">
           <img src="${escapeHtml(image)}" alt="" loading="lazy">
-        </div>
+          <span class="weekly-image-hint" aria-hidden="true">↕</span>
+        </button>
       ` : ""}
       <div class="weekly-card-main">
         <h3>${escapeHtml(trial.name)}</h3>
@@ -408,6 +409,16 @@ async function loadWeeklyTrials() {
 
   els.weeklyCurrent.innerHTML = current.map(weeklyCard).join("");
   els.weeklyUpcomingGrid.innerHTML = upcoming.map(weeklyCard).join("");
+
+  els.weeklyTrials.querySelectorAll(".weekly-image-strip").forEach(button => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".weekly-card");
+      if (!card) return;
+      const expanded = !card.classList.contains("is-image-expanded");
+      card.classList.toggle("is-image-expanded", expanded);
+      button.setAttribute("aria-expanded", String(expanded));
+    });
+  });
   els.weeklyUpcomingToggle.hidden = upcoming.length === 0;
   els.weeklyTrials.hidden = false;
 
