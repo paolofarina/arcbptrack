@@ -1612,3 +1612,132 @@ button.bp-map-row[aria-pressed="true"] .bp-map-check {
   font-size:.58rem;
   opacity:.75;
 }
+
+
+/* Weekly trials */
+.weekly-trials {
+  margin: 0 0 14px;
+  padding: 14px;
+  border: 1px solid rgba(242,184,75,.28);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(242,184,75,.055), transparent 42%),
+    var(--panel);
+}
+
+.weekly-heading {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:10px;
+}
+
+.weekly-heading h2 {
+  margin:0;
+  font-size:1.15rem;
+}
+
+.weekly-meta {
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:.7rem;
+}
+
+.weekly-toggle {
+  flex:0 0 auto;
+  min-height:32px;
+  padding:0 9px;
+  border:1px solid rgba(242,184,75,.3);
+  border-radius:8px;
+  background:rgba(242,184,75,.055);
+  color:var(--accent);
+  font-size:.7rem;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.weekly-grid {
+  display:grid;
+  grid-template-columns:repeat(5, minmax(0, 1fr));
+  gap:7px;
+}
+
+.weekly-card {
+  min-width:0;
+  padding:9px 10px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:#0f1418;
+}
+
+.weekly-card h3 {
+  margin:0;
+  min-height:2.5em;
+  color:var(--text);
+  font-size:.78rem;
+  line-height:1.25;
+}
+
+.weekly-card-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+  margin-top:7px;
+}
+
+.weekly-score,
+.weekly-type,
+.weekly-map {
+  padding:2px 5px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  color:var(--muted);
+  font-size:.61rem;
+  text-decoration:none;
+}
+
+.weekly-score {
+  border-color:rgba(242,184,75,.28);
+  color:var(--accent);
+}
+
+a.weekly-map:hover {
+  border-color:rgba(242,184,75,.35);
+  color:var(--accent);
+}
+
+.weekly-upcoming {
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px solid var(--border);
+}
+
+.weekly-subheading {
+  margin:0 0 7px;
+  color:var(--muted);
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+@media (max-width:1050px) {
+  .weekly-grid {
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width:620px) {
+  .weekly-heading {
+    align-items:flex-start;
+  }
+
+  .weekly-grid {
+    grid-template-columns:1fr;
+  }
+
+  .weekly-card h3 {
+    min-height:0;
+  }
+}
