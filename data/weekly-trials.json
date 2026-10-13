@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T16:28:07.002939+00:00",
+  "source": {
+    "provider": "MetaForge",
+    "url": "https://metaforge.app/arc-raiders/weekly-trials"
+  },
+  "current": [
+    {
+      "name": "Open Containers in the Commissary Supermarket",
+      "score": "Earn 200 points per completion.",
+      "map": ""
+    },
+    {
+      "name": "Harvest plants",
+      "score": "Earn 250 points per completion.",
+      "map": ""
+    },
+    {
+      "name": "Damage Bullies",
+      "score": "Earn 1.",
+      "map": ""
+    },
+    {
+      "name": "Deal Damage using Skulker Targeter",
+      "score": "Earn 5 points per 1 damage.",
+      "map": ""
+    },
+    {
+      "name": "Damage ARC using a Bantam",
+      "score": "Earn 2 points per 1 damage to arc using a bantam.",
+      "map": ""
+    }
+  ],
+  "upcoming": [
+    {
+      "name": "Destroy Ticks, Pops and Fireballs using a Stiletto",
+      "score": "Earn 200 points per ticks, pops and fireballs using a stiletto killed.",
+      "map": ""
+    },
+    {
+      "name": "Search kitchen cabinets",
+      "score": "Earn 250 points per kitchen cabinets searched.",
+      "map": ""
+    },
+    {
+      "name": "Damage ARC enemies using a Rascal",
+      "score": "Earn 0.",
+      "map": ""
+    },
+    {
+      "name": "Deal damage using a Bully Fragmenter",
+      "score": "Earn 2 points per 1 damage.",
+      "map": ""
+    },
+    {
+      "name": "Open Containers in Old Town",
+      "score": "Earn 200 points per completion.",
+      "map": ""
+    }
+  ]
+}
