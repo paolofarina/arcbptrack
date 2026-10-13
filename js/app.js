@@ -347,16 +347,18 @@ function weeklyCard(trial) {
       : "";
   const mapHref = weeklyMapLink(trial);
 
+  const singleMap = maps.length === 1 ? maps[0].name : "";
   return `
     <article class="weekly-card">
+      ${singleMap ? `<div class="weekly-map-banner">${escapeHtml(singleMap)}</div>` : ""}
       <div class="weekly-card-main">
         <h3>${escapeHtml(trial.name)}</h3>
         <div class="weekly-card-tags">
           ${score ? `<span class="weekly-score">${escapeHtml(score)}</span>` : ""}
           ${trial.type ? `<span class="weekly-type">${escapeHtml(trial.type)}</span>` : ""}
-          ${mapHref
+          ${!singleMap && mapHref
             ? `<a class="weekly-map" href="${mapHref}">${escapeHtml(mapText)} →</a>`
-            : mapText
+            : !singleMap && mapText
               ? `<span class="weekly-map">${escapeHtml(mapText)}</span>`
               : ""}
         </div>
