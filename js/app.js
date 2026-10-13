@@ -312,9 +312,16 @@ const WEEKLY_MAP_LINKS = {
 function weeklyScoreLabel(trial) {
   const n = Number(trial.multiplier);
   if (!Number.isFinite(n)) return "";
+
+  const name = String(trial.name || "").toLowerCase();
   if (trial.type === "Damage") return `${n} pt / danno`;
   if (trial.type === "KillEnemy") return `${n} pt / kill`;
-  return `${n} pt`;
+  if (/harvest|plant/.test(name)) return `${n} pt / pianta`;
+  if (/container/.test(name)) return `${n} pt / container`;
+  if (/cabinet/.test(name)) return `${n} pt / mobile`;
+  if (/search/.test(name)) return `${n} pt / ricerca`;
+  if (/destroy/.test(name)) return `${n} pt / distruzione`;
+  return `${n} pt / azione`;
 }
 
 function weeklyDateLabel(epoch) {
@@ -350,9 +357,15 @@ function weeklyCard(trial) {
   const mapHref = weeklyMapLink(trial);
 
   const singleMap = maps.length === 1 ? maps[0].name : "";
+  const image = trial.localImage || trial.image || "";
   return `
     <article class="weekly-card">
       ${singleMap ? `<div class="weekly-map-banner">${escapeHtml(singleMap)}</div>` : ""}
+      ${image ? `
+        <div class="weekly-image-strip">
+          <img src="${escapeHtml(image)}" alt="" loading="lazy">
+        </div>
+      ` : ""}
       <div class="weekly-card-main">
         <h3>${escapeHtml(trial.name)}</h3>
         <div class="weekly-card-tags">
