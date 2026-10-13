@@ -1835,3 +1835,56 @@ a.weekly-map:hover {
     height:72px;
   }
 }
+
+
+/* Weekly image color grading */
+.weekly-image-strip img {
+  filter:
+    saturate(.88)
+    contrast(1.12)
+    brightness(.76)
+    sepia(.035);
+}
+
+.weekly-image-strip::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10,14,18,.78),
+      rgba(10,14,18,.06) 27%,
+      rgba(10,14,18,.06) 73%,
+      rgba(10,14,18,.76)
+    ),
+    radial-gradient(
+      circle at 52% 42%,
+      rgba(242,184,75,.16) 0%,
+      rgba(242,184,75,.07) 28%,
+      transparent 58%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(242,184,75,.055) 0%,
+      transparent 40%,
+      rgba(4,7,9,.38) 100%
+    );
+  mix-blend-mode:screen;
+}
+
+.weekly-image-strip::after {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.08),
+      transparent 26%,
+      transparent 70%,
+      rgba(0,0,0,.24)
+    ),
+    repeating-linear-gradient(
+      180deg,
+      rgba(255,255,255,.018) 0,
+      rgba(255,255,255,.018) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  opacity:.3;
+}
