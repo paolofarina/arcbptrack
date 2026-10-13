@@ -1759,3 +1759,20 @@ a.weekly-map:hover {
   text-align:center;
   text-transform:uppercase;
 }
+
+
+.weekly-card {
+  display:flex;
+  flex-direction:column;
+}
+
+.weekly-card-main {
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+}
+
+.weekly-card-tags {
+  margin-top:auto;
+  padding-top:10px;
+}
