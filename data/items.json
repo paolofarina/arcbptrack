@@ -1,16 +1,16 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-13T12:41:26.686Z",
+  "generatedAt": "2026-10-14T10:09:46.508Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
     "attribution": "https://metaforge.app/arc-raiders"
   },
   "summary": {
-    "totalRawRecords": 1109,
-    "totalItemRecords": 1017,
+    "totalRawRecords": 1110,
+    "totalItemRecords": 1018,
     "totalFamilies": 952,
-    "collapsedWeaponRecords": 66,
+    "collapsedWeaponRecords": 67,
     "withBlueprint": 92,
     "withoutBlueprint": 860,
     "rawBlueprintRecords": 92,
@@ -1979,6 +1979,12 @@
       "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9f129cb81f4a8c7670817ff6ed820882f092e5fce3bd7e8baff36530b7f2a5c0.png",
       "blueprint": null,
       "variants": [
+        {
+          "id": "amplified-canto",
+          "name": "Amplified Canto",
+          "rarity": "Amplified",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9f129cb81f4a8c7670817ff6ed820882f092e5fce3bd7e8baff36530b7f2a5c0.png"
+        },
         {
           "id": "amplified-canto",
           "name": "Amplified Canto",
@@ -8481,15 +8487,15 @@
       "rawType": "Stencil",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/c17a502ba779e37e3b43dcfde55f7da15e78708aa624841835d3be7cfd5a301b.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/c17a502ba779e37e3b43dcfde55f7da15e78708aa624841835d3be7cfd5a301b.png",
       "blueprint": null,
       "variants": [
         {
           "id": "bulwark-stencil",
           "name": "Bulwark Stencil",
           "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png"
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/c17a502ba779e37e3b43dcfde55f7da15e78708aa624841835d3be7cfd5a301b.png"
         }
       ],
       "spawn": {
@@ -12850,15 +12856,15 @@
       "rawType": "Stencil",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/690eaa0dc2d8aef7d7640005954010054790687f659f2a52462cf932419a4215.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/690eaa0dc2d8aef7d7640005954010054790687f659f2a52462cf932419a4215.png",
       "blueprint": null,
       "variants": [
         {
           "id": "dragons-breath-stencil",
           "name": "Dragon's Breath Stencil",
           "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png"
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/690eaa0dc2d8aef7d7640005954010054790687f659f2a52462cf932419a4215.png"
         }
       ],
       "spawn": {
@@ -13821,15 +13827,15 @@
       "rawType": "Stencil",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/4430d2166dcc774ee1949cd7b966aea9be3169d405921e1b505a012867079ca8.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/4430d2166dcc774ee1949cd7b966aea9be3169d405921e1b505a012867079ca8.png",
       "blueprint": null,
       "variants": [
         {
           "id": "empyrean-stencil",
           "name": "Empyrean Stencil",
           "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png"
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/4430d2166dcc774ee1949cd7b966aea9be3169d405921e1b505a012867079ca8.png"
         }
       ],
       "spawn": {
@@ -16014,15 +16020,15 @@
       "rawType": "Stencil",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/7f0888ecb59d3fa2241914d7bc950567459e5f18826940f9c59089f9c6f94f52.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/7f0888ecb59d3fa2241914d7bc950567459e5f18826940f9c59089f9c6f94f52.png",
       "blueprint": null,
       "variants": [
         {
           "id": "fortuna-stencil",
           "name": "Fortuna Stencil",
           "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png"
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/7f0888ecb59d3fa2241914d7bc950567459e5f18826940f9c59089f9c6f94f52.png"
         }
       ],
       "spawn": {
@@ -27494,15 +27500,15 @@
       "rawType": "Stencil",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/9e972a8296b2501f2ff1fbe4a8be56bec9b0e818737e1f8c87c01d185dd70074.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/9e972a8296b2501f2ff1fbe4a8be56bec9b0e818737e1f8c87c01d185dd70074.png",
       "blueprint": null,
       "variants": [
         {
           "id": "sacrifice-stencil",
           "name": "Sacrifice Stencil",
           "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png"
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/9e972a8296b2501f2ff1fbe4a8be56bec9b0e818737e1f8c87c01d185dd70074.png"
         }
       ],
       "spawn": {
@@ -28004,15 +28010,15 @@
       "rawType": "Stencil",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/6da20d22003bfd29ea86b6965e713c25599c04bcade59439d7f898a9d38de49e.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/6da20d22003bfd29ea86b6965e713c25599c04bcade59439d7f898a9d38de49e.png",
       "blueprint": null,
       "variants": [
         {
           "id": "serac-stencil",
           "name": "Serac Stencil",
           "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png"
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/6da20d22003bfd29ea86b6965e713c25599c04bcade59439d7f898a9d38de49e.png"
         }
       ],
       "spawn": {
@@ -30483,41 +30489,6 @@
       "image": "assets/items/striker-outfit.png"
     },
     {
-      "id": "study-armchair-res-armchair-01-a",
-      "name": "Study Armchair",
-      "description": null,
-      "rarity": "Legendary",
-      "type": "Furniture",
-      "rawType": "Furniture",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "study-armchair-res-armchair-01-a",
-          "name": "Study Armchair",
-          "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "study-armchair-res-armchair-01-a",
-        "itemType": "Furniture"
-      },
-      "image": "assets/items/study-armchair-res-armchair-01-a.png"
-    },
-    {
       "id": "study-armchair",
       "name": "Study Armchair",
       "description": null,
@@ -30551,6 +30522,41 @@
         "itemType": "Furniture"
       },
       "image": "assets/items/study-armchair.png"
+    },
+    {
+      "id": "study-armchair-res-armchair-01-a",
+      "name": "Study Armchair",
+      "description": null,
+      "rarity": "Legendary",
+      "type": "Furniture",
+      "rawType": "Furniture",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "study-armchair-res-armchair-01-a",
+          "name": "Study Armchair",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "study-armchair-res-armchair-01-a",
+        "itemType": "Furniture"
+      },
+      "image": "assets/items/study-armchair-res-armchair-01-a.png"
     },
     {
       "id": "study-armchair-design-res-armchair-01-a",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:41:26.653Z",
+  "generatedAt": "2026-10-14T10:09:45.490Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -923,7 +923,7 @@
       "file": "assets/items/bully-fragmenter.png"
     },
     "bulwark-stencil": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/c17a502ba779e37e3b43dcfde55f7da15e78708aa624841835d3be7cfd5a301b.png",
       "file": "assets/items/bulwark-stencil.png"
     },
     "bureau-ceiling-lamp": {
@@ -1387,7 +1387,7 @@
       "file": "assets/items/door-blocker.png"
     },
     "dragons-breath-stencil": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/690eaa0dc2d8aef7d7640005954010054790687f659f2a52462cf932419a4215.png",
       "file": "assets/items/dragons-breath-stencil.png"
     },
     "draped-debris-a": {
@@ -1495,7 +1495,7 @@
       "file": "assets/items/empty-wine-bottle.png"
     },
     "empyrean-stencil": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/4430d2166dcc774ee1949cd7b966aea9be3169d405921e1b505a012867079ca8.png",
       "file": "assets/items/empyrean-stencil.png"
     },
     "energy-ammo": {
@@ -1723,7 +1723,7 @@
       "file": "assets/items/food-wrapper.png"
     },
     "fortuna-stencil": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/7f0888ecb59d3fa2241914d7bc950567459e5f18826940f9c59089f9c6f94f52.png",
       "file": "assets/items/fortuna-stencil.png"
     },
     "fossilized-lightning": {
@@ -2951,7 +2951,7 @@
       "file": "assets/items/ryder-outfit.png"
     },
     "sacrifice-stencil": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/9e972a8296b2501f2ff1fbe4a8be56bec9b0e818737e1f8c87c01d185dd70074.png",
       "file": "assets/items/sacrifice-stencil.png"
     },
     "saltwalker-outfit": {
@@ -3007,7 +3007,7 @@
       "file": "assets/items/sentinel-part.png"
     },
     "serac-stencil": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/9dc94c4cb914bb5782ed8b0feaeb335e9f549326a603a54faa4c53bca8784c82.png",
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/6da20d22003bfd29ea86b6965e713c25599c04bcade59439d7f898a9d38de49e.png",
       "file": "assets/items/serac-stencil.png"
     },
     "sextant": {
@@ -3262,13 +3262,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fb68ff9ec9bed05a2dd5463d2367b052f191a26e4d9b9a4ae4739af69ac094a9.png",
       "file": "assets/items/striker-outfit.png"
     },
-    "study-armchair-res-armchair-01-a": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
-      "file": "assets/items/study-armchair-res-armchair-01-a.png"
-    },
     "study-armchair": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
       "file": "assets/items/study-armchair.png"
+    },
+    "study-armchair-res-armchair-01-a": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
+      "file": "assets/items/study-armchair-res-armchair-01-a.png"
     },
     "study-armchair-design-res-armchair-01-a": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
