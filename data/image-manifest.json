@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:52:09.387Z",
+  "generatedAt": "2026-10-16T09:45:20.971Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -109,6 +109,10 @@
     "amplification-module-mk-v": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/fd23de1a6afd4914840f48b33690fa32d425ea982a1c8f42e8d13d42775ffbcf.png",
       "file": "assets/items/amplification-module-mk-v.png"
+    },
+    "amplified-anvil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/eea53184b36738d95f6cfe5d8282c40091d2fdfd48390e7a563b7cdb00af2baf.png",
+      "file": "assets/items/amplified-anvil.png"
     },
     "amplified-anvil-anvil-splitter": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/eea53184b36738d95f6cfe5d8282c40091d2fdfd48390e7a563b7cdb00af2baf.png",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-15T09:52:09.449Z",
+  "generatedAt": "2026-10-16T09:45:21.199Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
@@ -9,10 +9,10 @@
   "summary": {
     "totalRawRecords": 1110,
     "totalItemRecords": 1018,
-    "totalFamilies": 952,
-    "collapsedWeaponRecords": 67,
+    "totalFamilies": 953,
+    "collapsedWeaponRecords": 66,
     "withBlueprint": 92,
-    "withoutBlueprint": 860,
+    "withoutBlueprint": 861,
     "rawBlueprintRecords": 92,
     "byRarity": {
       "Legendary": 29,
@@ -21,7 +21,7 @@
       "Rare": 223,
       "Common": 161,
       "Unknown": 158,
-      "Amplified": 93
+      "Amplified": 94
     },
     "byType": {
       "Trinket": 90,
@@ -33,7 +33,7 @@
       "Recyclable": 136,
       "Furniture": 100,
       "Design": 100,
-      "Weapon": 114,
+      "Weapon": 115,
       "Key": 44,
       "Mod": 38,
       "Misc": 6,
@@ -1057,6 +1057,41 @@
       "image": "assets/items/amplification-module-mk-v.png"
     },
     {
+      "id": "amplified-anvil",
+      "name": "Amplified Anvil",
+      "description": "An amplified variant of the Anvil.",
+      "rarity": "Amplified",
+      "type": "Weapon",
+      "rawType": "Weapon",
+      "isPrimaryType": true,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/eea53184b36738d95f6cfe5d8282c40091d2fdfd48390e7a563b7cdb00af2baf.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/eea53184b36738d95f6cfe5d8282c40091d2fdfd48390e7a563b7cdb00af2baf.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "amplified-anvil",
+          "name": "Amplified Anvil",
+          "rarity": "Amplified",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/eea53184b36738d95f6cfe5d8282c40091d2fdfd48390e7a563b7cdb00af2baf.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "amplified-anvil",
+        "itemType": "Weapon"
+      },
+      "image": "assets/items/amplified-anvil.png"
+    },
+    {
       "id": "amplified-anvil-anvil-splitter",
       "name": "Amplified Anvil (Anvil Splitter)",
       "description": "An amplified variant of the Anvil.",
@@ -1979,12 +2014,6 @@
       "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9f129cb81f4a8c7670817ff6ed820882f092e5fce3bd7e8baff36530b7f2a5c0.png",
       "blueprint": null,
       "variants": [
-        {
-          "id": "amplified-canto",
-          "name": "Amplified Canto",
-          "rarity": "Amplified",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/9f129cb81f4a8c7670817ff6ed820882f092e5fce3bd7e8baff36530b7f2a5c0.png"
-        },
         {
           "id": "amplified-canto",
           "name": "Amplified Canto",
