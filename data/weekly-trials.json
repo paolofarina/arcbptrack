@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T17:25:09.041882+00:00",
+  "generatedAt": "2026-10-20T21:44:03.848251+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
@@ -52,7 +52,7 @@
       "name": "Deal damage using a Bully Fragmenter",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-a-bully-fragmenter.webp",
       "localImage": "assets/weekly-trials/LAb3SC5I.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/deal-damage-using-a-bully-fragmenter",
       "multiplier": 2,
       "type": "Damage",
       "mapNames": [],
@@ -67,7 +67,7 @@
       "name": "Destroy Ticks, Pops and Fireballs using a Stiletto",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-ticks-pops-and-fireballs-using-a-stiletto.webp",
       "localImage": "assets/weekly-trials/6QjLnaya.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/destroy-ticks-pops-and-fireballs-using-a-stiletto",
       "multiplier": 200,
       "type": "KillEnemy",
       "mapNames": [],
@@ -82,7 +82,7 @@
       "name": "Open Containers in Old Town",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-old-town-on-pendola-pass.webp",
       "localImage": "assets/weekly-trials/vMPfVNs9.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/open-containers-in-old-town-on-pendola-pass",
       "multiplier": 200,
       "type": "Interact",
       "mapNames": [],
