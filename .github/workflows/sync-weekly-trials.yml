@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "23 */6 * * *"
+    # Martedì: controlli ogni 30 minuti attorno alla rotazione weekly.
+    # 12:00-15:30 UTC copre circa 14:00-17:30 CEST e 13:00-16:30 CET.
+    - cron: "0,30 12-15 * * 2"
   push:
     paths:
       - "scripts/sync-weekly-trials.py"
