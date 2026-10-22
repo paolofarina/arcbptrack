@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T10:06:08.707Z",
+  "generatedAt": "2026-10-22T10:08:28.851Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -3266,21 +3266,21 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fb68ff9ec9bed05a2dd5463d2367b052f191a26e4d9b9a4ae4739af69ac094a9.png",
       "file": "assets/items/striker-outfit.png"
     },
-    "study-armchair-res-armchair-01-a": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
-      "file": "assets/items/study-armchair-res-armchair-01-a.png"
-    },
     "study-armchair": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
       "file": "assets/items/study-armchair.png"
     },
-    "study-armchair-design-res-sofa-01-y150-a": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
-      "file": "assets/items/study-armchair-design-res-sofa-01-y150-a.png"
+    "study-armchair-res-armchair-01-a": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_Outpost_Furniture_Res_Armchair_01_A.png",
+      "file": "assets/items/study-armchair-res-armchair-01-a.png"
     },
     "study-armchair-design-res-armchair-01-a": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
       "file": "assets/items/study-armchair-design-res-armchair-01-a.png"
+    },
+    "study-armchair-design-res-sofa-01-y150-a": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
+      "file": "assets/items/study-armchair-design-res-sofa-01-y150-a.png"
     },
     "study-ceiling-lamp": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/e756a491c686b5fa83e70168cf429bce82e9f3ecc4a296b03eadda96fd7ca5af.png",
