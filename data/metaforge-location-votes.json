@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T09:09:42.831Z",
+  "generatedAt": "2026-10-25T09:31:01.869Z",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/item-location-votes"
   },
   "totalItems": 953,
   "queriedItems": 953,
-  "itemsWithVotes": 439,
+  "itemsWithVotes": 451,
   "items": {
     "leviathans-crown-ship-model": {
       "itemId": "leviathans-crown-ship-model",
@@ -612,9 +612,9 @@
     "acoustic-guitar": {
       "itemId": "acoustic-guitar",
       "available": true,
-      "totalVotes": 127,
+      "totalVotes": 128,
       "totals": {
-        "container": 65,
+        "container": 66,
         "map": 41,
         "event": 21
       },
@@ -623,7 +623,7 @@
           "key": "bag",
           "name": "Bags",
           "votes": 18,
-          "percent": 27.7
+          "percent": 27.3
         },
         "map": {
           "key": "buried-city",
@@ -644,109 +644,109 @@
             "key": "bag",
             "name": "Bags",
             "votes": 18,
-            "percent": 27.7
+            "percent": 27.3
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 7,
-            "percent": 10.8
+            "percent": 10.6
           },
           {
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 4,
-            "percent": 6.2
+            "percent": 6.1
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 3,
-            "percent": 4.6
+            "percent": 4.5
           },
           {
             "key": "android",
             "name": "Android",
             "votes": 3,
-            "percent": 4.6
+            "percent": 4.5
           },
           {
             "key": "arc_courier",
             "name": "Arc Courier",
             "votes": 3,
-            "percent": 4.6
+            "percent": 4.5
           },
           {
             "key": "arc_husk",
             "name": "Arc Husk",
             "votes": 3,
-            "percent": 4.6
+            "percent": 4.5
           },
           {
             "key": "arc_probe",
             "name": "Arc Probe",
             "votes": 3,
-            "percent": 4.6
+            "percent": 4.5
+          },
+          {
+            "key": "baron_husk",
+            "name": "Baron Husk",
+            "votes": 3,
+            "percent": 4.5
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 3,
-            "percent": 4.6
-          },
-          {
-            "key": "baron_husk",
-            "name": "Baron Husk",
-            "votes": 2,
-            "percent": 3.1
+            "percent": 4.5
           },
           {
             "key": "basket",
             "name": "Baskets",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "box",
             "name": "Boxes",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "car",
             "name": "Cars",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "utility_crate",
             "name": "Grenade Tube",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           },
           {
             "key": "raider_cache",
             "name": "Raider Cache",
             "votes": 2,
-            "percent": 3.1
+            "percent": 3
           }
         ],
         "map": [
@@ -2071,21 +2071,33 @@
     },
     "alpine-wardrobe": {
       "itemId": "alpine-wardrobe",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 1,
       "totals": {
         "container": 0,
-        "map": 0,
+        "map": 1,
         "event": 0
       },
       "top": {
         "container": null,
-        "map": null,
+        "map": {
+          "key": "pendola-pass",
+          "name": "Pendola Pass",
+          "votes": 1,
+          "percent": 100
+        },
         "event": null
       },
       "groups": {
         "container": [],
-        "map": [],
+        "map": [
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "event": []
       }
     },
@@ -2132,9 +2144,9 @@
     "amplification-module-mk-i": {
       "itemId": "amplification-module-mk-i",
       "available": true,
-      "totalVotes": 4,
+      "totalVotes": 5,
       "totals": {
-        "container": 1,
+        "container": 2,
         "map": 1,
         "event": 2
       },
@@ -2142,7 +2154,7 @@
         "container": {
           "key": "weapon_case",
           "name": "Weapon Case",
-          "votes": 1,
+          "votes": 2,
           "percent": 100
         },
         "map": {
@@ -2163,7 +2175,7 @@
           {
             "key": "weapon_case",
             "name": "Weapon Case",
-            "votes": 1,
+            "votes": 2,
             "percent": 100
           }
         ],
@@ -2254,14 +2266,19 @@
     "amplification-module-mk-v": {
       "itemId": "amplification-module-mk-v",
       "available": true,
-      "totalVotes": 5,
+      "totalVotes": 6,
       "totals": {
-        "container": 0,
+        "container": 1,
         "map": 3,
         "event": 2
       },
       "top": {
-        "container": null,
+        "container": {
+          "key": "med_crate",
+          "name": "Med Crate",
+          "votes": 1,
+          "percent": 100
+        },
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
@@ -2276,7 +2293,14 @@
         }
       },
       "groups": {
-        "container": [],
+        "container": [
+          {
+            "key": "med_crate",
+            "name": "Med Crate",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "map": [
           {
             "key": "blue-gate",
@@ -4814,24 +4838,24 @@
     "anvil": {
       "itemId": "anvil-recipe",
       "available": true,
-      "totalVotes": 539,
+      "totalVotes": 541,
       "totals": {
-        "container": 248,
-        "map": 194,
+        "container": 249,
+        "map": 195,
         "event": 97
       },
       "top": {
         "container": {
           "key": "raider_cache",
           "name": "Raider Cache",
-          "votes": 116,
-          "percent": 46.8
+          "votes": 117,
+          "percent": 47
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
           "votes": 86,
-          "percent": 44.3
+          "percent": 44.1
         },
         "event": {
           "key": "night_raid",
@@ -4845,26 +4869,26 @@
           {
             "key": "raider_cache",
             "name": "Raider Cache",
-            "votes": 116,
-            "percent": 46.8
+            "votes": 117,
+            "percent": 47
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 27,
-            "percent": 10.9
+            "percent": 10.8
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 22,
-            "percent": 8.9
+            "percent": 8.8
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 19,
-            "percent": 7.7
+            "percent": 7.6
           },
           {
             "key": "breachable_container",
@@ -4956,25 +4980,25 @@
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 86,
-            "percent": 44.3
+            "percent": 44.1
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 32,
-            "percent": 16.5
+            "percent": 16.4
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 31,
-            "percent": 16
+            "percent": 15.9
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 30,
-            "percent": 15.5
+            "percent": 15.4
           },
           {
             "key": "spaceport",
@@ -4987,6 +5011,12 @@
             "name": "Riven Tides",
             "votes": 2,
             "percent": 1
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 0.5
           }
         ],
         "event": [
@@ -6164,10 +6194,10 @@
     "arc-conductive-coupler": {
       "itemId": "arc-conductive-coupler",
       "available": true,
-      "totalVotes": 7,
+      "totalVotes": 8,
       "totals": {
         "container": 0,
-        "map": 4,
+        "map": 5,
         "event": 3
       },
       "top": {
@@ -6175,7 +6205,7 @@
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 4,
+          "votes": 5,
           "percent": 100
         },
         "event": {
@@ -6191,7 +6221,7 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 4,
+            "votes": 5,
             "percent": 100
           }
         ],
@@ -6474,30 +6504,30 @@
     "arc-data-module": {
       "itemId": "arc-data-module",
       "available": true,
-      "totalVotes": 47,
+      "totalVotes": 56,
       "totals": {
-        "container": 7,
-        "map": 22,
-        "event": 18
+        "container": 9,
+        "map": 28,
+        "event": 19
       },
       "top": {
         "container": {
           "key": "arc_courier",
           "name": "Arc Courier",
-          "votes": 3,
-          "percent": 42.9
+          "votes": 4,
+          "percent": 44.4
         },
         "map": {
-          "key": "pendola-pass",
-          "name": "Pendola Pass",
+          "key": "blue-gate",
+          "name": "Blue Gate",
           "votes": 4,
-          "percent": 18.2
+          "percent": 14.3
         },
         "event": {
           "key": "arc_frigate",
           "name": "ARC Frigate",
-          "votes": 4,
-          "percent": 22.2
+          "votes": 5,
+          "percent": 26.3
         }
       },
       "groups": {
@@ -6505,156 +6535,156 @@
           {
             "key": "arc_courier",
             "name": "Arc Courier",
-            "votes": 3,
-            "percent": 42.9
+            "votes": 4,
+            "percent": 44.4
           },
           {
             "key": "bag",
             "name": "Bags",
-            "votes": 2,
-            "percent": 28.6
+            "votes": 3,
+            "percent": 33.3
           },
           {
             "key": "arc_husk",
             "name": "Arc Husk",
             "votes": 1,
-            "percent": 14.3
+            "percent": 11.1
           },
           {
             "key": "arc_probe",
             "name": "Arc Probe",
             "votes": 1,
-            "percent": 14.3
+            "percent": 11.1
           }
         ],
         "map": [
           {
-            "key": "pendola-pass",
-            "name": "Pendola Pass",
-            "votes": 4,
-            "percent": 18.2
-          },
-          {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 3,
-            "percent": 13.6
+            "votes": 4,
+            "percent": 14.3
           },
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 3,
-            "percent": 13.6
+            "votes": 4,
+            "percent": 14.3
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 3,
-            "percent": 13.6
+            "votes": 4,
+            "percent": 14.3
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 4,
+            "percent": 14.3
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
-            "votes": 3,
-            "percent": 13.6
+            "votes": 4,
+            "percent": 14.3
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
-            "votes": 3,
-            "percent": 13.6
+            "votes": 4,
+            "percent": 14.3
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
-            "votes": 3,
-            "percent": 13.6
+            "votes": 4,
+            "percent": 14.3
           }
         ],
         "event": [
           {
             "key": "arc_frigate",
             "name": "ARC Frigate",
-            "votes": 4,
-            "percent": 22.2
+            "votes": 5,
+            "percent": 26.3
           },
           {
             "key": "redirection",
             "name": "Redirection",
             "votes": 2,
-            "percent": 11.1
+            "percent": 10.5
           },
           {
             "key": "beachcombing",
             "name": "Beachcombing",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "bird_city",
             "name": "Bird City",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "close_scrutiny",
             "name": "Close Scrutiny",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "cold_snap",
             "name": "Cold Snap",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "day_raid",
             "name": "Day Raid (Standard)",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "harvester",
             "name": "Harvester",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "hidden_bunker",
             "name": "Hidden Bunker",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "hurricane",
             "name": "Hurricane",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "husk_graveyard",
             "name": "Husk Graveyard",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "launch_tower_loot",
             "name": "Launch Tower Loot",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           },
           {
             "key": "night_raid",
             "name": "Night Raid",
             "votes": 1,
-            "percent": 5.6
+            "percent": 5.3
           }
         ]
       }
@@ -7018,19 +7048,19 @@
     "arc-plated-coupler": {
       "itemId": "arc-plated-coupler",
       "available": true,
-      "totalVotes": 7,
+      "totalVotes": 8,
       "totals": {
         "container": 0,
-        "map": 4,
+        "map": 5,
         "event": 3
       },
       "top": {
         "container": null,
         "map": {
-          "key": "dam",
-          "name": "Dam Battlegrounds",
-          "votes": 2,
-          "percent": 50
+          "key": "pendola-pass",
+          "name": "Pendola Pass",
+          "votes": 3,
+          "percent": 60
         },
         "event": {
           "key": "redirection",
@@ -7043,16 +7073,16 @@
         "container": [],
         "map": [
           {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 3,
+            "percent": 60
+          },
+          {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 2,
-            "percent": 50
-          },
-          {
-            "key": "pendola-pass",
-            "name": "Pendola Pass",
-            "votes": 2,
-            "percent": 50
+            "percent": 40
           }
         ],
         "event": [
@@ -7511,22 +7541,46 @@
     },
     "arcade-duck": {
       "itemId": "arcade-duck",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 2,
       "totals": {
         "container": 0,
-        "map": 0,
-        "event": 0
+        "map": 1,
+        "event": 1
       },
       "top": {
         "container": null,
-        "map": null,
-        "event": null
+        "map": {
+          "key": "buried-city",
+          "name": "Buried City",
+          "votes": 1,
+          "percent": 100
+        },
+        "event": {
+          "key": "bird_city",
+          "name": "Bird City",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [],
-        "map": [],
-        "event": []
+        "map": [
+          {
+            "key": "buried-city",
+            "name": "Buried City",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "event": [
+          {
+            "key": "bird_city",
+            "name": "Bird City",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "archive-desk-lamp": {
@@ -8747,22 +8801,46 @@
     },
     "battered-aviary-table-design": {
       "itemId": "battered-aviary-table-design",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 2,
       "totals": {
         "container": 0,
-        "map": 0,
-        "event": 0
+        "map": 1,
+        "event": 1
       },
       "top": {
         "container": null,
-        "map": null,
-        "event": null
+        "map": {
+          "key": "dam",
+          "name": "Dam Battlegrounds",
+          "votes": 1,
+          "percent": 100
+        },
+        "event": {
+          "key": "electromagnetic_storm",
+          "name": "Electromagnetic Storm",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [],
-        "map": [],
-        "event": []
+        "map": [
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "event": [
+          {
+            "key": "electromagnetic_storm",
+            "name": "Electromagnetic Storm",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "battered-bureau-chair": {
@@ -9128,42 +9206,54 @@
     "battered-paperback": {
       "itemId": "battered-paperback",
       "available": true,
-      "totalVotes": 2,
+      "totalVotes": 4,
       "totals": {
-        "container": 1,
-        "map": 1,
+        "container": 2,
+        "map": 2,
         "event": 0
       },
       "top": {
         "container": {
-          "key": "locker",
-          "name": "Lockers",
+          "key": "bag",
+          "name": "Bags",
           "votes": 1,
-          "percent": 100
+          "percent": 50
         },
         "map": {
-          "key": "pendola-pass",
-          "name": "Pendola Pass",
+          "key": "blue-gate",
+          "name": "Blue Gate",
           "votes": 1,
-          "percent": 100
+          "percent": 50
         },
         "event": null
       },
       "groups": {
         "container": [
           {
+            "key": "bag",
+            "name": "Bags",
+            "votes": 1,
+            "percent": 50
+          },
+          {
             "key": "locker",
             "name": "Lockers",
             "votes": 1,
-            "percent": 100
+            "percent": 50
           }
         ],
         "map": [
           {
+            "key": "blue-gate",
+            "name": "Blue Gate",
+            "votes": 1,
+            "percent": 50
+          },
+          {
             "key": "pendola-pass",
             "name": "Pendola Pass",
             "votes": 1,
-            "percent": 100
+            "percent": 50
           }
         ],
         "event": []
@@ -9436,24 +9526,24 @@
     "bettina": {
       "itemId": "bettina-blueprint",
       "available": true,
-      "totalVotes": 205,
+      "totalVotes": 207,
       "totals": {
-        "container": 89,
-        "map": 73,
+        "container": 90,
+        "map": 74,
         "event": 43
       },
       "top": {
         "container": {
           "key": "raider_cache",
           "name": "Raider Cache",
-          "votes": 23,
-          "percent": 25.8
+          "votes": 24,
+          "percent": 26.7
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
           "votes": 24,
-          "percent": 32.9
+          "percent": 32.4
         },
         "event": {
           "key": "night_raid",
@@ -9467,32 +9557,32 @@
           {
             "key": "raider_cache",
             "name": "Raider Cache",
-            "votes": 23,
-            "percent": 25.8
+            "votes": 24,
+            "percent": 26.7
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 12,
-            "percent": 13.5
+            "percent": 13.3
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 10,
-            "percent": 11.2
+            "percent": 11.1
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 8,
-            "percent": 9
+            "percent": 8.9
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 8,
-            "percent": 9
+            "percent": 8.9
           },
           {
             "key": "breachable_container",
@@ -9504,25 +9594,25 @@
             "key": "base_container",
             "name": "Container",
             "votes": 4,
-            "percent": 4.5
+            "percent": 4.4
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 4,
-            "percent": 4.5
+            "percent": 4.4
           },
           {
             "key": "utility_crate",
             "name": "Grenade Tube",
             "votes": 3,
-            "percent": 3.4
+            "percent": 3.3
           },
           {
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 3,
-            "percent": 3.4
+            "percent": 3.3
           },
           {
             "key": "android",
@@ -9578,31 +9668,37 @@
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 24,
-            "percent": 32.9
+            "percent": 32.4
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 20,
-            "percent": 27.4
+            "percent": 27
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 12,
-            "percent": 16.4
+            "percent": 16.2
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 9,
-            "percent": 12.3
+            "percent": 12.2
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 8,
-            "percent": 11
+            "percent": 10.8
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 1.4
           }
         ],
         "event": [
@@ -11776,30 +11872,30 @@
     "bully-fragmenter": {
       "itemId": "bully-fragmenter",
       "available": true,
-      "totalVotes": 9,
+      "totalVotes": 15,
       "totals": {
-        "container": 1,
-        "map": 6,
-        "event": 2
+        "container": 3,
+        "map": 8,
+        "event": 4
       },
       "top": {
         "container": {
           "key": "arc_courier",
           "name": "Arc Courier",
-          "votes": 1,
+          "votes": 3,
           "percent": 100
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 4,
-          "percent": 66.7
+          "votes": 6,
+          "percent": 75
         },
         "event": {
-          "key": "arc_frigate",
-          "name": "ARC Frigate",
-          "votes": 1,
-          "percent": 50
+          "key": "day_raid",
+          "name": "Day Raid (Standard)",
+          "votes": 3,
+          "percent": 75
         }
       },
       "groups": {
@@ -11807,7 +11903,7 @@
           {
             "key": "arc_courier",
             "name": "Arc Courier",
-            "votes": 1,
+            "votes": 3,
             "percent": 100
           }
         ],
@@ -11815,34 +11911,34 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 4,
-            "percent": 66.7
+            "votes": 6,
+            "percent": 75
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 1,
-            "percent": 16.7
+            "percent": 12.5
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 1,
-            "percent": 16.7
+            "percent": 12.5
           }
         ],
         "event": [
           {
+            "key": "day_raid",
+            "name": "Day Raid (Standard)",
+            "votes": 3,
+            "percent": 75
+          },
+          {
             "key": "arc_frigate",
             "name": "ARC Frigate",
             "votes": 1,
-            "percent": 50
-          },
-          {
-            "key": "day_raid",
-            "name": "Day Raid (Standard)",
-            "votes": 1,
-            "percent": 50
+            "percent": 25
           }
         ]
       }
@@ -12986,30 +13082,30 @@
     "calculator": {
       "itemId": "calculator",
       "available": true,
-      "totalVotes": 8,
+      "totalVotes": 14,
       "totals": {
-        "container": 1,
-        "map": 5,
-        "event": 2
+        "container": 3,
+        "map": 8,
+        "event": 3
       },
       "top": {
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
-          "votes": 1,
+          "votes": 3,
           "percent": 100
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 3,
-          "percent": 60
+          "votes": 4,
+          "percent": 50
         },
         "event": {
           "key": "electromagnetic_storm",
           "name": "Electromagnetic Storm",
           "votes": 2,
-          "percent": 100
+          "percent": 66.7
         }
       },
       "groups": {
@@ -13017,7 +13113,7 @@
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 1,
+            "votes": 3,
             "percent": 100
           }
         ],
@@ -13025,20 +13121,26 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 3,
-            "percent": 60
+            "votes": 4,
+            "percent": 50
+          },
+          {
+            "key": "spaceport",
+            "name": "The Spaceport",
+            "votes": 2,
+            "percent": 25
+          },
+          {
+            "key": "buried-city",
+            "name": "Buried City",
+            "votes": 1,
+            "percent": 12.5
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 1,
-            "percent": 20
-          },
-          {
-            "key": "spaceport",
-            "name": "The Spaceport",
-            "votes": 1,
-            "percent": 20
+            "percent": 12.5
           }
         ],
         "event": [
@@ -13046,7 +13148,13 @@
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
             "votes": 2,
-            "percent": 100
+            "percent": 66.7
+          },
+          {
+            "key": "night_raid",
+            "name": "Night Raid",
+            "votes": 1,
+            "percent": 33.3
           }
         ]
       }
@@ -18342,11 +18450,11 @@
     "differential-microphone": {
       "itemId": "differential-microphone",
       "available": true,
-      "totalVotes": 5,
+      "totalVotes": 7,
       "totals": {
         "container": 2,
-        "map": 3,
-        "event": 0
+        "map": 4,
+        "event": 1
       },
       "top": {
         "container": {
@@ -18358,10 +18466,15 @@
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 3,
+          "votes": 4,
           "percent": 100
         },
-        "event": null
+        "event": {
+          "key": "day_raid",
+          "name": "Day Raid (Standard)",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [
@@ -18376,11 +18489,18 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 3,
+            "votes": 4,
             "percent": 100
           }
         ],
-        "event": []
+        "event": [
+          {
+            "key": "day_raid",
+            "name": "Day Raid (Standard)",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "diner-ceiling-lamp": {
@@ -18445,21 +18565,45 @@
     },
     "diner-cupboard-design": {
       "itemId": "diner-cupboard-design",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 2,
       "totals": {
-        "container": 0,
-        "map": 0,
+        "container": 1,
+        "map": 1,
         "event": 0
       },
       "top": {
-        "container": null,
-        "map": null,
+        "container": {
+          "key": "box",
+          "name": "Boxes",
+          "votes": 1,
+          "percent": 100
+        },
+        "map": {
+          "key": "pendola-pass",
+          "name": "Pendola Pass",
+          "votes": 1,
+          "percent": 100
+        },
         "event": null
       },
       "groups": {
-        "container": [],
-        "map": [],
+        "container": [
+          {
+            "key": "box",
+            "name": "Boxes",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "map": [
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "event": []
       }
     },
@@ -19158,11 +19302,11 @@
     "doodly-duck": {
       "itemId": "doodly-duck",
       "available": true,
-      "totalVotes": 5,
+      "totalVotes": 6,
       "totals": {
         "container": 2,
         "map": 3,
-        "event": 0
+        "event": 1
       },
       "top": {
         "container": {
@@ -19177,7 +19321,12 @@
           "votes": 3,
           "percent": 100
         },
-        "event": null
+        "event": {
+          "key": "bird_city",
+          "name": "Bird City",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [
@@ -19196,7 +19345,14 @@
             "percent": 100
           }
         ],
-        "event": []
+        "event": [
+          {
+            "key": "bird_city",
+            "name": "Bird City",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "door-blocker": {
@@ -19948,10 +20104,10 @@
     "elephant-obelisk": {
       "itemId": "elephant-obelisk",
       "available": true,
-      "totalVotes": 17,
+      "totalVotes": 18,
       "totals": {
         "container": 4,
-        "map": 11,
+        "map": 12,
         "event": 2
       },
       "top": {
@@ -19965,7 +20121,7 @@
           "key": "dam",
           "name": "Dam Battlegrounds",
           "votes": 4,
-          "percent": 36.4
+          "percent": 33.3
         },
         "event": {
           "key": "day_raid",
@@ -19988,31 +20144,31 @@
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 4,
-            "percent": 36.4
+            "percent": 33.3
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 3,
-            "percent": 27.3
+            "percent": 25
+          },
+          {
+            "key": "blue-gate",
+            "name": "Blue Gate",
+            "votes": 2,
+            "percent": 16.7
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 2,
-            "percent": 18.2
-          },
-          {
-            "key": "blue-gate",
-            "name": "Blue Gate",
-            "votes": 1,
-            "percent": 9.1
+            "percent": 16.7
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 1,
-            "percent": 9.1
+            "percent": 8.3
           }
         ],
         "event": [
@@ -20074,30 +20230,30 @@
     "emperor-gateway-conduit": {
       "itemId": "emperor-gateway-conduit-blueprint",
       "available": true,
-      "totalVotes": 61,
+      "totalVotes": 84,
       "totals": {
-        "container": 19,
-        "map": 22,
-        "event": 20
+        "container": 26,
+        "map": 32,
+        "event": 26
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 15,
-          "percent": 78.9
+          "votes": 19,
+          "percent": 73.1
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 8,
-          "percent": 36.4
+          "votes": 11,
+          "percent": 34.4
         },
         "event": {
           "key": "electromagnetic_storm",
           "name": "Electromagnetic Storm",
-          "votes": 9,
-          "percent": 45
+          "votes": 10,
+          "percent": 38.5
         }
       },
       "groups": {
@@ -20105,90 +20261,108 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 15,
-            "percent": 78.9
+            "votes": 19,
+            "percent": 73.1
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 4,
-            "percent": 21.1
+            "percent": 15.4
+          },
+          {
+            "key": "breachable_container",
+            "name": "Breachable Container",
+            "votes": 2,
+            "percent": 7.7
+          },
+          {
+            "key": "bag",
+            "name": "Bags",
+            "votes": 1,
+            "percent": 3.8
           }
         ],
         "map": [
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 8,
-            "percent": 36.4
+            "votes": 11,
+            "percent": 34.4
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
-            "votes": 7,
-            "percent": 31.8
+            "votes": 9,
+            "percent": 28.1
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 4,
-            "percent": 18.2
+            "votes": 7,
+            "percent": 21.9
+          },
+          {
+            "key": "buried-city",
+            "name": "Buried City",
+            "votes": 2,
+            "percent": 6.3
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 2,
+            "percent": 6.3
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 1,
-            "percent": 4.5
-          },
-          {
-            "key": "buried-city",
-            "name": "Buried City",
-            "votes": 1,
-            "percent": 4.5
-          },
-          {
-            "key": "riven-tides",
-            "name": "Riven Tides",
-            "votes": 1,
-            "percent": 4.5
+            "percent": 3.1
           }
         ],
         "event": [
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
-            "votes": 9,
-            "percent": 45
+            "votes": 10,
+            "percent": 38.5
           },
           {
             "key": "redirection",
             "name": "Redirection",
-            "votes": 6,
-            "percent": 30
+            "votes": 7,
+            "percent": 26.9
+          },
+          {
+            "key": "close_scrutiny",
+            "name": "Close Scrutiny",
+            "votes": 2,
+            "percent": 7.7
+          },
+          {
+            "key": "day_raid",
+            "name": "Day Raid (Standard)",
+            "votes": 2,
+            "percent": 7.7
+          },
+          {
+            "key": "hurricane",
+            "name": "Hurricane",
+            "votes": 2,
+            "percent": 7.7
           },
           {
             "key": "night_raid",
             "name": "Night Raid",
             "votes": 2,
-            "percent": 10
+            "percent": 7.7
           },
           {
             "key": "arc_frigate",
             "name": "ARC Frigate",
             "votes": 1,
-            "percent": 5
-          },
-          {
-            "key": "day_raid",
-            "name": "Day Raid (Standard)",
-            "votes": 1,
-            "percent": 5
-          },
-          {
-            "key": "hurricane",
-            "name": "Hurricane",
-            "votes": 1,
-            "percent": 5
+            "percent": 3.8
           }
         ]
       }
@@ -20196,18 +20370,23 @@
     "emperor-modulator": {
       "itemId": "emperor-modulator",
       "available": true,
-      "totalVotes": 8,
+      "totalVotes": 13,
       "totals": {
-        "container": 0,
-        "map": 5,
+        "container": 2,
+        "map": 8,
         "event": 3
       },
       "top": {
-        "container": null,
+        "container": {
+          "key": "breachable_container",
+          "name": "Breachable Container",
+          "votes": 1,
+          "percent": 50
+        },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 5,
+          "votes": 8,
           "percent": 100
         },
         "event": {
@@ -20218,12 +20397,25 @@
         }
       },
       "groups": {
-        "container": [],
+        "container": [
+          {
+            "key": "breachable_container",
+            "name": "Breachable Container",
+            "votes": 1,
+            "percent": 50
+          },
+          {
+            "key": "base_container",
+            "name": "Container",
+            "votes": 1,
+            "percent": 50
+          }
+        ],
         "map": [
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 5,
+            "votes": 8,
             "percent": 100
           }
         ],
@@ -20322,30 +20514,30 @@
     "energy-ammo": {
       "itemId": "energy-ammo",
       "available": true,
-      "totalVotes": 11,
+      "totalVotes": 18,
       "totals": {
-        "container": 3,
-        "map": 4,
-        "event": 4
+        "container": 4,
+        "map": 9,
+        "event": 5
       },
       "top": {
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
-          "votes": 3,
+          "votes": 4,
           "percent": 100
         },
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 1,
-          "percent": 25
+          "votes": 2,
+          "percent": 22.2
         },
         "event": {
           "key": "harvester",
           "name": "Harvester",
           "votes": 3,
-          "percent": 75
+          "percent": 60
         }
       },
       "groups": {
@@ -20353,7 +20545,7 @@
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 3,
+            "votes": 4,
             "percent": 100
           }
         ],
@@ -20361,26 +20553,32 @@
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 1,
-            "percent": 25
+            "votes": 2,
+            "percent": 22.2
           },
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 1,
-            "percent": 25
+            "votes": 2,
+            "percent": 22.2
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 1,
-            "percent": 25
+            "votes": 2,
+            "percent": 22.2
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
+            "votes": 2,
+            "percent": 22.2
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
             "votes": 1,
-            "percent": 25
+            "percent": 11.1
           }
         ],
         "event": [
@@ -20388,13 +20586,19 @@
             "key": "harvester",
             "name": "Harvester",
             "votes": 3,
-            "percent": 75
+            "percent": 60
+          },
+          {
+            "key": "arc_frigate",
+            "name": "ARC Frigate",
+            "votes": 1,
+            "percent": 20
           },
           {
             "key": "close_scrutiny",
             "name": "Close Scrutiny",
             "votes": 1,
-            "percent": 25
+            "percent": 20
           }
         ]
       }
@@ -20402,29 +20606,29 @@
     "epoxy-bucket": {
       "itemId": "epoxy-bucket",
       "available": true,
-      "totalVotes": 18,
+      "totalVotes": 29,
       "totals": {
-        "container": 6,
-        "map": 11,
-        "event": 1
+        "container": 9,
+        "map": 17,
+        "event": 3
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 5,
-          "percent": 83.3
+          "votes": 6,
+          "percent": 66.7
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 11,
+          "votes": 17,
           "percent": 100
         },
         "event": {
           "key": "night_raid",
           "name": "Night Raid",
-          "votes": 1,
+          "votes": 3,
           "percent": 100
         }
       },
@@ -20433,21 +20637,27 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 5,
-            "percent": 83.3
+            "votes": 6,
+            "percent": 66.7
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
+            "votes": 2,
+            "percent": 22.2
+          },
+          {
+            "key": "weapon_case",
+            "name": "Weapon Case",
             "votes": 1,
-            "percent": 16.7
+            "percent": 11.1
           }
         ],
         "map": [
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 11,
+            "votes": 17,
             "percent": 100
           }
         ],
@@ -20455,7 +20665,7 @@
           {
             "key": "night_raid",
             "name": "Night Raid",
-            "votes": 1,
+            "votes": 3,
             "percent": 100
           }
         ]
@@ -21110,10 +21320,10 @@
     "exodus-technical-handbook": {
       "itemId": "exodus-technical-handbook",
       "available": true,
-      "totalVotes": 9,
+      "totalVotes": 10,
       "totals": {
         "container": 4,
-        "map": 5,
+        "map": 6,
         "event": 0
       },
       "top": {
@@ -21126,8 +21336,8 @@
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 3,
-          "percent": 60
+          "votes": 4,
+          "percent": 66.7
         },
         "event": null
       },
@@ -21144,20 +21354,20 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 3,
-            "percent": 60
+            "votes": 4,
+            "percent": 66.7
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 1,
-            "percent": 20
+            "percent": 16.7
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 1,
-            "percent": 20
+            "percent": 16.7
           }
         ],
         "event": []
@@ -22156,10 +22366,10 @@
     "extended-light-mag-iii": {
       "itemId": "extended-light-mag-iii-recipe",
       "available": true,
-      "totalVotes": 155,
+      "totalVotes": 156,
       "totals": {
         "container": 49,
-        "map": 53,
+        "map": 54,
         "event": 53
       },
       "top": {
@@ -22173,7 +22383,7 @@
           "key": "blue-gate",
           "name": "Blue Gate",
           "votes": 18,
-          "percent": 34
+          "percent": 33.3
         },
         "event": {
           "key": "electromagnetic_storm",
@@ -22220,31 +22430,37 @@
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 18,
-            "percent": 34
+            "percent": 33.3
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 15,
-            "percent": 28.3
+            "percent": 27.8
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 9,
-            "percent": 17
+            "percent": 16.7
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 9,
-            "percent": 17
+            "percent": 16.7
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 2,
-            "percent": 3.8
+            "percent": 3.7
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 1.9
           }
         ],
         "event": [
@@ -24504,10 +24720,10 @@
     "fluted-rotor-core": {
       "itemId": "fluted-rotor-core",
       "available": true,
-      "totalVotes": 9,
+      "totalVotes": 10,
       "totals": {
         "container": 0,
-        "map": 5,
+        "map": 6,
         "event": 4
       },
       "top": {
@@ -24515,7 +24731,7 @@
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 5,
+          "votes": 6,
           "percent": 100
         },
         "event": {
@@ -24531,7 +24747,7 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 5,
+            "votes": 6,
             "percent": 100
           }
         ],
@@ -24594,29 +24810,29 @@
     "fossilized-lightning": {
       "itemId": "fossilized-lightning",
       "available": true,
-      "totalVotes": 81,
+      "totalVotes": 85,
       "totals": {
-        "container": 6,
-        "map": 40,
-        "event": 35
+        "container": 8,
+        "map": 41,
+        "event": 36
       },
       "top": {
         "container": {
           "key": "bag",
           "name": "Bags",
-          "votes": 4,
-          "percent": 66.7
+          "votes": 6,
+          "percent": 75
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
           "votes": 24,
-          "percent": 60
+          "percent": 58.5
         },
         "event": {
           "key": "electromagnetic_storm",
           "name": "Electromagnetic Storm",
-          "votes": 35,
+          "votes": 36,
           "percent": 100
         }
       },
@@ -24625,20 +24841,20 @@
           {
             "key": "bag",
             "name": "Bags",
-            "votes": 4,
-            "percent": 66.7
+            "votes": 6,
+            "percent": 75
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 1,
-            "percent": 16.7
+            "percent": 12.5
           },
           {
             "key": "basket",
             "name": "Baskets",
             "votes": 1,
-            "percent": 16.7
+            "percent": 12.5
           }
         ],
         "map": [
@@ -24646,38 +24862,38 @@
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 24,
-            "percent": 60
+            "percent": 58.5
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 9,
-            "percent": 22.5
+            "percent": 22
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 5,
-            "percent": 12.5
+            "percent": 12.2
+          },
+          {
+            "key": "stella-montis",
+            "name": "Stella Montis",
+            "votes": 2,
+            "percent": 4.9
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 1,
-            "percent": 2.5
-          },
-          {
-            "key": "stella-montis",
-            "name": "Stella Montis",
-            "votes": 1,
-            "percent": 2.5
+            "percent": 2.4
           }
         ],
         "event": [
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
-            "votes": 35,
+            "votes": 36,
             "percent": 100
           }
         ]
@@ -25004,15 +25220,25 @@
     "frigate-diagnostic-node": {
       "itemId": "frigate-diagnostic-node",
       "available": true,
-      "totalVotes": 6,
+      "totalVotes": 14,
       "totals": {
-        "container": 0,
-        "map": 0,
+        "container": 1,
+        "map": 7,
         "event": 6
       },
       "top": {
-        "container": null,
-        "map": null,
+        "container": {
+          "key": "breachable_container",
+          "name": "Breachable Container",
+          "votes": 1,
+          "percent": 100
+        },
+        "map": {
+          "key": "blue-gate",
+          "name": "Blue Gate",
+          "votes": 1,
+          "percent": 14.3
+        },
         "event": {
           "key": "arc_frigate",
           "name": "ARC Frigate",
@@ -25021,8 +25247,58 @@
         }
       },
       "groups": {
-        "container": [],
-        "map": [],
+        "container": [
+          {
+            "key": "breachable_container",
+            "name": "Breachable Container",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "map": [
+          {
+            "key": "blue-gate",
+            "name": "Blue Gate",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "buried-city",
+            "name": "Buried City",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "stella-montis",
+            "name": "Stella Montis",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "spaceport",
+            "name": "The Spaceport",
+            "votes": 1,
+            "percent": 14.3
+          }
+        ],
         "event": [
           {
             "key": "arc_frigate",
@@ -25036,29 +25312,29 @@
     "frigate-inductor": {
       "itemId": "frigate-inductor",
       "available": true,
-      "totalVotes": 20,
+      "totalVotes": 37,
       "totals": {
-        "container": 6,
-        "map": 9,
-        "event": 5
+        "container": 13,
+        "map": 15,
+        "event": 9
       },
       "top": {
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
-          "votes": 5,
-          "percent": 83.3
+          "votes": 11,
+          "percent": 84.6
         },
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 2,
-          "percent": 22.2
+          "votes": 3,
+          "percent": 20
         },
         "event": {
           "key": "arc_frigate",
           "name": "ARC Frigate",
-          "votes": 5,
+          "votes": 9,
           "percent": 100
         }
       },
@@ -25067,53 +25343,59 @@
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 5,
-            "percent": 83.3
+            "votes": 11,
+            "percent": 84.6
+          },
+          {
+            "key": "box",
+            "name": "Boxes",
+            "votes": 1,
+            "percent": 7.7
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 1,
-            "percent": 16.7
+            "percent": 7.7
           }
         ],
         "map": [
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 2,
-            "percent": 22.2
-          },
-          {
-            "key": "dam",
-            "name": "Dam Battlegrounds",
-            "votes": 2,
-            "percent": 22.2
-          },
-          {
-            "key": "pendola-pass",
-            "name": "Pendola Pass",
-            "votes": 2,
-            "percent": 22.2
-          },
-          {
-            "key": "spaceport",
-            "name": "The Spaceport",
-            "votes": 2,
-            "percent": 22.2
+            "votes": 3,
+            "percent": 20
           },
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 1,
-            "percent": 11.1
+            "votes": 3,
+            "percent": 20
+          },
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 3,
+            "percent": 20
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 3,
+            "percent": 20
+          },
+          {
+            "key": "spaceport",
+            "name": "The Spaceport",
+            "votes": 3,
+            "percent": 20
           }
         ],
         "event": [
           {
             "key": "arc_frigate",
             "name": "ARC Frigate",
-            "votes": 5,
+            "votes": 9,
             "percent": 100
           }
         ]
@@ -25360,26 +25642,31 @@
     "garnet-stencil": {
       "itemId": "garnet-stencil",
       "available": true,
-      "totalVotes": 4,
+      "totalVotes": 7,
       "totals": {
-        "container": 2,
-        "map": 2,
-        "event": 0
+        "container": 3,
+        "map": 3,
+        "event": 1
       },
       "top": {
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
           "votes": 2,
-          "percent": 100
+          "percent": 66.7
         },
         "map": {
-          "key": "blue-gate",
-          "name": "Blue Gate",
-          "votes": 1,
-          "percent": 50
+          "key": "riven-tides",
+          "name": "Riven Tides",
+          "votes": 2,
+          "percent": 66.7
         },
-        "event": null
+        "event": {
+          "key": "husk_graveyard",
+          "name": "Husk Graveyard",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [
@@ -25387,24 +25674,37 @@
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 2,
-            "percent": 100
+            "percent": 66.7
+          },
+          {
+            "key": "locker",
+            "name": "Lockers",
+            "votes": 1,
+            "percent": 33.3
           }
         ],
         "map": [
           {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 2,
+            "percent": 66.7
+          },
+          {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 1,
-            "percent": 50
-          },
-          {
-            "key": "riven-tides",
-            "name": "Riven Tides",
-            "votes": 1,
-            "percent": 50
+            "percent": 33.3
           }
         ],
-        "event": []
+        "event": [
+          {
+            "key": "husk_graveyard",
+            "name": "Husk Graveyard",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "gas-grenade": {
@@ -26689,22 +26989,58 @@
     },
     "green-lab-sofa-design": {
       "itemId": "green-lab-sofa-design",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 3,
       "totals": {
-        "container": 0,
-        "map": 0,
-        "event": 0
+        "container": 1,
+        "map": 1,
+        "event": 1
       },
       "top": {
-        "container": null,
-        "map": null,
-        "event": null
+        "container": {
+          "key": "breachable_container",
+          "name": "Breachable Container",
+          "votes": 1,
+          "percent": 100
+        },
+        "map": {
+          "key": "dam",
+          "name": "Dam Battlegrounds",
+          "votes": 1,
+          "percent": 100
+        },
+        "event": {
+          "key": "electromagnetic_storm",
+          "name": "Electromagnetic Storm",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
-        "container": [],
-        "map": [],
-        "event": []
+        "container": [
+          {
+            "key": "breachable_container",
+            "name": "Breachable Container",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "map": [
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "event": [
+          {
+            "key": "electromagnetic_storm",
+            "name": "Electromagnetic Storm",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "hairpin": {
@@ -27806,9 +28142,9 @@
     "horizontal-grip": {
       "itemId": "horizontal-grip",
       "available": true,
-      "totalVotes": 83,
+      "totalVotes": 85,
       "totals": {
-        "container": 23,
+        "container": 25,
         "map": 32,
         "event": 28
       },
@@ -27817,7 +28153,7 @@
           "key": "base_container",
           "name": "Container",
           "votes": 17,
-          "percent": 73.9
+          "percent": 68
         },
         "map": {
           "key": "buried-city",
@@ -27838,25 +28174,31 @@
             "key": "base_container",
             "name": "Container",
             "votes": 17,
-            "percent": 73.9
+            "percent": 68
           },
           {
             "key": "baron_husk",
             "name": "Baron Husk",
             "votes": 3,
-            "percent": 13
+            "percent": 12
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 2,
-            "percent": 8.7
+            "percent": 8
           },
           {
             "key": "raider_cache",
             "name": "Raider Cache",
+            "votes": 2,
+            "percent": 8
+          },
+          {
+            "key": "arc_courier",
+            "name": "Arc Courier",
             "votes": 1,
-            "percent": 4.3
+            "percent": 4
           }
         ],
         "map": [
@@ -29460,30 +29802,30 @@
     "insulation-roll": {
       "itemId": "insulation-roll",
       "available": true,
-      "totalVotes": 42,
+      "totalVotes": 45,
       "totals": {
-        "container": 25,
-        "map": 12,
-        "event": 5
+        "container": 26,
+        "map": 13,
+        "event": 6
       },
       "top": {
         "container": {
           "key": "box",
           "name": "Boxes",
-          "votes": 5,
-          "percent": 20
+          "votes": 6,
+          "percent": 23.1
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 11,
-          "percent": 91.7
+          "votes": 12,
+          "percent": 92.3
         },
         "event": {
           "key": "day_raid",
           "name": "Day Raid (Standard)",
-          "votes": 4,
-          "percent": 80
+          "votes": 5,
+          "percent": 83.3
         }
       },
       "groups": {
@@ -29491,138 +29833,138 @@
           {
             "key": "box",
             "name": "Boxes",
-            "votes": 5,
-            "percent": 20
+            "votes": 6,
+            "percent": 23.1
           },
           {
             "key": "android",
             "name": "Android",
             "votes": 3,
-            "percent": 12
+            "percent": 11.5
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 2,
-            "percent": 8
+            "percent": 7.7
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "arc_courier",
             "name": "Arc Courier",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "arc_husk",
             "name": "Arc Husk",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "arc_probe",
             "name": "Arc Probe",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "baron_husk",
             "name": "Baron Husk",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "basket",
             "name": "Baskets",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "car",
             "name": "Cars",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "utility_crate",
             "name": "Grenade Tube",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "raider_cache",
             "name": "Raider Cache",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 1,
-            "percent": 4
+            "percent": 3.8
           }
         ],
         "map": [
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 11,
-            "percent": 91.7
+            "votes": 12,
+            "percent": 92.3
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 1,
-            "percent": 8.3
+            "percent": 7.7
           }
         ],
         "event": [
           {
             "key": "day_raid",
             "name": "Day Raid (Standard)",
-            "votes": 4,
-            "percent": 80
+            "votes": 5,
+            "percent": 83.3
           },
           {
             "key": "night_raid",
             "name": "Night Raid",
             "votes": 1,
-            "percent": 20
+            "percent": 16.7
           }
         ]
       }
@@ -29920,29 +30262,29 @@
     "jupiter": {
       "itemId": "jupiter-i-recipe",
       "available": true,
-      "totalVotes": 116,
+      "totalVotes": 121,
       "totals": {
-        "container": 21,
-        "map": 54,
-        "event": 41
+        "container": 22,
+        "map": 57,
+        "event": 42
       },
       "top": {
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
-          "votes": 15,
-          "percent": 71.4
+          "votes": 16,
+          "percent": 72.7
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
-          "votes": 24,
-          "percent": 44.4
+          "votes": 25,
+          "percent": 43.9
         },
         "event": {
           "key": "harvester",
           "name": "Harvester",
-          "votes": 41,
+          "votes": 42,
           "percent": 100
         }
       },
@@ -29951,47 +30293,47 @@
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 15,
-            "percent": 71.4
+            "votes": 16,
+            "percent": 72.7
           },
           {
             "key": "raider_cache",
             "name": "Raider Cache",
             "votes": 4,
-            "percent": 19
+            "percent": 18.2
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 2,
-            "percent": 9.5
+            "percent": 9.1
           }
         ],
         "map": [
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 24,
-            "percent": 44.4
+            "votes": 25,
+            "percent": 43.9
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 19,
-            "percent": 35.2
+            "votes": 20,
+            "percent": 35.1
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
-            "votes": 11,
-            "percent": 20.4
+            "votes": 12,
+            "percent": 21.1
           }
         ],
         "event": [
           {
             "key": "harvester",
             "name": "Harvester",
-            "votes": 41,
+            "votes": 42,
             "percent": 100
           }
         ]
@@ -30062,24 +30404,24 @@
     "kinetic-converter": {
       "itemId": "kinetic-converter",
       "available": true,
-      "totalVotes": 274,
+      "totalVotes": 277,
       "totals": {
-        "container": 101,
-        "map": 105,
+        "container": 103,
+        "map": 106,
         "event": 68
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 58,
-          "percent": 57.4
+          "votes": 59,
+          "percent": 57.3
         },
         "map": {
           "key": "buried-city",
           "name": "Buried City",
-          "votes": 44,
-          "percent": 41.9
+          "votes": 45,
+          "percent": 42.5
         },
         "event": {
           "key": "night_raid",
@@ -30093,38 +30435,38 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 58,
-            "percent": 57.4
+            "votes": 59,
+            "percent": 57.3
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 19,
-            "percent": 18.8
+            "percent": 18.4
           },
           {
             "key": "locker",
             "name": "Lockers",
-            "votes": 12,
-            "percent": 11.9
+            "votes": 13,
+            "percent": 12.6
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 3,
-            "percent": 3
+            "percent": 2.9
           },
           {
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 3,
-            "percent": 3
+            "percent": 2.9
           },
           {
             "key": "car",
             "name": "Cars",
             "votes": 2,
-            "percent": 2
+            "percent": 1.9
           },
           {
             "key": "baron_husk",
@@ -30155,38 +30497,38 @@
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 44,
-            "percent": 41.9
+            "votes": 45,
+            "percent": 42.5
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 20,
-            "percent": 19
+            "percent": 18.9
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 20,
-            "percent": 19
+            "percent": 18.9
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 11,
-            "percent": 10.5
+            "percent": 10.4
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 5,
-            "percent": 4.8
+            "percent": 4.7
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 5,
-            "percent": 4.8
+            "percent": 4.7
           }
         ],
         "event": [
@@ -30682,10 +31024,10 @@
     "laser-level": {
       "itemId": "laser-level",
       "available": true,
-      "totalVotes": 16,
+      "totalVotes": 18,
       "totals": {
         "container": 2,
-        "map": 10,
+        "map": 12,
         "event": 4
       },
       "top": {
@@ -30698,8 +31040,8 @@
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 9,
-          "percent": 90
+          "votes": 11,
+          "percent": 91.7
         },
         "event": {
           "key": "day_raid",
@@ -30721,14 +31063,14 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 9,
-            "percent": 90
+            "votes": 11,
+            "percent": 91.7
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 1,
-            "percent": 10
+            "percent": 8.3
           }
         ],
         "event": [
@@ -32584,10 +32926,10 @@
     "lightweight-stock": {
       "itemId": "lightweight-stock-recipe",
       "available": true,
-      "totalVotes": 123,
+      "totalVotes": 127,
       "totals": {
         "container": 42,
-        "map": 43,
+        "map": 47,
         "event": 38
       },
       "top": {
@@ -32600,8 +32942,8 @@
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 25,
-          "percent": 58.1
+          "votes": 26,
+          "percent": 55.3
         },
         "event": {
           "key": "cold_snap",
@@ -32635,26 +32977,44 @@
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 25,
-            "percent": 58.1
+            "votes": 26,
+            "percent": 55.3
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 10,
-            "percent": 23.3
+            "percent": 21.3
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 4,
-            "percent": 9.3
+            "percent": 8.5
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 4,
-            "percent": 9.3
+            "percent": 8.5
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 2.1
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 2.1
+          },
+          {
+            "key": "stella-montis",
+            "name": "Stella Montis",
+            "votes": 1,
+            "percent": 2.1
           }
         ],
         "event": [
@@ -33020,30 +33380,30 @@
     "looting-mk-3-survivor": {
       "itemId": "looting-mk-3-survivor-blueprint",
       "available": true,
-      "totalVotes": 1388,
+      "totalVotes": 1410,
       "totals": {
-        "container": 516,
-        "map": 558,
-        "event": 314
+        "container": 524,
+        "map": 566,
+        "event": 320
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 338,
-          "percent": 65.5
+          "votes": 342,
+          "percent": 65.3
         },
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 205,
-          "percent": 36.7
+          "votes": 207,
+          "percent": 36.6
         },
         "event": {
           "key": "night_raid",
           "name": "Night Raid",
-          "votes": 158,
-          "percent": 50.3
+          "votes": 159,
+          "percent": 49.7
         }
       },
       "groups": {
@@ -33051,32 +33411,32 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 338,
-            "percent": 65.5
+            "votes": 342,
+            "percent": 65.3
           },
           {
             "key": "locker",
             "name": "Lockers",
-            "votes": 48,
-            "percent": 9.3
+            "votes": 49,
+            "percent": 9.4
           },
           {
             "key": "box",
             "name": "Boxes",
-            "votes": 47,
-            "percent": 9.1
+            "votes": 48,
+            "percent": 9.2
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
-            "votes": 22,
-            "percent": 4.3
+            "votes": 23,
+            "percent": 4.4
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 14,
-            "percent": 2.7
+            "votes": 15,
+            "percent": 2.9
           },
           {
             "key": "arc_courier",
@@ -33161,32 +33521,32 @@
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 205,
-            "percent": 36.7
+            "votes": 207,
+            "percent": 36.6
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
-            "votes": 170,
-            "percent": 30.5
+            "votes": 171,
+            "percent": 30.2
           },
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 95,
-            "percent": 17
+            "votes": 98,
+            "percent": 17.3
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 58,
-            "percent": 10.4
+            "percent": 10.2
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 25,
-            "percent": 4.5
+            "percent": 4.4
           },
           {
             "key": "riven-tides",
@@ -33197,46 +33557,46 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 1,
-            "percent": 0.2
+            "votes": 3,
+            "percent": 0.5
           }
         ],
         "event": [
           {
             "key": "night_raid",
             "name": "Night Raid",
-            "votes": 158,
-            "percent": 50.3
+            "votes": 159,
+            "percent": 49.7
           },
           {
             "key": "cold_snap",
             "name": "Cold Snap",
             "votes": 32,
-            "percent": 10.2
+            "percent": 10
           },
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
-            "votes": 27,
-            "percent": 8.6
+            "votes": 28,
+            "percent": 8.8
           },
           {
             "key": "matriarch",
             "name": "Matriarch",
             "votes": 17,
-            "percent": 5.4
+            "percent": 5.3
           },
           {
             "key": "harvester",
             "name": "Harvester",
             "votes": 16,
-            "percent": 5.1
+            "percent": 5
           },
           {
             "key": "hurricane",
             "name": "Hurricane",
-            "votes": 14,
-            "percent": 4.5
+            "votes": 15,
+            "percent": 4.7
           },
           {
             "key": "locked_gate",
@@ -33247,8 +33607,8 @@
           {
             "key": "day_raid",
             "name": "Day Raid (Standard)",
-            "votes": 10,
-            "percent": 3.2
+            "votes": 11,
+            "percent": 3.4
           },
           {
             "key": "hidden_bunker",
@@ -33275,6 +33635,12 @@
             "percent": 1.3
           },
           {
+            "key": "husk_graveyard",
+            "name": "Husk Graveyard",
+            "votes": 2,
+            "percent": 0.6
+          },
+          {
             "key": "lush_blooms",
             "name": "Lush Blooms",
             "votes": 2,
@@ -33287,14 +33653,14 @@
             "percent": 0.6
           },
           {
-            "key": "beachcombing",
-            "name": "Beachcombing",
+            "key": "arc_frigate",
+            "name": "ARC Frigate",
             "votes": 1,
             "percent": 0.3
           },
           {
-            "key": "husk_graveyard",
-            "name": "Husk Graveyard",
+            "key": "beachcombing",
+            "name": "Beachcombing",
             "votes": 1,
             "percent": 0.3
           },
@@ -34078,11 +34444,11 @@
     "matriarch-reactor": {
       "itemId": "matriarch-reactor",
       "available": true,
-      "totalVotes": 83,
+      "totalVotes": 85,
       "totals": {
         "container": 18,
         "map": 41,
-        "event": 24
+        "event": 26
       },
       "top": {
         "container": {
@@ -34100,8 +34466,8 @@
         "event": {
           "key": "matriarch",
           "name": "Matriarch",
-          "votes": 24,
-          "percent": 100
+          "votes": 25,
+          "percent": 96.2
         }
       },
       "groups": {
@@ -34167,8 +34533,14 @@
           {
             "key": "matriarch",
             "name": "Matriarch",
-            "votes": 24,
-            "percent": 100
+            "votes": 25,
+            "percent": 96.2
+          },
+          {
+            "key": "arc_frigate",
+            "name": "ARC Frigate",
+            "votes": 1,
+            "percent": 3.8
           }
         ]
       }
@@ -35028,29 +35400,29 @@
     "mini-pump": {
       "itemId": "mini-pump",
       "available": true,
-      "totalVotes": 9,
+      "totalVotes": 19,
       "totals": {
-        "container": 3,
-        "map": 4,
-        "event": 2
+        "container": 5,
+        "map": 10,
+        "event": 4
       },
       "top": {
         "container": {
           "key": "locker",
           "name": "Lockers",
           "votes": 3,
-          "percent": 100
+          "percent": 60
         },
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 3,
-          "percent": 75
+          "votes": 5,
+          "percent": 50
         },
         "event": {
           "key": "day_raid",
           "name": "Day Raid (Standard)",
-          "votes": 2,
+          "votes": 4,
           "percent": 100
         }
       },
@@ -35060,28 +35432,58 @@
             "key": "locker",
             "name": "Lockers",
             "votes": 3,
-            "percent": 100
+            "percent": 60
+          },
+          {
+            "key": "base_container",
+            "name": "Container",
+            "votes": 1,
+            "percent": 20
+          },
+          {
+            "key": "weapon_case",
+            "name": "Weapon Case",
+            "votes": 1,
+            "percent": 20
           }
         ],
         "map": [
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 3,
-            "percent": 75
+            "votes": 5,
+            "percent": 50
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
+            "votes": 2,
+            "percent": 20
+          },
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
             "votes": 1,
-            "percent": 25
+            "percent": 10
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 10
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 10
           }
         ],
         "event": [
           {
             "key": "day_raid",
             "name": "Day Raid (Standard)",
-            "votes": 2,
+            "votes": 4,
             "percent": 100
           }
         ]
@@ -36145,21 +36547,33 @@
     },
     "noisemaker": {
       "itemId": "noisemaker",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 1,
       "totals": {
         "container": 0,
-        "map": 0,
+        "map": 1,
         "event": 0
       },
       "top": {
         "container": null,
-        "map": null,
+        "map": {
+          "key": "blue-gate",
+          "name": "Blue Gate",
+          "votes": 1,
+          "percent": 100
+        },
         "event": null
       },
       "groups": {
         "container": [],
-        "map": [],
+        "map": [
+          {
+            "key": "blue-gate",
+            "name": "Blue Gate",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "event": []
       }
     },
@@ -36247,21 +36661,33 @@
     },
     "ochre-stencil": {
       "itemId": "ochre-stencil",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 1,
       "totals": {
         "container": 0,
-        "map": 0,
+        "map": 1,
         "event": 0
       },
       "top": {
         "container": null,
-        "map": null,
+        "map": {
+          "key": "stella-montis",
+          "name": "Stella Montis",
+          "votes": 1,
+          "percent": 100
+        },
         "event": null
       },
       "groups": {
         "container": [],
-        "map": [],
+        "map": [
+          {
+            "key": "stella-montis",
+            "name": "Stella Montis",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "event": []
       }
     },
@@ -36478,24 +36904,24 @@
     "olives": {
       "itemId": "olives",
       "available": true,
-      "totalVotes": 81,
+      "totalVotes": 83,
       "totals": {
-        "container": 19,
-        "map": 43,
+        "container": 20,
+        "map": 44,
         "event": 19
       },
       "top": {
         "container": {
           "key": "basket",
           "name": "Baskets",
-          "votes": 15,
-          "percent": 78.9
+          "votes": 16,
+          "percent": 80
         },
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 35,
-          "percent": 81.4
+          "votes": 36,
+          "percent": 81.8
         },
         "event": {
           "key": "lush_blooms",
@@ -36509,34 +36935,34 @@
           {
             "key": "basket",
             "name": "Baskets",
-            "votes": 15,
-            "percent": 78.9
+            "votes": 16,
+            "percent": 80
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 2,
-            "percent": 10.5
+            "percent": 10
           },
           {
             "key": "android",
             "name": "Android",
             "votes": 2,
-            "percent": 10.5
+            "percent": 10
           }
         ],
         "map": [
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 35,
-            "percent": 81.4
+            "votes": 36,
+            "percent": 81.8
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 6,
-            "percent": 14
+            "percent": 13.6
           },
           {
             "key": "dam",
@@ -36836,11 +37262,11 @@
     "ornate-wardrobe-design": {
       "itemId": "ornate-wardrobe-design",
       "available": true,
-      "totalVotes": 2,
+      "totalVotes": 4,
       "totals": {
         "container": 1,
-        "map": 1,
-        "event": 0
+        "map": 2,
+        "event": 1
       },
       "top": {
         "container": {
@@ -36850,12 +37276,17 @@
           "percent": 100
         },
         "map": {
-          "key": "pendola-pass",
-          "name": "Pendola Pass",
+          "key": "dam",
+          "name": "Dam Battlegrounds",
+          "votes": 1,
+          "percent": 50
+        },
+        "event": {
+          "key": "lush_blooms",
+          "name": "Lush Blooms",
           "votes": 1,
           "percent": 100
-        },
-        "event": null
+        }
       },
       "groups": {
         "container": [
@@ -36868,36 +37299,49 @@
         ],
         "map": [
           {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 50
+          },
+          {
             "key": "pendola-pass",
             "name": "Pendola Pass",
             "votes": 1,
-            "percent": 100
+            "percent": 50
           }
         ],
-        "event": []
+        "event": [
+          {
+            "key": "lush_blooms",
+            "name": "Lush Blooms",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "osprey": {
       "itemId": "osprey-recipe",
       "available": true,
-      "totalVotes": 143,
+      "totalVotes": 145,
       "totals": {
-        "container": 59,
-        "map": 54,
+        "container": 60,
+        "map": 55,
         "event": 30
       },
       "top": {
         "container": {
           "key": "raider_cache",
           "name": "Raider Cache",
-          "votes": 18,
-          "percent": 30.5
+          "votes": 19,
+          "percent": 31.7
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
           "votes": 19,
-          "percent": 35.2
+          "percent": 34.5
         },
         "event": {
           "key": "night_raid",
@@ -36911,50 +37355,50 @@
           {
             "key": "raider_cache",
             "name": "Raider Cache",
-            "votes": 18,
-            "percent": 30.5
+            "votes": 19,
+            "percent": 31.7
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 10,
-            "percent": 16.9
+            "percent": 16.7
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 10,
-            "percent": 16.9
+            "percent": 16.7
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 8,
-            "percent": 13.6
+            "percent": 13.3
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 4,
-            "percent": 6.8
+            "percent": 6.7
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 4,
-            "percent": 6.8
+            "percent": 6.7
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 3,
-            "percent": 5.1
+            "percent": 5
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 2,
-            "percent": 3.4
+            "percent": 3.3
           }
         ],
         "map": [
@@ -36962,31 +37406,37 @@
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 19,
-            "percent": 35.2
+            "percent": 34.5
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 14,
-            "percent": 25.9
+            "percent": 25.5
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 10,
-            "percent": 18.5
+            "percent": 18.2
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 6,
-            "percent": 11.1
+            "percent": 10.9
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 5,
-            "percent": 9.3
+            "percent": 9.1
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 1.8
           }
         ],
         "event": [
@@ -37056,9 +37506,9 @@
     "padded-stock": {
       "itemId": "padded-stock-recipe",
       "available": true,
-      "totalVotes": 120,
+      "totalVotes": 121,
       "totals": {
-        "container": 44,
+        "container": 45,
         "map": 40,
         "event": 36
       },
@@ -37067,7 +37517,7 @@
           "key": "base_container",
           "name": "Container",
           "votes": 29,
-          "percent": 65.9
+          "percent": 64.4
         },
         "map": {
           "key": "dam",
@@ -37088,31 +37538,31 @@
             "key": "base_container",
             "name": "Container",
             "votes": 29,
-            "percent": 65.9
+            "percent": 64.4
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 7,
-            "percent": 15.9
+            "percent": 15.6
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 4,
-            "percent": 9.1
+            "votes": 5,
+            "percent": 11.1
           },
           {
             "key": "box",
             "name": "Boxes",
             "votes": 3,
-            "percent": 6.8
+            "percent": 6.7
           },
           {
             "key": "arc_courier",
             "name": "Arc Courier",
             "votes": 1,
-            "percent": 2.3
+            "percent": 2.2
           }
         ],
         "map": [
@@ -37994,11 +38444,11 @@
     "pneumatic-actuator": {
       "itemId": "pneumatic-actuator",
       "available": true,
-      "totalVotes": 3,
+      "totalVotes": 4,
       "totals": {
         "container": 0,
         "map": 1,
-        "event": 2
+        "event": 3
       },
       "top": {
         "container": null,
@@ -38011,7 +38461,7 @@
         "event": {
           "key": "arc_frigate",
           "name": "ARC Frigate",
-          "votes": 2,
+          "votes": 3,
           "percent": 100
         }
       },
@@ -38029,7 +38479,7 @@
           {
             "key": "arc_frigate",
             "name": "ARC Frigate",
-            "votes": 2,
+            "votes": 3,
             "percent": 100
           }
         ]
@@ -38494,10 +38944,10 @@
     "pop-trigger": {
       "itemId": "pop-trigger",
       "available": true,
-      "totalVotes": 10,
+      "totalVotes": 11,
       "totals": {
         "container": 0,
-        "map": 10,
+        "map": 11,
         "event": 0
       },
       "top": {
@@ -38506,7 +38956,7 @@
           "key": "blue-gate",
           "name": "Blue Gate",
           "votes": 2,
-          "percent": 20
+          "percent": 18.2
         },
         "event": null
       },
@@ -38517,31 +38967,37 @@
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 9.1
           }
         ],
         "event": []
@@ -38550,9 +39006,9 @@
     "portable-television": {
       "itemId": "portable-television",
       "available": true,
-      "totalVotes": 40,
+      "totalVotes": 41,
       "totals": {
-        "container": 13,
+        "container": 14,
         "map": 24,
         "event": 3
       },
@@ -38560,8 +39016,8 @@
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 10,
-          "percent": 76.9
+          "votes": 11,
+          "percent": 78.6
         },
         "map": {
           "key": "stella-montis",
@@ -38581,14 +39037,14 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 10,
-            "percent": 76.9
+            "votes": 11,
+            "percent": 78.6
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 3,
-            "percent": 23.1
+            "percent": 21.4
           }
         ],
         "map": [
@@ -38717,21 +39173,45 @@
     },
     "potted-plant": {
       "itemId": "potted-plant",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 2,
       "totals": {
-        "container": 0,
-        "map": 0,
+        "container": 1,
+        "map": 1,
         "event": 0
       },
       "top": {
-        "container": null,
-        "map": null,
+        "container": {
+          "key": "locker",
+          "name": "Lockers",
+          "votes": 1,
+          "percent": 100
+        },
+        "map": {
+          "key": "pendola-pass",
+          "name": "Pendola Pass",
+          "votes": 1,
+          "percent": 100
+        },
         "event": null
       },
       "groups": {
-        "container": [],
-        "map": [],
+        "container": [
+          {
+            "key": "locker",
+            "name": "Lockers",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "map": [
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "event": []
       }
     },
@@ -39128,10 +39608,10 @@
     "pressure-regulator": {
       "itemId": "pressure-regulator",
       "available": true,
-      "totalVotes": 3,
+      "totalVotes": 4,
       "totals": {
         "container": 0,
-        "map": 1,
+        "map": 2,
         "event": 2
       },
       "top": {
@@ -39139,7 +39619,7 @@
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 1,
+          "votes": 2,
           "percent": 100
         },
         "event": {
@@ -39155,7 +39635,7 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 1,
+            "votes": 2,
             "percent": 100
           }
         ],
@@ -39682,11 +40162,11 @@
     "queen-reactor": {
       "itemId": "queen-reactor",
       "available": true,
-      "totalVotes": 201,
+      "totalVotes": 207,
       "totals": {
         "container": 69,
-        "map": 62,
-        "event": 70
+        "map": 65,
+        "event": 73
       },
       "top": {
         "container": {
@@ -39698,14 +40178,14 @@
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
-          "votes": 26,
-          "percent": 41.9
+          "votes": 27,
+          "percent": 41.5
         },
         "event": {
           "key": "harvester",
           "name": "Harvester",
-          "votes": 54,
-          "percent": 77.1
+          "votes": 57,
+          "percent": 78.1
         }
       },
       "groups": {
@@ -39823,52 +40303,52 @@
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 26,
-            "percent": 41.9
+            "votes": 27,
+            "percent": 41.5
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 16,
-            "percent": 25.8
+            "votes": 17,
+            "percent": 26.2
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
-            "votes": 11,
-            "percent": 17.7
+            "votes": 12,
+            "percent": 18.5
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 4,
-            "percent": 6.5
+            "percent": 6.2
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 4,
-            "percent": 6.5
+            "percent": 6.2
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 1,
-            "percent": 1.6
+            "percent": 1.5
           }
         ],
         "event": [
           {
             "key": "harvester",
             "name": "Harvester",
-            "votes": 54,
-            "percent": 77.1
+            "votes": 57,
+            "percent": 78.1
           },
           {
             "key": "matriarch",
             "name": "Matriarch",
             "votes": 2,
-            "percent": 2.9
+            "percent": 2.7
           },
           {
             "key": "beachcombing",
@@ -39980,30 +40460,30 @@
     "radial-press": {
       "itemId": "radial-press",
       "available": true,
-      "totalVotes": 39,
+      "totalVotes": 48,
       "totals": {
-        "container": 5,
-        "map": 25,
-        "event": 9
+        "container": 10,
+        "map": 28,
+        "event": 10
       },
       "top": {
         "container": {
           "key": "bag",
           "name": "Bags",
-          "votes": 5,
-          "percent": 100
+          "votes": 7,
+          "percent": 70
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 20,
-          "percent": 80
+          "votes": 21,
+          "percent": 75
         },
         "event": {
           "key": "night_raid",
           "name": "Night Raid",
           "votes": 4,
-          "percent": 44.4
+          "percent": 40
         }
       },
       "groups": {
@@ -40011,34 +40491,58 @@
           {
             "key": "bag",
             "name": "Bags",
-            "votes": 5,
-            "percent": 100
+            "votes": 7,
+            "percent": 70
+          },
+          {
+            "key": "android",
+            "name": "Android",
+            "votes": 1,
+            "percent": 10
+          },
+          {
+            "key": "box",
+            "name": "Boxes",
+            "votes": 1,
+            "percent": 10
+          },
+          {
+            "key": "locker",
+            "name": "Lockers",
+            "votes": 1,
+            "percent": 10
           }
         ],
         "map": [
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 20,
-            "percent": 80
+            "votes": 21,
+            "percent": 75
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
-            "votes": 3,
-            "percent": 12
+            "votes": 4,
+            "percent": 14.3
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 1,
-            "percent": 4
+            "percent": 3.6
+          },
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 3.6
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 1,
-            "percent": 4
+            "percent": 3.6
           }
         ],
         "event": [
@@ -40046,25 +40550,31 @@
             "key": "night_raid",
             "name": "Night Raid",
             "votes": 4,
-            "percent": 44.4
+            "percent": 40
           },
           {
             "key": "day_raid",
             "name": "Day Raid (Standard)",
             "votes": 3,
-            "percent": 33.3
+            "percent": 30
+          },
+          {
+            "key": "beachcombing",
+            "name": "Beachcombing",
+            "votes": 1,
+            "percent": 10
           },
           {
             "key": "bird_city",
             "name": "Bird City",
             "votes": 1,
-            "percent": 11.1
+            "percent": 10
           },
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
             "votes": 1,
-            "percent": 11.1
+            "percent": 10
           }
         ]
       }
@@ -40520,9 +41030,9 @@
     "raider-logbook": {
       "itemId": "raider-logbook",
       "available": true,
-      "totalVotes": 17,
+      "totalVotes": 21,
       "totals": {
-        "container": 12,
+        "container": 16,
         "map": 5,
         "event": 0
       },
@@ -40530,8 +41040,8 @@
         "container": {
           "key": "med_crate",
           "name": "Med Crate",
-          "votes": 4,
-          "percent": 33.3
+          "votes": 5,
+          "percent": 31.3
         },
         "map": {
           "key": "pendola-pass",
@@ -40546,38 +41056,38 @@
           {
             "key": "med_crate",
             "name": "Med Crate",
-            "votes": 4,
-            "percent": 33.3
+            "votes": 5,
+            "percent": 31.3
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
-            "votes": 3,
+            "votes": 4,
             "percent": 25
+          },
+          {
+            "key": "bag",
+            "name": "Bags",
+            "votes": 2,
+            "percent": 12.5
+          },
+          {
+            "key": "utility_crate",
+            "name": "Grenade Tube",
+            "votes": 2,
+            "percent": 12.5
           },
           {
             "key": "raider_cache",
             "name": "Raider Cache",
             "votes": 2,
-            "percent": 16.7
-          },
-          {
-            "key": "bag",
-            "name": "Bags",
-            "votes": 1,
-            "percent": 8.3
-          },
-          {
-            "key": "utility_crate",
-            "name": "Grenade Tube",
-            "votes": 1,
-            "percent": 8.3
+            "percent": 12.5
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 1,
-            "percent": 8.3
+            "percent": 6.3
           }
         ],
         "map": [
@@ -40718,30 +41228,30 @@
     "rascal": {
       "itemId": "rascal-blueprint",
       "available": true,
-      "totalVotes": 208,
+      "totalVotes": 213,
       "totals": {
-        "container": 87,
-        "map": 82,
-        "event": 39
+        "container": 89,
+        "map": 84,
+        "event": 40
       },
       "top": {
         "container": {
           "key": "raider_cache",
           "name": "Raider Cache",
-          "votes": 39,
-          "percent": 44.8
+          "votes": 41,
+          "percent": 46.1
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
-          "votes": 26,
-          "percent": 31.7
+          "votes": 27,
+          "percent": 32.1
         },
         "event": {
           "key": "night_raid",
           "name": "Night Raid",
           "votes": 18,
-          "percent": 46.2
+          "percent": 45
         }
       },
       "groups": {
@@ -40749,44 +41259,44 @@
           {
             "key": "raider_cache",
             "name": "Raider Cache",
-            "votes": 39,
-            "percent": 44.8
+            "votes": 41,
+            "percent": 46.1
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 15,
-            "percent": 17.2
+            "percent": 16.9
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 7,
-            "percent": 8
+            "percent": 7.9
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 6,
-            "percent": 6.9
+            "percent": 6.7
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 6,
-            "percent": 6.9
+            "percent": 6.7
           },
           {
             "key": "utility_crate",
             "name": "Grenade Tube",
             "votes": 4,
-            "percent": 4.6
+            "percent": 4.5
           },
           {
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 4,
-            "percent": 4.6
+            "percent": 4.5
           },
           {
             "key": "base_container",
@@ -40798,7 +41308,7 @@
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 2,
-            "percent": 2.3
+            "percent": 2.2
           },
           {
             "key": "locker",
@@ -40811,38 +41321,44 @@
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 26,
-            "percent": 31.7
+            "votes": 27,
+            "percent": 32.1
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 22,
-            "percent": 26.8
+            "percent": 26.2
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 13,
-            "percent": 15.9
+            "percent": 15.5
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 11,
-            "percent": 13.4
+            "percent": 13.1
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 6,
-            "percent": 7.3
+            "percent": 7.1
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 4,
-            "percent": 4.9
+            "percent": 4.8
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 1.2
           }
         ],
         "event": [
@@ -40850,67 +41366,67 @@
             "key": "night_raid",
             "name": "Night Raid",
             "votes": 18,
-            "percent": 46.2
+            "percent": 45
           },
           {
             "key": "hurricane",
             "name": "Hurricane",
             "votes": 11,
-            "percent": 28.2
+            "percent": 27.5
+          },
+          {
+            "key": "matriarch",
+            "name": "Matriarch",
+            "votes": 2,
+            "percent": 5
           },
           {
             "key": "uncovered_caches",
             "name": "Uncovered Caches",
             "votes": 2,
-            "percent": 5.1
+            "percent": 5
           },
           {
             "key": "beachcombing",
             "name": "Beachcombing",
             "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           },
           {
             "key": "bird_city",
             "name": "Bird City",
             "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           },
           {
             "key": "close_scrutiny",
             "name": "Close Scrutiny",
             "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           },
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
             "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           },
           {
             "key": "harvester",
             "name": "Harvester",
             "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           },
           {
             "key": "launch_tower_loot",
             "name": "Launch Tower Loot",
             "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           },
           {
             "key": "locked_gate",
             "name": "Locked Gate",
             "votes": 1,
-            "percent": 2.6
-          },
-          {
-            "key": "matriarch",
-            "name": "Matriarch",
-            "votes": 1,
-            "percent": 2.6
+            "percent": 2.5
           }
         ]
       }
@@ -45212,10 +45728,10 @@
     "sentinel-part": {
       "itemId": "sentinel-part",
       "available": true,
-      "totalVotes": 303,
+      "totalVotes": 304,
       "totals": {
         "container": 116,
-        "map": 151,
+        "map": 152,
         "event": 36
       },
       "top": {
@@ -45228,8 +45744,8 @@
         "map": {
           "key": "blue-gate",
           "name": "Blue Gate",
-          "votes": 87,
-          "percent": 57.6
+          "votes": 88,
+          "percent": 57.9
         },
         "event": {
           "key": "electromagnetic_storm",
@@ -45257,20 +45773,20 @@
           {
             "key": "blue-gate",
             "name": "Blue Gate",
-            "votes": 87,
-            "percent": 57.6
+            "votes": 88,
+            "percent": 57.9
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 33,
-            "percent": 21.9
+            "percent": 21.7
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 17,
-            "percent": 11.3
+            "percent": 11.2
           },
           {
             "key": "spaceport",
@@ -45608,24 +46124,24 @@
     "sheet-metal": {
       "itemId": "sheet-metal",
       "available": true,
-      "totalVotes": 17,
+      "totalVotes": 21,
       "totals": {
-        "container": 6,
-        "map": 10,
+        "container": 9,
+        "map": 11,
         "event": 1
       },
       "top": {
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
-          "votes": 4,
-          "percent": 66.7
+          "votes": 5,
+          "percent": 55.6
         },
         "map": {
           "key": "riven-tides",
           "name": "Riven Tides",
           "votes": 4,
-          "percent": 40
+          "percent": 36.4
         },
         "event": {
           "key": "day_raid",
@@ -45639,20 +46155,20 @@
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 4,
-            "percent": 66.7
+            "votes": 5,
+            "percent": 55.6
           },
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 1,
-            "percent": 16.7
+            "votes": 2,
+            "percent": 22.2
           },
           {
             "key": "locker",
             "name": "Lockers",
-            "votes": 1,
-            "percent": 16.7
+            "votes": 2,
+            "percent": 22.2
           }
         ],
         "map": [
@@ -45660,31 +46176,37 @@
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 4,
-            "percent": 40
+            "percent": 36.4
           },
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 2,
-            "percent": 20
+            "percent": 18.2
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 1,
-            "percent": 10
+            "percent": 9.1
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 1,
-            "percent": 10
+            "percent": 9.1
+          },
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 9.1
           }
         ],
         "event": [
@@ -47284,63 +47806,87 @@
     "slipstream-stencil": {
       "itemId": "slipstream-stencil",
       "available": true,
-      "totalVotes": 6,
+      "totalVotes": 9,
       "totals": {
-        "container": 6,
-        "map": 0,
-        "event": 0
+        "container": 7,
+        "map": 1,
+        "event": 1
       },
       "top": {
         "container": {
           "key": "basket",
           "name": "Baskets",
-          "votes": 1,
-          "percent": 16.7
+          "votes": 2,
+          "percent": 28.6
         },
-        "map": null,
-        "event": null
+        "map": {
+          "key": "stella-montis",
+          "name": "Stella Montis",
+          "votes": 1,
+          "percent": 100
+        },
+        "event": {
+          "key": "day_raid",
+          "name": "Day Raid (Standard)",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [
           {
             "key": "basket",
             "name": "Baskets",
-            "votes": 1,
-            "percent": 16.7
+            "votes": 2,
+            "percent": 28.6
           },
           {
             "key": "box",
             "name": "Boxes",
             "votes": 1,
-            "percent": 16.7
+            "percent": 14.3
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 1,
-            "percent": 16.7
+            "percent": 14.3
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 1,
-            "percent": 16.7
+            "percent": 14.3
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 1,
-            "percent": 16.7
+            "percent": 14.3
           },
           {
             "key": "raider_cache",
             "name": "Raider Cache",
             "votes": 1,
-            "percent": 16.7
+            "percent": 14.3
           }
         ],
-        "map": [],
-        "event": []
+        "map": [
+          {
+            "key": "stella-montis",
+            "name": "Stella Montis",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "event": [
+          {
+            "key": "day_raid",
+            "name": "Day Raid (Standard)",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "slugger-outfit": {
@@ -47694,30 +48240,30 @@
     "snap-hook": {
       "itemId": "snap-hook-recipe",
       "available": true,
-      "totalVotes": 965,
+      "totalVotes": 971,
       "totals": {
-        "container": 342,
-        "map": 331,
-        "event": 292
+        "container": 343,
+        "map": 334,
+        "event": 294
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
           "votes": 174,
-          "percent": 50.9
+          "percent": 50.7
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
-          "votes": 195,
-          "percent": 58.9
+          "votes": 196,
+          "percent": 58.7
         },
         "event": {
           "key": "electromagnetic_storm",
           "name": "Electromagnetic Storm",
-          "votes": 253,
-          "percent": 86.6
+          "votes": 254,
+          "percent": 86.4
         }
       },
       "groups": {
@@ -47726,19 +48272,19 @@
             "key": "base_container",
             "name": "Container",
             "votes": 174,
-            "percent": 50.9
+            "percent": 50.7
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 90,
-            "percent": 26.3
+            "percent": 26.2
           },
           {
             "key": "locker",
             "name": "Lockers",
-            "votes": 47,
-            "percent": 13.7
+            "votes": 48,
+            "percent": 14
           },
           {
             "key": "bag",
@@ -47835,26 +48381,26 @@
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
-            "votes": 195,
-            "percent": 58.9
+            "votes": 196,
+            "percent": 58.7
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 67,
-            "percent": 20.2
+            "percent": 20.1
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 57,
-            "percent": 17.2
+            "percent": 17.1
           },
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 5,
-            "percent": 1.5
+            "votes": 7,
+            "percent": 2.1
           },
           {
             "key": "stella-montis",
@@ -47873,14 +48419,14 @@
           {
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
-            "votes": 253,
-            "percent": 86.6
+            "votes": 254,
+            "percent": 86.4
           },
           {
             "key": "night_raid",
             "name": "Night Raid",
-            "votes": 11,
-            "percent": 3.8
+            "votes": 12,
+            "percent": 4.1
           },
           {
             "key": "cold_snap",
@@ -49424,24 +49970,24 @@
     "steel-cable": {
       "itemId": "steel-cable",
       "available": true,
-      "totalVotes": 6,
+      "totalVotes": 9,
       "totals": {
-        "container": 1,
-        "map": 5,
+        "container": 3,
+        "map": 6,
         "event": 0
       },
       "top": {
         "container": {
           "key": "box",
           "name": "Boxes",
-          "votes": 1,
+          "votes": 3,
           "percent": 100
         },
         "map": {
           "key": "pendola-pass",
           "name": "Pendola Pass",
-          "votes": 4,
-          "percent": 80
+          "votes": 5,
+          "percent": 83.3
         },
         "event": null
       },
@@ -49450,7 +49996,7 @@
           {
             "key": "box",
             "name": "Boxes",
-            "votes": 1,
+            "votes": 3,
             "percent": 100
           }
         ],
@@ -49458,14 +50004,14 @@
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
-            "votes": 4,
-            "percent": 80
+            "votes": 5,
+            "percent": 83.3
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 1,
-            "percent": 20
+            "percent": 16.7
           }
         ],
         "event": []
@@ -49474,9 +50020,9 @@
     "spring": {
       "itemId": "spring",
       "available": true,
-      "totalVotes": 129,
+      "totalVotes": 130,
       "totals": {
-        "container": 38,
+        "container": 39,
         "map": 48,
         "event": 43
       },
@@ -49484,8 +50030,8 @@
         "container": {
           "key": "breachable_container",
           "name": "Breachable Container",
-          "votes": 18,
-          "percent": 47.4
+          "votes": 19,
+          "percent": 48.7
         },
         "map": {
           "key": "spaceport",
@@ -49505,32 +50051,32 @@
           {
             "key": "breachable_container",
             "name": "Breachable Container",
-            "votes": 18,
-            "percent": 47.4
+            "votes": 19,
+            "percent": 48.7
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 8,
-            "percent": 21.1
+            "percent": 20.5
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 6,
-            "percent": 15.8
+            "percent": 15.4
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 3,
-            "percent": 7.9
+            "percent": 7.7
           },
           {
             "key": "car",
             "name": "Cars",
             "votes": 3,
-            "percent": 7.9
+            "percent": 7.7
           }
         ],
         "map": [
@@ -50138,24 +50684,24 @@
     "stencil-parts": {
       "itemId": "stencil-parts",
       "available": true,
-      "totalVotes": 9,
+      "totalVotes": 11,
       "totals": {
-        "container": 2,
-        "map": 5,
+        "container": 3,
+        "map": 6,
         "event": 2
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 1,
-          "percent": 50
+          "votes": 2,
+          "percent": 66.7
         },
         "map": {
-          "key": "stella-montis",
-          "name": "Stella Montis",
+          "key": "pendola-pass",
+          "name": "Pendola Pass",
           "votes": 2,
-          "percent": 40
+          "percent": 33.3
         },
         "event": {
           "key": "day_raid",
@@ -50169,40 +50715,40 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 1,
-            "percent": 50
+            "votes": 2,
+            "percent": 66.7
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 1,
-            "percent": 50
+            "percent": 33.3
           }
         ],
         "map": [
           {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 2,
+            "percent": 33.3
+          },
+          {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 2,
-            "percent": 40
+            "percent": 33.3
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 1,
-            "percent": 20
+            "percent": 16.7
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 1,
-            "percent": 20
-          },
-          {
-            "key": "pendola-pass",
-            "name": "Pendola Pass",
-            "votes": 1,
-            "percent": 20
+            "percent": 16.7
           }
         ],
         "event": [
@@ -50627,21 +51173,45 @@
     },
     "study-tv-stand-design": {
       "itemId": "study-tv-stand-design",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 2,
       "totals": {
-        "container": 0,
-        "map": 0,
+        "container": 1,
+        "map": 1,
         "event": 0
       },
       "top": {
-        "container": null,
-        "map": null,
+        "container": {
+          "key": "base_container",
+          "name": "Container",
+          "votes": 1,
+          "percent": 100
+        },
+        "map": {
+          "key": "pendola-pass",
+          "name": "Pendola Pass",
+          "votes": 1,
+          "percent": 100
+        },
         "event": null
       },
       "groups": {
-        "container": [],
-        "map": [],
+        "container": [
+          {
+            "key": "base_container",
+            "name": "Container",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "map": [
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
         "event": []
       }
     },
@@ -50667,22 +51237,46 @@
     },
     "sturdy-aviary-table-design": {
       "itemId": "sturdy-aviary-table-design",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 2,
       "totals": {
         "container": 0,
-        "map": 0,
-        "event": 0
+        "map": 1,
+        "event": 1
       },
       "top": {
         "container": null,
-        "map": null,
-        "event": null
+        "map": {
+          "key": "dam",
+          "name": "Dam Battlegrounds",
+          "votes": 1,
+          "percent": 100
+        },
+        "event": {
+          "key": "lush_blooms",
+          "name": "Lush Blooms",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [],
-        "map": [],
-        "event": []
+        "map": [
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 100
+          }
+        ],
+        "event": [
+          {
+            "key": "lush_blooms",
+            "name": "Lush Blooms",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
       }
     },
     "sturdy-bureau-chair": {
@@ -51530,24 +52124,24 @@
     "surveyor-vault": {
       "itemId": "surveyor-vault",
       "available": true,
-      "totalVotes": 146,
+      "totalVotes": 149,
       "totals": {
-        "container": 57,
-        "map": 55,
+        "container": 59,
+        "map": 56,
         "event": 34
       },
       "top": {
         "container": {
           "key": "arc_courier",
           "name": "Arc Courier",
-          "votes": 48,
-          "percent": 84.2
+          "votes": 50,
+          "percent": 84.7
         },
         "map": {
           "key": "dam",
           "name": "Dam Battlegrounds",
           "votes": 28,
-          "percent": 50.9
+          "percent": 50
         },
         "event": {
           "key": "electromagnetic_storm",
@@ -51561,14 +52155,14 @@
           {
             "key": "arc_courier",
             "name": "Arc Courier",
-            "votes": 48,
-            "percent": 84.2
+            "votes": 50,
+            "percent": 84.7
           },
           {
             "key": "arc_probe",
             "name": "Arc Probe",
             "votes": 9,
-            "percent": 15.8
+            "percent": 15.3
           }
         ],
         "map": [
@@ -51576,25 +52170,31 @@
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 28,
-            "percent": 50.9
+            "percent": 50
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 13,
-            "percent": 23.6
+            "percent": 23.2
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 7,
-            "percent": 12.7
+            "percent": 12.5
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 6,
-            "percent": 10.9
+            "percent": 10.7
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 1.8
           },
           {
             "key": "stella-montis",
@@ -52320,30 +52920,30 @@
     "tactical-mk-3-smoke": {
       "itemId": "utility-augment-t3-smoke-blueprint",
       "available": true,
-      "totalVotes": 79,
+      "totalVotes": 82,
       "totals": {
-        "container": 33,
-        "map": 33,
-        "event": 13
+        "container": 34,
+        "map": 34,
+        "event": 14
       },
       "top": {
         "container": {
           "key": "locker",
           "name": "Lockers",
           "votes": 18,
-          "percent": 54.5
+          "percent": 52.9
         },
         "map": {
           "key": "stella-montis",
           "name": "Stella Montis",
-          "votes": 18,
-          "percent": 54.5
+          "votes": 19,
+          "percent": 55.9
         },
         "event": {
           "key": "night_raid",
           "name": "Night Raid",
-          "votes": 8,
-          "percent": 61.5
+          "votes": 9,
+          "percent": 64.3
         }
       },
       "groups": {
@@ -52352,101 +52952,101 @@
             "key": "locker",
             "name": "Lockers",
             "votes": 18,
-            "percent": 54.5
+            "percent": 52.9
           },
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 9,
-            "percent": 27.3
+            "votes": 10,
+            "percent": 29.4
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 2,
-            "percent": 6.1
+            "percent": 5.9
           },
           {
             "key": "med_crate",
             "name": "Med Crate",
             "votes": 2,
-            "percent": 6.1
+            "percent": 5.9
           },
           {
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 2,
-            "percent": 6.1
+            "percent": 5.9
           }
         ],
         "map": [
           {
             "key": "stella-montis",
             "name": "Stella Montis",
-            "votes": 18,
-            "percent": 54.5
+            "votes": 19,
+            "percent": 55.9
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 10,
-            "percent": 30.3
+            "percent": 29.4
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 2,
-            "percent": 6.1
+            "percent": 5.9
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 1,
-            "percent": 3
+            "percent": 2.9
           },
           {
             "key": "pendola-pass",
             "name": "Pendola Pass",
             "votes": 1,
-            "percent": 3
+            "percent": 2.9
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 1,
-            "percent": 3
+            "percent": 2.9
           }
         ],
         "event": [
           {
             "key": "night_raid",
             "name": "Night Raid",
-            "votes": 8,
-            "percent": 61.5
+            "votes": 9,
+            "percent": 64.3
           },
           {
             "key": "locked_gate",
             "name": "Locked Gate",
             "votes": 2,
-            "percent": 15.4
+            "percent": 14.3
           },
           {
             "key": "day_raid",
             "name": "Day Raid (Standard)",
             "votes": 1,
-            "percent": 7.7
+            "percent": 7.1
           },
           {
             "key": "harvester",
             "name": "Harvester",
             "votes": 1,
-            "percent": 7.7
+            "percent": 7.1
           },
           {
             "key": "matriarch",
             "name": "Matriarch",
             "votes": 1,
-            "percent": 7.7
+            "percent": 7.1
           }
         ]
       }
@@ -52894,24 +53494,24 @@
     "tempest": {
       "itemId": "tempest-i-recipe",
       "available": true,
-      "totalVotes": 1879,
+      "totalVotes": 1881,
       "totals": {
-        "container": 651,
-        "map": 686,
+        "container": 652,
+        "map": 687,
         "event": 542
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 411,
-          "percent": 63.1
+          "votes": 412,
+          "percent": 63.2
         },
         "map": {
           "key": "buried-city",
           "name": "Buried City",
-          "votes": 252,
-          "percent": 36.7
+          "votes": 253,
+          "percent": 36.8
         },
         "event": {
           "key": "night_raid",
@@ -52925,8 +53525,8 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 411,
-            "percent": 63.1
+            "votes": 412,
+            "percent": 63.2
           },
           {
             "key": "raider_cache",
@@ -52938,7 +53538,7 @@
             "key": "bag",
             "name": "Bags",
             "votes": 44,
-            "percent": 6.8
+            "percent": 6.7
           },
           {
             "key": "locker",
@@ -53035,14 +53635,14 @@
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 252,
-            "percent": 36.7
+            "votes": 253,
+            "percent": 36.8
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 176,
-            "percent": 25.7
+            "percent": 25.6
           },
           {
             "key": "dam",
@@ -53054,7 +53654,7 @@
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 80,
-            "percent": 11.7
+            "percent": 11.6
           },
           {
             "key": "blue-gate",
@@ -53147,32 +53747,12 @@
     },
     "tether-launcher": {
       "itemId": "tether-launcher-blueprint",
-      "available": false,
-      "totalVotes": 0,
-      "totals": {
-        "container": 0,
-        "map": 0,
-        "event": 0
-      },
-      "top": {
-        "container": null,
-        "map": null,
-        "event": null
-      },
-      "groups": {
-        "container": [],
-        "map": [],
-        "event": []
-      }
-    },
-    "thermal-shaker": {
-      "itemId": "thermal-shaker",
       "available": true,
       "totalVotes": 3,
       "totals": {
         "container": 1,
-        "map": 2,
-        "event": 0
+        "map": 1,
+        "event": 1
       },
       "top": {
         "container": {
@@ -53182,12 +53762,17 @@
           "percent": 100
         },
         "map": {
-          "key": "pendola-pass",
-          "name": "Pendola Pass",
-          "votes": 2,
+          "key": "dam",
+          "name": "Dam Battlegrounds",
+          "votes": 1,
           "percent": 100
         },
-        "event": null
+        "event": {
+          "key": "harvester",
+          "name": "Harvester",
+          "votes": 1,
+          "percent": 100
+        }
       },
       "groups": {
         "container": [
@@ -53200,13 +53785,88 @@
         ],
         "map": [
           {
-            "key": "pendola-pass",
-            "name": "Pendola Pass",
-            "votes": 2,
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
             "percent": 100
           }
         ],
-        "event": []
+        "event": [
+          {
+            "key": "harvester",
+            "name": "Harvester",
+            "votes": 1,
+            "percent": 100
+          }
+        ]
+      }
+    },
+    "thermal-shaker": {
+      "itemId": "thermal-shaker",
+      "available": true,
+      "totalVotes": 10,
+      "totals": {
+        "container": 4,
+        "map": 4,
+        "event": 2
+      },
+      "top": {
+        "container": {
+          "key": "base_container",
+          "name": "Container",
+          "votes": 4,
+          "percent": 100
+        },
+        "map": {
+          "key": "blue-gate",
+          "name": "Blue Gate",
+          "votes": 2,
+          "percent": 50
+        },
+        "event": {
+          "key": "day_raid",
+          "name": "Day Raid (Standard)",
+          "votes": 1,
+          "percent": 50
+        }
+      },
+      "groups": {
+        "container": [
+          {
+            "key": "base_container",
+            "name": "Container",
+            "votes": 4,
+            "percent": 100
+          }
+        ],
+        "map": [
+          {
+            "key": "blue-gate",
+            "name": "Blue Gate",
+            "votes": 2,
+            "percent": 50
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 2,
+            "percent": 50
+          }
+        ],
+        "event": [
+          {
+            "key": "day_raid",
+            "name": "Day Raid (Standard)",
+            "votes": 1,
+            "percent": 50
+          },
+          {
+            "key": "night_raid",
+            "name": "Night Raid",
+            "votes": 1,
+            "percent": 50
+          }
+        ]
       }
     },
     "thermite-tipped-rounds": {
@@ -54496,11 +55156,11 @@
     "turbine-compressor": {
       "itemId": "turbine-compressor",
       "available": true,
-      "totalVotes": 95,
+      "totalVotes": 97,
       "totals": {
         "container": 48,
-        "map": 30,
-        "event": 17
+        "map": 31,
+        "event": 18
       },
       "top": {
         "container": {
@@ -54513,13 +55173,13 @@
           "key": "spaceport",
           "name": "The Spaceport",
           "votes": 10,
-          "percent": 33.3
+          "percent": 32.3
         },
         "event": {
           "key": "electromagnetic_storm",
           "name": "Electromagnetic Storm",
           "votes": 12,
-          "percent": 70.6
+          "percent": 66.7
         }
       },
       "groups": {
@@ -54554,31 +55214,31 @@
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 10,
-            "percent": 33.3
+            "percent": 32.3
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
-            "votes": 7,
-            "percent": 23.3
+            "votes": 8,
+            "percent": 25.8
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 6,
-            "percent": 20
+            "percent": 19.4
           },
           {
             "key": "buried-city",
             "name": "Buried City",
             "votes": 4,
-            "percent": 13.3
+            "percent": 12.9
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 3,
-            "percent": 10
+            "percent": 9.7
           }
         ],
         "event": [
@@ -54586,25 +55246,31 @@
             "key": "electromagnetic_storm",
             "name": "Electromagnetic Storm",
             "votes": 12,
-            "percent": 70.6
+            "percent": 66.7
           },
           {
             "key": "beachcombing",
             "name": "Beachcombing",
             "votes": 2,
-            "percent": 11.8
+            "percent": 11.1
           },
           {
             "key": "hurricane",
             "name": "Hurricane",
             "votes": 2,
-            "percent": 11.8
+            "percent": 11.1
           },
           {
             "key": "lush_blooms",
             "name": "Lush Blooms",
             "votes": 1,
-            "percent": 5.9
+            "percent": 5.6
+          },
+          {
+            "key": "night_raid",
+            "name": "Night Raid",
+            "votes": 1,
+            "percent": 5.6
           }
         ]
       }
@@ -55006,24 +55672,24 @@
     "venator": {
       "itemId": "venator-recipe",
       "available": true,
-      "totalVotes": 369,
+      "totalVotes": 371,
       "totals": {
-        "container": 149,
-        "map": 121,
+        "container": 150,
+        "map": 122,
         "event": 99
       },
       "top": {
         "container": {
           "key": "raider_cache",
           "name": "Raider Cache",
-          "votes": 47,
-          "percent": 31.5
+          "votes": 48,
+          "percent": 32
         },
         "map": {
           "key": "buried-city",
           "name": "Buried City",
           "votes": 37,
-          "percent": 30.6
+          "percent": 30.3
         },
         "event": {
           "key": "night_raid",
@@ -55037,26 +55703,26 @@
           {
             "key": "raider_cache",
             "name": "Raider Cache",
-            "votes": 47,
-            "percent": 31.5
+            "votes": 48,
+            "percent": 32
           },
           {
             "key": "ammo_crate",
             "name": "Ammo Crate",
             "votes": 22,
-            "percent": 14.8
+            "percent": 14.7
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 14,
-            "percent": 9.4
+            "percent": 9.3
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 14,
-            "percent": 9.4
+            "percent": 9.3
           },
           {
             "key": "med_crate",
@@ -55068,13 +55734,13 @@
             "key": "security_breach",
             "name": "Security Breach",
             "votes": 8,
-            "percent": 5.4
+            "percent": 5.3
           },
           {
             "key": "weapon_case",
             "name": "Weapon Case",
             "votes": 8,
-            "percent": 5.4
+            "percent": 5.3
           },
           {
             "key": "breachable_container",
@@ -55148,37 +55814,43 @@
             "key": "buried-city",
             "name": "Buried City",
             "votes": 37,
-            "percent": 30.6
+            "percent": 30.3
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 30,
-            "percent": 24.8
+            "percent": 24.6
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 26,
-            "percent": 21.5
+            "percent": 21.3
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 16,
-            "percent": 13.2
+            "percent": 13.1
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 10,
-            "percent": 8.3
+            "percent": 8.2
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 2,
-            "percent": 1.7
+            "percent": 1.6
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 0.8
           }
         ],
         "event": [
@@ -55311,22 +55983,118 @@
     },
     "verdigris-stencil": {
       "itemId": "verdigris-stencil",
-      "available": false,
-      "totalVotes": 0,
+      "available": true,
+      "totalVotes": 13,
       "totals": {
-        "container": 0,
-        "map": 0,
-        "event": 0
+        "container": 4,
+        "map": 7,
+        "event": 2
       },
       "top": {
-        "container": null,
-        "map": null,
-        "event": null
+        "container": {
+          "key": "box",
+          "name": "Boxes",
+          "votes": 1,
+          "percent": 25
+        },
+        "map": {
+          "key": "blue-gate",
+          "name": "Blue Gate",
+          "votes": 1,
+          "percent": 14.3
+        },
+        "event": {
+          "key": "day_raid",
+          "name": "Day Raid (Standard)",
+          "votes": 1,
+          "percent": 50
+        }
       },
       "groups": {
-        "container": [],
-        "map": [],
-        "event": []
+        "container": [
+          {
+            "key": "box",
+            "name": "Boxes",
+            "votes": 1,
+            "percent": 25
+          },
+          {
+            "key": "breachable_container",
+            "name": "Breachable Container",
+            "votes": 1,
+            "percent": 25
+          },
+          {
+            "key": "base_container",
+            "name": "Container",
+            "votes": 1,
+            "percent": 25
+          },
+          {
+            "key": "locker",
+            "name": "Lockers",
+            "votes": 1,
+            "percent": 25
+          }
+        ],
+        "map": [
+          {
+            "key": "blue-gate",
+            "name": "Blue Gate",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "buried-city",
+            "name": "Buried City",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "dam",
+            "name": "Dam Battlegrounds",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "pendola-pass",
+            "name": "Pendola Pass",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "riven-tides",
+            "name": "Riven Tides",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "stella-montis",
+            "name": "Stella Montis",
+            "votes": 1,
+            "percent": 14.3
+          },
+          {
+            "key": "spaceport",
+            "name": "The Spaceport",
+            "votes": 1,
+            "percent": 14.3
+          }
+        ],
+        "event": [
+          {
+            "key": "day_raid",
+            "name": "Day Raid (Standard)",
+            "votes": 1,
+            "percent": 50
+          },
+          {
+            "key": "matriarch",
+            "name": "Matriarch",
+            "votes": 1,
+            "percent": 50
+          }
+        ]
       }
     },
     "vertical-grip-i": {
@@ -55704,24 +56472,24 @@
     "very-comfortable-pillow": {
       "itemId": "very-comfortable-pillow",
       "available": true,
-      "totalVotes": 101,
+      "totalVotes": 104,
       "totals": {
-        "container": 24,
-        "map": 44,
+        "container": 25,
+        "map": 46,
         "event": 33
       },
       "top": {
         "container": {
           "key": "base_container",
           "name": "Container",
-          "votes": 15,
-          "percent": 62.5
+          "votes": 16,
+          "percent": 64
         },
         "map": {
           "key": "buried-city",
           "name": "Buried City",
-          "votes": 27,
-          "percent": 61.4
+          "votes": 29,
+          "percent": 63
         },
         "event": {
           "key": "cold_snap",
@@ -55735,58 +56503,58 @@
           {
             "key": "base_container",
             "name": "Container",
-            "votes": 15,
-            "percent": 62.5
+            "votes": 16,
+            "percent": 64
           },
           {
             "key": "locker",
             "name": "Lockers",
             "votes": 5,
-            "percent": 20.8
+            "percent": 20
           },
           {
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 4,
-            "percent": 16.7
+            "percent": 16
           }
         ],
         "map": [
           {
             "key": "buried-city",
             "name": "Buried City",
-            "votes": 27,
-            "percent": 61.4
+            "votes": 29,
+            "percent": 63
           },
           {
             "key": "dam",
             "name": "Dam Battlegrounds",
             "votes": 8,
-            "percent": 18.2
+            "percent": 17.4
           },
           {
             "key": "blue-gate",
             "name": "Blue Gate",
             "votes": 3,
-            "percent": 6.8
+            "percent": 6.5
           },
           {
             "key": "spaceport",
             "name": "The Spaceport",
             "votes": 3,
-            "percent": 6.8
+            "percent": 6.5
           },
           {
             "key": "riven-tides",
             "name": "Riven Tides",
             "votes": 2,
-            "percent": 4.5
+            "percent": 4.3
           },
           {
             "key": "stella-montis",
             "name": "Stella Montis",
             "votes": 1,
-            "percent": 2.3
+            "percent": 2.2
           }
         ],
         "event": [
@@ -57724,9 +58492,9 @@
     "wires-recipe": {
       "itemId": "wires-recipe",
       "available": true,
-      "totalVotes": 98,
+      "totalVotes": 99,
       "totals": {
-        "container": 23,
+        "container": 24,
         "map": 33,
         "event": 42
       },
@@ -57735,7 +58503,7 @@
           "key": "breachable_container",
           "name": "Breachable Container",
           "votes": 9,
-          "percent": 39.1
+          "percent": 37.5
         },
         "map": {
           "key": "dam",
@@ -57756,25 +58524,25 @@
             "key": "breachable_container",
             "name": "Breachable Container",
             "votes": 9,
-            "percent": 39.1
+            "percent": 37.5
           },
           {
             "key": "base_container",
             "name": "Container",
             "votes": 7,
-            "percent": 30.4
+            "percent": 29.2
           },
           {
             "key": "car",
             "name": "Cars",
-            "votes": 4,
-            "percent": 17.4
+            "votes": 5,
+            "percent": 20.8
           },
           {
             "key": "bag",
             "name": "Bags",
             "votes": 3,
-            "percent": 13
+            "percent": 12.5
           }
         ],
         "map": [
