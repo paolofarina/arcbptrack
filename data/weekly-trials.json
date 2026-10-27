@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-27T12:27:23.404024+00:00",
+  "generatedAt": "2026-10-27T17:21:51.919724+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
@@ -12,7 +12,7 @@
       "name": "Damage ARC enemies using a Deadline",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-enemies-using-a-deadline.webp",
       "localImage": "assets/weekly-trials/0pZHkXCl.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-enemies-using-the-deadline",
       "multiplier": 0.5,
       "type": "Damage",
       "mapNames": [],
@@ -52,7 +52,7 @@
       "name": "Damage ARC using a Blaze Grenade",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-using-a-blaze-grenade.webp",
       "localImage": "assets/weekly-trials/UDJHPID4.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-using-blaze-grenade",
       "multiplier": 1.5,
       "type": "Damage",
       "mapNames": [],
