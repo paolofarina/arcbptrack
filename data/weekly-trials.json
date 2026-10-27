@@ -1,118 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-27T05:17:20.336558+00:00",
+  "generatedAt": "2026-10-27T12:27:23.404024+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
   },
   "current": [
-    {
-      "id": "weekly-trial:EEuzcXDB:431208543:875905501",
-      "trialId": "EEuzcXDB",
-      "name": "Damage ARC enemies using a Rascal",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-enemies-using-a-rascal.webp",
-      "localImage": "assets/weekly-trials/EEuzcXDB.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-using-rascal",
-      "multiplier": 0.7,
-      "type": "Damage",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [
-        {
-          "id": "dam",
-          "name": "Dam Battlegrounds"
-        },
-        {
-          "id": "buried-city",
-          "name": "Buried City"
-        },
-        {
-          "id": "spaceport",
-          "name": "Spaceport"
-        },
-        {
-          "id": "blue-gate",
-          "name": "Blue Gate"
-        },
-        {
-          "id": "stella-montis",
-          "name": "Stella Montis"
-        },
-        {
-          "id": "riven-tides",
-          "name": "Riven Tides"
-        }
-      ],
-      "windowStart": 1792497600,
-      "windowEnd": 1793095200
-    },
-    {
-      "id": "weekly-trial:LAb3SC5I:489945682:875905501",
-      "trialId": "LAb3SC5I",
-      "name": "Deal damage using a Bully Fragmenter",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-a-bully-fragmenter.webp",
-      "localImage": "assets/weekly-trials/LAb3SC5I.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/deal-damage-using-a-bully-fragmenter",
-      "multiplier": 2,
-      "type": "Damage",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1792497600,
-      "windowEnd": 1793095200
-    },
-    {
-      "id": "weekly-trial:6QjLnaya:115154037:875905501",
-      "trialId": "6QjLnaya",
-      "name": "Destroy Ticks, Pops and Fireballs using a Stiletto",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-ticks-pops-and-fireballs-using-a-stiletto.webp",
-      "localImage": "assets/weekly-trials/6QjLnaya.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/destroy-ticks-pops-and-fireballs-using-a-stiletto",
-      "multiplier": 200,
-      "type": "KillEnemy",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1792497600,
-      "windowEnd": 1793095200
-    },
-    {
-      "id": "weekly-trial:vMPfVNs9:637332879:875905501",
-      "trialId": "vMPfVNs9",
-      "name": "Open Containers in Old Town",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-old-town-on-pendola-pass.webp",
-      "localImage": "assets/weekly-trials/vMPfVNs9.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/open-containers-in-old-town-on-pendola-pass",
-      "multiplier": 200,
-      "type": "Interact",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [
-        {
-          "id": "pendola-pass",
-          "name": "Pendola Pass"
-        }
-      ],
-      "windowStart": 1792497600,
-      "windowEnd": 1793095200
-    },
-    {
-      "id": "weekly-trial:jyPCh3FB:134286434:875905501",
-      "trialId": "jyPCh3FB",
-      "name": "Search kitchen cabinets",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-kitchen-cabinets.webp",
-      "localImage": "assets/weekly-trials/jyPCh3FB.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/search-kitchen-cabinets",
-      "multiplier": 250,
-      "type": "Interact",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1792497600,
-      "windowEnd": 1793095200
-    }
-  ],
-  "upcoming": [
     {
       "id": "weekly-trial:0pZHkXCl:996505250:387506147",
       "trialId": "0pZHkXCl",
@@ -197,7 +90,7 @@
       "id": "weekly-trial:nQnkWGsQ:803496725:387506147",
       "trialId": "nQnkWGsQ",
       "name": "Damage flying ARC enmies using Medium Ammo Weapons",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-flying-arc-enemies-using-medium-ammo-weapons.webp",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-flying-arc-enemies-using-medium-ammo-weapons-v2.webp",
       "localImage": "assets/weekly-trials/nQnkWGsQ.webp",
       "guideLink": "",
       "multiplier": 1.3,
@@ -252,7 +145,7 @@
       "id": "weekly-trial:d9bPJuXx:960002156:387506147",
       "trialId": "d9bPJuXx",
       "name": "Search Husks",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-husks-on-pendola-pass.webp",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-husks-on-pendola-pass-v2.webp",
       "localImage": "assets/weekly-trials/d9bPJuXx.webp",
       "guideLink": "",
       "multiplier": 400,
@@ -267,6 +160,134 @@
       ],
       "windowStart": 1793102400,
       "windowEnd": 1793700000
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "weekly-trial:7Ncabehg:141256458:847389050",
+      "trialId": "7Ncabehg",
+      "name": "Damage ARC Turbines",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-turbines.webp",
+      "localImage": "assets/weekly-trials/7Ncabehg.webp",
+      "guideLink": "",
+      "multiplier": 1.2,
+      "type": "Damage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [
+        {
+          "id": "blue-gate",
+          "name": "Blue Gate"
+        },
+        {
+          "id": "buried-city",
+          "name": "Buried City"
+        },
+        {
+          "id": "dam",
+          "name": "Dam Battlegrounds"
+        },
+        {
+          "id": "riven-tides",
+          "name": "Riven Tides"
+        },
+        {
+          "id": "spaceport",
+          "name": "Spaceport"
+        }
+      ],
+      "windowStart": 1793707200,
+      "windowEnd": 1794304800
+    },
+    {
+      "id": "weekly-trial:XUirqWfM:592362126:847389050",
+      "trialId": "XUirqWfM",
+      "name": "Damage Comets",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-comets.webp",
+      "localImage": "assets/weekly-trials/XUirqWfM.webp",
+      "guideLink": "",
+      "multiplier": 4,
+      "type": "Damage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [
+        {
+          "id": "blue-gate",
+          "name": "Blue Gate"
+        },
+        {
+          "id": "buried-city",
+          "name": "Buried City"
+        },
+        {
+          "id": "dam",
+          "name": "Dam Battlegrounds"
+        },
+        {
+          "id": "riven-tides",
+          "name": "Riven Tides"
+        },
+        {
+          "id": "spaceport",
+          "name": "Spaceport"
+        },
+        {
+          "id": "stella-montis",
+          "name": "Stella Montis"
+        }
+      ],
+      "windowStart": 1793707200,
+      "windowEnd": 1794304800
+    },
+    {
+      "id": "weekly-trial:yRQlDh12:895839506:847389050",
+      "trialId": "yRQlDh12",
+      "name": "Damage Queens or Matriarchs",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-queens-or-matriarchs.webp",
+      "localImage": "assets/weekly-trials/yRQlDh12.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-queens-or-matriarchs",
+      "multiplier": 0.7,
+      "type": "Damage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1793707200,
+      "windowEnd": 1794304800
+    },
+    {
+      "id": "weekly-trial:ZA2WpmAp:534518487:847389050",
+      "trialId": "ZA2WpmAp",
+      "name": "Search ARC Couriers",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-arc-couriers-on-pendola-pass.webp",
+      "localImage": "assets/weekly-trials/ZA2WpmAp.webp",
+      "guideLink": "",
+      "multiplier": 500,
+      "type": "Interact",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [
+        {
+          "id": "pendola-pass",
+          "name": "Pendola Pass"
+        }
+      ],
+      "windowStart": 1793707200,
+      "windowEnd": 1794304800
+    },
+    {
+      "id": "weekly-trial:Vu6JglJo:969069705:847389050",
+      "trialId": "Vu6JglJo",
+      "name": "Search Husks",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-husks.webp",
+      "localImage": "assets/weekly-trials/Vu6JglJo.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/search-husks",
+      "multiplier": 400,
+      "type": "Interact",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1793707200,
+      "windowEnd": 1794304800
     }
   ]
 }
