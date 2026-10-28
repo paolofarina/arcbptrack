@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:30:31.896Z",
+  "generatedAt": "2026-10-28T11:18:47.608Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -501,10 +501,6 @@
     "anvil": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a6f5ae7dd4f8bb866752445dad31655a1d934feb2aa2cd106c2ff8b9d70d10e1.png",
       "file": "assets/items/anvil.png"
-    },
-    "anvil-splitter": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
-      "file": "assets/items/anvil-splitter.png"
     },
     "aphelion": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c1c59f3cf0cd556bd66aeacc32db364e8db92fc8da6986f5f4fd60c1a3476ec2.png",
@@ -1282,6 +1278,14 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/de8c198727833f0d5079f6619933f5afa0a18ac23d039eed0c332becfa50566a.png",
       "file": "assets/items/dart-board.png"
     },
+    "dead-eye-outfit": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/a745b88cfad26aefc0e16683960704895031463888b61ff181f54e191586a391.png",
+      "file": "assets/items/dead-eye-outfit.png"
+    },
+    "dead-flowers": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/09388a423e2f5f4c7d6564802baea36e6c72091a9b2df65f717f08802c10c81b.png",
+      "file": "assets/items/dead-flowers.png"
+    },
     "deadline": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
       "file": "assets/items/deadline.png"
@@ -1301,6 +1305,10 @@
     "degraded-arc-rubber": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/235bff553119ad91e5f1dbd3e49fda25a138a6636be009d7b0392184d114fca3.png",
       "file": "assets/items/degraded-arc-rubber.png"
+    },
+    "anvil-splitter": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
+      "file": "assets/items/anvil-splitter.png"
     },
     "desk-lamp": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/c0e825f38861195f488d3ccd25a2737ec9ed29acb38ea2fc00b6d61cabc14f19.png",
@@ -1641,6 +1649,10 @@
     "familiar-duck": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/61c779fcb9ab509bd6fc850992124d4c8a7b23d39a267a258424a745d9d60cad.png",
       "file": "assets/items/familiar-duck.png"
+    },
+    "fancy-plate": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/dc8bd006804068df1606a24f78ae59579fb8cc6c6287f57cbe98d3a1aff572eb.png",
+      "file": "assets/items/fancy-plate.png"
     },
     "ferro": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/fe769a6a4d3138fc4ab1cd5dbc9d8894b1f0f7cbfd117d27243d60f4dd251ab5.png",
@@ -2162,6 +2174,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/a3af616e5c40dbd8b5b87471e765569578ebc78725fb8db704637896b9c0694b.png",
       "file": "assets/items/lightweight-stock.png"
     },
+    "lone-survivor-backpack": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/c99750bacfa67b7929d0b118bb865d0c47d76dd670d7ba6918f5135a6341be72.png",
+      "file": "assets/items/lone-survivor-backpack.png"
+    },
     "looting-mk-1": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8d7834c42845f1c57952e92bd77255d88a73c91d4ae2558cf189fb3e2ba541c3.png",
       "file": "assets/items/looting-mk-1.png"
@@ -2233,6 +2249,10 @@
     "marco-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c84ccbe107c50d96636190e3a56aa5eaaacb16c271bbc14d77e2eaa57da93177.png",
       "file": "assets/items/marco-outfit.png"
+    },
+    "mask-fragment": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/ae4a2d0243158b877c5899e92476617cc8e5b042212e5a829c60b623455d1648.png",
+      "file": "assets/items/mask-fragment.png"
     },
     "mastery-medal-backpack-charm": {
       "source": "https://static.metaforge.app/arc-raiders/icons/mastery-medal-backpack-charm.webp",
@@ -2362,6 +2382,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/03f75855b5b4a68ad5d9bc3b2ea2f058b2b33bcbcb2dddb3fb3b46866bfdfa25.png",
       "file": "assets/items/noisemaker.png"
     },
+    "noxious-outfit": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/95db62b914d24dd25584c144b500ef8dc25f891626491e2f2f82aac9df27a02d.png",
+      "file": "assets/items/noxious-outfit.png"
+    },
     "number-plate": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/bed221984c19c6c50e780f582abef342dab2e36ec50824e1820530808fb787c5.png",
       "file": "assets/items/number-plate.png"
@@ -2373,6 +2397,14 @@
     "ochre-stencil": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/eb3d651efd8e8f4d63be9e4b31b86612a44f36afe8023a9c8dc309cebff1bfe9.png",
       "file": "assets/items/ochre-stencil.png"
+    },
+    "offering-display-table": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png",
+      "file": "assets/items/offering-display-table.png"
+    },
+    "offering-display-table-design": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png",
+      "file": "assets/items/offering-display-table-design.png"
     },
     "official-shutdown-documentation": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/7685a5095f30cdcff165e6b50f9b2659bb1a08efacb4da91e6f583fe92db8b10.png",
@@ -2481,6 +2513,10 @@
     "photoelectric-cloak": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/639d21fa0d5a93e251c286c3ad793b66e386cde43c17c58b1361a03612328a61.png",
       "file": "assets/items/photoelectric-cloak.png"
+    },
+    "pilgrim-backpack": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/7c7e2463c960223ce42e29fbc01196c04c66466787af5fdc72a2de44d7feb272.png",
+      "file": "assets/items/pilgrim-backpack.png"
     },
     "pilgrims-peak-security-code": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3e427fa580c510970e66c3082a9e86fb77c248dbdbf63aaddc00fa52b60eaa72.png",
@@ -2730,6 +2766,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/3e427fa580c510970e66c3082a9e86fb77c248dbdbf63aaddc00fa52b60eaa72.png",
       "file": "assets/items/raiders-refuge-security-code.png"
     },
+    "railway-lantern": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/0cb0290da3656178974910be569254f186d35cf64e938faa57fae3f0f3bda39e.png",
+      "file": "assets/items/railway-lantern.png"
+    },
     "rascal": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0aabb8da784330210cdc35fd3e081f52e12790eb6ebfb2a1ddd1c94ff7e315fe.png",
       "file": "assets/items/rascal.png"
@@ -2857,6 +2897,10 @@
     "roamer-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/535cccb65b501430d86367e98d204924c68a3baadecac3a5698e3ad7f4d49113.png",
       "file": "assets/items/roamer-outfit.png"
+    },
+    "rock-salt": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261027/3f1b2636d9111c72c1bcc664a39339eda74df56d9ee73784ba6a3b9ee29d5e81.png",
+      "file": "assets/items/rock-salt.png"
     },
     "rocket-thruster": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6fe21fd8b8d4507dfefd0580e5fd98419ba0bad439461005e3e54bf04da2a846.png",
@@ -3277,10 +3321,6 @@
     "study-armchair-design-res-sofa-01-y150-a": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
       "file": "assets/items/study-armchair-design-res-sofa-01-y150-a.png"
-    },
-    "study-armchair-design-res-armchair-01-a": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
-      "file": "assets/items/study-armchair-design-res-armchair-01-a.png"
     },
     "study-ceiling-lamp": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/e756a491c686b5fa83e70168cf429bce82e9f3ecc4a296b03eadda96fd7ca5af.png",

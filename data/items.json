@@ -1,46 +1,46 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-27T10:30:31.956Z",
+  "generatedAt": "2026-10-28T11:18:58.755Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
     "attribution": "https://metaforge.app/arc-raiders"
   },
   "summary": {
-    "totalRawRecords": 1110,
-    "totalItemRecords": 1018,
-    "totalFamilies": 953,
-    "collapsedWeaponRecords": 66,
+    "totalRawRecords": 1121,
+    "totalItemRecords": 1029,
+    "totalFamilies": 963,
+    "collapsedWeaponRecords": 67,
     "withBlueprint": 92,
-    "withoutBlueprint": 861,
+    "withoutBlueprint": 871,
     "rawBlueprintRecords": 92,
     "byRarity": {
-      "Legendary": 29,
-      "Epic": 111,
-      "Uncommon": 177,
-      "Rare": 223,
+      "Legendary": 30,
+      "Epic": 113,
+      "Uncommon": 179,
+      "Rare": 224,
       "Common": 161,
-      "Unknown": 158,
+      "Unknown": 162,
       "Amplified": 94
     },
     "byType": {
-      "Trinket": 90,
-      "Outfits": 86,
+      "Trinket": 95,
+      "Outfits": 88,
       "Quick Use": 48,
       "Research": 15,
       "Material": 67,
       "Nature": 13,
       "Recyclable": 136,
-      "Furniture": 100,
+      "Furniture": 101,
       "Design": 100,
       "Weapon": 115,
       "Key": 44,
       "Mod": 38,
-      "Misc": 6,
       "Research Item": 5,
-      "Cosmetic": 26,
+      "Cosmetic": 28,
       "Grenade": 23,
       "Stencil": 14,
+      "Misc": 6,
       "Augment": 16,
       "Quest Item": 1,
       "Ammunition": 6,
@@ -56,18 +56,18 @@
       "Material"
     ],
     "otherTypes": {
-      "Trinket": 90,
-      "Outfits": 86,
+      "Trinket": 95,
+      "Outfits": 88,
       "Research": 15,
       "Nature": 13,
       "Recyclable": 136,
-      "Furniture": 100,
+      "Furniture": 101,
       "Design": 100,
       "Key": 44,
-      "Misc": 6,
       "Research Item": 5,
-      "Cosmetic": 26,
+      "Cosmetic": 28,
       "Stencil": 14,
+      "Misc": 6,
       "Quest Item": 1,
       "Ammunition": 6,
       "Shield": 3,
@@ -4549,41 +4549,6 @@
         "itemType": "Weapon"
       },
       "image": "assets/items/anvil.png"
-    },
-    {
-      "id": "anvil-splitter",
-      "name": "Anvil Splitter",
-      "description": "Can be recycled into crafting materials.",
-      "rarity": "Legendary",
-      "type": "Misc",
-      "rawType": "Misc",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "anvil-splitter",
-          "name": "Anvil Splitter",
-          "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "anvil-splitter",
-        "itemType": "Misc"
-      },
-      "image": "assets/items/anvil-splitter.png"
     },
     {
       "id": "aphelion",
@@ -11878,6 +11843,78 @@
       "image": "assets/items/dart-board.png"
     },
     {
+      "id": "dead-eye-outfit",
+      "name": "Dead Eye (Outfit)",
+      "description": null,
+      "rarity": "Unknown",
+      "type": "Outfits",
+      "rawType": "Outfits",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/a745b88cfad26aefc0e16683960704895031463888b61ff181f54e191586a391.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/a745b88cfad26aefc0e16683960704895031463888b61ff181f54e191586a391.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "dead-eye-outfit",
+          "name": "Dead Eye (Outfit)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/a745b88cfad26aefc0e16683960704895031463888b61ff181f54e191586a391.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "dead-eye-outfit",
+        "itemType": "Outfits"
+      },
+      "image": "assets/items/dead-eye-outfit.png"
+    },
+    {
+      "id": "dead-flowers",
+      "name": "Dead Flowers",
+      "description": "Don't give these to your date.",
+      "rarity": "Uncommon",
+      "type": "Trinket",
+      "rawType": "Trinket",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/09388a423e2f5f4c7d6564802baea36e6c72091a9b2df65f717f08802c10c81b.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/09388a423e2f5f4c7d6564802baea36e6c72091a9b2df65f717f08802c10c81b.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "dead-flowers",
+          "name": "Dead Flowers",
+          "rarity": "Uncommon",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/09388a423e2f5f4c7d6564802baea36e6c72091a9b2df65f717f08802c10c81b.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": "Old World, Residential, Commercial",
+        "lootAreas": [
+          "Old World, Residential, Commercial"
+        ],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "dead-flowers",
+        "itemType": "Trinket"
+      },
+      "image": "assets/items/dead-flowers.png"
+    },
+    {
       "id": "deadline",
       "name": "Deadline",
       "description": "A mine that deals damage to anything within its radius once the timer runs out.",
@@ -12083,6 +12120,41 @@
         "itemType": "Recyclable"
       },
       "image": "assets/items/degraded-arc-rubber.png"
+    },
+    {
+      "id": "anvil-splitter",
+      "name": "Deprecated Anvil Splitter",
+      "description": "No longer functional, but can still be sold or recycled.",
+      "rarity": "Legendary",
+      "type": "Misc",
+      "rawType": "Misc",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "anvil-splitter",
+          "name": "Deprecated Anvil Splitter",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dcd53c40f47eaeeccfedb56b8b9d2fe4458fa14e59c32398bb377050689b9d8e.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "anvil-splitter",
+        "itemType": "Misc"
+      },
+      "image": "assets/items/anvil-splitter.png"
     },
     {
       "id": "desk-lamp",
@@ -15260,6 +15332,43 @@
         "itemType": "Trinket"
       },
       "image": "assets/items/familiar-duck.png"
+    },
+    {
+      "id": "fancy-plate",
+      "name": "Fancy Plate",
+      "description": "Careful not to shatter it.",
+      "rarity": "Epic",
+      "type": "Trinket",
+      "rawType": "Trinket",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/dc8bd006804068df1606a24f78ae59579fb8cc6c6287f57cbe98d3a1aff572eb.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/dc8bd006804068df1606a24f78ae59579fb8cc6c6287f57cbe98d3a1aff572eb.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "fancy-plate",
+          "name": "Fancy Plate",
+          "rarity": "Epic",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/dc8bd006804068df1606a24f78ae59579fb8cc6c6287f57cbe98d3a1aff572eb.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": "Old World",
+        "lootAreas": [
+          "Old World"
+        ],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "fancy-plate",
+        "itemType": "Trinket"
+      },
+      "image": "assets/items/fancy-plate.png"
     },
     {
       "id": "ferro",
@@ -20168,6 +20277,41 @@
       "image": "assets/items/lightweight-stock.png"
     },
     {
+      "id": "lone-survivor-backpack",
+      "name": "Lone Survivor (Backpack)",
+      "description": null,
+      "rarity": "Unknown",
+      "type": "Cosmetic",
+      "rawType": "Cosmetic",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/c99750bacfa67b7929d0b118bb865d0c47d76dd670d7ba6918f5135a6341be72.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/c99750bacfa67b7929d0b118bb865d0c47d76dd670d7ba6918f5135a6341be72.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "lone-survivor-backpack",
+          "name": "Lone Survivor (Backpack)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/c99750bacfa67b7929d0b118bb865d0c47d76dd670d7ba6918f5135a6341be72.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "lone-survivor-backpack",
+        "itemType": "Cosmetic"
+      },
+      "image": "assets/items/lone-survivor-backpack.png"
+    },
+    {
       "id": "looting-mk-1",
       "name": "Looting Mk. 1",
       "description": "Basic looting augment. More backpack slots and weight capacity, but low defensive and tactical capability.",
@@ -20844,6 +20988,43 @@
         "itemType": "Outfits"
       },
       "image": "assets/items/marco-outfit.png"
+    },
+    {
+      "id": "mask-fragment",
+      "name": "Mask Fragment",
+      "description": "Half a face, cast in bronze.",
+      "rarity": "Epic",
+      "type": "Trinket",
+      "rawType": "Trinket",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/ae4a2d0243158b877c5899e92476617cc8e5b042212e5a829c60b623455d1648.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/ae4a2d0243158b877c5899e92476617cc8e5b042212e5a829c60b623455d1648.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "mask-fragment",
+          "name": "Mask Fragment",
+          "rarity": "Epic",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/ae4a2d0243158b877c5899e92476617cc8e5b042212e5a829c60b623455d1648.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": "Old World",
+        "lootAreas": [
+          "Old World"
+        ],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "mask-fragment",
+        "itemType": "Trinket"
+      },
+      "image": "assets/items/mask-fragment.png"
     },
     {
       "id": "mastery-medal-backpack-charm",
@@ -22036,6 +22217,41 @@
       "image": "assets/items/noisemaker.png"
     },
     {
+      "id": "noxious-outfit",
+      "name": "Noxious (Outfit)",
+      "description": null,
+      "rarity": "Unknown",
+      "type": "Outfits",
+      "rawType": "Outfits",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/95db62b914d24dd25584c144b500ef8dc25f891626491e2f2f82aac9df27a02d.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/95db62b914d24dd25584c144b500ef8dc25f891626491e2f2f82aac9df27a02d.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "noxious-outfit",
+          "name": "Noxious (Outfit)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/95db62b914d24dd25584c144b500ef8dc25f891626491e2f2f82aac9df27a02d.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "noxious-outfit",
+        "itemType": "Outfits"
+      },
+      "image": "assets/items/noxious-outfit.png"
+    },
+    {
       "id": "number-plate",
       "name": "Number Plate",
       "description": "Can be recycled into metal parts.",
@@ -22141,6 +22357,76 @@
         "itemType": "Stencil"
       },
       "image": "assets/items/ochre-stencil.png"
+    },
+    {
+      "id": "offering-display-table",
+      "name": "Offering Display Table",
+      "description": null,
+      "rarity": "Legendary",
+      "type": "Furniture",
+      "rawType": "Furniture",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "offering-display-table",
+          "name": "Offering Display Table",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "offering-display-table",
+        "itemType": "Furniture"
+      },
+      "image": "assets/items/offering-display-table.png"
+    },
+    {
+      "id": "offering-display-table-design",
+      "name": "Offering Display Table Design",
+      "description": null,
+      "rarity": "Legendary",
+      "type": "Design",
+      "rawType": "Design",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "offering-display-table-design",
+          "name": "Offering Display Table Design",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/03b5ba16fbaedc936b88779efcfb653c1d9d4fd256757d24b9c84a5d578205de.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "offering-display-table-design",
+        "itemType": "Design"
+      },
+      "image": "assets/items/offering-display-table-design.png"
     },
     {
       "id": "official-shutdown-documentation",
@@ -23143,6 +23429,41 @@
         "itemType": "Quick Use"
       },
       "image": "assets/items/photoelectric-cloak.png"
+    },
+    {
+      "id": "pilgrim-backpack",
+      "name": "Pilgrim (Backpack)",
+      "description": null,
+      "rarity": "Unknown",
+      "type": "Cosmetic",
+      "rawType": "Cosmetic",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/7c7e2463c960223ce42e29fbc01196c04c66466787af5fdc72a2de44d7feb272.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/7c7e2463c960223ce42e29fbc01196c04c66466787af5fdc72a2de44d7feb272.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "pilgrim-backpack",
+          "name": "Pilgrim (Backpack)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/7c7e2463c960223ce42e29fbc01196c04c66466787af5fdc72a2de44d7feb272.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "pilgrim-backpack",
+        "itemType": "Cosmetic"
+      },
+      "image": "assets/items/pilgrim-backpack.png"
     },
     {
       "id": "pilgrims-peak-security-code",
@@ -25389,6 +25710,41 @@
       "image": "assets/items/raiders-refuge-security-code.png"
     },
     {
+      "id": "railway-lantern",
+      "name": "Railway Lantern",
+      "description": "Once kept trains from running into each other in the dark.",
+      "rarity": "Rare",
+      "type": "Trinket",
+      "rawType": "Trinket",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/0cb0290da3656178974910be569254f186d35cf64e938faa57fae3f0f3bda39e.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/0cb0290da3656178974910be569254f186d35cf64e938faa57fae3f0f3bda39e.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "railway-lantern",
+          "name": "Railway Lantern",
+          "rarity": "Rare",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/0cb0290da3656178974910be569254f186d35cf64e938faa57fae3f0f3bda39e.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "railway-lantern",
+        "itemType": "Trinket"
+      },
+      "image": "assets/items/railway-lantern.png"
+    },
+    {
       "id": "rascal",
       "name": "Rascal",
       "description": "Fires explosive projectiles that only detonate when hitting ARC.",
@@ -26639,6 +26995,41 @@
         "itemType": "Outfits"
       },
       "image": "assets/items/roamer-outfit.png"
+    },
+    {
+      "id": "rock-salt",
+      "name": "Rock Salt",
+      "description": "Decorative, not dinner.",
+      "rarity": "Uncommon",
+      "type": "Trinket",
+      "rawType": "Trinket",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/3f1b2636d9111c72c1bcc664a39339eda74df56d9ee73784ba6a3b9ee29d5e81.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/3f1b2636d9111c72c1bcc664a39339eda74df56d9ee73784ba6a3b9ee29d5e81.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "rock-salt",
+          "name": "Rock Salt",
+          "rarity": "Uncommon",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261027/3f1b2636d9111c72c1bcc664a39339eda74df56d9ee73784ba6a3b9ee29d5e81.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "rock-salt",
+        "itemType": "Trinket"
+      },
+      "image": "assets/items/rock-salt.png"
     },
     {
       "id": "rocket-thruster",
@@ -30605,6 +30996,12 @@
           "name": "Study Armchair Design",
           "rarity": "Uncommon",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png"
+        },
+        {
+          "id": "study-armchair-design-res-sofa-01-y150-a",
+          "name": "Study Armchair Design",
+          "rarity": "Uncommon",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png"
         }
       ],
       "spawn": {
@@ -30621,41 +31018,6 @@
         "itemType": "Design"
       },
       "image": "assets/items/study-armchair-design-res-sofa-01-y150-a.png"
-    },
-    {
-      "id": "study-armchair-design-res-armchair-01-a",
-      "name": "Study Armchair Design",
-      "description": null,
-      "rarity": "Legendary",
-      "type": "Design",
-      "rawType": "Design",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "study-armchair-design-res-armchair-01-a",
-          "name": "Study Armchair Design",
-          "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "study-armchair-design-res-armchair-01-a",
-        "itemType": "Design"
-      },
-      "image": "assets/items/study-armchair-design-res-armchair-01-a.png"
     },
     {
       "id": "study-ceiling-lamp",
