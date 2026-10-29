@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-28T11:18:58.755Z",
+  "generatedAt": "2026-10-29T11:29:48.835Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
@@ -15,9 +15,9 @@
     "withoutBlueprint": 871,
     "rawBlueprintRecords": 92,
     "byRarity": {
-      "Legendary": 30,
+      "Legendary": 31,
       "Epic": 113,
-      "Uncommon": 179,
+      "Uncommon": 178,
       "Rare": 224,
       "Common": 161,
       "Unknown": 162,
@@ -30979,29 +30979,29 @@
       "image": "assets/items/study-armchair.png"
     },
     {
-      "id": "study-armchair-design-res-sofa-01-y150-a",
+      "id": "study-armchair-design-res-armchair-01-a",
       "name": "Study Armchair Design",
       "description": null,
-      "rarity": "Uncommon",
+      "rarity": "Legendary",
       "type": "Design",
       "rawType": "Design",
       "isPrimaryType": false,
       "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png",
       "blueprint": null,
       "variants": [
         {
-          "id": "study-armchair-design-res-sofa-01-y150-a",
+          "id": "study-armchair-design-res-armchair-01-a",
           "name": "Study Armchair Design",
-          "rarity": "Uncommon",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png"
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png"
         },
         {
-          "id": "study-armchair-design-res-sofa-01-y150-a",
+          "id": "study-armchair-design-res-armchair-01-a",
           "name": "Study Armchair Design",
-          "rarity": "Uncommon",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png"
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/1ce44bb1e0fbee784caee51c407292ab63a6525e048626a230087a4a454e8ece.png"
         }
       ],
       "spawn": {
@@ -31014,10 +31014,10 @@
       },
       "source": {
         "provider": "MetaForge",
-        "itemId": "study-armchair-design-res-sofa-01-y150-a",
+        "itemId": "study-armchair-design-res-armchair-01-a",
         "itemType": "Design"
       },
-      "image": "assets/items/study-armchair-design-res-sofa-01-y150-a.png"
+      "image": "assets/items/study-armchair-design-res-armchair-01-a.png"
     },
     {
       "id": "study-ceiling-lamp",
