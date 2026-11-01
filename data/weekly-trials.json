@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T06:26:35.990520+00:00",
+  "generatedAt": "2026-11-01T17:58:52.262429+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
@@ -17,32 +17,7 @@
       "type": "Damage",
       "mapNames": [],
       "mapCondition": null,
-      "maps": [
-        {
-          "id": "dam",
-          "name": "Dam Battlegrounds"
-        },
-        {
-          "id": "buried-city",
-          "name": "Buried City"
-        },
-        {
-          "id": "spaceport",
-          "name": "Spaceport"
-        },
-        {
-          "id": "blue-gate",
-          "name": "Blue Gate"
-        },
-        {
-          "id": "stella-montis",
-          "name": "Stella Montis"
-        },
-        {
-          "id": "riven-tides",
-          "name": "Riven Tides"
-        }
-      ],
+      "maps": [],
       "windowStart": 1793102400,
       "windowEnd": 1793700000
     },
@@ -57,32 +32,7 @@
       "type": "Damage",
       "mapNames": [],
       "mapCondition": null,
-      "maps": [
-        {
-          "id": "dam",
-          "name": "Dam Battlegrounds"
-        },
-        {
-          "id": "buried-city",
-          "name": "Buried City"
-        },
-        {
-          "id": "spaceport",
-          "name": "Spaceport"
-        },
-        {
-          "id": "blue-gate",
-          "name": "Blue Gate"
-        },
-        {
-          "id": "stella-montis",
-          "name": "Stella Montis"
-        },
-        {
-          "id": "riven-tides",
-          "name": "Riven Tides"
-        }
-      ],
+      "maps": [],
       "windowStart": 1793102400,
       "windowEnd": 1793700000
     },
@@ -97,32 +47,7 @@
       "type": "Damage",
       "mapNames": [],
       "mapCondition": null,
-      "maps": [
-        {
-          "id": "dam",
-          "name": "Dam Battlegrounds"
-        },
-        {
-          "id": "buried-city",
-          "name": "Buried City"
-        },
-        {
-          "id": "spaceport",
-          "name": "Spaceport"
-        },
-        {
-          "id": "blue-gate",
-          "name": "Blue Gate"
-        },
-        {
-          "id": "stella-montis",
-          "name": "Stella Montis"
-        },
-        {
-          "id": "riven-tides",
-          "name": "Riven Tides"
-        }
-      ],
+      "maps": [],
       "windowStart": 1793102400,
       "windowEnd": 1793700000
     },
@@ -174,28 +99,7 @@
       "type": "Damage",
       "mapNames": [],
       "mapCondition": null,
-      "maps": [
-        {
-          "id": "blue-gate",
-          "name": "Blue Gate"
-        },
-        {
-          "id": "buried-city",
-          "name": "Buried City"
-        },
-        {
-          "id": "dam",
-          "name": "Dam Battlegrounds"
-        },
-        {
-          "id": "riven-tides",
-          "name": "Riven Tides"
-        },
-        {
-          "id": "spaceport",
-          "name": "Spaceport"
-        }
-      ],
+      "maps": [],
       "windowStart": 1793707200,
       "windowEnd": 1794304800
     },
@@ -210,32 +114,7 @@
       "type": "Damage",
       "mapNames": [],
       "mapCondition": null,
-      "maps": [
-        {
-          "id": "blue-gate",
-          "name": "Blue Gate"
-        },
-        {
-          "id": "buried-city",
-          "name": "Buried City"
-        },
-        {
-          "id": "dam",
-          "name": "Dam Battlegrounds"
-        },
-        {
-          "id": "riven-tides",
-          "name": "Riven Tides"
-        },
-        {
-          "id": "spaceport",
-          "name": "Spaceport"
-        },
-        {
-          "id": "stella-montis",
-          "name": "Stella Montis"
-        }
-      ],
+      "maps": [],
       "windowStart": 1793707200,
       "windowEnd": 1794304800
     },
