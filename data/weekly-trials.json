@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-02T06:27:27.509721+00:00",
+  "generatedAt": "2026-11-02T21:48:53.458945+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
@@ -75,7 +75,9 @@
       "guideLink": "https://metaforge.app/arc-raiders/search-husks-on-pendola-pass",
       "multiplier": 400,
       "type": "Interact",
-      "mapNames": [],
+      "mapNames": [
+        "Pendola Pass"
+      ],
       "mapCondition": null,
       "maps": [
         {
@@ -142,7 +144,9 @@
       "guideLink": "",
       "multiplier": 500,
       "type": "Interact",
-      "mapNames": [],
+      "mapNames": [
+        "Pendola Pass"
+      ],
       "mapCondition": null,
       "maps": [
         {
