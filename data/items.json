@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-03T12:45:53.014Z",
+  "generatedAt": "2026-11-04T12:58:07.053Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
@@ -28692,41 +28692,6 @@
       "image": "assets/items/mask-fragment.png"
     },
     {
-      "id": "mastery-medal-backpack-charm",
-      "name": "Mastery Medal (Backpack Charm)",
-      "description": "Maintain Wildcard I trials rank until the season end.",
-      "rarity": "Unknown",
-      "type": "Cosmetic",
-      "rawType": "Cosmetic",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "mastery-medal-backpack-charm",
-          "name": "Mastery Medal (Backpack Charm)",
-          "rarity": "Unknown",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "mastery-medal-backpack-charm",
-        "itemType": "Cosmetic"
-      },
-      "image": "assets/items/mastery-medal-backpack-charm.png"
-    },
-    {
       "id": "game-cosmetic-1667060404",
       "name": "Mastery Medal (Backpack Charm)",
       "description": null,
@@ -28760,6 +28725,41 @@
         "itemType": "Cosmetic"
       },
       "image": "assets/items/game-cosmetic-1667060404.png"
+    },
+    {
+      "id": "mastery-medal-backpack-charm",
+      "name": "Mastery Medal (Backpack Charm)",
+      "description": "Maintain Wildcard I trials rank until the season end.",
+      "rarity": "Unknown",
+      "type": "Cosmetic",
+      "rawType": "Cosmetic",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "mastery-medal-backpack-charm",
+          "name": "Mastery Medal (Backpack Charm)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "mastery-medal-backpack-charm",
+        "itemType": "Cosmetic"
+      },
+      "image": "assets/items/mastery-medal-backpack-charm.png"
     },
     {
       "id": "matador-outfit",
@@ -31971,41 +31971,6 @@
       "image": "assets/items/patrol-car-key.png"
     },
     {
-      "id": "game-cosmetic-n922026955",
-      "name": "Peace (Emote)",
-      "description": null,
-      "rarity": "Unknown",
-      "type": "Cosmetic",
-      "rawType": "Cosmetic",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "game-cosmetic-n922026955",
-          "name": "Peace (Emote)",
-          "rarity": "Unknown",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "game-cosmetic-n922026955",
-        "itemType": "Cosmetic"
-      },
-      "image": "assets/items/game-cosmetic-n922026955.png"
-    },
-    {
       "id": "peace-emote",
       "name": "Peace (Emote)",
       "description": null,
@@ -32039,6 +32004,41 @@
         "itemType": "Cosmetic"
       },
       "image": "assets/items/peace-emote.png"
+    },
+    {
+      "id": "game-cosmetic-n922026955",
+      "name": "Peace (Emote)",
+      "description": null,
+      "rarity": "Unknown",
+      "type": "Cosmetic",
+      "rawType": "Cosmetic",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "game-cosmetic-n922026955",
+          "name": "Peace (Emote)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "game-cosmetic-n922026955",
+        "itemType": "Cosmetic"
+      },
+      "image": "assets/items/game-cosmetic-n922026955.png"
     },
     {
       "id": "pendola-pass-observatory-key",

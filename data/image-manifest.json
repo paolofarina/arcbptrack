@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:45:52.937Z",
+  "generatedAt": "2026-11-04T12:58:06.976Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -3130,13 +3130,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20261027/ae4a2d0243158b877c5899e92476617cc8e5b042212e5a829c60b623455d1648.png",
       "file": "assets/items/mask-fragment.png"
     },
-    "mastery-medal-backpack-charm": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
-      "file": "assets/items/mastery-medal-backpack-charm.png"
-    },
     "game-cosmetic-1667060404": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/920ddc9c0e3ca2905c765ca4e4f152ef9bb212a74dce07076ba4a6c5952084a5.png",
       "file": "assets/items/game-cosmetic-1667060404.png"
+    },
+    "mastery-medal-backpack-charm": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
+      "file": "assets/items/mastery-medal-backpack-charm.png"
     },
     "matador-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2ea890f387d9426987ff478c539e93f04ee785c1ad0084733856713285d7b70f.png",
@@ -3490,13 +3490,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/44b285b2182df33ca85fb76712e553f8c1f7e543bbd913112ad7f6d6636da3d0.png",
       "file": "assets/items/patrol-car-key.png"
     },
-    "game-cosmetic-n922026955": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png",
-      "file": "assets/items/game-cosmetic-n922026955.png"
-    },
     "peace-emote": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/addeb5742ea55d5f99f81009efb0db4c796a57659a447927ddbdc7d4506f6f56.png",
       "file": "assets/items/peace-emote.png"
+    },
+    "game-cosmetic-n922026955": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/678a9002d82619a8e6f93fdc060a34c4baf2cb79d0582aa39c30907a09d8cca8.png",
+      "file": "assets/items/game-cosmetic-n922026955.png"
     },
     "pendola-pass-observatory-key": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/fd46f031cdeef4e8d9b5133561e7e144b9191aaa527503ee0b69a9ac3f0a7f8e.png",
