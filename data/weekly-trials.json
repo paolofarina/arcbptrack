@@ -1,102 +1,18 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-10T07:30:03.461318+00:00",
+  "generatedAt": "2026-11-10T19:15:07.372488+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
   },
   "current": [
     {
-      "id": "weekly-trial:7Ncabehg:141256458:847389050",
-      "trialId": "7Ncabehg",
-      "name": "Damage ARC Turbines",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-turbines.webp",
-      "localImage": "assets/weekly-trials/7Ncabehg.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-turbines",
-      "multiplier": 1.2,
-      "type": "Damage",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1793707200,
-      "windowEnd": 1794304800
-    },
-    {
-      "id": "weekly-trial:XUirqWfM:592362126:847389050",
-      "trialId": "XUirqWfM",
-      "name": "Damage Comets",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-comets.webp",
-      "localImage": "assets/weekly-trials/XUirqWfM.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-comets",
-      "multiplier": 4,
-      "type": "Damage",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1793707200,
-      "windowEnd": 1794304800
-    },
-    {
-      "id": "weekly-trial:yRQlDh12:895839506:847389050",
-      "trialId": "yRQlDh12",
-      "name": "Damage Queens or Matriarchs",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-queens-or-matriarchs.webp",
-      "localImage": "assets/weekly-trials/yRQlDh12.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-queens-or-matriarchs",
-      "multiplier": 0.7,
-      "type": "Damage",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1793707200,
-      "windowEnd": 1794304800
-    },
-    {
-      "id": "weekly-trial:ZA2WpmAp:534518487:847389050",
-      "trialId": "ZA2WpmAp",
-      "name": "Search ARC Couriers",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-arc-couriers-on-pendola-pass.webp",
-      "localImage": "assets/weekly-trials/ZA2WpmAp.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/search-arc-couriers-on-pendola-pass",
-      "multiplier": 500,
-      "type": "Interact",
-      "mapNames": [
-        "Pendola Pass"
-      ],
-      "mapCondition": null,
-      "maps": [
-        {
-          "id": "pendola-pass",
-          "name": "Pendola Pass"
-        }
-      ],
-      "windowStart": 1793707200,
-      "windowEnd": 1794304800
-    },
-    {
-      "id": "weekly-trial:Vu6JglJo:969069705:847389050",
-      "trialId": "Vu6JglJo",
-      "name": "Search Husks",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-husks.webp",
-      "localImage": "assets/weekly-trials/Vu6JglJo.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/search-husks",
-      "multiplier": 400,
-      "type": "Interact",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1793707200,
-      "windowEnd": 1794304800
-    }
-  ],
-  "upcoming": [
-    {
       "id": "weekly-trial:kc2Mpn7b:149222420:181041556",
       "trialId": "kc2Mpn7b",
       "name": "Damage ARC enemies",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-enemies.webp",
       "localImage": "assets/weekly-trials/kc2Mpn7b.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-any-arc-enemies",
       "multiplier": 0.7,
       "type": "Damage",
       "mapNames": [],
@@ -111,7 +27,7 @@
       "name": "Damage ARC enemies using the Hullcracker",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-enemies-using-the-hullcracker.webp",
       "localImage": "assets/weekly-trials/rVs4qaTl.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-using-the-hullcracke",
       "multiplier": 0.8,
       "type": "Damage",
       "mapNames": [],
@@ -141,7 +57,7 @@
       "name": "Open Containers",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers.webp",
       "localImage": "assets/weekly-trials/lOY9CTe2.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/open-containers-within-the-spaceport-walls",
       "multiplier": 75,
       "type": "Interact",
       "mapNames": [],
@@ -156,7 +72,7 @@
       "name": "Search destroyed ARC",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-destroyed-arc.webp",
       "localImage": "assets/weekly-trials/ItNsQTLl.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/loot-arc-enemies",
       "multiplier": 120,
       "type": "Interact",
       "mapNames": [],
@@ -165,5 +81,6 @@
       "windowStart": 1794312000,
       "windowEnd": 1794909600
     }
-  ]
+  ],
+  "upcoming": []
 }
