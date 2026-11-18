@@ -1,86 +1,176 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-17T08:08:46.858957+00:00",
+  "generatedAt": "2026-11-18T08:10:58.275399+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
   },
   "current": [
     {
-      "id": "weekly-trial:kc2Mpn7b:149222420:181041556",
-      "trialId": "kc2Mpn7b",
-      "name": "Damage ARC enemies",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-enemies.webp",
-      "localImage": "assets/weekly-trials/kc2Mpn7b.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-any-arc-enemies",
-      "multiplier": 0.7,
+      "id": "weekly-trial:aRD3FQIT:964109526:598734588",
+      "trialId": "aRD3FQIT",
+      "name": "Deal Damage using Heavy Ammo weapons",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-heavy-ammo-weapons.webp",
+      "localImage": "assets/weekly-trials/aRD3FQIT.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-using-heavy-ammo-weapons",
+      "multiplier": 1,
       "type": "Damage",
       "mapNames": [],
       "mapCondition": null,
       "maps": [],
-      "windowStart": 1794312000,
-      "windowEnd": 1794909600
+      "windowStart": 1794916800,
+      "windowEnd": 1795514400
     },
     {
-      "id": "weekly-trial:rVs4qaTl:127678109:181041556",
-      "trialId": "rVs4qaTl",
-      "name": "Damage ARC enemies using the Hullcracker",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-arc-enemies-using-the-hullcracker.webp",
-      "localImage": "assets/weekly-trials/rVs4qaTl.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-using-the-hullcracke",
-      "multiplier": 0.8,
-      "type": "Damage",
+      "id": "weekly-trial:zXHVjlhl:265602329:598734588",
+      "trialId": "zXHVjlhl",
+      "name": "Destroy ARC thrusters",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-arc-thrusters.webp",
+      "localImage": "assets/weekly-trials/zXHVjlhl.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/destroy-arc-thrusters",
+      "multiplier": 200,
+      "type": "DestroyConstructablePart",
       "mapNames": [],
       "mapCondition": null,
       "maps": [],
-      "windowStart": 1794312000,
-      "windowEnd": 1794909600
+      "windowStart": 1794916800,
+      "windowEnd": 1795514400
     },
     {
-      "id": "weekly-trial:lvOuGi5s:951372101:181041556",
-      "trialId": "lvOuGi5s",
-      "name": "Deal melee damage to ARC enemies",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/dealmeleedamagetoarcenemies2.webp",
-      "localImage": "assets/weekly-trials/lvOuGi5s.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/deal-melee-damage-to-arc-enemies",
-      "multiplier": 7.5,
-      "type": "Damage",
+      "id": "weekly-trial:T2wZ6r0i:407907509:598734588",
+      "trialId": "T2wZ6r0i",
+      "name": "Destroy ground ARC",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-ground-arc.webp",
+      "localImage": "assets/weekly-trials/T2wZ6r0i.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/destroy-ground-arc",
+      "multiplier": 250,
+      "type": "KillEnemy",
       "mapNames": [],
       "mapCondition": null,
       "maps": [],
-      "windowStart": 1794312000,
-      "windowEnd": 1794909600
+      "windowStart": 1794916800,
+      "windowEnd": 1795514400
     },
     {
-      "id": "weekly-trial:lOY9CTe2:721696531:181041556",
-      "trialId": "lOY9CTe2",
-      "name": "Open Containers",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers.webp",
-      "localImage": "assets/weekly-trials/lOY9CTe2.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/open-containers-within-the-spaceport-walls",
-      "multiplier": 75,
+      "id": "weekly-trial:I5r7exx6:217209190:598734588",
+      "trialId": "I5r7exx6",
+      "name": "Loot Weapon Crates",
+      "image": "https://metaforge.app//static.metaforge.app/arc-raiders/weekly-trials/lootweaponcrates.webp",
+      "localImage": "",
+      "guideLink": "https://metaforge.app/arc-raiders/loot-weapon-crates",
+      "multiplier": 1000,
       "type": "Interact",
       "mapNames": [],
       "mapCondition": null,
       "maps": [],
-      "windowStart": 1794312000,
-      "windowEnd": 1794909600
+      "windowStart": 1794916800,
+      "windowEnd": 1795514400
     },
     {
-      "id": "weekly-trial:ItNsQTLl:782488689:181041556",
-      "trialId": "ItNsQTLl",
-      "name": "Search destroyed ARC",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/search-destroyed-arc.webp",
-      "localImage": "assets/weekly-trials/ItNsQTLl.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/loot-arc-enemies",
-      "multiplier": 120,
+      "id": "weekly-trial:2c0ak8O2:134074964:598734588",
+      "trialId": "2c0ak8O2",
+      "name": "Open containers in Cielo Sereno Observatory",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-cielo-sereno-observatory-on-pendola-pass.webp",
+      "localImage": "assets/weekly-trials/2c0ak8O2.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/open-containers-in-cielo-sereno-observatory",
+      "multiplier": 200,
       "type": "Interact",
-      "mapNames": [],
+      "mapNames": [
+        "Pendola Pass"
+      ],
       "mapCondition": null,
-      "maps": [],
-      "windowStart": 1794312000,
-      "windowEnd": 1794909600
+      "maps": [
+        {
+          "id": "pendola-pass",
+          "name": "Pendola Pass"
+        }
+      ],
+      "windowStart": 1794916800,
+      "windowEnd": 1795514400
     }
   ],
-  "upcoming": []
+  "upcoming": [
+    {
+      "id": "weekly-trial:qLuwio4N:537757437:839389624",
+      "trialId": "qLuwio4N",
+      "name": "Damage Leapers",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-leapers.webp",
+      "localImage": "assets/weekly-trials/qLuwio4N.webp",
+      "guideLink": "",
+      "multiplier": 1.6,
+      "type": "Damage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1795521600,
+      "windowEnd": 1796119200
+    },
+    {
+      "id": "weekly-trial:XCtdUK33:528679721:839389624",
+      "trialId": "XCtdUK33",
+      "name": "Deal damage using Shotguns",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-shotguns.webp",
+      "localImage": "assets/weekly-trials/XCtdUK33.webp",
+      "guideLink": "",
+      "multiplier": 1,
+      "type": "Damage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1795521600,
+      "windowEnd": 1796119200
+    },
+    {
+      "id": "weekly-trial:uuvThBYK:178196284:839389624",
+      "trialId": "uuvThBYK",
+      "name": "Destroy Leaper legs",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-leaper-legs.webp",
+      "localImage": "assets/weekly-trials/uuvThBYK.webp",
+      "guideLink": "",
+      "multiplier": 500,
+      "type": "DestroyConstructablePart",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1795521600,
+      "windowEnd": 1796119200
+    },
+    {
+      "id": "weekly-trial:hmll6eiA:763100549:839389624",
+      "trialId": "hmll6eiA",
+      "name": "Harvest plants",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/harvest-plants.webp",
+      "localImage": "assets/weekly-trials/hmll6eiA.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/harvest-plants",
+      "multiplier": 250,
+      "type": "Interact",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1795521600,
+      "windowEnd": 1796119200
+    },
+    {
+      "id": "weekly-trial:P98bMGGa:845451580:839389624",
+      "trialId": "P98bMGGa",
+      "name": "Open containers in Railyard",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-railyard-on-pendola-pass.webp",
+      "localImage": "assets/weekly-trials/P98bMGGa.webp",
+      "guideLink": "",
+      "multiplier": 200,
+      "type": "Interact",
+      "mapNames": [
+        "Pendola Pass"
+      ],
+      "mapCondition": null,
+      "maps": [
+        {
+          "id": "pendola-pass",
+          "name": "Pendola Pass"
+        }
+      ],
+      "windowStart": 1795521600,
+      "windowEnd": 1796119200
+    }
+  ]
 }
