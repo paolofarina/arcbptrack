@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-18T08:30:19.724Z",
+  "generatedAt": "2026-11-18T13:54:48.560Z",
   "source": {
     "provider": "MetaForge",
     "api": "https://metaforge.app/api/arc-raiders/items",
@@ -8,40 +8,40 @@
   },
   "summary": {
     "totalRawRecords": 1512,
-    "totalItemRecords": 1420,
-    "totalFamilies": 1355,
-    "collapsedWeaponRecords": 66,
-    "withBlueprint": 92,
-    "withoutBlueprint": 1263,
-    "rawBlueprintRecords": 92,
+    "totalItemRecords": 1423,
+    "totalFamilies": 1351,
+    "collapsedWeaponRecords": 74,
+    "withBlueprint": 90,
+    "withoutBlueprint": 1261,
+    "rawBlueprintRecords": 89,
     "byRarity": {
-      "Legendary": 31,
-      "Epic": 113,
-      "Uncommon": 179,
-      "Rare": 224,
+      "Legendary": 32,
+      "Epic": 111,
+      "Uncommon": 180,
+      "Rare": 221,
       "Common": 161,
-      "Unknown": 553,
+      "Unknown": 552,
       "Amplified": 94
     },
     "byType": {
       "Trinket": 95,
       "Outfits": 88,
-      "Cosmetic": 419,
+      "Cosmetic": 418,
       "Quick Use": 48,
       "Research": 15,
       "Material": 67,
       "Nature": 13,
       "Recyclable": 136,
-      "Furniture": 101,
-      "Design": 101,
+      "Furniture": 100,
+      "Design": 100,
       "Weapon": 115,
       "Key": 44,
       "Mod": 38,
       "Research Item": 5,
       "Grenade": 23,
-      "Stencil": 14,
+      "Stencil": 16,
       "Misc": 6,
-      "Augment": 16,
+      "Augment": 13,
       "Quest Item": 1,
       "Ammunition": 6,
       "Shield": 3,
@@ -58,15 +58,15 @@
     "otherTypes": {
       "Trinket": 95,
       "Outfits": 88,
-      "Cosmetic": 419,
+      "Cosmetic": 418,
       "Research": 15,
       "Nature": 13,
       "Recyclable": 136,
-      "Furniture": 101,
-      "Design": 101,
+      "Furniture": 100,
+      "Design": 100,
       "Key": 44,
       "Research Item": 5,
-      "Stencil": 14,
+      "Stencil": 16,
       "Misc": 6,
       "Quest Item": 1,
       "Ammunition": 6,
@@ -10098,6 +10098,12 @@
           "name": "Bronze Statuette",
           "rarity": "Legendary",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/ad1f5145b2580a6ed5e5a2e3b4abf6adedee9b97cb674c69371d68bf7f97eb7d.png"
+        },
+        {
+          "id": "bronze-statuette",
+          "name": "Bronze Statuette",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/ad1f5145b2580a6ed5e5a2e3b4abf6adedee9b97cb674c69371d68bf7f97eb7d.png"
         }
       ],
       "spawn": {
@@ -11689,41 +11695,6 @@
         "itemType": "Outfits"
       },
       "image": "assets/items/carrion-outfit.png"
-    },
-    {
-      "id": "carrion-helmet",
-      "name": "Carrion Helmet (Scrappy Outfit)",
-      "description": null,
-      "rarity": "Unknown",
-      "type": "Cosmetic",
-      "rawType": "Cosmetic",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/f973801a59783c571253abea12aa2a251c1a217d4589156f4008fc890c6a4b71.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/f973801a59783c571253abea12aa2a251c1a217d4589156f4008fc890c6a4b71.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "carrion-helmet",
-          "name": "Carrion Helmet (Scrappy Outfit)",
-          "rarity": "Unknown",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261007/f973801a59783c571253abea12aa2a251c1a217d4589156f4008fc890c6a4b71.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "carrion-helmet",
-        "itemType": "Cosmetic"
-      },
-      "image": "assets/items/carrion-helmet.png"
     },
     {
       "id": "game-cosmetic-n1319203648",
@@ -13356,6 +13327,12 @@
         }
       },
       "variants": [
+        {
+          "id": "complex-gun-parts",
+          "name": "Complex Gun Parts",
+          "rarity": "Epic",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/f89ec15fe5f8d48de02a92dd5cccc8537281af9eaa1e75740c4238be64978965.png"
+        },
         {
           "id": "complex-gun-parts",
           "name": "Complex Gun Parts",
@@ -15073,22 +15050,16 @@
       "rawType": "Quick Use",
       "isPrimaryType": true,
       "hasBlueprint": true,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
+      "imageRemote": "https://static.metaforge.app/arc-raiders/icons/deadline.webp",
       "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
       "blueprint": {
-        "id": "deadline-blueprint",
+        "id": "deadline",
         "name": "Deadline Blueprint",
         "rarity": "Epic",
         "type": "Quick Use",
-        "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
+        "imageRemote": "https://static.metaforge.app/arc-raiders/icons/deadline.webp",
         "reward": null,
-        "spawn": {
-          "provider": "MetaForge",
-          "lootArea": null,
-          "sources": [],
-          "locations": [],
-          "droppedBy": []
-        }
+        "spawn": null
       },
       "variants": [
         {
@@ -15111,7 +15082,7 @@
         "itemId": "deadline",
         "itemType": "Quick Use"
       },
-      "image": "assets/items/deadline.png"
+      "image": "assets/items/deadline.webp"
     },
     {
       "id": "deadwire-outfit",
@@ -21777,6 +21748,12 @@
           "name": "Frying Pan",
           "rarity": "Rare",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/f05b26c6d1dc01292aec76dc3234764b6696998274a10b231c41fb462dd6dcaa.png"
+        },
+        {
+          "id": "frying-pan",
+          "name": "Frying Pan",
+          "rarity": "Rare",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/f05b26c6d1dc01292aec76dc3234764b6696998274a10b231c41fb462dd6dcaa.png"
         }
       ],
       "spawn": {
@@ -23110,6 +23087,41 @@
       "image": "assets/items/goggles-radio-renegade-variant.webp"
     },
     {
+      "id": "golden-olive-stencil",
+      "name": "Golden Olive Stencil",
+      "description": null,
+      "rarity": "Uncommon",
+      "type": "Stencil",
+      "rawType": "Stencil",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261117/70f1f617e772e7ccc469ce86be212502cae793b69fee5ba6e5362d004d0729ea.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261117/70f1f617e772e7ccc469ce86be212502cae793b69fee5ba6e5362d004d0729ea.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "golden-olive-stencil",
+          "name": "Golden Olive Stencil",
+          "rarity": "Uncommon",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261117/70f1f617e772e7ccc469ce86be212502cae793b69fee5ba6e5362d004d0729ea.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "golden-olive-stencil",
+        "itemType": "Stencil"
+      },
+      "image": "assets/items/golden-olive-stencil.png"
+    },
+    {
       "id": "game-cosmetic-828819479",
       "name": "Golden Rubber Duck (Backpack Charm)",
       "description": null,
@@ -23474,76 +23486,6 @@
         "itemType": "Furniture"
       },
       "image": "assets/items/green-geometric-sofa.png"
-    },
-    {
-      "id": "green-geometric-sofa-design",
-      "name": "Green Geometric Sofa Design",
-      "description": null,
-      "rarity": "Rare",
-      "type": "Design",
-      "rawType": "Design",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/0e75e8531666590b8be7fee8ca8c695d82709684db1234ad8b402fa85fb7ffa1.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/0e75e8531666590b8be7fee8ca8c695d82709684db1234ad8b402fa85fb7ffa1.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "green-geometric-sofa-design",
-          "name": "Green Geometric Sofa Design",
-          "rarity": "Rare",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261008/0e75e8531666590b8be7fee8ca8c695d82709684db1234ad8b402fa85fb7ffa1.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "green-geometric-sofa-design",
-        "itemType": "Design"
-      },
-      "image": "assets/items/green-geometric-sofa-design.png"
-    },
-    {
-      "id": "green-lab-sofa",
-      "name": "Green Lab Sofa",
-      "description": null,
-      "rarity": "Rare",
-      "type": "Furniture",
-      "rawType": "Furniture",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_ResearchCompany_BC.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_ResearchCompany_BC.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "green-lab-sofa",
-          "name": "Green Lab Sofa",
-          "rarity": "Rare",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_ResearchCompany_BC.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "green-lab-sofa",
-        "itemType": "Furniture"
-      },
-      "image": "assets/items/green-lab-sofa.png"
     },
     {
       "id": "green-lab-sofa-design",
@@ -41574,6 +41516,12 @@
           "name": "Speckled (Scrappy Appearance)",
           "rarity": "Unknown",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/f928ef1da46162783f4760ff1da7a9b436d809cff3e0bc11d8caafc41eb3883a.png"
+        },
+        {
+          "id": "game-cosmetic-n1504118640",
+          "name": "Speckled (Scrappy Appearance)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/f928ef1da46162783f4760ff1da7a9b436d809cff3e0bc11d8caafc41eb3883a.png"
         }
       ],
       "spawn": {
@@ -41609,6 +41557,12 @@
           "name": "Speckled Face Art (Face Style)",
           "rarity": "Unknown",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/2e15d7187b695520edf22e1d7077ebc3fced525bb02cbb7816b9e0098ea0bbfc.png"
+        },
+        {
+          "id": "game-cosmetic-n734651836",
+          "name": "Speckled Face Art (Face Style)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/2e15d7187b695520edf22e1d7077ebc3fced525bb02cbb7816b9e0098ea0bbfc.png"
         }
       ],
       "spawn": {
@@ -41639,6 +41593,12 @@
       "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/4f1c817415d17e533dc7d980d947ae44b87b24ed99cda24ebf3e0c0bb7fb3ca6.png",
       "blueprint": null,
       "variants": [
+        {
+          "id": "spectrometer",
+          "name": "Spectrometer",
+          "rarity": "Rare",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/4f1c817415d17e533dc7d980d947ae44b87b24ed99cda24ebf3e0c0bb7fb3ca6.png"
+        },
         {
           "id": "spectrometer",
           "name": "Spectrometer",
@@ -41681,6 +41641,12 @@
           "name": "Spectrum Analyzer",
           "rarity": "Epic",
           "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/baac10d33db290d7aa965e16273ef74663ff65956479e142f4f8eb1d5ab4fc67.png"
+        },
+        {
+          "id": "spectrum-analyzer",
+          "name": "Spectrum Analyzer",
+          "rarity": "Epic",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/baac10d33db290d7aa965e16273ef74663ff65956479e142f4f8eb1d5ab4fc67.png"
         }
       ],
       "spawn": {
@@ -41713,6 +41679,12 @@
       "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/5107497e7611865c1316371a2b0ee156739a6fe57b056a2c13acbf581a209161.png",
       "blueprint": null,
       "variants": [
+        {
+          "id": "game-cosmetic-570411026",
+          "name": "Spider Tattoo (Face Style)",
+          "rarity": "Unknown",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/5107497e7611865c1316371a2b0ee156739a6fe57b056a2c13acbf581a209161.png"
+        },
         {
           "id": "game-cosmetic-570411026",
           "name": "Spider Tattoo (Face Style)",
@@ -43054,41 +43026,6 @@
       "image": "assets/items/game-cosmetic-n1378660176.png"
     },
     {
-      "id": "study-armchair-res-armchair-01-a",
-      "name": "Study Armchair",
-      "description": null,
-      "rarity": "Legendary",
-      "type": "Furniture",
-      "rawType": "Furniture",
-      "isPrimaryType": false,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "study-armchair-res-armchair-01-a",
-          "name": "Study Armchair",
-          "rarity": "Legendary",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "study-armchair-res-armchair-01-a",
-        "itemType": "Furniture"
-      },
-      "image": "assets/items/study-armchair-res-armchair-01-a.png"
-    },
-    {
       "id": "study-armchair",
       "name": "Study Armchair",
       "description": null,
@@ -43122,6 +43059,41 @@
         "itemType": "Furniture"
       },
       "image": "assets/items/study-armchair.png"
+    },
+    {
+      "id": "study-armchair-res-armchair-01-a",
+      "name": "Study Armchair",
+      "description": null,
+      "rarity": "Legendary",
+      "type": "Furniture",
+      "rawType": "Furniture",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "study-armchair-res-armchair-01-a",
+          "name": "Study Armchair",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "study-armchair-res-armchair-01-a",
+        "itemType": "Furniture"
+      },
+      "image": "assets/items/study-armchair-res-armchair-01-a.png"
     },
     {
       "id": "study-armchair-design-res-armchair-01-a",
@@ -44489,6 +44461,41 @@
       "image": "assets/items/game-cosmetic-231741991.png"
     },
     {
+      "id": "sundog-stencil",
+      "name": "Sundog Stencil",
+      "description": null,
+      "rarity": "Legendary",
+      "type": "Stencil",
+      "rawType": "Stencil",
+      "isPrimaryType": false,
+      "hasBlueprint": false,
+      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261117/73216f7b2a7afb07becb0746462167a80996b7dc31dd124264d93d4291704951.png",
+      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20261117/73216f7b2a7afb07becb0746462167a80996b7dc31dd124264d93d4291704951.png",
+      "blueprint": null,
+      "variants": [
+        {
+          "id": "sundog-stencil",
+          "name": "Sundog Stencil",
+          "rarity": "Legendary",
+          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20261117/73216f7b2a7afb07becb0746462167a80996b7dc31dd124264d93d4291704951.png"
+        }
+      ],
+      "spawn": {
+        "provider": "MetaForge",
+        "lootArea": null,
+        "lootAreas": [],
+        "sources": [],
+        "locations": [],
+        "droppedBy": []
+      },
+      "source": {
+        "provider": "MetaForge",
+        "itemId": "sundog-stencil",
+        "itemType": "Stencil"
+      },
+      "image": "assets/items/sundog-stencil.png"
+    },
+    {
       "id": "surge-coil",
       "name": "Surge Coil",
       "description": "A deployable device that periodically electrifies the area around itself and briefly stuns anything caught within it.",
@@ -44789,149 +44796,16 @@
       "image": "assets/items/tactical-mk-1.png"
     },
     {
-      "id": "tactical-mk-2",
-      "name": "Tactical Mk. 2",
-      "description": "Adds more backpack space and an extra utility item slot.",
-      "rarity": "Rare",
-      "type": "Augment",
-      "rawType": "Augment",
-      "isPrimaryType": true,
-      "hasBlueprint": false,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/93daa92420665aade905500bab42cb7d84774f365131ac1e60e523294a3c8c74.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/93daa92420665aade905500bab42cb7d84774f365131ac1e60e523294a3c8c74.png",
-      "blueprint": null,
-      "variants": [
-        {
-          "id": "tactical-mk-2",
-          "name": "Tactical Mk. 2",
-          "rarity": "Rare",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/93daa92420665aade905500bab42cb7d84774f365131ac1e60e523294a3c8c74.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "tactical-mk-2",
-        "itemType": "Augment"
-      },
-      "image": "assets/items/tactical-mk-2.png"
-    },
-    {
-      "id": "tactical-mk3-defensive",
-      "name": "Tactical Mk. 3 (Defensive)",
-      "description": "A defense-focused augment for keeping Shields topped up.",
-      "rarity": "Epic",
-      "type": "Augment",
-      "rawType": "Augment",
-      "isPrimaryType": true,
-      "hasBlueprint": true,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png",
-      "blueprint": {
-        "id": "tactical-mk3-defensive-blueprint",
-        "name": "Tactical Mk. 3 (Defensive) Blueprint",
-        "rarity": "Epic",
-        "type": "Augment",
-        "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png",
-        "reward": null,
-        "spawn": {
-          "provider": "MetaForge",
-          "lootArea": null,
-          "sources": [],
-          "locations": [],
-          "droppedBy": []
-        }
-      },
-      "variants": [
-        {
-          "id": "tactical-mk3-defensive",
-          "name": "Tactical Mk. 3 (Defensive)",
-          "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "tactical-mk3-defensive",
-        "itemType": "Augment"
-      },
-      "image": "assets/items/tactical-mk3-defensive.png"
-    },
-    {
-      "id": "tactical-mk-3-healing",
-      "name": "Tactical Mk. 3 (Healing)",
-      "description": "A healing-focused augment which adds extra slots for healing items.",
-      "rarity": "Epic",
-      "type": "Augment",
-      "rawType": "Augment",
-      "isPrimaryType": true,
-      "hasBlueprint": true,
-      "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png",
-      "blueprint": {
-        "id": "tacical-mk3-healing-blueprint",
-        "name": "Tactical Mk. 3 (Healing) Blueprint",
-        "rarity": "Epic",
-        "type": "Augment",
-        "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png",
-        "reward": null,
-        "spawn": {
-          "provider": "MetaForge",
-          "lootArea": null,
-          "sources": [],
-          "locations": [],
-          "droppedBy": []
-        }
-      },
-      "variants": [
-        {
-          "id": "tactical-mk-3-healing",
-          "name": "Tactical Mk. 3 (Healing)",
-          "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png"
-        }
-      ],
-      "spawn": {
-        "provider": "MetaForge",
-        "lootArea": null,
-        "lootAreas": [],
-        "sources": [],
-        "locations": [],
-        "droppedBy": []
-      },
-      "source": {
-        "provider": "MetaForge",
-        "itemId": "tactical-mk-3-healing",
-        "itemType": "Augment"
-      },
-      "image": "assets/items/tactical-mk-3-healing.png"
-    },
-    {
-      "id": "tactical-mk-3-revival",
+      "id": "bp-target-tactical-mk-3-revival-blueprint",
       "name": "Tactical Mk. 3 (Revival)",
-      "description": "A tactical augment focused on utility over defense and looting.",
+      "description": "Lets you craft Tactical MK. 3 (Revival) Blueprint.",
       "rarity": "Epic",
       "type": "Augment",
-      "rawType": "Augment",
+      "rawType": "Unknown",
       "isPrimaryType": true,
       "hasBlueprint": true,
       "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/09979fa9a2505e367c5d5e568a2cee6b24b7ff94141b93ebb411dbc465598101.png",
-      "itemImageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/09979fa9a2505e367c5d5e568a2cee6b24b7ff94141b93ebb411dbc465598101.png",
+      "itemImageRemote": null,
       "blueprint": {
         "id": "tactical-mk-3-revival-blueprint",
         "name": "Tactical Mk. 3 (Revival) Blueprint",
@@ -44947,28 +44821,20 @@
           "droppedBy": []
         }
       },
-      "variants": [
-        {
-          "id": "tactical-mk-3-revival",
-          "name": "Tactical Mk. 3 (Revival)",
-          "rarity": "Epic",
-          "imageRemote": "https://static.metaforge.app/arc-raiders/preview/20260919/09979fa9a2505e367c5d5e568a2cee6b24b7ff94141b93ebb411dbc465598101.png"
-        }
-      ],
+      "variants": [],
       "spawn": {
         "provider": "MetaForge",
         "lootArea": null,
-        "lootAreas": [],
         "sources": [],
         "locations": [],
         "droppedBy": []
       },
       "source": {
         "provider": "MetaForge",
-        "itemId": "tactical-mk-3-revival",
-        "itemType": "Augment"
+        "itemId": null,
+        "itemType": "Unknown"
       },
-      "image": "assets/items/tactical-mk-3-revival.png"
+      "image": "assets/items/bp-target-tactical-mk-3-revival-blueprint.png"
     },
     {
       "id": "tactical-mk-3-smoke",

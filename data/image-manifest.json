@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T08:30:19.683Z",
+  "generatedAt": "2026-11-18T13:54:47.692Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -1278,10 +1278,6 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/f61c0fa5e686d604aa11379cb3c70134cd36c05d1e3987b0456df2326bd6ebb2.png",
       "file": "assets/items/carrion-outfit.png"
     },
-    "carrion-helmet": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/f973801a59783c571253abea12aa2a251c1a217d4589156f4008fc890c6a4b71.png",
-      "file": "assets/items/carrion-helmet.png"
-    },
     "game-cosmetic-n1319203648": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e043d9bd3f29dbb442620eb0ba06989d14cca2fc2217695b53e2c78b14b88a41.png",
       "file": "assets/items/game-cosmetic-n1319203648.png"
@@ -1647,8 +1643,8 @@
       "file": "assets/items/dead-flowers.png"
     },
     "deadline": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
-      "file": "assets/items/deadline.png"
+      "source": "https://static.metaforge.app/arc-raiders/icons/deadline.webp",
+      "file": "assets/items/deadline.webp"
     },
     "deadwire-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/19eecadead89b321762f8b6b3f4f6ccd9ffbd2a0e21f05168edc4bfbabde3ace.png",
@@ -2530,6 +2526,10 @@
       "source": "https://static.metaforge.app/arc-raiders/icons/goggles-radio-renegade-variant.webp",
       "file": "assets/items/goggles-radio-renegade-variant.webp"
     },
+    "golden-olive-stencil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/70f1f617e772e7ccc469ce86be212502cae793b69fee5ba6e5362d004d0729ea.png",
+      "file": "assets/items/golden-olive-stencil.png"
+    },
     "game-cosmetic-828819479": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/28ce06367d5e699ba23b2f47aaf93533824cf465fe76d4faf2a69109033bf86b.png",
       "file": "assets/items/game-cosmetic-828819479.png"
@@ -2569,14 +2569,6 @@
     "green-geometric-sofa": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_Patterns_Green_Grometry.png",
       "file": "assets/items/green-geometric-sofa.png"
-    },
-    "green-geometric-sofa-design": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/0e75e8531666590b8be7fee8ca8c695d82709684db1234ad8b402fa85fb7ffa1.png",
-      "file": "assets/items/green-geometric-sofa-design.png"
-    },
-    "green-lab-sofa": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_ResearchCompany_BC.png",
-      "file": "assets/items/green-lab-sofa.png"
     },
     "green-lab-sofa-design": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261008/281d228edc290cc16b8a068995b019e277e2f27e0b8fecb3da4932bfdd932800.png",
@@ -4698,13 +4690,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/abcd117d160094c3e6ba82031e3329aa18373a313ec7433431453c7d2acaf262.png",
       "file": "assets/items/game-cosmetic-n1378660176.png"
     },
-    "study-armchair-res-armchair-01-a": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
-      "file": "assets/items/study-armchair-res-armchair-01-a.png"
-    },
     "study-armchair": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/04b92633a931d131142ac0b436d6dbdceb8e8ab1b57e42b6bfd2b668681c9d6d.png",
       "file": "assets/items/study-armchair.png"
+    },
+    "study-armchair-res-armchair-01-a": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
+      "file": "assets/items/study-armchair-res-armchair-01-a.png"
     },
     "study-armchair-design-res-armchair-01-a": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261030/eab3e05466f62a712a19814d463f2dd5b11c637eecd5f98ddc64cb39b0421426.png",
@@ -4862,6 +4854,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/caa863dd58dbd1571af24adde913d7925076e87479a31920ac4d46299094a767.png",
       "file": "assets/items/game-cosmetic-231741991.png"
     },
+    "sundog-stencil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/73216f7b2a7afb07becb0746462167a80996b7dc31dd124264d93d4291704951.png",
+      "file": "assets/items/sundog-stencil.png"
+    },
     "surge-coil": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8d3eb5bd13f02e1bf83416336d5e7bef5b8523cb157927eefceca758c5e9f51a.png",
       "file": "assets/items/surge-coil.png"
@@ -4894,21 +4890,9 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c21464b72f80d0da4a0e75f2d4d0e67ba13437661e9b9b87c946256adc71c10a.png",
       "file": "assets/items/tactical-mk-1.png"
     },
-    "tactical-mk-2": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/93daa92420665aade905500bab42cb7d84774f365131ac1e60e523294a3c8c74.png",
-      "file": "assets/items/tactical-mk-2.png"
-    },
-    "tactical-mk3-defensive": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png",
-      "file": "assets/items/tactical-mk3-defensive.png"
-    },
-    "tactical-mk-3-healing": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png",
-      "file": "assets/items/tactical-mk-3-healing.png"
-    },
-    "tactical-mk-3-revival": {
+    "bp-target-tactical-mk-3-revival-blueprint": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/09979fa9a2505e367c5d5e568a2cee6b24b7ff94141b93ebb411dbc465598101.png",
-      "file": "assets/items/tactical-mk-3-revival.png"
+      "file": "assets/items/bp-target-tactical-mk-3-revival-blueprint.png"
     },
     "tactical-mk-3-smoke": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ae0d6b3a3f145d88622835abf56bb5eb2ea21043348f1b89225f8f0507ad9a3e.png",
