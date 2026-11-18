@@ -1,9 +1,6 @@
 name: Assemble ArcTracker UI cache
 
 on:
-  push:
-    paths:
-      - ".github/workflows/assemble-arctracker-ui.yml"
   workflow_dispatch:
 
 permissions:
@@ -15,9 +12,9 @@ concurrency:
 
 jobs:
   assemble:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 

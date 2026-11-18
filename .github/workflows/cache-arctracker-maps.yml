@@ -2,9 +2,6 @@ name: Cache ArcTracker map assets
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - ".github/workflows/cache-arctracker-maps.yml"
 
 permissions:
   contents: write
@@ -15,9 +12,9 @@ concurrency:
 
 jobs:
   cache:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
