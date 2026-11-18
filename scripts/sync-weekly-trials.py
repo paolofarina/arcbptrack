@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import json
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -30,27 +32,64 @@ def inferred_maps(row):
 
     return inferred
 
-def cache_image(row):
-    url = row.get("image_url") or ""
-    trial_id = row.get("trial_id") or ""
-    if not url or not trial_id:
+def normalize_image_url(raw_url):
+    raw_url = (raw_url or "").strip()
+    if not raw_url:
         return ""
 
-    suffix = Path(url.split("?", 1)[0]).suffix.lower()
+    if raw_url.startswith("//"):
+        return "https:" + raw_url
+
+    parsed = urllib.parse.urlparse(raw_url)
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return raw_url
+
+    first_segment = raw_url.lstrip("/").split("/", 1)[0]
+    if "." in first_segment and not raw_url.startswith("/"):
+        return "https://" + raw_url
+
+    return urllib.parse.urljoin("https://metaforge.app/", raw_url)
+
+
+def existing_cached_image(trial_id):
+    for suffix in (".webp", ".jpg", ".jpeg", ".png"):
+        candidate = IMAGE_DIR / f"{trial_id}{suffix}"
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def cache_image(row):
+    raw_url = row.get("image_url") or ""
+    trial_id = row.get("trial_id") or ""
+    if not raw_url or not trial_id:
+        return ""
+
+    url = normalize_image_url(raw_url)
+    parsed = urllib.parse.urlparse(url)
+    suffix = Path(parsed.path).suffix.lower()
     if suffix not in {".webp", ".jpg", ".jpeg", ".png"}:
         suffix = ".webp"
 
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     target = IMAGE_DIR / f"{trial_id}{suffix}"
 
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": "arcbptrack-weekly-trials-cache/2.1 (+https://github.com/paolofarina/arcbptrack)"}
-    )
-    with urllib.request.urlopen(req, timeout=30) as response:
-        target.write_bytes(response.read())
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "arcbptrack-weekly-trials-cache/2.2 (+https://github.com/paolofarina/arcbptrack)"}
+        )
+        with urllib.request.urlopen(req, timeout=30) as response:
+            target.write_bytes(response.read())
+        return target.as_posix()
+    except (urllib.error.URLError, ValueError, OSError) as exc:
+        fallback = existing_cached_image(trial_id)
+        if fallback:
+            print(f"WARNING: image refresh failed for {trial_id}: {exc}; keeping {fallback}", file=sys.stderr)
+            return fallback.as_posix()
 
-    return target.as_posix()
+        print(f"WARNING: image unavailable for {trial_id}: {exc}", file=sys.stderr)
+        return ""
 
 def compact_trial(row):
     map_links = []
@@ -79,7 +118,7 @@ def compact_trial(row):
         "id": row.get("id"),
         "trialId": row.get("trial_id"),
         "name": row.get("name") or row.get("content_name") or "",
-        "image": row.get("image_url") or "",
+        "image": normalize_image_url(row.get("image_url") or ""),
         "localImage": cache_image(row),
         "guideLink": row.get("guide_link") or "",
         "multiplier": row.get("multiplier"),
@@ -106,13 +145,30 @@ def main():
     if not current:
         raise RuntimeError("API returned no active weekly trials")
 
+    source = {
+        "provider": "MetaForge",
+        "endpoint": API_URL,
+    }
+
+    generated_at = datetime.now(timezone.utc).isoformat()
+    if OUTPUT.exists():
+        try:
+            previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
+            if (
+                previous.get("schemaVersion") == 2
+                and previous.get("source") == source
+                and previous.get("current") == current
+                and previous.get("upcoming") == upcoming
+            ):
+                generated_at = previous.get("generatedAt") or generated_at
+                print("Weekly trial data unchanged; preserving generatedAt.")
+        except (OSError, json.JSONDecodeError):
+            pass
+
     output = {
         "schemaVersion": 2,
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "source": {
-            "provider": "MetaForge",
-            "endpoint": API_URL,
-        },
+        "generatedAt": generated_at,
+        "source": source,
         "current": current,
         "upcoming": upcoming,
     }
