@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: sync-metaforge-location-votes
+  group: arcbptrack-repo-writer
   cancel-in-progress: false
 
 jobs:
@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v7

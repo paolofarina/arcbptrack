@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: arcbptrack-repo-writer
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-24.04
