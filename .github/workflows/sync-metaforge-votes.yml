@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: arcbptrack-repo-writer
+  group: sync-metaforge-location-votes
   cancel-in-progress: false
 
 jobs:
@@ -47,5 +47,13 @@ jobs:
 
           git add data/metaforge-location-votes.json
           git commit -m "chore(data): refresh MetaForge location votes"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "Push raced with another sync; retrying ($attempt/3)..."
+            sleep $((attempt * 2))
+          done
+          echo "Unable to push after 3 attempts."
+          exit 1
