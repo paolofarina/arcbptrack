@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:54:47.692Z",
+  "generatedAt": "2026-11-19T14:23:33.954Z",
   "policy": "all families",
   "items": {
     "leviathans-crown-ship-model": {
@@ -706,6 +706,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/580eafbe4c84002f86d0b78f6ad5aec873e093dceb811a537123ad48e624e91d.png",
       "file": "assets/items/game-cosmetic-2053872668.png"
     },
+    "bandit-backpack": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/431a2903c4351e51c388a8dbedb7cfa7a86486ead2f4026a5ccb290ef0b8f9bf.png",
+      "file": "assets/items/bandit-backpack.png"
+    },
     "banjo": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/fb27de463b8246ff7886bd14a2b36015f5fad94c28ac7a3c80abd20dac683595.png",
       "file": "assets/items/banjo.png"
@@ -1278,6 +1282,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/f61c0fa5e686d604aa11379cb3c70134cd36c05d1e3987b0456df2326bd6ebb2.png",
       "file": "assets/items/carrion-outfit.png"
     },
+    "carrion-helmet": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261007/f973801a59783c571253abea12aa2a251c1a217d4589156f4008fc890c6a4b71.png",
+      "file": "assets/items/carrion-helmet.png"
+    },
     "game-cosmetic-n1319203648": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e043d9bd3f29dbb442620eb0ba06989d14cca2fc2217695b53e2c78b14b88a41.png",
       "file": "assets/items/game-cosmetic-n1319203648.png"
@@ -1643,8 +1651,8 @@
       "file": "assets/items/dead-flowers.png"
     },
     "deadline": {
-      "source": "https://static.metaforge.app/arc-raiders/icons/deadline.webp",
-      "file": "assets/items/deadline.webp"
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/8af3c45402fe1d383e6eeb175d17b566b7622c0488543f3dccc8479724307410.png",
+      "file": "assets/items/deadline.png"
     },
     "deadwire-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261007/19eecadead89b321762f8b6b3f4f6ccd9ffbd2a0e21f05168edc4bfbabde3ace.png",
@@ -2570,6 +2578,14 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_Patterns_Green_Grometry.png",
       "file": "assets/items/green-geometric-sofa.png"
     },
+    "green-geometric-sofa-design": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261008/0e75e8531666590b8be7fee8ca8c695d82709684db1234ad8b402fa85fb7ffa1.png",
+      "file": "assets/items/green-geometric-sofa-design.png"
+    },
+    "green-lab-sofa": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261010/furniture/T_UI_Icon_OutpostFurniture_Res_Sofa_01_Y300_A_ResearchCompany_BC.png",
+      "file": "assets/items/green-lab-sofa.png"
+    },
     "green-lab-sofa-design": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20261008/281d228edc290cc16b8a068995b019e277e2f27e0b8fecb3da4932bfdd932800.png",
       "file": "assets/items/green-lab-sofa-design.png"
@@ -3106,6 +3122,10 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/1205683644f19c563b6fcc68e9682673a4068c3603c5a390960e4199d5266235.png",
       "file": "assets/items/major-aiva-s-patch.png"
     },
+    "malocchio-stencil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/55dc13df0a494e6a136c61d934a4daf61882f3d2e36d7ec4145d85a1d0ff115d.png",
+      "file": "assets/items/malocchio-stencil.png"
+    },
     "game-cosmetic-n2096955525": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/88fd86f9b777e74f8ad008bed691b4ede1e0f3229ea224b9f042c1301fd90767.png",
       "file": "assets/items/game-cosmetic-n2096955525.png"
@@ -3122,13 +3142,13 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20261027/ae4a2d0243158b877c5899e92476617cc8e5b042212e5a829c60b623455d1648.png",
       "file": "assets/items/mask-fragment.png"
     },
-    "game-cosmetic-1667060404": {
-      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/920ddc9c0e3ca2905c765ca4e4f152ef9bb212a74dce07076ba4a6c5952084a5.png",
-      "file": "assets/items/game-cosmetic-1667060404.png"
-    },
     "mastery-medal-backpack-charm": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/dff5d0ad99b7ba1aa77fe86309fcfb408de3caf9966dddb47a1afaabcde861a4.png",
       "file": "assets/items/mastery-medal-backpack-charm.png"
+    },
+    "game-cosmetic-1667060404": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/920ddc9c0e3ca2905c765ca4e4f152ef9bb212a74dce07076ba4a6c5952084a5.png",
+      "file": "assets/items/game-cosmetic-1667060404.png"
     },
     "matador-outfit": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2ea890f387d9426987ff478c539e93f04ee785c1ad0084733856713285d7b70f.png",
@@ -3301,6 +3321,10 @@
     "game-cosmetic-1275837188": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/2b518df44aaf9ae673aca9b340456a42dc2d8c838a0cc124c9cf8b9047847ec2.png",
       "file": "assets/items/game-cosmetic-1275837188.png"
+    },
+    "nessuno-outfit": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/b8f1ec6d62b9eea54dc8371b41342c62ee633192640b05886b82ab94180479f9.png",
+      "file": "assets/items/nessuno-outfit.png"
     },
     "game-cosmetic-n389457683": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/6ee1ccfd0cadce18734f40f7b6de300f172908f6fa70b72cc619eca805e777fc.png",
@@ -3773,6 +3797,10 @@
     "pulse-mine": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d36042196f569ee41bdc9648e8dbd7b4ec3f8113cc7657141165fd4a3d31ddf0.png",
       "file": "assets/items/pulse-mine.png"
+    },
+    "pump-oiler-backpack-charm": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/d039575444091b5f8f2a86a7b3cee83fbe1455fe2da3aa3acd1de3c5a8434b7a.png",
+      "file": "assets/items/pump-oiler-backpack-charm.png"
     },
     "game-cosmetic-n1633960101": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/d9747d4a3ff6be6c57a30a3097372aee966e0c3c0e62d85dc9570e7ec026eed3.png",
@@ -4890,9 +4918,21 @@
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/c21464b72f80d0da4a0e75f2d4d0e67ba13437661e9b9b87c946256adc71c10a.png",
       "file": "assets/items/tactical-mk-1.png"
     },
-    "bp-target-tactical-mk-3-revival-blueprint": {
+    "tactical-mk-2": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/93daa92420665aade905500bab42cb7d84774f365131ac1e60e523294a3c8c74.png",
+      "file": "assets/items/tactical-mk-2.png"
+    },
+    "tactical-mk3-defensive": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/0515fecc6dfbb04c6f1d7b43f7afbcd2d47d9e3b00575c7dc5514d4bbb4e71be.png",
+      "file": "assets/items/tactical-mk3-defensive.png"
+    },
+    "tactical-mk-3-healing": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e6971c65fcfbdff43cc9008bd507c37d5dfd3c5f93ea360c7ea8f8f6391eb3be.png",
+      "file": "assets/items/tactical-mk-3-healing.png"
+    },
+    "tactical-mk-3-revival": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/09979fa9a2505e367c5d5e568a2cee6b24b7ff94141b93ebb411dbc465598101.png",
-      "file": "assets/items/bp-target-tactical-mk-3-revival-blueprint.png"
+      "file": "assets/items/tactical-mk-3-revival.png"
     },
     "tactical-mk-3-smoke": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ae0d6b3a3f145d88622835abf56bb5eb2ea21043348f1b89225f8f0507ad9a3e.png",
@@ -4917,6 +4957,10 @@
     "tattered-clothes": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/ad8428217fe62bd7084bca6931ca6564b361a63ceb8724db618387e9fc3f3f70.png",
       "file": "assets/items/tattered-clothes.png"
+    },
+    "taurus-stencil": {
+      "source": "https://static.metaforge.app/arc-raiders/preview/20261117/f5b8273bbe0c4657f4494d6f69607ba223260cdab4a0154639316c60fda040b9.png",
+      "file": "assets/items/taurus-stencil.png"
     },
     "game-cosmetic-1977040370": {
       "source": "https://static.metaforge.app/arc-raiders/preview/20260919/e2c79bb7d116d2dc83a89ed0171d58137eeecf7fd181fe35ae4e9e18162dfd5c.png",
