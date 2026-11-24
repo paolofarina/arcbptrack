@@ -1,102 +1,18 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T08:10:58.275399+00:00",
+  "generatedAt": "2026-11-24T21:52:18.374336+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
   },
   "current": [
     {
-      "id": "weekly-trial:aRD3FQIT:964109526:598734588",
-      "trialId": "aRD3FQIT",
-      "name": "Deal Damage using Heavy Ammo weapons",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-heavy-ammo-weapons.webp",
-      "localImage": "assets/weekly-trials/aRD3FQIT.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/damage-arc-using-heavy-ammo-weapons",
-      "multiplier": 1,
-      "type": "Damage",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1794916800,
-      "windowEnd": 1795514400
-    },
-    {
-      "id": "weekly-trial:zXHVjlhl:265602329:598734588",
-      "trialId": "zXHVjlhl",
-      "name": "Destroy ARC thrusters",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-arc-thrusters.webp",
-      "localImage": "assets/weekly-trials/zXHVjlhl.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/destroy-arc-thrusters",
-      "multiplier": 200,
-      "type": "DestroyConstructablePart",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1794916800,
-      "windowEnd": 1795514400
-    },
-    {
-      "id": "weekly-trial:T2wZ6r0i:407907509:598734588",
-      "trialId": "T2wZ6r0i",
-      "name": "Destroy ground ARC",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-ground-arc.webp",
-      "localImage": "assets/weekly-trials/T2wZ6r0i.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/destroy-ground-arc",
-      "multiplier": 250,
-      "type": "KillEnemy",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1794916800,
-      "windowEnd": 1795514400
-    },
-    {
-      "id": "weekly-trial:I5r7exx6:217209190:598734588",
-      "trialId": "I5r7exx6",
-      "name": "Loot Weapon Crates",
-      "image": "https://metaforge.app//static.metaforge.app/arc-raiders/weekly-trials/lootweaponcrates.webp",
-      "localImage": "",
-      "guideLink": "https://metaforge.app/arc-raiders/loot-weapon-crates",
-      "multiplier": 1000,
-      "type": "Interact",
-      "mapNames": [],
-      "mapCondition": null,
-      "maps": [],
-      "windowStart": 1794916800,
-      "windowEnd": 1795514400
-    },
-    {
-      "id": "weekly-trial:2c0ak8O2:134074964:598734588",
-      "trialId": "2c0ak8O2",
-      "name": "Open containers in Cielo Sereno Observatory",
-      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-cielo-sereno-observatory-on-pendola-pass.webp",
-      "localImage": "assets/weekly-trials/2c0ak8O2.webp",
-      "guideLink": "https://metaforge.app/arc-raiders/open-containers-in-cielo-sereno-observatory",
-      "multiplier": 200,
-      "type": "Interact",
-      "mapNames": [
-        "Pendola Pass"
-      ],
-      "mapCondition": null,
-      "maps": [
-        {
-          "id": "pendola-pass",
-          "name": "Pendola Pass"
-        }
-      ],
-      "windowStart": 1794916800,
-      "windowEnd": 1795514400
-    }
-  ],
-  "upcoming": [
-    {
       "id": "weekly-trial:qLuwio4N:537757437:839389624",
       "trialId": "qLuwio4N",
       "name": "Damage Leapers",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/damage-leapers.webp",
       "localImage": "assets/weekly-trials/qLuwio4N.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/damage-leapers",
       "multiplier": 1.6,
       "type": "Damage",
       "mapNames": [],
@@ -171,6 +87,90 @@
       ],
       "windowStart": 1795521600,
       "windowEnd": 1796119200
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "weekly-trial:TPul6E4j:887803682:597303125",
+      "trialId": "TPul6E4j",
+      "name": "Deal Damage using Kettle",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-kettle.webp",
+      "localImage": "assets/weekly-trials/TPul6E4j.webp",
+      "guideLink": "",
+      "multiplier": 1.5,
+      "type": "Damage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1796126400,
+      "windowEnd": 1796724000
+    },
+    {
+      "id": "weekly-trial:Mi9lP1EU:850262204:597303125",
+      "trialId": "Mi9lP1EU",
+      "name": "Deal damage using single Bully Fragmenter",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-single-bully-fragmenter.webp",
+      "localImage": "assets/weekly-trials/Mi9lP1EU.webp",
+      "guideLink": "",
+      "multiplier": 10,
+      "type": "MaxDamage",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1796126400,
+      "windowEnd": 1796724000
+    },
+    {
+      "id": "weekly-trial:8W5ljZZA:767038220:597303125",
+      "trialId": "8W5ljZZA",
+      "name": "Destroy Flying ARC",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-flying-arc.webp",
+      "localImage": "assets/weekly-trials/8W5ljZZA.webp",
+      "guideLink": "",
+      "multiplier": 250,
+      "type": "KillEnemy",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1796126400,
+      "windowEnd": 1796724000
+    },
+    {
+      "id": "weekly-trial:MFz5Ygqb:806775786:597303125",
+      "trialId": "MFz5Ygqb",
+      "name": "Open containers in Almatera Station",
+      "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-almatera-station-on-pendola-pass.webp",
+      "localImage": "assets/weekly-trials/MFz5Ygqb.webp",
+      "guideLink": "",
+      "multiplier": 200,
+      "type": "Interact",
+      "mapNames": [
+        "Pendola Pass"
+      ],
+      "mapCondition": null,
+      "maps": [
+        {
+          "id": "pendola-pass",
+          "name": "Pendola Pass"
+        }
+      ],
+      "windowStart": 1796126400,
+      "windowEnd": 1796724000
+    },
+    {
+      "id": "weekly-trial:IAaqUH7w:566376860:597303125",
+      "trialId": "IAaqUH7w",
+      "name": "Search Lockers",
+      "image": "https://static.metaforge.app/weekly-trials/searchlockers2.webp",
+      "localImage": "assets/weekly-trials/IAaqUH7w.webp",
+      "guideLink": "https://metaforge.app/arc-raiders/search-lockers",
+      "multiplier": 160,
+      "type": "Interact",
+      "mapNames": [],
+      "mapCondition": null,
+      "maps": [],
+      "windowStart": 1796126400,
+      "windowEnd": 1796724000
     }
   ]
 }
