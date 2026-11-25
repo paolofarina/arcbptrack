@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T21:52:18.374336+00:00",
+  "generatedAt": "2026-11-25T08:52:16.042084+00:00",
   "source": {
     "provider": "MetaForge",
     "endpoint": "https://metaforge.app/api/arc-raiders/weekly-trials"
@@ -27,7 +27,7 @@
       "name": "Deal damage using Shotguns",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/deal-damage-using-shotguns.webp",
       "localImage": "assets/weekly-trials/XCtdUK33.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/deal-damage-using-shotguns",
       "multiplier": 1,
       "type": "Damage",
       "mapNames": [],
@@ -42,7 +42,7 @@
       "name": "Destroy Leaper legs",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/destroy-leaper-legs.webp",
       "localImage": "assets/weekly-trials/uuvThBYK.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/destroy-leaper-legs",
       "multiplier": 500,
       "type": "DestroyConstructablePart",
       "mapNames": [],
@@ -72,7 +72,7 @@
       "name": "Open containers in Railyard",
       "image": "https://static.metaforge.app/arc-raiders/weekly-trials/open-containers-in-railyard-on-pendola-pass.webp",
       "localImage": "assets/weekly-trials/P98bMGGa.webp",
-      "guideLink": "",
+      "guideLink": "https://metaforge.app/arc-raiders/open-containers-in-railyard",
       "multiplier": 200,
       "type": "Interact",
       "mapNames": [
